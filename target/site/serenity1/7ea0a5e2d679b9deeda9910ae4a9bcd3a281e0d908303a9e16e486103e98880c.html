@@ -1,0 +1,2086 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Capabilities</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.4/media/jqueryui/dataTables.jqueryui.css" rel="Stylesheet"/>
+<link type="text/css" href="css/tables.css" rel="stylesheet" />
+
+<script type="text/javascript" src="datatables/1.10.4/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.4/media/jqueryui/dataTables.jqueryui.min.js"></script><!-- jQplot -->
+<!--[if IE]>
+<script language="javascript" type="text/javascript" src="excanvas/3/excanvas.compiled.js"></script>
+<![endif]--><link rel="stylesheet" type="text/css" href="jqplot/1.0.8/jquery.jqplot.min.css"/>
+<script type="text/javascript" src="jqplot/1.0.8/jquery.jqplot.min.js"></script>
+<script type="text/javascript" src="jqplot/1.0.8/plugins/jqplot.pieRenderer.min.js"></script>
+
+
+    <script class="code" type="text/javascript">$(document).ready(function () {
+
+        // Results table
+        $('#req-results-table').DataTable({
+            "order": [
+                [ 2, "asc" ]
+            ],
+            "pageLength": 25
+        });
+        $('#test-results-table').DataTable({
+            "order": [
+                [ 2, "asc" ]
+            ],
+            "pageLength": 25
+        });
+        $('#examples-table').DataTable({
+            "order": [
+                [ 2, "asc" ]
+            ],
+            "pageLength": 25
+        });
+        $("#tabs").tabs();
+        $("#test-tabs").tabs();
+    })
+    ;
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".read-more-link").click(function () {
+                $(this).nextAll("div.read-more-text").toggle();
+                var isrc = $(this).find("img").attr('src');
+                if (isrc == 'images/plus.png') {
+                    $(this).find("img").attr("src", function () {
+                        return "images/minus.png";
+                    });
+                } else {
+                    $(this).find("img").attr("src", function () {
+                        return "images/plus.png";
+                    });
+                }
+            });
+        });
+    </script>
+</head>
+
+<body class="results-page">
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-bdd-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+
+<div class="middlecontent">
+<div id="contenttop">
+    <div class="middlebg">
+        <span class="breadcrumbs"><a href="index.html">Home</a>
+            > Capabilities
+        </span>
+    </div>
+    <div class="rightbg"></div>
+</div>
+
+<div class="clr"></div>
+
+<!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li >
+            <a href="index.html"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li class="active">
+            <a href="#"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-11-2016 09:18</span>
+    <br style="clear:left"/>
+</div>
+
+<div class="clr"></div>
+
+<div id="beforetable"></div>
+<div id="results-dashboard">
+<div class="middlb">
+<div class="table">
+
+    <div id="tabs">
+            <ul>
+                    <li><a href="#tabs-1">
+                    Capabilities (11)
+                    </a></li>
+            </ul>
+            <div id="tabs-1" class="capabilities-table">
+<div id="req_list_tests" class="table">
+    <div class="test-results">
+        <table id="req-results-table">
+            <thead>
+            <tr>
+                <th width="30" class="test-results-heading">&nbsp;</th>
+                <th width="65" class="test-results-heading">ID</th>
+                <th width="525" class="test-results-heading">Capability</th>
+                    <th width="65" class="test-results-heading">Features</th>
+                <th class="test-results-heading" width="75px">Auto.<br/>Tests</th>
+                <th class="test-results-heading" width="25px"><i class="fa fa-check-square-o"
+                                                                 title="Tests passed (automated)"></i>
+                </th>
+                <th class="test-results-heading" width="25px"><i class="fa fa-square-o"
+                                                                 title="Tests skipped or pending (automated)">
+                </th>
+                <th class="test-results-heading" width="25px"><i class="fa fa-times-circle"
+                                                                 title="Tests failed (automated)"></th>
+                <th class="test-results-heading" width="25px"><i
+                        class="fa fa-exclamation-triangle"
+                        title="Tests failed with an error (automated)"></th>
+                <th class="test-results-heading" width="25px">
+                    <i class="fa fa-chain-broken fa-lg" title="Tests compromised"></i>
+                </th>
+                    <th class="test-results-heading" width="75px">Manual<br/>Tests</th>
+                    <th class="test-results-heading" width="25px"><i class="fa fa-check-square-o"
+                                                                     title="Tests passed (manual)"></i>
+                    </th>
+                    <th class="test-results-heading" width="25px"><i class="fa fa-square-o"
+                                                                     title="Tests skipped or pending (manual)">
+                    </th>
+                    <th class="test-results-heading" width="25px"><i class="fa fa-times-circle"
+                                                                     title="Tests failed (manual)"></th>
+                    <th class="test-results-heading" width="25px"><i
+                            class="fa fa-exclamation-triangle"
+                            title="Tests failed with an error (manual)"></th>
+
+
+                <th width="125px" class="test-results-heading">Coverage</th>
+            </tr>
+            <tbody>
+
+
+                <tr class="test-ERROR requirementRow">
+                    <td class="requirementRowCell">
+                        <span class="status_icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                        <span style="display:none">4</span>
+                    </td>
+                    <td class="cardNumber requirementRowCell"></td>
+
+                    <td class="ERROR-text requirementRowCell">
+                    <a href="javaScript:void(0)" class="read-more-link">
+                    <img src="images/plus.png" height="16"/></a>
+                        <span class="requirementName"><a
+                                href="fc61e3e04e1b2e2c86db64adca29dc6190a133154dc78ac2a796dd409873bacd.html">Credit management</a></span>
+
+                        <div class="requirementNarrative read-more-text">Credit management</div>
+                    </td>
+
+                        <td class="bluetext requirementRowCell">4</td>
+
+
+                    <td class="greentext highlighted-value requirementRowCell">18</td>
+                    <td class="greentext requirementRowCell">16</td>
+                    <td class="bluetext requirementRowCell">0</td>
+                    <td class="redtext requirementRowCell">1</td>
+                    <td class="lightorangetext requirementRowCell">1</td>
+                    <td class="violettext requirementRowCell">0</td>
+                        <td class="greentext highlighted-value requirementRowCell">0</td>
+                        <td class="greentext requirementRowCell">0</td>
+                        <td class="bluetext requirementRowCell">0</td>
+                        <td class="redtext requirementRowCell">0</td>
+                        <td class="lightorangetext requirementRowCell">0</td>
+
+                    <td width="125px" class="lightgreentext requirementRowCell">
+
+                        <table>
+                            <tr>
+                                <td width="40px">
+                                    <div class="small">88.9%</div>
+                                </td>
+                                <td width="125px">
+                                    <div class="percentagebar"
+                                         title="Credit management
+Tests implemented: 18
+  - Passing tests: 16 (88.9% of specified requirements)
+  - Failing tests: 1 (5.6% of specified requirements)
+  - Tests with errors: 1 (5.6% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     5
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%"
+                                         style="width: 125px;">
+                                        <div class="ignoredbar"
+                                             style="width: 125px;"
+                                             title="Credit management
+Tests implemented: 18
+  - Passing tests: 16 (88.9% of specified requirements)
+  - Failing tests: 1 (5.6% of specified requirements)
+  - Tests with errors: 1 (5.6% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     5
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                            <div class="compromisedbar"
+                                                 style="width: 125px;"
+                                                 title="Credit management
+Tests implemented: 18
+  - Passing tests: 16 (88.9% of specified requirements)
+  - Failing tests: 1 (5.6% of specified requirements)
+  - Tests with errors: 1 (5.6% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     5
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                <div class="errorbar"
+                                                     style="width: 125px;"
+                                                     title="Credit management
+Tests implemented: 18
+  - Passing tests: 16 (88.9% of specified requirements)
+  - Failing tests: 1 (5.6% of specified requirements)
+  - Tests with errors: 1 (5.6% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     5
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                    <div class="failingbar"
+                                                         style="width: 118px;"
+                                                         title="Credit management
+Tests implemented: 18
+  - Passing tests: 16 (88.9% of specified requirements)
+  - Failing tests: 1 (5.6% of specified requirements)
+  - Tests with errors: 1 (5.6% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     5
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                        <div class="passingbar"
+                                                             style="width: 111px;"
+                                                             title="Credit management
+Tests implemented: 18
+  - Passing tests: 16 (88.9% of specified requirements)
+  - Failing tests: 1 (5.6% of specified requirements)
+  - Tests with errors: 1 (5.6% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     5
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                </tr>
+
+                <tr class="test-FAILURE requirementRow">
+                    <td class="requirementRowCell">
+                        <span class="status_icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                        <span style="display:none">3</span>
+                    </td>
+                    <td class="cardNumber requirementRowCell"></td>
+
+                    <td class="FAILURE-text requirementRowCell">
+                    <a href="javaScript:void(0)" class="read-more-link">
+                    <img src="images/plus.png" height="16"/></a>
+                        <span class="requirementName"><a
+                                href="8a09bf1fdbb68dc88ac4f10f5517b85e5dfea8bc3cb661c63f41c415ae1805d0.html">Search daily report by date</a></span>
+
+                        <div class="requirementNarrative read-more-text">Search daily report by date</div>
+                    </td>
+
+                        <td class="bluetext requirementRowCell">1</td>
+
+
+                    <td class="greentext highlighted-value requirementRowCell">9</td>
+                    <td class="greentext requirementRowCell">8</td>
+                    <td class="bluetext requirementRowCell">0</td>
+                    <td class="redtext requirementRowCell">1</td>
+                    <td class="lightorangetext requirementRowCell">0</td>
+                    <td class="violettext requirementRowCell">0</td>
+                        <td class="greentext highlighted-value requirementRowCell">0</td>
+                        <td class="greentext requirementRowCell">0</td>
+                        <td class="bluetext requirementRowCell">0</td>
+                        <td class="redtext requirementRowCell">0</td>
+                        <td class="lightorangetext requirementRowCell">0</td>
+
+                    <td width="125px" class="lightgreentext requirementRowCell">
+
+                        <table>
+                            <tr>
+                                <td width="40px">
+                                    <div class="small">88.9%</div>
+                                </td>
+                                <td width="125px">
+                                    <div class="percentagebar"
+                                         title="Search daily report by date
+Tests implemented: 9
+  - Passing tests: 8 (88.9% of specified requirements)
+  - Failing tests: 1 (11.1% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%"
+                                         style="width: 125px;">
+                                        <div class="ignoredbar"
+                                             style="width: 125px;"
+                                             title="Search daily report by date
+Tests implemented: 9
+  - Passing tests: 8 (88.9% of specified requirements)
+  - Failing tests: 1 (11.1% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                            <div class="compromisedbar"
+                                                 style="width: 125px;"
+                                                 title="Search daily report by date
+Tests implemented: 9
+  - Passing tests: 8 (88.9% of specified requirements)
+  - Failing tests: 1 (11.1% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                <div class="errorbar"
+                                                     style="width: 125px;"
+                                                     title="Search daily report by date
+Tests implemented: 9
+  - Passing tests: 8 (88.9% of specified requirements)
+  - Failing tests: 1 (11.1% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                    <div class="failingbar"
+                                                         style="width: 125px;"
+                                                         title="Search daily report by date
+Tests implemented: 9
+  - Passing tests: 8 (88.9% of specified requirements)
+  - Failing tests: 1 (11.1% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                        <div class="passingbar"
+                                                             style="width: 111px;"
+                                                             title="Search daily report by date
+Tests implemented: 9
+  - Passing tests: 8 (88.9% of specified requirements)
+  - Failing tests: 1 (11.1% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                </tr>
+
+                <tr class="test-SUCCESS requirementRow">
+                    <td class="requirementRowCell">
+                        <span class="status_icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                        <span style="display:none">1</span>
+                    </td>
+                    <td class="cardNumber requirementRowCell"></td>
+
+                    <td class="SUCCESS-text requirementRowCell">
+                    <a href="javaScript:void(0)" class="read-more-link">
+                    <img src="images/plus.png" height="16"/></a>
+                        <span class="requirementName"><a
+                                href="06d5604f6d05fb641a1c63c88c98eed6f2ca4f0e5c5f3b222dfc5374761d7fa6.html">Bass export</a></span>
+
+                        <div class="requirementNarrative read-more-text">Bass export</div>
+                    </td>
+
+                        <td class="bluetext requirementRowCell">1</td>
+
+
+                    <td class="greentext highlighted-value requirementRowCell">5</td>
+                    <td class="greentext requirementRowCell">5</td>
+                    <td class="bluetext requirementRowCell">0</td>
+                    <td class="redtext requirementRowCell">0</td>
+                    <td class="lightorangetext requirementRowCell">0</td>
+                    <td class="violettext requirementRowCell">0</td>
+                        <td class="greentext highlighted-value requirementRowCell">0</td>
+                        <td class="greentext requirementRowCell">0</td>
+                        <td class="bluetext requirementRowCell">0</td>
+                        <td class="redtext requirementRowCell">0</td>
+                        <td class="lightorangetext requirementRowCell">0</td>
+
+                    <td width="125px" class="lightgreentext requirementRowCell">
+
+                        <table>
+                            <tr>
+                                <td width="40px">
+                                    <div class="small">100%</div>
+                                </td>
+                                <td width="125px">
+                                    <div class="percentagebar"
+                                         title="Bass export
+Tests implemented: 5
+  - Passing tests: 5 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%"
+                                         style="width: 125px;">
+                                        <div class="ignoredbar"
+                                             style="width: 125px;"
+                                             title="Bass export
+Tests implemented: 5
+  - Passing tests: 5 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                            <div class="compromisedbar"
+                                                 style="width: 125px;"
+                                                 title="Bass export
+Tests implemented: 5
+  - Passing tests: 5 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                <div class="errorbar"
+                                                     style="width: 125px;"
+                                                     title="Bass export
+Tests implemented: 5
+  - Passing tests: 5 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                    <div class="failingbar"
+                                                         style="width: 125px;"
+                                                         title="Bass export
+Tests implemented: 5
+  - Passing tests: 5 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                        <div class="passingbar"
+                                                             style="width: 125px;"
+                                                             title="Bass export
+Tests implemented: 5
+  - Passing tests: 5 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                </tr>
+
+                <tr class="test-ERROR requirementRow">
+                    <td class="requirementRowCell">
+                        <span class="status_icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                        <span style="display:none">4</span>
+                    </td>
+                    <td class="cardNumber requirementRowCell"></td>
+
+                    <td class="ERROR-text requirementRowCell">
+                    <a href="javaScript:void(0)" class="read-more-link">
+                    <img src="images/plus.png" height="16"/></a>
+                        <span class="requirementName"><a
+                                href="4b2f933518a139a89370e6a37777489ac0ad08e6a7bb2bd25b041ce07b143236.html">Company management</a></span>
+
+                        <div class="requirementNarrative read-more-text">Company management</div>
+                    </td>
+
+                        <td class="bluetext requirementRowCell">1</td>
+
+
+                    <td class="greentext highlighted-value requirementRowCell">19</td>
+                    <td class="greentext requirementRowCell">14</td>
+                    <td class="bluetext requirementRowCell">0</td>
+                    <td class="redtext requirementRowCell">1</td>
+                    <td class="lightorangetext requirementRowCell">4</td>
+                    <td class="violettext requirementRowCell">0</td>
+                        <td class="greentext highlighted-value requirementRowCell">0</td>
+                        <td class="greentext requirementRowCell">0</td>
+                        <td class="bluetext requirementRowCell">0</td>
+                        <td class="redtext requirementRowCell">0</td>
+                        <td class="lightorangetext requirementRowCell">0</td>
+
+                    <td width="125px" class="lightgreentext requirementRowCell">
+
+                        <table>
+                            <tr>
+                                <td width="40px">
+                                    <div class="small">73.7%</div>
+                                </td>
+                                <td width="125px">
+                                    <div class="percentagebar"
+                                         title="Company management
+Tests implemented: 19
+  - Passing tests: 14 (73.7% of specified requirements)
+  - Failing tests: 1 (5.3% of specified requirements)
+  - Tests with errors: 4 (21.1% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%"
+                                         style="width: 125px;">
+                                        <div class="ignoredbar"
+                                             style="width: 125px;"
+                                             title="Company management
+Tests implemented: 19
+  - Passing tests: 14 (73.7% of specified requirements)
+  - Failing tests: 1 (5.3% of specified requirements)
+  - Tests with errors: 4 (21.1% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                            <div class="compromisedbar"
+                                                 style="width: 125px;"
+                                                 title="Company management
+Tests implemented: 19
+  - Passing tests: 14 (73.7% of specified requirements)
+  - Failing tests: 1 (5.3% of specified requirements)
+  - Tests with errors: 4 (21.1% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                <div class="errorbar"
+                                                     style="width: 125px;"
+                                                     title="Company management
+Tests implemented: 19
+  - Passing tests: 14 (73.7% of specified requirements)
+  - Failing tests: 1 (5.3% of specified requirements)
+  - Tests with errors: 4 (21.1% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                    <div class="failingbar"
+                                                         style="width: 99px;"
+                                                         title="Company management
+Tests implemented: 19
+  - Passing tests: 14 (73.7% of specified requirements)
+  - Failing tests: 1 (5.3% of specified requirements)
+  - Tests with errors: 4 (21.1% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                        <div class="passingbar"
+                                                             style="width: 92px;"
+                                                             title="Company management
+Tests implemented: 19
+  - Passing tests: 14 (73.7% of specified requirements)
+  - Failing tests: 1 (5.3% of specified requirements)
+  - Tests with errors: 4 (21.1% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                </tr>
+
+                <tr class="test-SUCCESS requirementRow">
+                    <td class="requirementRowCell">
+                        <span class="status_icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                        <span style="display:none">1</span>
+                    </td>
+                    <td class="cardNumber requirementRowCell"></td>
+
+                    <td class="SUCCESS-text requirementRowCell">
+                    <a href="javaScript:void(0)" class="read-more-link">
+                    <img src="images/plus.png" height="16"/></a>
+                        <span class="requirementName"><a
+                                href="15502812cbf2abda24439aebaf099423f7201fa8474f619ef54c60575854f7cb.html">Employee management</a></span>
+
+                        <div class="requirementNarrative read-more-text">Employee management</div>
+                    </td>
+
+                        <td class="bluetext requirementRowCell">1</td>
+
+
+                    <td class="greentext highlighted-value requirementRowCell">23</td>
+                    <td class="greentext requirementRowCell">23</td>
+                    <td class="bluetext requirementRowCell">0</td>
+                    <td class="redtext requirementRowCell">0</td>
+                    <td class="lightorangetext requirementRowCell">0</td>
+                    <td class="violettext requirementRowCell">0</td>
+                        <td class="greentext highlighted-value requirementRowCell">0</td>
+                        <td class="greentext requirementRowCell">0</td>
+                        <td class="bluetext requirementRowCell">0</td>
+                        <td class="redtext requirementRowCell">0</td>
+                        <td class="lightorangetext requirementRowCell">0</td>
+
+                    <td width="125px" class="lightgreentext requirementRowCell">
+
+                        <table>
+                            <tr>
+                                <td width="40px">
+                                    <div class="small">100%</div>
+                                </td>
+                                <td width="125px">
+                                    <div class="percentagebar"
+                                         title="Employee management
+Tests implemented: 23
+  - Passing tests: 23 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%"
+                                         style="width: 125px;">
+                                        <div class="ignoredbar"
+                                             style="width: 125px;"
+                                             title="Employee management
+Tests implemented: 23
+  - Passing tests: 23 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                            <div class="compromisedbar"
+                                                 style="width: 125px;"
+                                                 title="Employee management
+Tests implemented: 23
+  - Passing tests: 23 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                <div class="errorbar"
+                                                     style="width: 125px;"
+                                                     title="Employee management
+Tests implemented: 23
+  - Passing tests: 23 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                    <div class="failingbar"
+                                                         style="width: 125px;"
+                                                         title="Employee management
+Tests implemented: 23
+  - Passing tests: 23 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                        <div class="passingbar"
+                                                             style="width: 125px;"
+                                                             title="Employee management
+Tests implemented: 23
+  - Passing tests: 23 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                </tr>
+
+                <tr class="test-SUCCESS requirementRow">
+                    <td class="requirementRowCell">
+                        <span class="status_icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                        <span style="display:none">1</span>
+                    </td>
+                    <td class="cardNumber requirementRowCell"></td>
+
+                    <td class="SUCCESS-text requirementRowCell">
+                    <a href="javaScript:void(0)" class="read-more-link">
+                    <img src="images/plus.png" height="16"/></a>
+                        <span class="requirementName"><a
+                                href="109a0e3aa77684220af4f05778c7e776a6718d7a20fcbba0617b5750449bf585.html">View notifications</a></span>
+
+                        <div class="requirementNarrative read-more-text">View notifications</div>
+                    </td>
+
+                        <td class="bluetext requirementRowCell">1</td>
+
+
+                    <td class="greentext highlighted-value requirementRowCell">8</td>
+                    <td class="greentext requirementRowCell">8</td>
+                    <td class="bluetext requirementRowCell">0</td>
+                    <td class="redtext requirementRowCell">0</td>
+                    <td class="lightorangetext requirementRowCell">0</td>
+                    <td class="violettext requirementRowCell">0</td>
+                        <td class="greentext highlighted-value requirementRowCell">0</td>
+                        <td class="greentext requirementRowCell">0</td>
+                        <td class="bluetext requirementRowCell">0</td>
+                        <td class="redtext requirementRowCell">0</td>
+                        <td class="lightorangetext requirementRowCell">0</td>
+
+                    <td width="125px" class="lightgreentext requirementRowCell">
+
+                        <table>
+                            <tr>
+                                <td width="40px">
+                                    <div class="small">100%</div>
+                                </td>
+                                <td width="125px">
+                                    <div class="percentagebar"
+                                         title="View notifications
+Tests implemented: 8
+  - Passing tests: 8 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%"
+                                         style="width: 125px;">
+                                        <div class="ignoredbar"
+                                             style="width: 125px;"
+                                             title="View notifications
+Tests implemented: 8
+  - Passing tests: 8 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                            <div class="compromisedbar"
+                                                 style="width: 125px;"
+                                                 title="View notifications
+Tests implemented: 8
+  - Passing tests: 8 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                <div class="errorbar"
+                                                     style="width: 125px;"
+                                                     title="View notifications
+Tests implemented: 8
+  - Passing tests: 8 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                    <div class="failingbar"
+                                                         style="width: 125px;"
+                                                         title="View notifications
+Tests implemented: 8
+  - Passing tests: 8 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                        <div class="passingbar"
+                                                             style="width: 125px;"
+                                                             title="View notifications
+Tests implemented: 8
+  - Passing tests: 8 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                </tr>
+
+                <tr class="test-SUCCESS requirementRow">
+                    <td class="requirementRowCell">
+                        <span class="status_icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                        <span style="display:none">1</span>
+                    </td>
+                    <td class="cardNumber requirementRowCell"></td>
+
+                    <td class="SUCCESS-text requirementRowCell">
+                    <a href="javaScript:void(0)" class="read-more-link">
+                    <img src="images/plus.png" height="16"/></a>
+                        <span class="requirementName"><a
+                                href="889aac50dfb3d0deaa98ba4b6dfb143b8424c30d712bfd06c0dfee2a1c6943da.html">Debug</a></span>
+
+                        <div class="requirementNarrative read-more-text">Debug</div>
+                    </td>
+
+                        <td class="bluetext requirementRowCell">1</td>
+
+
+                    <td class="greentext highlighted-value requirementRowCell">0</td>
+                    <td class="greentext requirementRowCell">0</td>
+                    <td class="bluetext requirementRowCell">0</td>
+                    <td class="redtext requirementRowCell">0</td>
+                    <td class="lightorangetext requirementRowCell">0</td>
+                    <td class="violettext requirementRowCell">0</td>
+                        <td class="greentext highlighted-value requirementRowCell">0</td>
+                        <td class="greentext requirementRowCell">0</td>
+                        <td class="bluetext requirementRowCell">0</td>
+                        <td class="redtext requirementRowCell">0</td>
+                        <td class="lightorangetext requirementRowCell">0</td>
+
+                    <td width="125px" class="lightgreentext requirementRowCell">
+
+                        <table>
+                            <tr>
+                                <td width="40px">
+                                    <div class="small">0%</div>
+                                </td>
+                                <td width="125px">
+                                    <div class="percentagebar"
+                                         title="Debug
+Tests implemented: 0
+  - Passing tests: 0 (0% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 2
+
+
+Estimated unimplemented tests: 8
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%"
+                                         style="width: 125px;">
+                                        <div class="ignoredbar"
+                                             style="width: 0px;"
+                                             title="Debug
+Tests implemented: 0
+  - Passing tests: 0 (0% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 2
+
+
+Estimated unimplemented tests: 8
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                            <div class="compromisedbar"
+                                                 style="width: 0px;"
+                                                 title="Debug
+Tests implemented: 0
+  - Passing tests: 0 (0% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 2
+
+
+Estimated unimplemented tests: 8
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                <div class="errorbar"
+                                                     style="width: 0px;"
+                                                     title="Debug
+Tests implemented: 0
+  - Passing tests: 0 (0% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 2
+
+
+Estimated unimplemented tests: 8
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                    <div class="failingbar"
+                                                         style="width: 0px;"
+                                                         title="Debug
+Tests implemented: 0
+  - Passing tests: 0 (0% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 2
+
+
+Estimated unimplemented tests: 8
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                        <div class="passingbar"
+                                                             style="width: 0px;"
+                                                             title="Debug
+Tests implemented: 0
+  - Passing tests: 0 (0% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 2
+
+
+Estimated unimplemented tests: 8
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                </tr>
+
+                <tr class="test-SUCCESS requirementRow">
+                    <td class="requirementRowCell">
+                        <span class="status_icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                        <span style="display:none">1</span>
+                    </td>
+                    <td class="cardNumber requirementRowCell"></td>
+
+                    <td class="SUCCESS-text requirementRowCell">
+                    <a href="javaScript:void(0)" class="read-more-link">
+                    <img src="images/plus.png" height="16"/></a>
+                        <span class="requirementName"><a
+                                href="956b653709daf9fba1bd8b6001a1adeca9097b6a2f25a625bfb821750c1853f8.html">Notification setting</a></span>
+
+                        <div class="requirementNarrative read-more-text">Notification setting</div>
+                    </td>
+
+                        <td class="bluetext requirementRowCell">1</td>
+
+
+                    <td class="greentext highlighted-value requirementRowCell">9</td>
+                    <td class="greentext requirementRowCell">9</td>
+                    <td class="bluetext requirementRowCell">0</td>
+                    <td class="redtext requirementRowCell">0</td>
+                    <td class="lightorangetext requirementRowCell">0</td>
+                    <td class="violettext requirementRowCell">0</td>
+                        <td class="greentext highlighted-value requirementRowCell">0</td>
+                        <td class="greentext requirementRowCell">0</td>
+                        <td class="bluetext requirementRowCell">0</td>
+                        <td class="redtext requirementRowCell">0</td>
+                        <td class="lightorangetext requirementRowCell">0</td>
+
+                    <td width="125px" class="lightgreentext requirementRowCell">
+
+                        <table>
+                            <tr>
+                                <td width="40px">
+                                    <div class="small">100%</div>
+                                </td>
+                                <td width="125px">
+                                    <div class="percentagebar"
+                                         title="Notification setting
+Tests implemented: 9
+  - Passing tests: 9 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%"
+                                         style="width: 125px;">
+                                        <div class="ignoredbar"
+                                             style="width: 125px;"
+                                             title="Notification setting
+Tests implemented: 9
+  - Passing tests: 9 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                            <div class="compromisedbar"
+                                                 style="width: 125px;"
+                                                 title="Notification setting
+Tests implemented: 9
+  - Passing tests: 9 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                <div class="errorbar"
+                                                     style="width: 125px;"
+                                                     title="Notification setting
+Tests implemented: 9
+  - Passing tests: 9 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                    <div class="failingbar"
+                                                         style="width: 125px;"
+                                                         title="Notification setting
+Tests implemented: 9
+  - Passing tests: 9 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                        <div class="passingbar"
+                                                             style="width: 125px;"
+                                                             title="Notification setting
+Tests implemented: 9
+  - Passing tests: 9 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                </tr>
+
+                <tr class="test-SUCCESS requirementRow">
+                    <td class="requirementRowCell">
+                        <span class="status_icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                        <span style="display:none">1</span>
+                    </td>
+                    <td class="cardNumber requirementRowCell"></td>
+
+                    <td class="SUCCESS-text requirementRowCell">
+                    <a href="javaScript:void(0)" class="read-more-link">
+                    <img src="images/plus.png" height="16"/></a>
+                        <span class="requirementName"><a
+                                href="9074917c4870e61bf426c1fc23d59287e7a62c169e4f9201a86819a683ef20e8.html">Menu</a></span>
+
+                        <div class="requirementNarrative read-more-text">Menu</div>
+                    </td>
+
+                        <td class="bluetext requirementRowCell">1</td>
+
+
+                    <td class="greentext highlighted-value requirementRowCell">8</td>
+                    <td class="greentext requirementRowCell">8</td>
+                    <td class="bluetext requirementRowCell">0</td>
+                    <td class="redtext requirementRowCell">0</td>
+                    <td class="lightorangetext requirementRowCell">0</td>
+                    <td class="violettext requirementRowCell">0</td>
+                        <td class="greentext highlighted-value requirementRowCell">0</td>
+                        <td class="greentext requirementRowCell">0</td>
+                        <td class="bluetext requirementRowCell">0</td>
+                        <td class="redtext requirementRowCell">0</td>
+                        <td class="lightorangetext requirementRowCell">0</td>
+
+                    <td width="125px" class="lightgreentext requirementRowCell">
+
+                        <table>
+                            <tr>
+                                <td width="40px">
+                                    <div class="small">100%</div>
+                                </td>
+                                <td width="125px">
+                                    <div class="percentagebar"
+                                         title="Menu
+Tests implemented: 8
+  - Passing tests: 8 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%"
+                                         style="width: 125px;">
+                                        <div class="ignoredbar"
+                                             style="width: 125px;"
+                                             title="Menu
+Tests implemented: 8
+  - Passing tests: 8 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                            <div class="compromisedbar"
+                                                 style="width: 125px;"
+                                                 title="Menu
+Tests implemented: 8
+  - Passing tests: 8 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                <div class="errorbar"
+                                                     style="width: 125px;"
+                                                     title="Menu
+Tests implemented: 8
+  - Passing tests: 8 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                    <div class="failingbar"
+                                                         style="width: 125px;"
+                                                         title="Menu
+Tests implemented: 8
+  - Passing tests: 8 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                        <div class="passingbar"
+                                                             style="width: 125px;"
+                                                             title="Menu
+Tests implemented: 8
+  - Passing tests: 8 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                </tr>
+
+                <tr class="test-SUCCESS requirementRow">
+                    <td class="requirementRowCell">
+                        <span class="status_icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                        <span style="display:none">1</span>
+                    </td>
+                    <td class="cardNumber requirementRowCell"></td>
+
+                    <td class="SUCCESS-text requirementRowCell">
+                    <a href="javaScript:void(0)" class="read-more-link">
+                    <img src="images/plus.png" height="16"/></a>
+                        <span class="requirementName"><a
+                                href="0eb9f8602085fbfa5916a0c66b08ccf4d74939525b4e14c04ac100bf73eb3c12.html">Login</a></span>
+
+                        <div class="requirementNarrative read-more-text">Login</div>
+                    </td>
+
+                        <td class="bluetext requirementRowCell">2</td>
+
+
+                    <td class="greentext highlighted-value requirementRowCell">2</td>
+                    <td class="greentext requirementRowCell">2</td>
+                    <td class="bluetext requirementRowCell">0</td>
+                    <td class="redtext requirementRowCell">0</td>
+                    <td class="lightorangetext requirementRowCell">0</td>
+                    <td class="violettext requirementRowCell">0</td>
+                        <td class="greentext highlighted-value requirementRowCell">0</td>
+                        <td class="greentext requirementRowCell">0</td>
+                        <td class="bluetext requirementRowCell">0</td>
+                        <td class="redtext requirementRowCell">0</td>
+                        <td class="lightorangetext requirementRowCell">0</td>
+
+                    <td width="125px" class="lightgreentext requirementRowCell">
+
+                        <table>
+                            <tr>
+                                <td width="40px">
+                                    <div class="small">100%</div>
+                                </td>
+                                <td width="125px">
+                                    <div class="percentagebar"
+                                         title="Login
+Tests implemented: 2
+  - Passing tests: 2 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     3
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%"
+                                         style="width: 125px;">
+                                        <div class="ignoredbar"
+                                             style="width: 125px;"
+                                             title="Login
+Tests implemented: 2
+  - Passing tests: 2 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     3
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                            <div class="compromisedbar"
+                                                 style="width: 125px;"
+                                                 title="Login
+Tests implemented: 2
+  - Passing tests: 2 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     3
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                <div class="errorbar"
+                                                     style="width: 125px;"
+                                                     title="Login
+Tests implemented: 2
+  - Passing tests: 2 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     3
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                    <div class="failingbar"
+                                                         style="width: 125px;"
+                                                         title="Login
+Tests implemented: 2
+  - Passing tests: 2 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     3
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                        <div class="passingbar"
+                                                             style="width: 125px;"
+                                                             title="Login
+Tests implemented: 2
+  - Passing tests: 2 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     3
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                </tr>
+
+                <tr class="test-SUCCESS requirementRow">
+                    <td class="requirementRowCell">
+                        <span class="status_icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                        <span style="display:none">1</span>
+                    </td>
+                    <td class="cardNumber requirementRowCell"></td>
+
+                    <td class="SUCCESS-text requirementRowCell">
+                    <a href="javaScript:void(0)" class="read-more-link">
+                    <img src="images/plus.png" height="16"/></a>
+                        <span class="requirementName"><a
+                                href="bc6dac84ec8f23c59cf716e6ae82f83d1ed5215e7cdcaaf2245040a8e9e077ac.html">Register daily report</a></span>
+
+                        <div class="requirementNarrative read-more-text">Register daily report</div>
+                    </td>
+
+                        <td class="bluetext requirementRowCell">1</td>
+
+
+                    <td class="greentext highlighted-value requirementRowCell">10</td>
+                    <td class="greentext requirementRowCell">10</td>
+                    <td class="bluetext requirementRowCell">0</td>
+                    <td class="redtext requirementRowCell">0</td>
+                    <td class="lightorangetext requirementRowCell">0</td>
+                    <td class="violettext requirementRowCell">0</td>
+                        <td class="greentext highlighted-value requirementRowCell">0</td>
+                        <td class="greentext requirementRowCell">0</td>
+                        <td class="bluetext requirementRowCell">0</td>
+                        <td class="redtext requirementRowCell">0</td>
+                        <td class="lightorangetext requirementRowCell">0</td>
+
+                    <td width="125px" class="lightgreentext requirementRowCell">
+
+                        <table>
+                            <tr>
+                                <td width="40px">
+                                    <div class="small">100%</div>
+                                </td>
+                                <td width="125px">
+                                    <div class="percentagebar"
+                                         title="Register daily report
+Tests implemented: 10
+  - Passing tests: 10 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%"
+                                         style="width: 125px;">
+                                        <div class="ignoredbar"
+                                             style="width: 125px;"
+                                             title="Register daily report
+Tests implemented: 10
+  - Passing tests: 10 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                            <div class="compromisedbar"
+                                                 style="width: 125px;"
+                                                 title="Register daily report
+Tests implemented: 10
+  - Passing tests: 10 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                <div class="errorbar"
+                                                     style="width: 125px;"
+                                                     title="Register daily report
+Tests implemented: 10
+  - Passing tests: 10 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                    <div class="failingbar"
+                                                         style="width: 125px;"
+                                                         title="Register daily report
+Tests implemented: 10
+  - Passing tests: 10 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                        <div class="passingbar"
+                                                             style="width: 125px;"
+                                                             title="Register daily report
+Tests implemented: 10
+  - Passing tests: 10 (100% of specified requirements)
+  - Failing tests: 0 (0% of specified requirements)
+  - Tests with errors: 0 (0% of specified requirements)
+  - Compromised tests 0 (0% of specified requirements)
+
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
+  - Ignored or skipped tests: 0 (0% of specified requirements)
+
+Requirements specified:     2
+Requirements with no tests: 0
+
+
+Estimated unimplemented tests: 0
+Estimated unimplemented or pending requirements: 0%
+Estimated ignored or skipped requirements: 0%">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+            </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+<span class="version">Serenity BDD version 1.1.36</span>
+</div>
+
+
+</body>
+</html>

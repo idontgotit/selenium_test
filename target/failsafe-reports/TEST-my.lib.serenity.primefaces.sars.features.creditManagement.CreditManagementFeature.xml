@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="my.lib.serenity.primefaces.sars.features.creditManagement.CreditManagementFeature" time="6.102" tests="79" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.66-b17"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/ngoc/Working/Project/serenity-primefaces"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/ngoc/Working/Project/serenity-primefaces"/>
+    <property name="java.runtime.version" value="1.8.0_66-b17"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.19.0-42-generic"/>
+    <property name="user.home" value="/home/ngoc"/>
+    <property name="user.timezone" value="Asia/Ho_Chi_Minh"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="ngoc"/>
+    <property name="java.class.path" value="/usr/share/maven3/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher verify"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_66"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="When I open submenu Credit Management of menu Accounting" classname="| Credit Management | Accounting |" time="0"/>
+  <testcase name="Then The system should open initialization screen of Credit Management page" classname="| Credit Management | Accounting |" time="0"/>
+  <testcase name="| Credit Management | Accounting |" classname="| Credit Management | Accounting |" time="1.194"/>
+  <testcase name="When I open submenu Credit Management of menu Accounting" classname="| Credit Management | Accounting | a0000000 | a0010000 | 0 |" time="0"/>
+  <testcase name="And I search customer by code a0000000" classname="| Credit Management | Accounting | a0000000 | a0010000 | 0 |" time="0"/>
+  <testcase name="Then The system should show table result with no record" classname="| Credit Management | Accounting | a0000000 | a0010000 | 0 |" time="0"/>
+  <testcase name="When I search customer by code a0010000" classname="| Credit Management | Accounting | a0000000 | a0010000 | 0 |" time="0"/>
+  <testcase name="Then The system should show table result with records" classname="| Credit Management | Accounting | a0000000 | a0010000 | 0 |" time="0"/>
+  <testcase name="When I click checkbox left of a row 0 into table result" classname="| Credit Management | Accounting | a0000000 | a0010000 | 0 |" time="0"/>
+  <testcase name="When I click checkbox left of a row 0 into table result" classname="| Credit Management | Accounting | a0000000 | a0010000 | 0 |" time="0"/>
+  <testcase name="Then The system should enable select button and highlight row 0" classname="| Credit Management | Accounting | a0000000 | a0010000 | 0 |" time="0"/>
+  <testcase name="Then The system should enable select button and highlight row 0" classname="| Credit Management | Accounting | a0000000 | a0010000 | 0 |" time="0"/>
+  <testcase name="Then The system should enable select button and highlight row 0" classname="| Credit Management | Accounting | a0000000 | a0010000 | 0 |" time="0"/>
+  <testcase name="Then The system should disable select button and no highlight row 0" classname="| Credit Management | Accounting | a0000000 | a0010000 | 0 |" time="0"/>
+  <testcase name="When I click a row 0 into table result" classname="| Credit Management | Accounting | a0000000 | a0010000 | 0 |" time="0"/>
+  <testcase name="When I click a row 0 into table result" classname="| Credit Management | Accounting | a0000000 | a0010000 | 0 |" time="0"/>
+  <testcase name="When In accounting screen, I click button select" classname="| Credit Management | Accounting | a0000000 | a0010000 | 0 |" time="0"/>
+  <testcase name="Then The system should show customer details screen" classname="| Credit Management | Accounting | a0000000 | a0010000 | 0 |" time="0"/>
+  <testcase name="| Credit Management | Accounting | a0000000 | a0010000 | 0 |" classname="| Credit Management | Accounting | a0000000 | a0010000 | 0 |" time="1.811"/>
+  <testcase name="When I open submenu Credit Management of menu Accounting" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="And I fill value aaaaa for input id name card" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="And I fill value  for input company name" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="And I fill value  for input company name" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="And I click search button in tab other conditions" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="And I click search button in tab other conditions" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="And I click search button in tab other conditions" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="And I click search button in tab other conditions" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="And I click search button in tab other conditions" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="And I click search button in tab other conditions" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="Then The system should show table result with no record" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="Then The system should show table result with no record" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="Then The system should show table result with no record" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="When I fill value EC7B840A53B2A4BE86BCC0AF3272D57D for input id name card" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="When I fill value EC7B840A53B2A4BE86BCC0AF3272D57D for input id name card" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="Then The system should show table result with records" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0.001"/>
+  <testcase name="Then The system should show table result with records" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="Then The system should show table result with records" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="When I fill value  for input id name card" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="When I fill value  for input id name card" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="And I fill value aaaaa for input company name" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="And I fill value aaaaa for input company name" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="And I fill value コペル株式会社 for input company name" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="And I fill value コペル株式会社 for input company name" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="When I fill value aaaaa for input id name card" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="When I click checkbox left of a row 0 into table result" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="When I click checkbox left of a row 0 into table result" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="Then The system should enable select button and highlight row 0" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="Then The system should enable select button and highlight row 0" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="Then The system should enable select button and highlight row 0" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="Then The system should disable select button and no highlight row 0" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="When I click a row 0 into table result" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="When I click a row 0 into table result" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="When In accounting screen, I click button select" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="Then The system should show customer details screen" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="0"/>
+  <testcase name="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" classname="| Credit Management | Accounting | aaaaa | EC7B840A53B2A4BE86BCC0AF3272D57D | aaaaa | コペル株式会社 | 0 |" time="1.793"/>
+  <testcase name="When I open submenu Credit Management of menu Accounting" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="0"/>
+  <testcase name="And I fill value EC for input id name card" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="0"/>
+  <testcase name="And I fill value  for input company name" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="0"/>
+  <testcase name="And I click search button in tab other conditions" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="0"/>
+  <testcase name="Then The system should show table result with records" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="0"/>
+  <testcase name="When In accounting screen, I click button last page on paging" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="0"/>
+  <testcase name="Then The table result should show last page" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="0"/>
+  <testcase name="When In accounting screen, I click button first page on paging" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="0"/>
+  <testcase name="Then The table result should show first page" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="0"/>
+  <testcase name="When I click page 2 on paging" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="0"/>
+  <testcase name="When I click page 2 on paging" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="0"/>
+  <testcase name="Then The system should change table result to selected page 2" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="0"/>
+  <testcase name="Then The system should change table result to selected page 2" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="0"/>
+  <testcase name="When In accounting screen, I click button next on paging" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="0"/>
+  <testcase name="Then The system should change table result to selected page 2 + 1" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="0"/>
+  <testcase name="When In accounting screen, I click button back on paging" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="0"/>
+  <testcase name="Then The system should change table result to selected page 2 - 1" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="0"/>
+  <testcase name="When I click a row 0 into table result" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="0"/>
+  <testcase name="And I click page 4 on paging" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="0"/>
+  <testcase name="Then The system should change table result to selected page 4" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="0"/>
+  <testcase name="And The table result has no selected row" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="0"/>
+  <testcase name="And The table result show no row selected" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="0"/>
+  <testcase name="And Button Select disabled" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="0"/>
+  <testcase name="| Credit Management | Accounting | EC | 2 | 4 | 0 |" classname="| Credit Management | Accounting | EC | 2 | 4 | 0 |" time="1.303"/>
+</testsuite>

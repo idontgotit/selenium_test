@@ -1,0 +1,104 @@
+<acceptance-test-run title="10. Open Employee Management and add new" name="10. Open Employee Management and add new" description="" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="39721" timestamp="2016-11-21T13:41:32.724+07:00" session-id="ad489b995753d9add0f857680043cecb">
+  <user-story id="run-feature-for-debugging" name="Run feature for debugging" path="debug/debug.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Debug" type="capability"/>
+    <tag name="Debug/Run feature for debugging" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>employeeMenu</header>
+      <header>parentMenuText</header>
+      <header>addBtn</header>
+      <header>saveBtn</header>
+      <header>validateFailMes</header>
+      <header>successSave</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>Add</value>
+        <value>Save</value>
+        <value>Value is required</value>
+        <value>Save successfully</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, addBtn=Add, saveBtn=Save, validateFailMes=Value is required, successSave=Save successfully}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="dbb7cf9ff5b54b24e7dca0e5e290e5bd.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1345">
+      <screenshots>
+        <screenshot image="84e568571864360e305b233233995896.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1390">
+      <screenshots>
+        <screenshot image="cb946df597b32bde721929175ac0c37c.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1361">
+      <screenshots>
+        <screenshot image="b67d4c3ed6fbd016fc426f7fd7b0fa52.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Save</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="8437">
+      <screenshots>
+        <screenshot image="22fac41939de20b1a167acfb1972b790.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, System show message Value is required</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="902">
+      <screenshots>
+        <screenshot image="87adb1a6d8b7a1dcfa4008ce9e6a11e1.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1357">
+      <screenshots>
+        <screenshot image="761a2d5592709c7738a3349a355dcad5.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="5640">
+      <screenshots>
+        <screenshot image="16de59b26b49a8bfb501b14c5a9a408d.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I fill all data as below with employee name auto generate
+| hireDate | status | baseLocation | privilege | email |
+| 2016/07/01 | Working | 東京 | 管理職 | ngocpt@arrow-tech.vn |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2834">
+      <screenshots>
+        <screenshot image="69f2e314f9614898bd2e03c09346445f.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Save</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="8390">
+      <screenshots>
+        <screenshot image="dbb7cf9ff5b54b24e7dca0e5e290e5bd.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, System show message Save successfully</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

@@ -1,0 +1,321 @@
+<acceptance-test-run title="select record draft -&gt; approve" name="select record draft -&gt; approve" description="" steps="35" successful="35" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="55190" timestamp="2016-11-03T09:02:30.392+07:00" session-id="e5282270082c13020cc1287e0f5c9628">
+  <user-story id="credit-management-add-and-edit" name="Credit management add and edit" path="creditManagement/credit_management_add_edit.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Credit management" type="capability"/>
+    <tag name="Credit management/Credit management add and edit" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>validCustomerCode</header>
+      <header>rowIndex</header>
+      <header>surveySelect</header>
+      <header>indexAccounting</header>
+      <header>valueSurvey</header>
+      <header>valueIndexAccounting</header>
+      <header>btnEdit</header>
+      <header>creditScore</header>
+      <header>valueCreditScore</header>
+      <header>tradingCondition</header>
+      <header>valueTrading</header>
+      <header>zipCode</header>
+      <header>valueZipCode</header>
+      <header>address</header>
+      <header>tel</header>
+      <header>valueTel</header>
+      <header>fiscal</header>
+      <header>valueFiscal</header>
+      <header>tabBussi</header>
+      <header>btnApprove</header>
+      <header>successSave</header>
+      <header>btnDuplicate</header>
+      <header>btnSaveDraft</header>
+      <header>tabIndustry</header>
+      <header>btnGenerate</header>
+      <header>tabInputCustomer</header>
+      <header>textInput</header>
+      <header>typeInput</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Credit Management</value>
+        <value>Accounting</value>
+        <value>a567</value>
+        <value>0</value>
+        <value>Survey institute and information source</value>
+        <value>Index for accounting system</value>
+        <value>帝国データ</value>
+        <value>12</value>
+        <value>Edit</value>
+        <value>Credit score number</value>
+        <value>10</value>
+        <value>Trading condition category</value>
+        <value>通常取引</value>
+        <value>Zip code of HQ</value>
+        <value>111-1111</value>
+        <value>Address of HQ (all)</value>
+        <value>Tel.</value>
+        <value>023-345-3212</value>
+        <value>Fiscal closing month</value>
+        <value>01月</value>
+        <value>Business factors</value>
+        <value>Approve</value>
+        <value>Save successfully</value>
+        <value>Duplicate</value>
+        <value>Save draft</value>
+        <value>Industry classification</value>
+        <value>Generate in input customer data</value>
+        <value>Input customer data</value>
+        <value>name1,name2</value>
+        <value>Provider</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Credit Management, menuText=Accounting, validCustomerCode=a567, rowIndex=0, surveySelect=Survey institute and information source, indexAccounting=Index for accounting system, valueSurvey=帝国データ, valueIndexAccounting=12, btnEdit=Edit, creditScore=Credit score number, valueCreditScore=10, tradingCondition=Trading condition category, valueTrading=通常取引, zipCode=Zip code of HQ, valueZipCode=111-1111, address=Address of HQ (all), tel=Tel., valueTel=023-345-3212, fiscal=Fiscal closing month, valueFiscal=01月, tabBussi=Business factors, btnApprove=Approve, successSave=Save successfully, btnDuplicate=Duplicate, btnSaveDraft=Save draft, tabIndustry=Industry classification, btnGenerate=Generate in input customer data, tabInputCustomer=Input customer data, textInput=name1,name2, typeInput=Provider}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="106aa401003b79ff8c17fc7b38e83750.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="867">
+      <screenshots>
+        <screenshot image="21c4d43bb7b682ab76913e486e8fa4c2.png"/>
+      </screenshots>
+      <description>When I open submenu Credit Management of menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1530">
+      <screenshots>
+        <screenshot image="314252c89f1b1c266c0ee47752d7261a.png"/>
+      </screenshots>
+      <description>And I search customer by code a567</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="440">
+      <screenshots>
+        <screenshot image="7fc86773c162099b58a790d3f1678738.png"/>
+      </screenshots>
+      <description>And I click checkbox left of a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1351">
+      <screenshots>
+        <screenshot image="ced77fe1cb8d14dfb188750503161b9b.png"/>
+      </screenshots>
+      <description>And In accounting screen, I click button select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1508">
+      <screenshots>
+        <screenshot image="2d2a1a08e4e19083355f6344554c8ca0.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click record 0 in table Credit History in bottom with View enable</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2282">
+      <screenshots>
+        <screenshot image="34c252da5e042498d51e7b01bff136de.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Duplicate</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1564">
+      <screenshots>
+        <screenshot image="c51a179c4d1f75ade401622fb8a8dc81.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I change survey date to next day of selected record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1882">
+      <screenshots>
+        <screenshot image="33871ee9ed881626fcbe97144cf9e4c3.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Save draft</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1398">
+      <screenshots>
+        <screenshot image="b42ae8d1a6415a9f60e7db438ac1d344.png"/>
+      </screenshots>
+      <description>And I open submenu Credit Management of menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1538">
+      <screenshots>
+        <screenshot image="273de1715075efeed1edd739ce5a0320.png"/>
+      </screenshots>
+      <description>And I search customer by code a567</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="329">
+      <screenshots>
+        <screenshot image="ff957ed4bef5bc703594fd039b8415b3.png"/>
+      </screenshots>
+      <description>And I click checkbox left of a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1281">
+      <screenshots>
+        <screenshot image="e27646590da01710db9671253ae155e2.png"/>
+      </screenshots>
+      <description>And In accounting screen, I click button select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="806">
+      <screenshots>
+        <screenshot image="c899c9482f913fdbfb810a4f5e3d6ebb.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click record 0 in table Credit History in bottom</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2243">
+      <screenshots>
+        <screenshot image="dc48a7e9af97451fb595f56d74d96834.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="334">
+      <screenshots>
+        <screenshot image="ba57db4738ff68714d7174e52eec62ac.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I select in Survey institute and information source is 帝国データ</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="737">
+      <screenshots>
+        <screenshot image="9cfca4a595a4a4498e6ea600195a2b18.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I change survey date to next day of selected record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="297">
+      <screenshots>
+        <screenshot image="df2d8e5c8908ae681772a0c53f21f7d8.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I type in Index for accounting system is 12</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="299">
+      <screenshots>
+        <screenshot image="9052f08e975ccf12509eb1c032c00543.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I type in Credit score number is 10</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="360">
+      <screenshots>
+        <screenshot image="8263d8a8f23a220f27b4690444e1a863.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I select in Trading condition category is 通常取引</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1432">
+      <screenshots>
+        <screenshot image="44975a103e88b17a65c0df278687b2ac.png"/>
+      </screenshots>
+      <description>And In Credit Management page, textarea can input
+| Cause of decision |
+| Additional direction |
+| Accountant direction |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="707">
+      <screenshots>
+        <screenshot image="7261f27ffa862518da428f244ea4aa48.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I select tab have name is Business factors</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="273">
+      <screenshots>
+        <screenshot image="dd1c87f93db44e820662aa9261e26384.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I type in Zip code of HQ is 111-1111</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="428">
+      <screenshots>
+        <screenshot image="487bbadd94f591f6a33d96d7e74d36ad.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I type in Address of HQ (all) is 111-1111</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="506">
+      <screenshots>
+        <screenshot image="9436488e947310f374dd62cd5f004d5f.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I type in Tel. is 023-345-3212</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="388">
+      <screenshots>
+        <screenshot image="744a2ee593dee5622bb1bab3cfaae955.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I select in Fiscal closing month is 01月</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3999">
+      <screenshots>
+        <screenshot image="a3ea276d063a87585ce2ee2e16eb17f3.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields not required can input
+| Company index of research institute |
+| Fax. |
+| Number of employees |
+| Capital fund |
+| Url |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="682">
+      <screenshots>
+        <screenshot image="d2f7588c29d173ecd96faf749e4e29cd.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I select tab have name is Industry classification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="4528">
+      <screenshots>
+        <screenshot image="f8cb5195859a6b9476333dc72edcad05.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields required can input
+| Industry category code (main) |
+| Industry category code (subsidiary) |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2677">
+      <screenshots>
+        <screenshot image="92d38e6e7e352a687150b82381b47f54.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields not required can input
+| Rank of the same sector (Nation wide) |
+| Population of the same industry (Nation wide) |
+| Rank of the same sector (Prefecture) |
+| Population of the same industry (Prefecture) |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="675">
+      <screenshots>
+        <screenshot image="58c2634c7e1da17c91617d7d2e753f4e.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I select tab have name is Input customer data</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="358">
+      <screenshots>
+        <screenshot image="d61fc7d0b4fced9f434ee57888d08106.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I type name1,name2 in Input related company and choose type is Provider</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1796">
+      <screenshots>
+        <screenshot image="272b0d600d8310bdc1eac578689380a8.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Generate in input customer data</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1261">
+      <screenshots>
+        <screenshot image="5ddb2650b9776a51e3909784539f7552.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Approve</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1772">
+      <screenshots>
+        <screenshot image="15151422b6b8657a82e8a30f3304458d.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I confirm action</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="7889">
+      <screenshots>
+        <screenshot image="106aa401003b79ff8c17fc7b38e83750.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show message Save successfully</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

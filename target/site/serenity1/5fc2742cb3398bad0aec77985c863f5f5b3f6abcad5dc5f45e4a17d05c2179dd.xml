@@ -1,0 +1,95 @@
+<acceptance-test-run title="view details notification" name="view details notification" description="" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="10658" timestamp="2016-11-03T08:47:17.199+07:00" session-id="e02788a4687a6dd95353ac181b190d1d">
+  <user-story id="view-notification" name="View Notification" path="viewNotifications/viewNotifications.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="View notifications" type="capability"/>
+    <tag name="View Notification" type="feature"/>
+    <tag name="View notifications/View notification" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>rowIndex</header>
+      <header>tableIndex</header>
+      <header>dailyReportTitle</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>View Notifications</value>
+        <value>Notification</value>
+        <value>0</value>
+        <value>0</value>
+        <value>Daily Report</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=View Notifications, menuText=Notification, rowIndex=0, tableIndex=0, dailyReportTitle=Daily Report}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="37ee97fe8eb33690373cf4e0f363b45f.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1346">
+      <screenshots>
+        <screenshot image="516759dd06e443f0cf4ccd2d0597b5e7.png"/>
+      </screenshots>
+      <description>When I open submenu View Notifications of menu Notification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="774">
+      <screenshots>
+        <screenshot image="eaa344ba2e5dff13e7467539c37f2d17.png"/>
+      </screenshots>
+      <description>And In View notification screen, I choose row 0 in table list notification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="159">
+      <screenshots>
+        <screenshot image="801f5a8ae489e1190aa4096ab71b4877.png"/>
+      </screenshots>
+      <description>Then The system should show list table notification detail</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="881">
+      <screenshots>
+        <screenshot image="0ff1889927b64a91eed4d2c75826eb03.png"/>
+      </screenshots>
+      <description>When In View notification screen, I choose row 0 in table 0 of Notification details panel</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="240">
+      <screenshots>
+        <screenshot image="7e5593bb9e2b79394313b2ac7608c34c.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Daily Report&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="761">
+      <screenshots>
+        <screenshot image="e4288158a41100f48b90e4914cc98a47.png"/>
+      </screenshots>
+      <description>When I close screen</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="368">
+      <screenshots>
+        <screenshot image="37ee97fe8eb33690373cf4e0f363b45f.png"/>
+      </screenshots>
+      <description>Then The system should show initialization screen of View Notifications page when have data</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

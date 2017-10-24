@@ -1,0 +1,155 @@
+<acceptance-test-run title="9. Select record -&gt; duplicate -&gt; reset" name="9. Select record -&gt; duplicate -&gt; reset" description="" steps="15" successful="15" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="26057" timestamp="2017-02-02T09:50:31.161+07:00" session-id="8f9afc4c066fbf667ba73615c31c19b6">
+  <user-story id="credit-management-test-4-6" name="Credit management test 4-6" path="creditManagement/creadit_management_test46_company_and_credit_data.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Credit management" type="capability"/>
+    <tag name="Credit management test 4-6" type="feature"/>
+    <tag name="Credit management/Credit management test 4 6" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>validCustomerCode</header>
+      <header>rowIndex</header>
+      <header>btnReset</header>
+      <header>rowIndex2CreditHistory</header>
+      <header>btnDuplicate</header>
+      <header>number</header>
+      <header>string</header>
+      <header>lang</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Credit Management</value>
+        <value>Accounting</value>
+        <value>A567</value>
+        <value>0</value>
+        <value>Reset</value>
+        <value>0</value>
+        <value>Duplicate</value>
+        <value>4009912</value>
+        <value>123456</value>
+        <value>en</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Credit Management, menuText=Accounting, validCustomerCode=A567, rowIndex=0, btnReset=Reset, rowIndex2CreditHistory=0, btnDuplicate=Duplicate, number=4009912, string=123456, lang=en}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="cb5a9eb8330d8063c016a981d68ec630.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="855">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>When I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3100">
+      <screenshots>
+        <screenshot image="617d41b902e1df6119a620f9391ddde8.png"/>
+        <screenshot image="bf4b9fd0501168c6276e7d777fec338c.png"/>
+      </screenshots>
+      <description>And I input my credentials username 4009912 and password 123456</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2241">
+      <screenshots>
+        <screenshot image="269a53b2ee6c75ad822926c95bab8585.png"/>
+      </screenshots>
+      <description>And I change language to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1160">
+      <screenshots>
+        <screenshot image="f18c989cf512ec5a1e8ce46683b183e4.png"/>
+      </screenshots>
+      <description>When I open submenu Credit Management of menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1525">
+      <screenshots>
+        <screenshot image="fe3e08eff4351bacc4ca0ba358eb5e21.png"/>
+      </screenshots>
+      <description>And I search customer by code A567</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="360">
+      <screenshots>
+        <screenshot image="1517d840036583d88c810ac4817c5ecb.png"/>
+      </screenshots>
+      <description>And I click checkbox left of a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1874">
+      <screenshots>
+        <screenshot image="b3a99dbb52807fcb5446b3eea8c72dd0.png"/>
+      </screenshots>
+      <description>And In accounting screen, I click button select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="906">
+      <screenshots>
+        <screenshot image="2f2c6882cad18eaf7816a365b19699a1.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click record 0 in table Credit History in bottom with View enable</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3513">
+      <screenshots>
+        <screenshot image="2c09468f91b6063505ffac23341729c5.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Duplicate</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2274">
+      <screenshots>
+        <screenshot image="56596674d9ccc56f4697c0db2b2c3793.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Reset</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1781">
+      <screenshots>
+        <screenshot image="dea26709ef1f5c0d26ba514e6e00b9f4.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I confirm action</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="257">
+      <screenshots>
+        <screenshot image="dea26709ef1f5c0d26ba514e6e00b9f4.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show list button can use
+| Back |
+| Approve |
+| Save draft |
+| Reset |
+| Choose file upload |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="157">
+      <screenshots>
+        <screenshot image="dea26709ef1f5c0d26ba514e6e00b9f4.png"/>
+      </screenshots>
+      <description>And In Credit Management page, System show list button can not use
+| Upload |
+| Cancel |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="4041">
+      <screenshots>
+        <screenshot image="5bd8b5f30468c01b20d9e6247413c4c0.png"/>
+      </screenshots>
+      <description>And In Credit Management page, verify page after reset</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1897">
+      <screenshots>
+        <screenshot image="0317d62b52dee2733ce8e92700fa4b8c.png"/>
+      </screenshots>
+      <description>And I logout from system</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

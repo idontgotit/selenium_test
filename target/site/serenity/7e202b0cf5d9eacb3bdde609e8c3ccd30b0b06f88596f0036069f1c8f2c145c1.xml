@@ -1,0 +1,228 @@
+<acceptance-test-run title="6. Open Maintain credit data, search by Other conditions - Associated, select record, unselect, change page..." name="6. Open Maintain credit data, search by Other conditions - Associated, select record, unselect, change page..." description="" steps="23" successful="20" failures="0" errors="1" skipped="2" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="21724" timestamp="2017-04-17T17:19:44.963+07:00" session-id="6d2b575ba2fd2d5ef5ceb43fab6dac8e">
+  <user-story id="5-7.-maintain-credit-data" name="5-7. Maintain credit data" path="maintain_credit_data/maintain_credit_data57.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Maintain credit data" type="capability"/>
+    <tag name="5-7. Maintain credit data" type="feature"/>
+    <tag name="Maintain credit data/5 7. maintain credit data" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>maintainMenu</header>
+      <header>pageTitle</header>
+      <header>parentMenuText</header>
+      <header>searchBtn</header>
+      <header>selectBtn</header>
+      <header>rowSelect</header>
+      <header>only1</header>
+      <header>fieldIdNamecard</header>
+      <header>next</header>
+      <header>emptyString</header>
+      <header>fieldSansanCompanyId</header>
+      <header>previous</header>
+      <header>fieldCompanyName</header>
+      <header>fullRecord</header>
+      <header>validCompanyName</header>
+      <header>associated</header>
+      <header>otherConditions</header>
+    </headers>
+    <rows>
+      <row result="ERROR">
+        <value>Maintain Credit Data</value>
+        <value>Maintenance accounting data screen</value>
+        <value>Accounting</value>
+        <value>Search</value>
+        <value>Select</value>
+        <value>0</value>
+        <value>1</value>
+        <value>Id Name Card</value>
+        <value>next</value>
+        <value></value>
+        <value>Sansan Company ID</value>
+        <value>previous</value>
+        <value>Company name</value>
+        <value>5</value>
+        <value>NTT</value>
+        <value>Associated</value>
+        <value>Other conditions</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {maintainMenu=Maintain Credit Data, pageTitle=Maintenance accounting data screen, parentMenuText=Accounting, searchBtn=Search, selectBtn=Select, rowSelect=0, only1=1, fieldIdNamecard=Id Name Card, next=next, emptyString=, fieldSansanCompanyId=Sansan Company ID, previous=previous, fieldCompanyName=Company name, fullRecord=5, validCompanyName=NTT, associated=Associated, otherConditions=Other conditions}" result="ERROR">
+    <screenshots>
+      <screenshot image="211ba72560aa0e05afa6111e50fd8a60.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1488">
+      <screenshots>
+        <screenshot image="8025ffbd9bf599eae2a034748d2e4194.png"/>
+      </screenshots>
+      <description>When I open submenu Maintain Credit Data of parent menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="196">
+      <screenshots>
+        <screenshot image="edb9931e823b1d5c33f14189230aa7a3.png"/>
+      </screenshots>
+      <description>And The system should open &apos;Maintenance accounting data screen&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="185">
+      <screenshots>
+        <screenshot image="6e40b139ece80c655a3c66a1c1659142.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, I choose radio button have name is Other conditions</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="206">
+      <screenshots>
+        <screenshot image="e375df4e61db91ac4b639e054465718a.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I choose radio button have name is Associated</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="251">
+      <screenshots>
+        <screenshot image="72b5c52f53f28d69631c390aab338856.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I type NTT in input field have name is Company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1506">
+      <screenshots>
+        <screenshot image="d26f81be7b71d9d305f5faca0ce8a982.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="803">
+      <screenshots>
+        <screenshot image="80f153bd34224809b3ba8eca12f3609d.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click select checkbox row 0</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1439">
+      <screenshots>
+        <screenshot image="71b2ab16275af538dfba2e6fa3e646d2.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="186">
+      <screenshots>
+        <screenshot image="4cacd66ec5dc552fbc48e8c333e82e01.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, in search Company Sansan Table below have 1 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="346">
+      <screenshots>
+        <screenshot image="4cacd66ec5dc552fbc48e8c333e82e01.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I verify field in Trade name of customer</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="747">
+      <screenshots>
+        <screenshot image="9c5a5b21bbd0ca536ccf5994f577634c.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, in search Company Sansan I type NTT in input field have name is Company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="317">
+      <screenshots>
+        <screenshot image="f19a5a973e72be54f96c81a8417628ff.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I type  in input field have name is Id Name Card</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="353">
+      <screenshots>
+        <screenshot image="7107b4c7b439bf09cfaa92cd757a69b3.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I type  in input field have name is Sansan Company ID</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1322">
+      <screenshots>
+        <screenshot image="51a9f46564f8f2aded814bdea105e938.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="203">
+      <screenshots>
+        <screenshot image="ffacf04dcaa69c75d939a9d6e65c1f94.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, in search Company Sansan Table below have 5 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="340">
+      <screenshots>
+        <screenshot image="07a6c52494389597466bc1db977f6f92.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, in search Company Sansan I click one record can click</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="475">
+      <screenshots>
+        <screenshot image="07a6c52494389597466bc1db977f6f92.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, in search Company Sansan I verify field in Trade name of customer</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="272">
+      <screenshots>
+        <screenshot image="39eb76f64681bd213b22510598a61897.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, in search Company Sansan I try select this record again</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="466">
+      <screenshots>
+        <screenshot image="39eb76f64681bd213b22510598a61897.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, in search Company Sansan I verify field in Trade name of customer</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="266">
+      <screenshots>
+        <screenshot image="07a6c52494389597466bc1db977f6f92.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, in search Company Sansan I try select this record again</description>
+    </test-step>
+    <test-group name="And In Maintain credit data screen, in search Company Sansan table I go to next page" result="ERROR">
+      <test-step result="ERROR" duration="143">
+        <screenshots>
+          <screenshot image="e48f5f1051a785950e63cf256af88242.png" source="pagesource1074139256805144996.html.txt"/>
+        </screenshots>
+        <description>Goto page with value: next</description>
+        <error>org.openqa.selenium.WebDriverException: unknown error: Cannot read property &apos;ajax&apos; of null
+  (Session info: chrome=54.0.2840.100)
+  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.D2JMi4}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.100, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6d2b575ba2fd2d5ef5ceb43fab6dac8e</error>
+        <exception>org.openqa.selenium.WebDriverException:unknown error: Cannot read property &apos;ajax&apos; of null
+  (Session info: chrome=54.0.2840.100)
+  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.D2JMi4}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.100, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6d2b575ba2fd2d5ef5ceb43fab6dac8e
+[my.lib.serenity.primefaces.component.WebComponent.executeBooleanJavascript(WebComponent.java:91), my.lib.serenity.primefaces.component.WebComponent.access$000(WebComponent.java:18), my.lib.serenity.primefaces.component.WebComponent.waitForJQueryAndPrimeFaces(WebComponent.java:51), my.lib.serenity.primefaces.component.WebComponent.waitForAjaxDone(WebComponent.java:95), my.lib.serenity.primefaces.component.TableComponent.next(TableComponent.java:88), my.lib.serenity.primefaces.sars.page.MaintainCreditDataPage.gotoPageWithValue(MaintainCreditDataPage.java:256), my.lib.serenity.primefaces.sars.steps.MaintainCreditDataSteps.gotoPageWithValue(MaintainCreditDataSteps.java:119), my.lib.serenity.primefaces.sars.definition.MaintainCreditDataScenarioSteps.inMaintainCreditDataScreenInSearchCompanySansanTableIGoToNextPage(MaintainCreditDataScenarioSteps.java:129)]</exception>
+      </test-step>
+    </test-group>
+    <test-step result="SKIPPED" duration="1">
+      <description>And In Maintain credit data screen, in search Company Sansan table I go to previous page</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>Then In Maintain credit data screen, in search Company Sansan record selected still there</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

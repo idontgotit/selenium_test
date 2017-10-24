@@ -1,0 +1,27 @@
+<acceptance-test-run title="logout from system" name="logout from system" description="" steps="1" successful="1" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="965" timestamp="2016-11-03T20:00:13.054+07:00" session-id="2b3f3f9feabc2f361c0f10d5b4a15be0">
+  <user-story id="register-daily-report" name="register daily report" path="registerDailyReport/registerDailyReport.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Register daily report" type="capability"/>
+    <tag name="register daily report" type="feature"/>
+    <tag name="Register daily report/Register daily report" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <test-step result="SUCCESS" duration="873">
+    <screenshots>
+      <screenshot image="e93395e7bbd2ffe4fe37b0db79c83100.png"/>
+    </screenshots>
+    <description>Given I logout from system</description>
+  </test-step>
+</acceptance-test-run>

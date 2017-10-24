@@ -1,0 +1,110 @@
+<acceptance-test-run title="7. Create new daily report and fill all fields" name="7. Create new daily report and fill all fields" description="" steps="8" successful="6" failures="0" errors="1" skipped="1" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="23461" timestamp="2016-12-22T14:16:07.706+07:00" session-id="6dc48dd9f35f9d6bcf7d681790a78067">
+  <user-story id="run-feature-for-debugging" name="Run feature for debugging" path="debug/debug.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Debug" type="capability"/>
+    <tag name="Debug/Run feature for debugging" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>number</header>
+      <header>string</header>
+      <header>lang</header>
+    </headers>
+    <rows>
+      <row result="ERROR">
+        <value>Register</value>
+        <value>Daily Report</value>
+        <value>4009906</value>
+        <value>123456</value>
+        <value>en</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Register, menuText=Daily Report, number=4009906, string=123456, lang=en}" result="ERROR">
+    <test-step result="SUCCESS" duration="3478">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>When I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3292">
+      <screenshots>
+        <screenshot image="688c8a42e2926a0ab7262b8bc41c6d3f.png"/>
+        <screenshot image="37573172304760fd8821c151a318a375.png"/>
+      </screenshots>
+      <description>And I input my credentials username 4009906 and password 123456</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2470">
+      <screenshots>
+        <screenshot image="f386f901f44ca6451926c3b924a2a625.png"/>
+      </screenshots>
+      <description>And I change language to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1049">
+      <screenshots>
+        <screenshot image="bd67a8f2c5c8d692a79e7015acf81e74.png"/>
+      </screenshots>
+      <description>When I open submenu Register of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="264">
+      <screenshots>
+        <screenshot image="bdb32c1617b65d5590873e51c6880c8f.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Daily Report&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="12203">
+      <screenshots>
+        <screenshot image="bba57f9d3368534fa041c631a0eda09e.png"/>
+      </screenshots>
+      <description>When I add new Daily report with data below
+| companyName | content | personInCharge | department | businessType | purpose | reminder | projectFlag | openFlag |
+| 北開工営 | Verify create new daily report and fill all fields | 庭田次1 | atv | ソフトウェア | クレーム | OFF | OFF | OFF |</description>
+    </test-step>
+    <test-group name="And In Register daily report, I click button Add" result="ERROR">
+      <test-step result="ERROR" duration="175">
+        <screenshots>
+          <screenshot image="bba57f9d3368534fa041c631a0eda09e.png" source="pagesource3619046205152525255.html.txt"/>
+        </screenshots>
+        <description>Click button add</description>
+        <error>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (906, 62). Other element would receive the click: &lt;p&gt;...&lt;/p&gt;
+  (Session info: chrome=54.0.2840.100)
+  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 79 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.9xgCq5}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.100, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6dc48dd9f35f9d6bcf7d681790a78067</error>
+        <exception>org.openqa.selenium.WebDriverException:unknown error: Element is not clickable at point (906, 62). Other element would receive the click: &lt;p&gt;...&lt;/p&gt;
+  (Session info: chrome=54.0.2840.100)
+  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 79 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.9xgCq5}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.100, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6dc48dd9f35f9d6bcf7d681790a78067
+[my.lib.serenity.primefaces.component.ButtonComponent.click_and_wait(ButtonComponent.java:21), my.lib.serenity.primefaces.sars.steps.RegisterDailyReportSteps.click_button_add(RegisterDailyReportSteps.java:139), my.lib.serenity.primefaces.sars.definition.RegisterDailyReportScenarioSteps.when_in_register_daily_report_i_click_button_add(RegisterDailyReportScenarioSteps.java:188)]</exception>
+      </test-step>
+    </test-group>
+    <test-step result="SKIPPED" duration="3">
+      <description>And I logout from system</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

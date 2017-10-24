@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"View Notification","initialization screen when have data","FAILURE","2016-11-03T20:06:11.722+07:00","0.0","10.54"
+"View Notification","verify mark all as read function","FAILURE","2016-11-03T20:06:52.395+07:00","0.0","14.88"
+"View Notification","view details notification","FAILURE","2016-11-03T20:06:40.793+07:00","0.0","10.52"

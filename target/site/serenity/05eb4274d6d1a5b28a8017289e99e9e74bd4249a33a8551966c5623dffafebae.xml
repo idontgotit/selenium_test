@@ -1,0 +1,66 @@
+<acceptance-test-run title="initialization screen when have data" name="initialization screen when have data" description="" steps="3" successful="2" failures="1" skipped="0" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="10536" timestamp="2016-11-03T20:06:11.722+07:00" session-id="5049f77184e1913fa059ff0fb451f225">
+  <user-story id="view-notification" name="View Notification" path="viewNotifications/viewNotifications.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="View notifications" type="capability"/>
+    <tag name="View Notification" type="feature"/>
+    <tag name="View notifications/View notification" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+    </headers>
+    <rows>
+      <row result="FAILURE">
+        <value>View Notifications</value>
+        <value>Notification</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=View Notifications, menuText=Notification}" result="FAILURE">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1571">
+      <screenshots>
+        <screenshot image="ab7a9f250836007658f76ae7bdada888.png"/>
+      </screenshots>
+      <description>When I open submenu View Notifications of menu Notification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="164">
+      <screenshots>
+        <screenshot image="ab7a9f250836007658f76ae7bdada888.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Notification&apos; page</description>
+    </test-step>
+    <test-group name="And The system should show initialization screen of View Notifications page when have data" result="FAILURE">
+      <test-step result="FAILURE" duration="130">
+        <screenshots>
+          <screenshot image="ab7a9f250836007658f76ae7bdada888.png" source="pagesource4552551076701953407.html.txt"/>
+        </screenshots>
+        <description>Should show initialization screen of view notification page when have data</description>
+        <error>org.junit.ComparisonFailure: expected:&lt;[tru]e&gt; but was:&lt;[fals]e&gt;</error>
+        <exception>org.junit.ComparisonFailure:expected:&lt;[tru]e&gt; but was:&lt;[fals]e&gt;
+[my.lib.serenity.primefaces.sars.steps.ViewNotificationsSteps.should_show_initialization_screen_of_view_notification_page_when_have_data(ViewNotificationsSteps.java:19), my.lib.serenity.primefaces.sars.definition.ViewNotificationsFeatureScenarioSteps.then_the_system_should_show_initialization_screen_of_view_notification_page_when_have_data(ViewNotificationsFeatureScenarioSteps.java:23)]</exception>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

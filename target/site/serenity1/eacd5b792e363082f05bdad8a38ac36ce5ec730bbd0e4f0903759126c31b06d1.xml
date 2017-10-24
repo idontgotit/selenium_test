@@ -1,0 +1,117 @@
+<acceptance-test-run title="search daily report" name="search daily report" description="" steps="18" successful="2" failures="1" skipped="15" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="12840" timestamp="2016-11-03T08:38:27.458+07:00" session-id="9c5954d4ef1ac2845c372d3f713dec30">
+  <user-story id="search-daily-report-by-date" name="Search Daily report by date" path="searchDailyReportByDate/searchDailyReportByDate.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Search daily report by date" type="capability"/>
+    <tag name="Search Daily report by date" type="feature"/>
+    <tag name="Search daily report by date/Search daily report by date" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>buttonText</header>
+      <header>branchName</header>
+      <header>employeeInfo</header>
+      <header>date</header>
+    </headers>
+    <rows>
+      <row result="FAILURE">
+        <value>Search By Date</value>
+        <value>Daily Report</value>
+        <value>Search</value>
+        <value>福岡県</value>
+        <value>40000005</value>
+        <value>2012/11/28</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Search By Date, menuText=Daily Report, buttonText=Search, branchName=福岡県, employeeInfo=40000005, date=2012/11/28}" result="FAILURE">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="875">
+      <screenshots>
+        <screenshot image="d1cc1f62e10236ceb9588443e2000c30.png"/>
+      </screenshots>
+      <description>When I open submenu Search By Date of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="797">
+      <screenshots>
+        <screenshot image="6de399c0e78669c3caee7b1331467057.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I click button &apos;Search&apos;</description>
+    </test-step>
+    <test-group name="Then The system should show required branch and employee error message" result="FAILURE">
+      <test-step result="FAILURE" duration="143">
+        <screenshots>
+          <screenshot image="9cbd5bd9fb5f1ae1a2f5d8c93320df71.png" source="pagesource2658157466323590909.html.txt"/>
+        </screenshots>
+        <description>Should show required branch and employee error message</description>
+        <error>org.junit.ComparisonFailure: expected:&lt;[tru]e&gt; but was:&lt;[fals]e&gt;</error>
+        <exception>org.junit.ComparisonFailure:expected:&lt;[tru]e&gt; but was:&lt;[fals]e&gt;
+[my.lib.serenity.primefaces.sars.steps.SearchHistoryByDateSteps.should_show_required_branch_and_employee_error_message(SearchHistoryByDateSteps.java:22), my.lib.serenity.primefaces.sars.definition.SearchDailyReportByDateFeatureScenarioSteps.then_the_system_should_show_required_branch_and_employee_error_message(SearchDailyReportByDateFeatureScenarioSteps.java:36)]</exception>
+      </test-step>
+    </test-group>
+    <test-step result="SKIPPED" duration="1">
+      <description>When In Search by date screen, I choose a branch 福岡県 in dropdown Branch</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>And In Search by date screen, I type value 40000005 for autocomplete Employee</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>And In Search by date screen, I choose 40000005 employee in dropdown of autocomplete Employee</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>And In Search by date screen, I click button &apos;Search&apos;</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>Then The system should show table Search by date result with no record found</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>When In Search by date screen, I select date 2012/11/28 in item Date</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>And In Search by date screen, I click button &apos;Search&apos;</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>Then The system should show table Search by date result has record found</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>And The system should show button Edit and Delete disabled</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>When In Search by date screen, I click checkbox Include retired employee</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>And In Search by date screen, I click button &apos;Search&apos;</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>Then The system should show required employee error message</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>When In Search by date screen, I choose 40000005 employee in dropdown of autocomplete Employee</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>And In Search by date screen, I click button &apos;Search&apos;</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>Then The system should show table Search by date result has record found</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

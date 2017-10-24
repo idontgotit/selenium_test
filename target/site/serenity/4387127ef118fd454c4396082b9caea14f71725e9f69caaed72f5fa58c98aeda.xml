@@ -1,0 +1,112 @@
+<acceptance-test-run title="4. Open Maintain credit data, search and use toggle column" name="4. Open Maintain credit data, search and use toggle column" description="" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="11086" timestamp="2016-11-23T13:39:29.842+07:00" session-id="a3bcf3757119b3cb737dc5895052fdc8">
+  <user-story id="run-feature-for-debugging" name="Run feature for debugging" path="debug/debug.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Debug" type="capability"/>
+    <tag name="Debug/Run feature for debugging" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>maintainMenu</header>
+      <header>pageTitle</header>
+      <header>parentMenuText</header>
+      <header>validCustomerCode</header>
+      <header>fieldCustomer</header>
+      <header>searchBtn</header>
+      <header>numberClm</header>
+      <header>only1</header>
+      <header>toggleBtn</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Maintain Credit Data</value>
+        <value>Maintenance accounting data screen</value>
+        <value>Accounting</value>
+        <value>A211</value>
+        <value>Customer code</value>
+        <value>Search</value>
+        <value>10</value>
+        <value>1</value>
+        <value>Toggle Column</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {maintainMenu=Maintain Credit Data, pageTitle=Maintenance accounting data screen, parentMenuText=Accounting, validCustomerCode=A211, fieldCustomer=Customer code, searchBtn=Search, numberClm=10, only1=1, toggleBtn=Toggle Column}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="0cdad99673e67e2f7cccd3aef25d2f7b.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1173">
+      <screenshots>
+        <screenshot image="d097416590d55a19d8e63c303ac63ae2.png"/>
+      </screenshots>
+      <description>When I open submenu Maintain Credit Data of parent menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="223">
+      <screenshots>
+        <screenshot image="9be4921a435beb4ee3b902c71f1e49f8.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Maintenance accounting data screen&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="310">
+      <screenshots>
+        <screenshot image="4256cf212296fbff0f0a8931d2e2c453.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I type A211 in input field have name is Customer code</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1054">
+      <screenshots>
+        <screenshot image="72e83821ad44cf14e0ecaa70356a6afc.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="235">
+      <screenshots>
+        <screenshot image="14d41d437f194fadc2cf829595b3e192.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, Table below have 1 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="260">
+      <screenshots>
+        <screenshot image="dbeb6718b54ab6e9ea33e62ffde52993.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Toggle Column</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1128">
+      <screenshots>
+        <screenshot image="62bcaae53ed2b03300f30c4bbfaf9a59.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I toggle all column
+| Year of starting business |
+| Year of official establishment |
+| Last Export |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="748">
+      <screenshots>
+        <screenshot image="0cdad99673e67e2f7cccd3aef25d2f7b.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Toggle Column</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="254">
+      <screenshots>
+        <screenshot image="0cdad99673e67e2f7cccd3aef25d2f7b.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, Table below have 10 columns</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

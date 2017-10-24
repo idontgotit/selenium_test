@@ -1,0 +1,101 @@
+<acceptance-test-run title="9. Open Employee Management and edit" name="9. Open Employee Management and edit" description="" steps="8" successful="8" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="20061" timestamp="2016-11-21T13:23:50.601+07:00" session-id="d83d5f10a6b35a58e6daaefdfc9bd473">
+  <user-story id="run-feature-for-debugging" name="Run feature for debugging" path="debug/debug.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Debug" type="capability"/>
+    <tag name="Debug/Run feature for debugging" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>employeeMenu</header>
+      <header>parentMenuText</header>
+      <header>editBtn</header>
+      <header>firstRecord</header>
+      <header>secondRecord</header>
+      <header>saveBtn</header>
+      <header>successSave</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>Edit</value>
+        <value>1</value>
+        <value>2</value>
+        <value>Save</value>
+        <value>Save successfully</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, editBtn=Edit, firstRecord=1, secondRecord=2, saveBtn=Save, successSave=Save successfully}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="99aa93d204eafcaa6728188f50d4b31c.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1023">
+      <screenshots>
+        <screenshot image="c3d8769fcdbc7f533d8696e507df60ec.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="877">
+      <screenshots>
+        <screenshot image="7735d917b73f97f88f1821a0bdaae497.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click in number 1 record can click</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="931">
+      <screenshots>
+        <screenshot image="edcbcb9727cf16d82cc924b79b6a87ca.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click in number 2 record can click</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="158">
+      <screenshots>
+        <screenshot image="edcbcb9727cf16d82cc924b79b6a87ca.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, System show button can not use Edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="778">
+      <screenshots>
+        <screenshot image="62ddf1cb797e9b442cd73f6e699f5a7f.png"/>
+      </screenshots>
+      <description>When In Employee Management screen, I click in number 2 record can click</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1312">
+      <screenshots>
+        <screenshot image="ed2f57e197b98e847679fe718ac63905.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1353">
+      <screenshots>
+        <screenshot image="35c7635c4272c5ab14d8e8b3d4aee11a.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Save</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="8555">
+      <screenshots>
+        <screenshot image="99aa93d204eafcaa6728188f50d4b31c.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, System show message Save successfully</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

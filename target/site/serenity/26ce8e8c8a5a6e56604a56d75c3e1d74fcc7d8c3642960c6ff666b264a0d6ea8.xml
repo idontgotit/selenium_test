@@ -1,0 +1,187 @@
+<acceptance-test-run title="verify when delete tracking a user then add tracking that user again" name="verify when delete tracking a user then add tracking that user again" description="" steps="23" successful="7" failures="0" errors="1" skipped="15" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="21347" timestamp="2016-11-03T20:07:08.481+07:00" session-id="5049f77184e1913fa059ff0fb451f225">
+  <user-story id="view-notification" name="View Notification" path="viewNotifications/viewNotifications.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="View notifications" type="capability"/>
+    <tag name="View Notification" type="feature"/>
+    <tag name="View notifications/View notification" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>staffUsername</header>
+      <header>staffPassword</header>
+      <header>lang</header>
+      <header>registerMenuText</header>
+      <header>notificationSettingMenuText</header>
+      <header>dailyReportMenuText</header>
+      <header>managerUsername</header>
+      <header>managerPassword</header>
+      <header>viewNotificationsMenuText</header>
+      <header>notificationMenuText</header>
+      <header>notificationSettingText</header>
+      <header>addBtn</header>
+      <header>successSave</header>
+      <header>deleteSuccess</header>
+      <header>viewNotification</header>
+    </headers>
+    <rows>
+      <row result="ERROR">
+        <value>27000002</value>
+        <value>123456</value>
+        <value>en</value>
+        <value>Register</value>
+        <value>Notification Setting</value>
+        <value>Daily Report</value>
+        <value>9999999</value>
+        <value>triarrow</value>
+        <value>View Notifications</value>
+        <value>Notification</value>
+        <value>Notification Setting</value>
+        <value>Add</value>
+        <value>Save successfully</value>
+        <value>Delete successfully</value>
+        <value>View Notifications</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {staffUsername=27000002, staffPassword=123456, lang=en, registerMenuText=Register, notificationSettingMenuText=Notification Setting, dailyReportMenuText=Daily Report, managerUsername=9999999, managerPassword=triarrow, viewNotificationsMenuText=View Notifications, notificationMenuText=Notification, notificationSettingText=Notification Setting, addBtn=Add, successSave=Save successfully, deleteSuccess=Delete successfully, viewNotification=View Notifications}" result="ERROR">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1951">
+      <screenshots>
+        <screenshot image="9abc050c6ff7afb6de101e8d51e547f1.png"/>
+      </screenshots>
+      <description>When I open submenu Notification Setting of menu Notification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1750">
+      <screenshots>
+        <screenshot image="3ed0d79fd5b84f8fb8c24dd9db99412d.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, i select more dropdown with value below
+| valueBranch | valuePosition | valueEmpName |
+|  |  | All employee |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2122">
+      <screenshots>
+        <screenshot image="9d3819cb8d782c44027b69785ffbe054.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, I click in Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1880">
+      <screenshots>
+        <screenshot image="ab7a9f250836007658f76ae7bdada888.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, I click in View Notifications</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1091">
+      <screenshots>
+        <screenshot image="9df92821a003b217d7f94d77bdf6dff0.png"/>
+      </screenshots>
+      <description>When I logout from system</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1323">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>When I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2466">
+      <screenshots>
+        <screenshot image="189286e4901e89826b9c62f0fca5f4a1.png"/>
+        <screenshot image="b9209740376f27ec87176d0edfb5aa3e.png"/>
+      </screenshots>
+      <description>And I input my credentials username 27000002 and password 123456</description>
+    </test-step>
+    <test-group name="And I change language to en" result="ERROR">
+      <test-step result="ERROR" duration="151">
+        <screenshots>
+          <screenshot image="15af4c249ad689bfee897a5c6d9828c2.png" source="pagesource2114873201347208497.html.txt"/>
+        </screenshots>
+        <description>Change locale: en</description>
+        <error>org.openqa.selenium.NoSuchElementException: Timed out after 0 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: unknown</error>
+        <exception>org.openqa.selenium.NoSuchElementException:Timed out after 0 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: unknown
+[my.lib.serenity.primefaces.sars.page.TopPage.change_locale_and_wait(TopPage.java:35), my.lib.serenity.primefaces.sars.steps.LoginSteps.change_locale(LoginSteps.java:45), my.lib.serenity.primefaces.sars.definition.LoginFeatureScenarioSteps.when_I_change_language_to(LoginFeatureScenarioSteps.java:39)]</exception>
+      </test-step>
+    </test-group>
+    <test-step result="SKIPPED" duration="1">
+      <description>And I open submenu Register of menu Daily Report</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>And I add new Daily report with data below
+| companyName | content |
+| CIJ | content |</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>Then The system should show message save daily report successfully</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>When I logout from system</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>And I input my credentials username 9999999 and password triarrow</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>And I change language to en</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>And I open submenu View Notifications of menu Notification</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>Then The system should show initialization screen of View Notifications page when have data</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>When In View notification screen, I click button &apos;Notification Setting&apos;</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>And In Notification Setting screen, I delete all in table notification, show message Delete successfully</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>And In Notification Setting screen, i select more dropdown with value below
+| valueBranch | valuePosition | valueEmpName |
+| 大阪府 | All position | 岡本力 |</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>And In Notification Setting screen, I click in Add</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>Then In Notification Setting screen, System show message Save successfully</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>When In Notification Setting screen, I click in View Notifications</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>Then The system should show initialization screen of View Notifications page</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

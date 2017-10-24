@@ -1,0 +1,115 @@
+<acceptance-test-run title="Toggle" name="toggle" description="" steps="10" successful="10" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="15350" timestamp="2016-11-03T19:56:39.512+07:00" session-id="b0757e2a3e35e2909d57069c8784c35b">
+  <user-story id="search-daily-report-by-date" name="Search Daily report by date" path="searchDailyReportByDate/searchDailyReportByDate.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Search daily report by date" type="capability"/>
+    <tag name="Search Daily report by date" type="feature"/>
+    <tag name="Search daily report by date/Search daily report by date" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>totalColumn</header>
+      <header>buttonText</header>
+      <header>branchName</header>
+      <header>employeeInfo</header>
+      <header>date</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Search By Date</value>
+        <value>Daily Report</value>
+        <value>9</value>
+        <value>Search</value>
+        <value>福岡県</value>
+        <value>40000005</value>
+        <value>2012/11/28</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Search By Date, menuText=Daily Report, totalColumn=9, buttonText=Search, branchName=福岡県, employeeInfo=40000005, date=2012/11/28}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="6dc882a7d5e7a11f472583e78597c789.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="123">
+      <screenshots>
+        <screenshot image="486a8d5123e4a737a6f430ed62a11db7.png"/>
+      </screenshots>
+      <description>Given A list of column title need toggle in Search by date
+| Reminder start time |
+| Reminder end time |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="934">
+      <screenshots>
+        <screenshot image="ea5e6982fab752bd24409b95c17d3532.png"/>
+      </screenshots>
+      <description>When I open submenu Search By Date of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1745">
+      <screenshots>
+        <screenshot image="198cabaa2735801c00fa32c4685f3b53.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I select date 2012/11/28 in item Date</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="832">
+      <screenshots>
+        <screenshot image="6c054a83b124b0ca1bd3fcf37a19a484.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I choose a branch 福岡県 in dropdown Branch</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="283">
+      <screenshots>
+        <screenshot image="86c59231d7c1229d9a745f82736e13dc.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I type value 40000005 for autocomplete Employee</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2494">
+      <screenshots>
+        <screenshot image="2024acd0bde31904fba4e5519de8b1ef.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I choose 40000005 employee in dropdown of autocomplete Employee</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1363">
+      <screenshots>
+        <screenshot image="3e8224fad29af56071429664f5e8bc47.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I click button &apos;Search&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="299">
+      <screenshots>
+        <screenshot image="de08833b16fcc5dd2365b9c22f286f38.png"/>
+      </screenshots>
+      <description>And I open toggle menu in table Search by date result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="772">
+      <screenshots>
+        <screenshot image="6dc882a7d5e7a11f472583e78597c789.png"/>
+      </screenshots>
+      <description>And I toggle all column in table Search by date result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="152">
+      <screenshots>
+        <screenshot image="6dc882a7d5e7a11f472583e78597c789.png"/>
+      </screenshots>
+      <description>Then The system should show table Search by date result has 9 columns</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

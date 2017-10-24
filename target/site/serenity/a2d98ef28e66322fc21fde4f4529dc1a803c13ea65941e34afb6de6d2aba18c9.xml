@@ -1,0 +1,366 @@
+<acceptance-test-run title="3. Open Maintain credit data, search by customer code, select one record and verify search Company Sansan" name="3. Open Maintain credit data, search by customer code, select one record and verify search Company Sansan" description="" steps="48" successful="48" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="43361" timestamp="2017-04-17T16:26:04.803+07:00" session-id="d8943e338ee8af5e15dadf6af2b54e7d">
+  <user-story id="run-feature-for-debugging" name="Run feature for debugging" path="debug/debug.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Debug" type="capability"/>
+    <tag name="Debug/Run feature for debugging" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>maintainMenu</header>
+      <header>pageTitle</header>
+      <header>parentMenuText</header>
+      <header>validCustomerCode</header>
+      <header>fieldCustomer</header>
+      <header>searchBtn</header>
+      <header>selectBtn</header>
+      <header>rowSelect</header>
+      <header>only1</header>
+      <header>fieldIdNamecard</header>
+      <header>validIdNameCard</header>
+      <header>emptyString</header>
+      <header>fieldSansanCompanyId</header>
+      <header>invalidSansanID</header>
+      <header>fieldCompanyName</header>
+      <header>emptyRecord</header>
+      <header>fullRecord</header>
+      <header>invalidIdNameCard</header>
+      <header>validSansanID</header>
+      <header>invalidCompanyName</header>
+      <header>validCompanyName</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Maintain Credit Data</value>
+        <value>Maintenance accounting data screen</value>
+        <value>Accounting</value>
+        <value>A001</value>
+        <value>Customer code</value>
+        <value>Search</value>
+        <value>Select</value>
+        <value>0</value>
+        <value>1</value>
+        <value>Id Name Card</value>
+        <value>DE10708481BF3FF2657B92EB68A6711F</value>
+        <value></value>
+        <value>Sansan Company ID</value>
+        <value>99999()</value>
+        <value>Company name</value>
+        <value>0</value>
+        <value>5</value>
+        <value>13123123</value>
+        <value>307A5FC95E0E34AD88C41762A52BF564</value>
+        <value>Tast789</value>
+        <value>NTT</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {maintainMenu=Maintain Credit Data, pageTitle=Maintenance accounting data screen, parentMenuText=Accounting, validCustomerCode=A001, fieldCustomer=Customer code, searchBtn=Search, selectBtn=Select, rowSelect=0, only1=1, fieldIdNamecard=Id Name Card, validIdNameCard=DE10708481BF3FF2657B92EB68A6711F, emptyString=, fieldSansanCompanyId=Sansan Company ID, invalidSansanID=99999(), fieldCompanyName=Company name, emptyRecord=0, fullRecord=5, invalidIdNameCard=13123123, validSansanID=307A5FC95E0E34AD88C41762A52BF564, invalidCompanyName=Tast789, validCompanyName=NTT}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="211ba72560aa0e05afa6111e50fd8a60.png"/>
+      <screenshot image="b972f68e70fc591074da01f752de5183.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1655">
+      <screenshots>
+        <screenshot image="451ac513e3acb74642dac56733c83166.png"/>
+      </screenshots>
+      <description>When I open submenu Maintain Credit Data of parent menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="301">
+      <screenshots>
+        <screenshot image="221cafbdb337e0b85e2a92d86c21ebf0.png"/>
+      </screenshots>
+      <description>And The system should open &apos;Maintenance accounting data screen&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="363">
+      <screenshots>
+        <screenshot image="2e2b90ba659adfc22eed4ee2f6f7e80c.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I type A001 in input field have name is Customer code</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1359">
+      <screenshots>
+        <screenshot image="f369653cf18f2e7d678907c4c99afe8b.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="241">
+      <screenshots>
+        <screenshot image="f369653cf18f2e7d678907c4c99afe8b.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, Table below have 1 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="837">
+      <screenshots>
+        <screenshot image="ee5b4e4ffae0c5bd4c0c8c1d6435325b.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click select checkbox row 0</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1435">
+      <screenshots>
+        <screenshot image="dde9d0cbcd7282bee94f9e875bbd8886.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="313">
+      <screenshots>
+        <screenshot image="9df391418e5b05973de545e99e6c7dcf.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I type DE10708481BF3FF2657B92EB68A6711F in input field have name is Id Name Card</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="362">
+      <screenshots>
+        <screenshot image="d1f881c15681f715f1774f16251d58ba.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I type  in input field have name is Sansan Company ID</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="626">
+      <screenshots>
+        <screenshot image="d30758496acd451e5920a89fc61b9e3c.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I type  in input field have name is Company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1361">
+      <screenshots>
+        <screenshot image="60842101a5529f6455b4663cd76643ab.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="215">
+      <screenshots>
+        <screenshot image="cf780cab14730e48db83eead4639bd3a.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, in search Company Sansan Table below have 1 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1251">
+      <screenshots>
+        <screenshot image="3734e5511dcbc1c06cc651fa6ddcb01c.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, in search Company Sansan I type 13123123 in input field have name is Id Name Card</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="886">
+      <screenshots>
+        <screenshot image="a639098bd801e1bff8dda100f5529968.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="254">
+      <screenshots>
+        <screenshot image="c5126f026c4eb1a41261e356f8089918.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, in search Company Sansan Table below have 0 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="274">
+      <screenshots>
+        <screenshot image="ef2cf2ecaf3dffb23158f7977db5a975.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, in search Company Sansan I type 99999() in input field have name is Sansan Company ID</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="446">
+      <screenshots>
+        <screenshot image="d470824f5e9a083c9a2f481fe444aed3.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I type  in input field have name is Id Name Card</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2945">
+      <screenshots>
+        <screenshot image="39792bf59c8c2a7ab593269f0d4c013e.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="193">
+      <screenshots>
+        <screenshot image="356a6264bfe4a72f904eda757c0c4651.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, in search Company Sansan Table below have 0 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="572">
+      <screenshots>
+        <screenshot image="923fcf0cb4a483c41ed9cad1fd158f16.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, in search Company Sansan I type 307A5FC95E0E34AD88C41762A52BF564 in input field have name is Sansan Company ID</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="827">
+      <screenshots>
+        <screenshot image="052a3982d8a2c5e015dc3e6b199f11fd.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="311">
+      <screenshots>
+        <screenshot image="838a370f16ab0c193f17b9bc9a300d35.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, in search Company Sansan Table below have 1 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="239">
+      <screenshots>
+        <screenshot image="9001251c7ca2213a9fbe13c4f582318f.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, in search Company Sansan I type Tast789 in input field have name is Company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1106">
+      <screenshots>
+        <screenshot image="9d4d8ba15620bb15ae4da697075d2508.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I type  in input field have name is Sansan Company ID</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="941">
+      <screenshots>
+        <screenshot image="55ff1e4a2e8bacc65ab4ee02da8332f8.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="214">
+      <screenshots>
+        <screenshot image="3b0d4c64788f118f70fda506fa366cd1.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, in search Company Sansan Table below have 0 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="466">
+      <screenshots>
+        <screenshot image="0126bae2d745196c20fca77b9e591af6.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, in search Company Sansan I type NTT in input field have name is Company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="945">
+      <screenshots>
+        <screenshot image="430d83f14473c3cc69944b85adef3582.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="281">
+      <screenshots>
+        <screenshot image="c03a9c00fa726e023547aa0ba4a76875.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, in search Company Sansan Table below have 5 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="325">
+      <screenshots>
+        <screenshot image="61fcc64b83040b3e4de5df54da3941f3.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, in search Company Sansan I type 307A5FC95E0E34AD88C41762A52BF564 in input field have name is Sansan Company ID</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="340">
+      <screenshots>
+        <screenshot image="7fbf14952a54735c799dc6d2ab71bc16.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I type NTT in input field have name is Company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="893">
+      <screenshots>
+        <screenshot image="e82b22a546f63709dbee237745d649e6.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="257">
+      <screenshots>
+        <screenshot image="bbf12b5a9790e6314f0be90df176d4a2.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, in search Company Sansan Table below have 1 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1159">
+      <screenshots>
+        <screenshot image="86a9681d16e4903b1b962061f9cb44fe.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, in search Company Sansan I type 307A5FC95E0E34AD88C41762A52BF564 in input field have name is Sansan Company ID</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="333">
+      <screenshots>
+        <screenshot image="a79776d4bef3b798c18e539806c17c00.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I type NTT in input field have name is Company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="308">
+      <screenshots>
+        <screenshot image="4ba4838f43e99fe675802ff848d72f8f.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I type DE10708481BF3FF2657B92EB68A6711F in input field have name is Id Name Card</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="968">
+      <screenshots>
+        <screenshot image="478dfa6832834f5ae94adeed14ec557f.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="277">
+      <screenshots>
+        <screenshot image="113e860d2ada7dd62c1e4f845a3fc64f.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, in search Company Sansan Table below have 1 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1202">
+      <screenshots>
+        <screenshot image="58fc4598a8fe48ec1f632a792cee84c8.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, in search Company Sansan I type 307A5FC95E0E34AD88C41762A52BF564 in input field have name is Sansan Company ID</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="357">
+      <screenshots>
+        <screenshot image="ac234175f54d214b7baf760f055692a0.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I type Tast789 in input field have name is Company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1266">
+      <screenshots>
+        <screenshot image="a4efc5ba9c7c9851e5e3e112b4004df9.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I type DE10708481BF3FF2657B92EB68A6711F in input field have name is Id Name Card</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="892">
+      <screenshots>
+        <screenshot image="a39279dcb2662567c725c57b85689b11.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="261">
+      <screenshots>
+        <screenshot image="128d5987c5d82b5f519409092d094642.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, in search Company Sansan Table below have 0 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1250">
+      <screenshots>
+        <screenshot image="ec98cc2fb6fad8dfb080e214c43371f3.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, in search Company Sansan I type 307A5FC95E0E34AD88C41762A52BF564 in input field have name is Sansan Company ID</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="404">
+      <screenshots>
+        <screenshot image="f5f083e9738d2405c22b44991aff3cd0.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I type Tast789 in input field have name is Company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1070">
+      <screenshots>
+        <screenshot image="9634246cd8e35c347cd254a4745d93c7.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I type  in input field have name is Id Name Card</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="868">
+      <screenshots>
+        <screenshot image="005dbf7793d2d6d7ab376dca9cb2ebc3.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="259">
+      <screenshots>
+        <screenshot image="3f16f4a9cb38f13d22a87178aadef597.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, in search Company Sansan Table below have 0 record</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

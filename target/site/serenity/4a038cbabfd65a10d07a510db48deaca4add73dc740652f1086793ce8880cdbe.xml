@@ -1,0 +1,115 @@
+<acceptance-test-run title="2. Open Maintain credit data, search and use toggle column" name="2. Open Maintain credit data, search and use toggle column" description="" steps="9" successful="8" failures="1" skipped="0" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="16517" timestamp="2016-11-08T10:09:43.240+07:00" session-id="d85cda4e5b8b2ac77139a6a7e9b417ce">
+  <user-story id="maintain-credit-data" name="Maintain credit data" path="maintain_credit_data/maintain_credit_data14.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Maintain credit data" type="capability"/>
+    <tag name="Maintain credit data/Maintain credit data" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>maintainMenu</header>
+      <header>pageTitle</header>
+      <header>parentMenuText</header>
+      <header>validCustomerCode</header>
+      <header>fieldCustomer</header>
+      <header>searchBtn</header>
+      <header>numberClm</header>
+      <header>only1</header>
+      <header>toggleBtn</header>
+    </headers>
+    <rows>
+      <row result="FAILURE">
+        <value>Maintain Credit Data</value>
+        <value>Maintenance accounting data screen</value>
+        <value>Accounting</value>
+        <value>A211</value>
+        <value>Customer code</value>
+        <value>Search</value>
+        <value>9</value>
+        <value>1</value>
+        <value>Toggle Column</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {maintainMenu=Maintain Credit Data, pageTitle=Maintenance accounting data screen, parentMenuText=Accounting, validCustomerCode=A211, fieldCustomer=Customer code, searchBtn=Search, numberClm=9, only1=1, toggleBtn=Toggle Column}" result="FAILURE">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="2083">
+      <screenshots>
+        <screenshot image="f84ff3e2fc80acdd265f61803594af09.png"/>
+      </screenshots>
+      <description>When I open submenu Maintain Credit Data of parent menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="195">
+      <screenshots>
+        <screenshot image="f84ff3e2fc80acdd265f61803594af09.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Maintenance accounting data screen&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="298">
+      <screenshots>
+        <screenshot image="ac5073cd15fc9dc765f20afded0ff353.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I type A211 in input field have name is Customer code</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1468">
+      <screenshots>
+        <screenshot image="38f5e51b945c3c00f6aac349c295d6b3.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="246">
+      <screenshots>
+        <screenshot image="38f5e51b945c3c00f6aac349c295d6b3.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, Table below have 1 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="291">
+      <screenshots>
+        <screenshot image="b9c255164c3039d338a669329fec8fb5.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Toggle Column</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1124">
+      <screenshots>
+        <screenshot image="e3774721ce2c642bfb22a63f065cd8fb.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I toggle all column
+| Year of starting business |
+| Year of official establishment |
+| Last Export |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1372">
+      <screenshots>
+        <screenshot image="896fc1f581155be72c2e4b953aa811d7.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Toggle Column</description>
+    </test-step>
+    <test-group name="Then In Maintain credit data screen, Table below have 9 columns" result="FAILURE">
+      <test-step result="FAILURE" duration="177">
+        <screenshots>
+          <screenshot image="896fc1f581155be72c2e4b953aa811d7.png" source="pagesource4271879290794536777.html.txt"/>
+        </screenshots>
+        <description>Table have number clm: 9</description>
+        <error>org.junit.ComparisonFailure: expected:&lt;[9]&gt; but was:&lt;[10]&gt;</error>
+        <exception>org.junit.ComparisonFailure:expected:&lt;[9]&gt; but was:&lt;[10]&gt;
+[my.lib.serenity.primefaces.sars.steps.MaintainCreditDataSteps.tableHaveNumberClm(MaintainCreditDataSteps.java:53), my.lib.serenity.primefaces.sars.definition.MaintainCreditDataScenarioSteps.inMaintainCreditDataScreenTableBelowHaveNumberClmColumns(MaintainCreditDataScenarioSteps.java:69)]</exception>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

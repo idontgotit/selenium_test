@@ -1,0 +1,78 @@
+<acceptance-test-run title="Open Employee Management and add  not success" name="Open Employee Management and add  not success" description="" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="17013" timestamp="2016-11-03T09:13:33.274+07:00" session-id="02dcb434c09356ff95a3c15208adf3bc">
+  <user-story id="employee-management-display" name="Employee Management display" path="employee_management/employee_management.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Employee management" type="capability"/>
+    <tag name="Employee Management display" type="feature"/>
+    <tag name="Employee management/Employee management display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>employeeMenu</header>
+      <header>parentMenuText</header>
+      <header>addBtn</header>
+      <header>saveBtn</header>
+      <header>validateRequiredMess</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>Add</value>
+        <value>Save</value>
+        <value>Value is required</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, addBtn=Add, saveBtn=Save, validateRequiredMess=Value is required}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="3436c35c6670a45c7ceef1e8e576cb70.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="929">
+      <screenshots>
+        <screenshot image="59b052cdce17d565a20653d5f20cc4b2.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1300">
+      <screenshots>
+        <screenshot image="362628830b38dcd3d44d2a68ef4bcace.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1301">
+      <screenshots>
+        <screenshot image="d1efef8cfc80c9da1622fa9c867f0932.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Save</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="8649">
+      <screenshots>
+        <screenshot image="3436c35c6670a45c7ceef1e8e576cb70.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, System show message Value is required</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

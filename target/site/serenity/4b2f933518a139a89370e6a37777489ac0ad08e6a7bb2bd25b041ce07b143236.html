@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Features</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.4/media/jqueryui/dataTables.jqueryui.css" rel="Stylesheet"/>
+<link type="text/css" href="css/tables.css" rel="stylesheet" />
+
+<script type="text/javascript" src="datatables/1.10.4/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.4/media/jqueryui/dataTables.jqueryui.min.js"></script><!-- jQplot -->
+<!--[if IE]>
+<script language="javascript" type="text/javascript" src="excanvas/3/excanvas.compiled.js"></script>
+<![endif]--><link rel="stylesheet" type="text/css" href="jqplot/1.0.8/jquery.jqplot.min.css"/>
+<script type="text/javascript" src="jqplot/1.0.8/jquery.jqplot.min.js"></script>
+<script type="text/javascript" src="jqplot/1.0.8/plugins/jqplot.pieRenderer.min.js"></script>
+
+
+
+    <script class="code" type="text/javascript">$(document).ready(function () {
+        var plot1 = $.jqplot('coverage_pie_chart', [
+            [
+                ['Passing', 0.894737],
+                ['Pending', 0],
+                ['Ignored', 0],
+                ['Failing', 0],
+                ['Errors',  0.105263],
+                ['Compromised Tests',  0],
+            ]
+        ], {
+            gridPadding: {top: 0, bottom: 38, left: 0, right: 0},
+            seriesColors: ['#30cb23',
+                
+                '#a2f2f2',
+                
+                '#eeeadd',
+                
+                '#f8001f',
+                
+                '#fc6e1f',
+                'fuchsia'],
+            seriesDefaults: {
+                renderer: $.jqplot.PieRenderer,
+                trendline: {show: false},
+                rendererOptions: {padding: 8, showDataLabels: true}
+            },
+            legend: {
+                show: true,
+                placement: 'outside',
+                rendererOptions: {
+                    numberRows: 3
+                },
+                location: 's',
+                marginTop: '15px'
+            },
+            series: [
+                {label: '89.5% requirements tested successfully'},
+                {label: '0% requirements untested'},
+                {label: '0%} requirements failing'},
+                {label: '10.5%} requirements with errors'},
+                {label: '0%} requirements with compromised tests'}
+            ]
+        });
+        // Results table
+        $('#test-results-table').DataTable({
+            "order": [
+                [ 1, "asc" ]
+            ],
+            "pageLength": 100,
+            "lengthMenu": [ [50, 100, 200, -1] , [50, 100, 200, "All"] ]
+        });
+
+        // Results table
+        $('#req-results-table').DataTable({
+            "order": [
+                [ 1, "asc" ]
+            ],
+            "pageLength": 100,
+            "lengthMenu": [ [50, 100, 200, -1] , [50, 100, 200, "All"] ]
+        });
+
+        $('#examples-table').DataTable({
+            "order": [
+                [2, "asc"]
+            ],
+            "pageLength": 25
+        });
+        $("#tabs").tabs();
+        $("#test-tabs").tabs();
+    })
+    ;
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".read-more-link").click(function () {
+                $(this).nextAll("div.read-more-text").toggle();
+                var isrc = $(this).find("img").attr('src');
+                if (isrc == 'images/plus.png') {
+                    $(this).find("img").attr("src", function () {
+                        return "images/minus.png";
+                    });
+                } else {
+                    $(this).find("img").attr("src", function () {
+                        return "images/plus.png";
+                    });
+                }
+            });
+        });
+    </script>
+</head>
+
+<body class="results-page">
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-bdd-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+            <a href='index.html'>Home</a>
+
+
+                    > <a href="4b2f933518a139a89370e6a37777489ac0ad08e6a7bb2bd25b041ce07b143236.html">Company Management</a>
+                > Company Management
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li >
+            <a href="index.html"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li class="active">
+            <a href="#"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-11-2016 20:37</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+    <div id="beforetable"></div>
+    <div id="results-dashboard">
+        <div class="middlb">
+            <div class="table">
+                <div>
+                    <h2><i class="fa fa-book"></i> Feature:  Company Management</h2>
+
+                        <div class="requirementNarrativeTitle">
+                        As a user<br>I want to manage company<br>So I can view, add new, edit and delete companies
+                        </div>
+
+                </div>
+
+                <div id="requirements-summary">
+                    <div id="coverage_pie_chart"
+                         style="margin-top:10px; margin-left:10px; width:250px; height:250px;"></div>
+                    <div id="coverage_summary">
+                        <div>
+                            <h4>Requirements Overview</h4>
+                            <table class="summary-table">
+                                <head>
+                                    <tr>
+                                        <th>Requirement Type</th>
+                                        <th>Total</th>
+                                        <th>Pass&nbsp;<i class="icon-check"></i></th>
+                                        <th>Fail&nbsp;<i class="icon-thumbs-down"></i></th>
+                                        <th>Pending&nbsp;<i class="icon-calendar"></i></th>
+                                        <th>Ignored&nbsp;<i class="icon-ban-circle"></i></th>
+                                        <th>Untested&nbsp;<i class="icon-question"></i></th>
+                                    </tr>
+                                </head>
+                                <body>
+                                <tr>
+                                    <td class="summary-leading-column">Acceptance Criteria (tests)</td>
+                                    <td>19</td>
+                                    <td>17</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td></td>
+                                </tr>
+                                </body>
+                            </table>
+                        </div>
+
+
+
+
+
+<div>
+    <h4>Test Result Summary</h4>
+    <table class="summary-table">
+        <head>
+            <tr>
+                <th>Test Type</th>
+                <th>Total</th>
+                <th>Pass&nbsp;<i class="icon-check"/> </th>
+                <th>Fail&nbsp;<i class="icon-thumbs-down"/></th>
+                <th>Pending&nbsp;<i class="icon-calendar"/></th>
+                <th>Ignored&nbsp;<i class="icon-ban-circle"/></th>
+            </tr>
+        </head>
+        <body>
+        <tr>
+            <td class="summary-leading-column">Automated</td>
+            <td>19</td>
+            <td>17 (89%)</td>
+            <td>2 (11%)</td>
+            <td>0 (0%)</td>
+            <td>0 (0%)</td>
+        </tr>
+        <tr>
+            <td class="summary-leading-column">Manual</td>
+            <td>0</td>
+            <td>0 (0%)</td>
+            <td>0 (0%)</td>
+            <td>0 (0%)</td>
+            <td>0 (0%)</td>
+        </tr>
+        <tr>
+            <td class="summary-leading-column">Total</td>
+            <td>19</td>
+            <td>17 (89%)</td>
+            <td>2 (0%)</td>
+            <td>0 (0%)</td>
+            <td>0 (0%)</td>
+        </tr>
+        <tr>
+            <td class="summary-leading-column">Total Duration</td>
+                <td colspan="5">6 minutes 8 seconds</td>
+        </tr>
+        </body>
+    </table>
+</div>
+                    </div>
+                </div>
+                <div class="clr"></div>
+
+                <div id="tabs">
+<table>
+    <tr>
+        <td>
+            <div><h3>Acceptance Criteria</h3></div>
+            <div id="test_list_tests" class="table">
+                <div class="test-results">
+                    <table id="test-results-table">
+                        <thead>
+                        <tr>
+                            <th width="50" class="test-results-heading">&nbsp;</th>
+                            <th width="%" class="test-results-heading">Tests</th>
+                            <th width="70" class="test-results-heading">Steps</th>
+
+                            <th width="100" class="test-results-heading">Duration<br>(seconds)</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="bd6d8111fe789037e70be022b0741c7a2150476209d234ba6b9ae124d2254df5.html" class="ellipsis" title="">
+                                    Filter ()
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">14</td>
+
+
+                                <td class="lightgreentext">19.15</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="299236c7f3c57f7c72dabdd58f6e4721628411c467188f97542185ba4ec35c32.html" class="ellipsis" title="">
+                                    Paging ()
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">12</td>
+
+
+                                <td class="lightgreentext">16.75</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="9ff408f8eaf664e219861c7be39a97aeb7a44d1de4b765247f78c474d2eed275.html" class="ellipsis" title="">
+                                    Sorter ()
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">29</td>
+
+
+                                <td class="lightgreentext">35.59</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="01e8eee834ad6cf9c848d5d76def545dc5a84a3d9c3bb10e85aeb33f33d52791.html" class="ellipsis" title="">
+                                    add new company and fill all fields ()
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">8</td>
+
+
+                                <td class="lightgreentext">27.36</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="dcac0e58c0180e03b249c42a62f8fd4bbfbc57f5b0820603382267512f653f91.html" class="ellipsis" title="">
+                                    add new company and fill only required field ()
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">8</td>
+
+
+                                <td class="lightgreentext">24.5</td>
+                            </tr>
+
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                                    
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
+                                    <div class="ellipsis">
+                                    <a href="70860289a781754da8f59e9dfffa9f0f904ad738c6b65e1bd9db1ce05aedb4b7.html" class="ellipsis" title="No such element exception: Timed out after 0 seconds. Element not found">
+                                    cannot delete a company if user is not admin ()
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">7</td>
+
+
+                                <td class="lightgreentext">3.92</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="6e4cf79cb47cde066561078891499e0fc0ab74196103fdcf32f821af8c897e05.html" class="ellipsis" title="">
+                                    delete company after edit company ()
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">8</td>
+
+
+                                <td class="lightgreentext">19.06</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="4fc9b333c7b68ddeac54a29b146d3ada7b1590df9d45b74c4ecf5f83bf8489df.html" class="ellipsis" title="">
+                                    delete company by select after filter ()
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">8</td>
+
+
+                                <td class="lightgreentext">19.51</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="57d1d4b17a9e6ccd2b673cce045d7453e95185894f9cbebece47b05a17dab029.html" class="ellipsis" title="">
+                                    edit company and fill all field ()
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">8</td>
+
+
+                                <td class="lightgreentext">28.61</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="dc1ffe0a0a0d456898751725921fede6ec9eea05cc7e7a891b8355490b7eb29e.html" class="ellipsis" title="">
+                                    edit company with only required fields ()
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">8</td>
+
+
+                                <td class="lightgreentext">25.26</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="b8da6ef714daf73f0d4883794676a380b887f6012ff32523992610e50b6e9dab.html" class="ellipsis" title="">
+                                    initialization screen ()
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">5</td>
+
+
+                                <td class="lightgreentext">14.48</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="9f6ab97d2485234f17a87c3baef936de81dc30e9cb2e0687fb27863d8b913903.html" class="ellipsis" title="">
+                                    logout from system ()
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">1</td>
+
+
+                                <td class="lightgreentext">0.16</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="57ac9a1bcce25c5c8b99fa757fc5cb206428c45861d5cbbbd0060f961365adce.html" class="ellipsis" title="">
+                                    save immediately after open edit screen ()
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">6</td>
+
+
+                                <td class="lightgreentext">19.57</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="8d591e16fad7e540462fc0fb6339b7e7f522d1b51bf75e55925a0eeb801212ff.html" class="ellipsis" title="">
+                                    search company ()
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">8</td>
+
+
+                                <td class="lightgreentext">16.62</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="548f4124360868e3713f3aeb491816cfb772c69658d18dc5d9bd63caea39fcbc.html" class="ellipsis" title="">
+                                    verify recent activities ()
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">10</td>
+
+
+                                <td class="lightgreentext">16.85</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="823fb3e3471f22b53cef27fdb63457480c938dcc1bbd388c71238cec0f43b0b4.html" class="ellipsis" title="">
+                                    when add new company, click cancel after fill all fields ()
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">6</td>
+
+
+                                <td class="lightgreentext">20.75</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="69a44dc6326951a3ac27ff5425b2bd4832b3ecac509917a83c50dd72317724bf.html" class="ellipsis" title="">
+                                    when add new company, click reset after fill all fields ()
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">6</td>
+
+
+                                <td class="lightgreentext">19.54</td>
+                            </tr>
+
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                                    
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
+                                    <div class="ellipsis">
+                                    <a href="18d2e987dfb44c2f32f0a0543767e74b5a8f94e75b24bde6a7ee64cf17b5eedd.html" class="ellipsis" title="Web driver exception: unknown error: Element is not clickable at point (413, 664). Other element would receive the click: (td style='width:75%;')...(/td)">
+                                    when edit company, click cancel after fill all data ()
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">9</td>
+
+
+                                <td class="lightgreentext">18.42</td>
+                            </tr>
+
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                    
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
+                                    <div class="ellipsis">
+                                    <a href="a04ec8355e00fb93199297c7e8f0d9f5ba3fd256c9c5bbacbbf4d755e95b38af.html" class="ellipsis" title="">
+                                    when edit company, click reset after fill all data ()
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">8</td>
+
+
+                                <td class="lightgreentext">22.2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.1.36</span>
+</div>
+</body>
+</html>

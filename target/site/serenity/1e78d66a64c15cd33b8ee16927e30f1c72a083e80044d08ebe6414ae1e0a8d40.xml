@@ -1,0 +1,100 @@
+<acceptance-test-run title="12. Open Employee Management and delete with user full permission" name="12. Open Employee Management and delete with user full permission" description="" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="24762" timestamp="2016-11-24T11:07:34.625+07:00" session-id="dee658dc9b58a166de8f8743e2bf720a">
+  <user-story id="employee-management-display" name="Employee Management display" path="employee_management/employee_management.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Employee management" type="capability"/>
+    <tag name="Employee Management display" type="feature"/>
+    <tag name="Employee management/Employee management display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>employeeMenu</header>
+      <header>parentMenuText</header>
+      <header>deleteBtn</header>
+      <header>successDelete</header>
+      <header>editBtn</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>Delete</value>
+        <value>Delete successfully</value>
+        <value>Edit</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, deleteBtn=Delete, successDelete=Delete successfully, editBtn=Edit}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="93d1cdf87f53cf96ab0689aafc838186.png"/>
+      <screenshot image="2b310227dd96f9e235ae116f243d375b.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1407">
+      <screenshots>
+        <screenshot image="e112b81886f2dd49ecc6a52958adc4a5.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3544">
+      <screenshots>
+        <screenshot image="c833d6310158daf05479e5c29b868fb3.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I select record create in scenario before</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1398">
+      <screenshots>
+        <screenshot image="07e4721971d0b33b6dabf6b848780aa0.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="748">
+      <screenshots>
+        <screenshot image="3f445cfe571e4fe9ced338b092de1627.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Delete</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2322">
+      <screenshots>
+        <screenshot image="53a132f61be1b258c8f12ae78edeac54.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I confirm delete</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="141">
+      <screenshots>
+        <screenshot image="53a132f61be1b258c8f12ae78edeac54.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, The system should show table Employee</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="8261">
+      <screenshots>
+        <screenshot image="2b310227dd96f9e235ae116f243d375b.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, System show message Delete successfully</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

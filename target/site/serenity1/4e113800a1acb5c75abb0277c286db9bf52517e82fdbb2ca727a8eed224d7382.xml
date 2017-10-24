@@ -1,0 +1,167 @@
+<acceptance-test-run title="Open Notification Setting, select one branch, all position, all employee name and add" name="Open Notification Setting, select one branch, all position, all employee name and add" description="" steps="17" successful="17" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="55429" timestamp="2016-11-03T08:37:09.077+07:00" session-id="5b802c89a9981e25507d160b7ded548a">
+  <user-story id="notification-setting-display" name="Notification Setting display" path="notification_setting/notification_setting.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Notification setting" type="capability"/>
+    <tag name="Notification Setting display" type="feature"/>
+    <tag name="Notification setting/Notification setting display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>notificationMenu</header>
+      <header>parentMenuText</header>
+      <header>number</header>
+      <header>string</header>
+      <header>lang</header>
+      <header>addBtn</header>
+      <header>successSave</header>
+      <header>deleteSuccess</header>
+      <header>viewNotificationsNotVisible</header>
+      <header>viewNotificationsVisible</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Notification Setting</value>
+        <value>Notification</value>
+        <value>13000002</value>
+        <value>triarrow</value>
+        <value>en</value>
+        <value>Add</value>
+        <value>Save successfully</value>
+        <value>Delete successfully</value>
+        <value>Not Visible</value>
+        <value>Visible</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {notificationMenu=Notification Setting, parentMenuText=Notification, number=13000002, string=triarrow, lang=en, addBtn=Add, successSave=Save successfully, deleteSuccess=Delete successfully, viewNotificationsNotVisible=Not Visible, viewNotificationsVisible=Visible}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="52af3e57b92798a692b990c486caf701.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="764">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>When I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2540">
+      <screenshots>
+        <screenshot image="52f9210a61d4a4bcf8f472236953aaed.png"/>
+        <screenshot image="12dda5d5955172e78bfbf0b7b9609c28.png"/>
+      </screenshots>
+      <description>And I input my credentials username 13000002 and password triarrow</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1684">
+      <screenshots>
+        <screenshot image="3fe1885681dc6bd142a4a2a9c6c181cd.png"/>
+      </screenshots>
+      <description>And I change language to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="858">
+      <screenshots>
+        <screenshot image="7d21a9dc4a5606f17ada7bf224a5798b.png"/>
+      </screenshots>
+      <description>And I open submenu Notification Setting of parent menu Notification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="206">
+      <screenshots>
+        <screenshot image="09e1d0742c2d42188fb123d52b5c32ef.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Notification&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2512">
+      <screenshots>
+        <screenshot image="1ca08f10bb9978954bd8c05186735781.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, i select more dropdown with value below
+| valueBranch | valuePosition | valueEmpName |
+| random | All position | All employee |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1291">
+      <screenshots>
+        <screenshot image="5971eaed6468d716189026ebb91b2fa2.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, I click in Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="8705">
+      <screenshots>
+        <screenshot image="8a1cc304fdd529179e2703d331cfd88f.png"/>
+      </screenshots>
+      <description>Then In Notification Setting screen, System show message Save successfully</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="403">
+      <screenshots>
+        <screenshot image="90b00469bc9eff472ae9436fd6c2e04b.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, Table in the right have all employee in Employee Name added</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="9746">
+      <screenshots>
+        <screenshot image="a15d47532d1dee450ac50c603f00dd0b.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, I delete random in table notification, show message Delete successfully</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1278">
+      <screenshots>
+        <screenshot image="b9d7090a0a99774f63b84a2b3acddbb3.png"/>
+      </screenshots>
+      <description>When In Notification Setting screen, I click in Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="8465">
+      <screenshots>
+        <screenshot image="eb5e007ae3501f672bc74f8b258a130e.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, System show message Save successfully</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="420">
+      <screenshots>
+        <screenshot image="75f08decaca5ce62d99ef34593d9443d.png"/>
+      </screenshots>
+      <description>Then In Notification Setting screen, Table in the right have all employee in Employee Name added</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="142">
+      <screenshots>
+        <screenshot image="75f08decaca5ce62d99ef34593d9443d.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, link View Notifications is Visible</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="15341">
+      <screenshots>
+        <screenshot image="bcdf944f549f129715b827a5ef7e667d.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, I delete all in table notification, show message Delete successfully</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="129">
+      <screenshots>
+        <screenshot image="bcdf944f549f129715b827a5ef7e667d.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, link View Notifications is Not Visible</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="817">
+      <screenshots>
+        <screenshot image="218675e6ee750205f23ac49868f75bf8.png"/>
+      </screenshots>
+      <description>And I logout from system</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

@@ -1,0 +1,263 @@
+<acceptance-test-run title="3. Open Maintain credit data and search customer code by other conditions" name="3. Open Maintain credit data and search customer code by other conditions" description="" steps="32" successful="32" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="24712" timestamp="2017-04-17T16:27:43.266+07:00" session-id="69e9614765d42983373d210998dbb413">
+  <user-story id="1-4.-maintain-credit-data" name="1-4. Maintain credit data" path="maintain_credit_data/maintain_credit_data14.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Maintain credit data" type="capability"/>
+    <tag name="1-4. Maintain credit data" type="feature"/>
+    <tag name="Maintain credit data/1 4. maintain credit data" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>maintainMenu</header>
+      <header>pageTitle</header>
+      <header>parentMenuText</header>
+      <header>validCompanyName</header>
+      <header>fieldCompanyName</header>
+      <header>searchBtn</header>
+      <header>invalidCompanyName</header>
+      <header>empty</header>
+      <header>numberOfRecord</header>
+      <header>otherConditions</header>
+      <header>associated</header>
+      <header>validId</header>
+      <header>fieldSansanId</header>
+      <header>only1</header>
+      <header>invalidId</header>
+      <header>emptyString</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Maintain Credit Data</value>
+        <value>Maintenance accounting data screen</value>
+        <value>Accounting</value>
+        <value>F</value>
+        <value>Company name</value>
+        <value>Search</value>
+        <value>companynotexist</value>
+        <value>0</value>
+        <value>5</value>
+        <value>Other conditions</value>
+        <value>Associated</value>
+        <value>992272FF67A8A53A9FFE5ABE9EAFCD25</value>
+        <value>Sansan Company ID</value>
+        <value>1</value>
+        <value>TEST272FF67A8A53A9FFE5ABE9EAFCD25</value>
+        <value></value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {maintainMenu=Maintain Credit Data, pageTitle=Maintenance accounting data screen, parentMenuText=Accounting, validCompanyName=F, fieldCompanyName=Company name, searchBtn=Search, invalidCompanyName=companynotexist, empty=0, numberOfRecord=5, otherConditions=Other conditions, associated=Associated, validId=992272FF67A8A53A9FFE5ABE9EAFCD25, fieldSansanId=Sansan Company ID, only1=1, invalidId=TEST272FF67A8A53A9FFE5ABE9EAFCD25, emptyString=}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="211ba72560aa0e05afa6111e50fd8a60.png"/>
+      <screenshot image="7406df27ae3fb159e630eb7d4a83995b.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1054">
+      <screenshots>
+        <screenshot image="a0bc8740f2f73feb800b3e654e01d579.png"/>
+      </screenshots>
+      <description>When I open submenu Maintain Credit Data of parent menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="244">
+      <screenshots>
+        <screenshot image="7fd33d6cb65073edba1d236186b2dc40.png"/>
+      </screenshots>
+      <description>And The system should open &apos;Maintenance accounting data screen&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="169">
+      <screenshots>
+        <screenshot image="f92ab1e12a1a598bd8b59ec9e587103e.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I choose radio button have name is Other conditions</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="909">
+      <screenshots>
+        <screenshot image="bb1e13b4d8fac9dcc1a9e75d63869cff.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="269">
+      <screenshots>
+        <screenshot image="207ff93181c99033a7901f591e6051c1.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, Table below have 5 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="299">
+      <screenshots>
+        <screenshot image="f7a7d416200744cd5cd95f361dde7639.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, I type companynotexist in input field have name is Company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="960">
+      <screenshots>
+        <screenshot image="cc453f98874d6335ccfdf80880dc95e9.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="207">
+      <screenshots>
+        <screenshot image="7c3dd394efc63fb086247f45289fdc94.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, Table below have 0 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="625">
+      <screenshots>
+        <screenshot image="e4625bc4e92f65911912262b4d03c3b2.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, I type F in input field have name is Company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="948">
+      <screenshots>
+        <screenshot image="619f626241e506fc5d2ddc6b8e271f6f.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="226">
+      <screenshots>
+        <screenshot image="a3c9940816aaf171da19583748aa1d4b.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, Table below have 5 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="243">
+      <screenshots>
+        <screenshot image="8f746373532e21dd996d56a971d7f60b.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, I choose radio button have name is Associated</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="269">
+      <screenshots>
+        <screenshot image="20afbb977d1f996c25ad0de939c3ba5d.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I type companynotexist in input field have name is Company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="856">
+      <screenshots>
+        <screenshot image="29a02a4cd2c78e246aeb375a69caaf5d.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="239">
+      <screenshots>
+        <screenshot image="716956c5127389f98044989964d417d1.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, Table below have 0 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="627">
+      <screenshots>
+        <screenshot image="049ad53d34f78ef11371260bda71feec.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, I type F in input field have name is Company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1010">
+      <screenshots>
+        <screenshot image="b621714825553a5c6e831f12f89a7732.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="213">
+      <screenshots>
+        <screenshot image="9029f94a3143449b69497cb41f97aa97.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, Table below have 5 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="301">
+      <screenshots>
+        <screenshot image="159f99ab4b6029e7f763b8dcdc3d6a01.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, I type 992272FF67A8A53A9FFE5ABE9EAFCD25 in input field have name is Sansan Company ID</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="227">
+      <screenshots>
+        <screenshot image="62f035a87486c7aa27a1a8b1deded757.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, I type  in input field have name is Company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="874">
+      <screenshots>
+        <screenshot image="0cb5ab98c897acff41d425cdb297d8b3.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="244">
+      <screenshots>
+        <screenshot image="057902d93056bb3941a4ef5b3308c1be.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, Table below have 1 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1199">
+      <screenshots>
+        <screenshot image="e4dc772e70e93a76456d7d6c0be30d52.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, I type TEST272FF67A8A53A9FFE5ABE9EAFCD25 in input field have name is Sansan Company ID</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1303">
+      <screenshots>
+        <screenshot image="7406df27ae3fb159e630eb7d4a83995b.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="183">
+      <screenshots>
+        <screenshot image="7406df27ae3fb159e630eb7d4a83995b.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, Table below have 0 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1162">
+      <screenshots>
+        <screenshot image="9556f18ae8456d37fa999b21d60b24c4.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, I type 992272FF67A8A53A9FFE5ABE9EAFCD25 in input field have name is Sansan Company ID</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="220">
+      <screenshots>
+        <screenshot image="6209b4e6cb690747a5cb38b0d2869e89.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I type  in input field have name is Company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1296">
+      <screenshots>
+        <screenshot image="057902d93056bb3941a4ef5b3308c1be.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="171">
+      <screenshots>
+        <screenshot image="057902d93056bb3941a4ef5b3308c1be.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, Table below have 1 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1120">
+      <screenshots>
+        <screenshot image="e4dc772e70e93a76456d7d6c0be30d52.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, I type TEST272FF67A8A53A9FFE5ABE9EAFCD25 in input field have name is Sansan Company ID</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="837">
+      <screenshots>
+        <screenshot image="9926ec3a2fd42d06cb99bcbbec03e7d4.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="219">
+      <screenshots>
+        <screenshot image="4fce4fb970a60dc86700f38bc8f7772e.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, Table below have 0 record</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

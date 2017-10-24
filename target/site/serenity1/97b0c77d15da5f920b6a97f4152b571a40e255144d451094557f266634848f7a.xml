@@ -1,0 +1,117 @@
+<acceptance-test-run title="Open Employee Management and edit" name="Open Employee Management and edit" description="" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="37765" timestamp="2016-11-03T09:14:48.209+07:00" session-id="02dcb434c09356ff95a3c15208adf3bc">
+  <user-story id="employee-management-display" name="Employee Management display" path="employee_management/employee_management.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Employee management" type="capability"/>
+    <tag name="Employee Management display" type="feature"/>
+    <tag name="Employee management/Employee management display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>employeeMenu</header>
+      <header>parentMenuText</header>
+      <header>editBtn</header>
+      <header>saveBtn</header>
+      <header>successSave</header>
+      <header>validateFailMess</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>Edit</value>
+        <value>Save</value>
+        <value>Save successfully</value>
+        <value>Value is required</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, editBtn=Edit, saveBtn=Save, successSave=Save successfully, validateFailMess=Value is required}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="cc2b4e7b94b2332f3827f43284efb57b.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="909">
+      <screenshots>
+        <screenshot image="0cab92d958878b267c7887acacac8eb5.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3078">
+      <screenshots>
+        <screenshot image="e6d25721e9573ad06feed7ec56e1090f.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I select record create in scenario before</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1272">
+      <screenshots>
+        <screenshot image="ea079ee65f1afdfbda6fa97f8fc93d66.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2690">
+      <screenshots>
+        <screenshot image="8a4e9e7c1bea7f18a7dd8c6a1f3c5f14.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I fill all data as below with employee name auto generate
+| tel | mobile |
+| 03-1234-5678 | 090-1234-5678 |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1300">
+      <screenshots>
+        <screenshot image="0ba682bcb04a29107dcefdf0c15b54e3.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Save</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="8520">
+      <screenshots>
+        <screenshot image="e319dca680b8d93ba9efb4ed222e5cee.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, System show message Value is required</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="5312">
+      <screenshots>
+        <screenshot image="776b368528674dc71e81beeb2d6cc00a.png"/>
+      </screenshots>
+      <description>When In Employee Management screen, I fill all data as below with employee name auto generate
+| hireDate | status | baseLocation | position | authority | email |
+| 2016/08/01 | Working | 青森県 | 管理職 | 拠点 | ngocpt@arrow-tech.vn |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1311">
+      <screenshots>
+        <screenshot image="576314746e8e1426cede10a080837305.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Save</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="8528">
+      <screenshots>
+        <screenshot image="cc2b4e7b94b2332f3827f43284efb57b.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, System show message Save successfully</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

@@ -1,0 +1,150 @@
+<acceptance-test-run title="Paging" name="paging" description="" steps="16" successful="16" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="14745" timestamp="2016-11-03T08:38:54.490+07:00" session-id="9c5954d4ef1ac2845c372d3f713dec30">
+  <user-story id="search-daily-report-by-date" name="Search Daily report by date" path="searchDailyReportByDate/searchDailyReportByDate.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Search daily report by date" type="capability"/>
+    <tag name="Search Daily report by date" type="feature"/>
+    <tag name="Search daily report by date/Search daily report by date" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>buttonText</header>
+      <header>branchName</header>
+      <header>employeeInfo</header>
+      <header>date</header>
+      <header>pageNumberOne</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Search By Date</value>
+        <value>Daily Report</value>
+        <value>Search</value>
+        <value>福岡県</value>
+        <value>40000005</value>
+        <value>2012/11/28</value>
+        <value>2</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Search By Date, menuText=Daily Report, buttonText=Search, branchName=福岡県, employeeInfo=40000005, date=2012/11/28, pageNumberOne=2}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="1933ef774040c2d1dfa99c7b59934d7d.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="886">
+      <screenshots>
+        <screenshot image="a85a8e03cefe93fabdee09ecd48e50fc.png"/>
+      </screenshots>
+      <description>When I open submenu Search By Date of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1455">
+      <screenshots>
+        <screenshot image="f1dc05110e7a7fb215842a03157460b4.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I select date 2012/11/28 in item Date</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="809">
+      <screenshots>
+        <screenshot image="d6218d3ac6ade35c0613b4a6ad772fe8.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I choose a branch 福岡県 in dropdown Branch</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="249">
+      <screenshots>
+        <screenshot image="a407dd4b39143164bfd775b5ccdff52d.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I type value 40000005 for autocomplete Employee</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1319">
+      <screenshots>
+        <screenshot image="a29d1577baa25350cf341c5e00d60430.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I choose 40000005 employee in dropdown of autocomplete Employee</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="808">
+      <screenshots>
+        <screenshot image="16be73a833f9b77a8d2da8a817ee98c5.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I click button &apos;Search&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="790">
+      <screenshots>
+        <screenshot image="1933ef774040c2d1dfa99c7b59934d7d.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I click button last page on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="158">
+      <screenshots>
+        <screenshot image="1933ef774040c2d1dfa99c7b59934d7d.png"/>
+      </screenshots>
+      <description>Then The table Search by date result should show last page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="709">
+      <screenshots>
+        <screenshot image="143c8662f17aa8a6f3df62c2ead236ea.png"/>
+      </screenshots>
+      <description>When In Search by date screen, I click button first page on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="155">
+      <screenshots>
+        <screenshot image="143c8662f17aa8a6f3df62c2ead236ea.png"/>
+      </screenshots>
+      <description>Then The table Search by date result should show first page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="689">
+      <screenshots>
+        <screenshot image="1933ef774040c2d1dfa99c7b59934d7d.png"/>
+      </screenshots>
+      <description>When In Search by date screen, I click page 2 on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="192">
+      <screenshots>
+        <screenshot image="1933ef774040c2d1dfa99c7b59934d7d.png"/>
+      </screenshots>
+      <description>Then The table Search by date result should change to selected page 2</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="712">
+      <screenshots>
+        <screenshot image="143c8662f17aa8a6f3df62c2ead236ea.png"/>
+      </screenshots>
+      <description>When In Search by date screen, I click button back on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="145">
+      <screenshots>
+        <screenshot image="143c8662f17aa8a6f3df62c2ead236ea.png"/>
+      </screenshots>
+      <description>Then The table Search by date result should change to selected page 2 - 1</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="697">
+      <screenshots>
+        <screenshot image="1933ef774040c2d1dfa99c7b59934d7d.png"/>
+      </screenshots>
+      <description>When In Search by date screen, I click button next on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="156">
+      <screenshots>
+        <screenshot image="1933ef774040c2d1dfa99c7b59934d7d.png"/>
+      </screenshots>
+      <description>Then The table Search by date result should change to selected page 2</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

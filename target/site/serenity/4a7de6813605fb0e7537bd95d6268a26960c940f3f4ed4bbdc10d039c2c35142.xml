@@ -1,0 +1,134 @@
+<acceptance-test-run title="Open Employee Management and filter Employee select box" name="Open Employee Management and filter Employee select box" description="" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="38325" timestamp="2016-11-03T20:29:34.425+07:00" session-id="7f901579dbc98742cb659af9cd730134">
+  <user-story id="employee-management-display" name="Employee Management display" path="employee_management/employee_management.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Employee management" type="capability"/>
+    <tag name="Employee Management display" type="feature"/>
+    <tag name="Employee management/Employee management display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>employeeMenu</header>
+      <header>parentMenuText</header>
+      <header>column</header>
+      <header>textFilter</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>Head Office</value>
+        <value>北海道</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>Position</value>
+        <value>管理職</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>Authority</value>
+        <value>拠点</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, column=Head Office, textFilter=北海道}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="5c6294134bcd765d84f3c97a14a123af.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1636">
+      <screenshots>
+        <screenshot image="9982a1e38519b89ce0601b83efa4913d.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1480">
+      <screenshots>
+        <screenshot image="27d8d4be779aff3fdcf53cb3026d9d12.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I choose 北海道 in Head Office column filter</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="709">
+      <screenshots>
+        <screenshot image="5c6294134bcd765d84f3c97a14a123af.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result in column Head Office have 北海道</description>
+    </test-step>
+  </test-group>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, column=Position, textFilter=管理職}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="90e04ecd66ce1dc670d6ca428756c085.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1623">
+      <screenshots>
+        <screenshot image="9982a1e38519b89ce0601b83efa4913d.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1369">
+      <screenshots>
+        <screenshot image="4948914fc20bdc35eb6f8b333deb5b3f.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I choose 管理職 in Position column filter</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="844">
+      <screenshots>
+        <screenshot image="90e04ecd66ce1dc670d6ca428756c085.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result in column Position have 管理職</description>
+    </test-step>
+  </test-group>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, column=Authority, textFilter=拠点}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="2846c216154afcf9ac9e44183fddc5f7.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1601">
+      <screenshots>
+        <screenshot image="9982a1e38519b89ce0601b83efa4913d.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1729">
+      <screenshots>
+        <screenshot image="2846c216154afcf9ac9e44183fddc5f7.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I choose 拠点 in Authority column filter</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="767">
+      <screenshots>
+        <screenshot image="2846c216154afcf9ac9e44183fddc5f7.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result in column Authority have 拠点</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

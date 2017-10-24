@@ -1,0 +1,25 @@
+<acceptance-test-run title="logout from system" name="logout from system" description="" steps="1" successful="1" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="968" timestamp="2016-11-03T08:46:02.998+07:00" session-id="e02788a4687a6dd95353ac181b190d1d">
+  <user-story id="view-notification" name="View Notification" path="viewNotifications/viewNotifications.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="View notifications" type="capability"/>
+    <tag name="View Notification" type="feature"/>
+    <tag name="View notifications/View notification" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <test-step result="SUCCESS" duration="891">
+    <screenshots>
+      <screenshot image="c5a8dadda0a3e94ee0b80afe8811847c.png"/>
+    </screenshots>
+    <description>Given I logout from system</description>
+  </test-step>
+</acceptance-test-run>

@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-bdd-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <a
+                    href="7ac47b2b346dfa259ac6a5b8373accdd96c45b8d3fd6dfe3d2580ec1597b95cb.html">Bass Export Display</a>
+                > <a
+                    href="d69573c4fde344a378d6a61929b28fb82d306910b3c13a053f832f87d496bdd4.html">Open bass export and use download location </a>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-11-2016 08:45</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Bass Export Display</span>
+                                    <span class="badge tag-badge">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As an user<br>I want to be able see screen BASS Export
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="ba9fb54e1af2981411104c56e14ee34928ceb18af19fd6266c85e9ccfcde886c.html">3.1.5
+                                    (version)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="3e0ef395cd6ab697f994c3222494eed334cedf15c4ec046c2c7ce741935db68b.html">
+                                    (issue)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="221df95d1ff617be56b46a3e9a1f6c3e8e17fe899523d17e144aa0aed60dc835.html">Loggedin
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="995229af4a4d22936e397c2b399dd69a96d9fd663d7c591e383bf48de93445b7.html">Bass Export
+                                    (capability)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="7af145658023301483346e9bf7e7857d3d5d846f49bf9bef46addcc7f8c82094.html">Sprint-1.1
+                                    (version)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-3x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Open bass export and use download location
+                                    <span class="related-issue-title">()</span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+
+        <div class="scenario">When I open submenu BASS Export of parent menu Import/Export<br>And In Bass export screen, I click button Export<br>And In Bass export screen, I click button Edit<br>Then In Bass export screen, System show button Save<br>And In Bass export screen, System show button Cancel<br>And System hide button Edit<br>And System show downloaded location Download location<br>When In Bass export screen, I click button Cancel<br>Then In Bass export screen, System show button Edit<br>And System hide button Save<br>And System hide button Cancel<br>And System show downloaded location Download location<br>When In Bass export screen, I click button Edit<br>And In Bass export screen, I click button Save<br>Then In Bass export screen, System show button Edit<br>And System hide button Save<br>And System hide button Cancel<br>And System show downloaded location Download location<br>When I open submenu BASS Export of parent menu Import/Export<br>And In Bass export screen, I click button Export<br>And In Bass export screen, I click button Edit<br>And I save path in download location to new variable<br>And I type !@#$% in downloaded location<br>And In Bass export screen, I click button Cancel<br>Then In Bass export screen, System show button Edit<br>And System hide button Save<br>And System hide button Cancel<br>And System show downloaded location Download location<br>And System show downloaded location with old path</div>
+    </div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="850c9542f8e9e7cc11604458d3245f60.png" title="When I open submenu BASS Export of parent menu Import/Export" width="960"/>
+                <img src="05a466d5fe833d333b84e87232ff35d5.png" title="And In Bass export screen, I click button Export" width="960"/>
+                <img src="b30a46eb04f9734dd3715d80fcf4b8d7.png" title="And In Bass export screen, I click button Edit" width="960"/>
+                <img src="b30a46eb04f9734dd3715d80fcf4b8d7.png" title="Then In Bass export screen, System show button Save" width="960"/>
+                <img src="b30a46eb04f9734dd3715d80fcf4b8d7.png" title="And In Bass export screen, System show button Cancel" width="960"/>
+                <img src="b30a46eb04f9734dd3715d80fcf4b8d7.png" title="And System hide button Edit" width="960"/>
+                <img src="b30a46eb04f9734dd3715d80fcf4b8d7.png" title="And System show downloaded location Download location: and can edit" width="960"/>
+                <img src="fb11e74028bfa80227094021d65bcf09.png" title="When In Bass export screen, I click button Cancel" width="960"/>
+                <img src="fb11e74028bfa80227094021d65bcf09.png" title="Then In Bass export screen, System show button Edit" width="960"/>
+                <img src="fb11e74028bfa80227094021d65bcf09.png" title="And System hide button Save" width="960"/>
+                <img src="fb11e74028bfa80227094021d65bcf09.png" title="And System hide button Cancel" width="960"/>
+                <img src="fb11e74028bfa80227094021d65bcf09.png" title="And System show downloaded location Download location: and can not edit" width="960"/>
+                <img src="b30a46eb04f9734dd3715d80fcf4b8d7.png" title="When In Bass export screen, I click button Edit" width="960"/>
+                <img src="c34dcd473c5e13cea31ce4ab6fcf3965.png" title="And In Bass export screen, I click button Save" width="960"/>
+                <img src="c34dcd473c5e13cea31ce4ab6fcf3965.png" title="Then In Bass export screen, System show button Edit" width="960"/>
+                <img src="c34dcd473c5e13cea31ce4ab6fcf3965.png" title="And System hide button Save" width="960"/>
+                <img src="c34dcd473c5e13cea31ce4ab6fcf3965.png" title="And System hide button Cancel" width="960"/>
+                <img src="c34dcd473c5e13cea31ce4ab6fcf3965.png" title="And System show downloaded location Download location: and can not edit" width="960"/>
+                <img src="94af61d4641f1bc96d219e086a2902e8.png" title="When I open submenu BASS Export of parent menu Import/Export" width="960"/>
+                <img src="4e8eafadfd52cc9af69eb9f7cdc02b01.png" title="And In Bass export screen, I click button Export" width="960"/>
+                <img src="b30a46eb04f9734dd3715d80fcf4b8d7.png" title="And In Bass export screen, I click button Edit" width="960"/>
+                <img src="b30a46eb04f9734dd3715d80fcf4b8d7.png" title="And I save path in download location to new variable" width="960"/>
+                <img src="a37d83e9ecc20e02355ae2d2aacca265.png" title="And I type !@#$% in downloaded location" width="960"/>
+                <img src="fb11e74028bfa80227094021d65bcf09.png" title="And In Bass export screen, I click button Cancel" width="960"/>
+                <img src="fb11e74028bfa80227094021d65bcf09.png" title="Then In Bass export screen, System show button Edit" width="960"/>
+                <img src="fb11e74028bfa80227094021d65bcf09.png" title="And System hide button Save" width="960"/>
+                <img src="fb11e74028bfa80227094021d65bcf09.png" title="And System hide button Cancel" width="960"/>
+                <img src="fb11e74028bfa80227094021d65bcf09.png" title="And System show downloaded location Download location: and can not edit" width="960"/>
+                <img src="fb11e74028bfa80227094021d65bcf09.png" title="And System show downloaded location with old path: <span class='success-color'>SUCCESS</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.1.36</span>
+</div>
+</body>
+</html>

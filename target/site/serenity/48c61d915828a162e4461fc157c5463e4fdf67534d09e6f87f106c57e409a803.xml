@@ -1,0 +1,115 @@
+<acceptance-test-run title="7. Open Employee Management and use toggle working" name="7. Open Employee Management and use toggle working" description="" steps="10" successful="10" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="41918" timestamp="2016-11-24T11:04:31.561+07:00" session-id="dee658dc9b58a166de8f8743e2bf720a">
+  <user-story id="employee-management-display" name="Employee Management display" path="employee_management/employee_management.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Employee management" type="capability"/>
+    <tag name="Employee Management display" type="feature"/>
+    <tag name="Employee management/Employee management display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>employeeMenu</header>
+      <header>parentMenuText</header>
+      <header>firstRecord</header>
+      <header>secondRecord</header>
+      <header>toggleWorkingStatusBtn</header>
+      <header>successChangeStatus</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>1</value>
+        <value>5</value>
+        <value>Toggle Working Status</value>
+        <value>Change Status Successfully</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, firstRecord=1, secondRecord=5, toggleWorkingStatusBtn=Toggle Working Status, successChangeStatus=Change Status Successfully}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="077ea769b49a8d8350ce4636a5679340.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1037">
+      <screenshots>
+        <screenshot image="18f535d8d16b444b23068a00de15425c.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1914">
+      <screenshots>
+        <screenshot image="94b3bf833ed99d54d60b9f331077ecdf.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click in number 1 record can click</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1369">
+      <screenshots>
+        <screenshot image="d1a0e1ef681e6fdcac3ee4653b68a2b2.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Toggle Working Status</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="8498">
+      <screenshots>
+        <screenshot image="fc512f37f319d19a6ff3d6d51ab056c9.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, System show message Change Status Successfully</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="820">
+      <screenshots>
+        <screenshot image="83ccb582ade9b2617e78f77f83e8a0a8.png"/>
+      </screenshots>
+      <description>When In Employee Management screen, I click in number 5 record can click</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2883">
+      <screenshots>
+        <screenshot image="17568c2e146ed04c8e1247ebe7fb7e51.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Toggle Working Status</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="8647">
+      <screenshots>
+        <screenshot image="d739a6958307a3704e1b032766f42880.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, System show message Change Status Successfully</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="856">
+      <screenshots>
+        <screenshot image="ec13045a0848b5e74b269476f55a9e77.png"/>
+      </screenshots>
+      <description>When In Employee Management screen, I click in number 1 record can click</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1316">
+      <screenshots>
+        <screenshot image="b82c9a464c1e9de6d0632bcf2ef4487a.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Toggle Working Status</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="8569">
+      <screenshots>
+        <screenshot image="077ea769b49a8d8350ce4636a5679340.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, System show message Change Status Successfully</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

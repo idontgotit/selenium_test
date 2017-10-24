@@ -1,0 +1,138 @@
+<acceptance-test-run title="update daily report when access from menu" name="update daily report when access from menu" description="" steps="13" successful="13" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="59151" timestamp="2016-11-03T20:01:43.691+07:00" session-id="2b3f3f9feabc2f361c0f10d5b4a15be0">
+  <user-story id="register-daily-report" name="register daily report" path="registerDailyReport/registerDailyReport.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Register daily report" type="capability"/>
+    <tag name="register daily report" type="feature"/>
+    <tag name="Register daily report/Register daily report" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>rowIndex</header>
+      <header>categoryType</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Register</value>
+        <value>Daily Report</value>
+        <value>0</value>
+        <value>Other works</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Register, menuText=Daily Report, rowIndex=0, categoryType=Other works}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="351c290a390745b6bfeb71dcb1b2b43c.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1775">
+      <screenshots>
+        <screenshot image="b11b97def6961a2a14d06e5c3fe8ec68.png"/>
+      </screenshots>
+      <description>When I open submenu Register of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="179">
+      <screenshots>
+        <screenshot image="5b9ba5db7b80a1e4e30eed584380453c.png"/>
+      </screenshots>
+      <description>Then The system should show table daily report history has data</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1356">
+      <screenshots>
+        <screenshot image="5fea8aa6a28bb128bf0f17f31be1d63a.png"/>
+      </screenshots>
+      <description>When In Register daily report, I choose row 0 in table daily report history</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="148">
+      <screenshots>
+        <screenshot image="5fea8aa6a28bb128bf0f17f31be1d63a.png"/>
+      </screenshots>
+      <description>Then The system should show daily report can update</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1077">
+      <screenshots>
+        <screenshot image="bbd9543d7e60b19f47fc8745a51e802f.png"/>
+      </screenshots>
+      <description>When In Register daily report, I choose category &apos;Other works&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="4351">
+      <screenshots>
+        <screenshot image="5a4ece32befaaefc68b7e8cfa23966af.png"/>
+      </screenshots>
+      <description>And I update Daily report with data below
+| content |
+| Verify update daily report when change from category business to other works |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6486">
+      <screenshots>
+        <screenshot image="d7d128261dc8e4a7afd4e0d13322d509.png"/>
+      </screenshots>
+      <description>Then The system should show message save daily report successfully</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1032">
+      <screenshots>
+        <screenshot image="fa8ee199f898e5e15076dc83a3624175.png"/>
+      </screenshots>
+      <description>When In Register daily report, I choose row 0 in table daily report history</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="386">
+      <screenshots>
+        <screenshot image="a8f5f31477a7ca157ed71b7eec739f3b.png"/>
+      </screenshots>
+      <description>Then The system should show details like below
+| content |
+| Verify update daily report when change from category business to other works |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="24628">
+      <screenshots>
+        <screenshot image="36cf0f9fc2fcfa87a4e5857d1ad89128.png"/>
+      </screenshots>
+      <description>When I update Daily report with data below
+| companyName | content | branch | personInCharge | department | businessType | purpose | reminder | reminderFrom | reminderTo | projectFlag | openFlag |
+| CIJ | Verify update daily report | 北海道 | 庭田次長 | atv | ソフトウェア | クレーム | ON | 2016/10/19 | 2016/10/20 | ON | ON |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6388">
+      <screenshots>
+        <screenshot image="c3cf61f29e4e14b705ed48d56ed56f08.png"/>
+      </screenshots>
+      <description>Then The system should show message save daily report successfully</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1452">
+      <screenshots>
+        <screenshot image="351c290a390745b6bfeb71dcb1b2b43c.png"/>
+      </screenshots>
+      <description>When In Register daily report, I choose row 0 in table daily report history</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="880">
+      <screenshots>
+        <screenshot image="351c290a390745b6bfeb71dcb1b2b43c.png"/>
+      </screenshots>
+      <description>Then The system should show details like below
+| companyName | content | branch | personInCharge | department | businessType | purpose | reminder | reminderFrom | reminderTo | projectFlag | openFlag |
+| CIJ | Verify update daily report | 北海道 | 庭田次長 | atv | ソフトウェア | クレーム | ON | 2016/10/19 | 2016/10/20 | ON | ON |</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

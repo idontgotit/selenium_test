@@ -1,0 +1,95 @@
+<acceptance-test-run title="delete company by select after filter" name="delete company by select after filter" description="" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="15021" timestamp="2016-11-03T08:54:00.188+07:00" session-id="d5e3d34aabe3bb85d896e5672144ef84">
+  <user-story id="company-management" name="company management" path="companyManagement/companyManagement.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Company management" type="capability"/>
+    <tag name="company management" type="feature"/>
+    <tag name="Company management/Company management" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>filterText</header>
+      <header>columnCompanyNameTitle</header>
+      <header>rowIndex</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Company Management</value>
+        <value>Common</value>
+        <value>Test company</value>
+        <value>Company name</value>
+        <value>0</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Company Management, menuText=Common, filterText=Test company, columnCompanyNameTitle=Company name, rowIndex=0}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="2bc3ab09e532e29b16f2ef651f3af468.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="887">
+      <screenshots>
+        <screenshot image="e817b1d685e71d4d3bee96ae3255ce70.png"/>
+      </screenshots>
+      <description>When I open submenu Company Management of menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="847">
+      <screenshots>
+        <screenshot image="07b54eb3c0114c42fc7fa65b0eb2bb30.png"/>
+      </screenshots>
+      <description>And In Company management screen, I fill value &apos;Test company&apos; for filter in column &apos;Company name&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="816">
+      <screenshots>
+        <screenshot image="29659095bc5cb263a1faa16da4be40d2.png"/>
+      </screenshots>
+      <description>And In Company management screen, I select row &apos;0&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="162">
+      <screenshots>
+        <screenshot image="29659095bc5cb263a1faa16da4be40d2.png"/>
+      </screenshots>
+      <description>Then In Company management screen, the system should show button delete</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="220">
+      <screenshots>
+        <screenshot image="ebccc600785cd16d0b858ab88d4eea54.png"/>
+      </screenshots>
+      <description>When In Company management screen, I click button Delete</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="817">
+      <screenshots>
+        <screenshot image="786c4db5f42e99f561a9ca8d9a15cdd7.png"/>
+      </screenshots>
+      <description>And In Company management screen, I confirm delete company</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6583">
+      <screenshots>
+        <screenshot image="2bc3ab09e532e29b16f2ef651f3af468.png"/>
+      </screenshots>
+      <description>Then The system should save company success</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

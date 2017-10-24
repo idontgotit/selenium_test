@@ -1,0 +1,128 @@
+<acceptance-test-run title="create new daily report and logout from system" name="create new daily report and logout from system" description="" steps="11" successful="11" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="26896" timestamp="2016-11-03T08:46:03.980+07:00" session-id="e02788a4687a6dd95353ac181b190d1d">
+  <user-story id="view-notification" name="View Notification" path="viewNotifications/viewNotifications.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="View notifications" type="capability"/>
+    <tag name="View Notification" type="feature"/>
+    <tag name="View notifications/View notification" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>staffUsername</header>
+      <header>staffPassword</header>
+      <header>lang</header>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>viewNotificationsMenuText</header>
+      <header>notificationSettingMenuText</header>
+      <header>notificationMenuText</header>
+      <header>addBtn</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>22000001</value>
+        <value>123456</value>
+        <value>en</value>
+        <value>Register</value>
+        <value>Daily Report</value>
+        <value>View Notifications</value>
+        <value>Notification Setting</value>
+        <value>Notification</value>
+        <value>Add</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {staffUsername=22000001, staffPassword=123456, lang=en, submenuText=Register, menuText=Daily Report, viewNotificationsMenuText=View Notifications, notificationSettingMenuText=Notification Setting, notificationMenuText=Notification, addBtn=Add}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="516d2b047cc3e5b0147195302860e8fd.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="879">
+      <screenshots>
+        <screenshot image="ffb62864ae7d5c7c565ac5dc5a9bb63d.png"/>
+      </screenshots>
+      <description>When I open submenu Notification Setting of menu Notification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1435">
+      <screenshots>
+        <screenshot image="075597b1ae3098eff373cabb3d2f24de.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, i select more dropdown with value below
+| valueBranch | valuePosition | valueEmpName |
+|  |  | All employee |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1284">
+      <screenshots>
+        <screenshot image="98b0938c18a5649c01f06b2eac9849ca.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, I click in Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="906">
+      <screenshots>
+        <screenshot image="3dcc3b30d1b3e9951580b9d7f6174b38.png"/>
+      </screenshots>
+      <description>Then I open submenu View Notifications of menu Notification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="832">
+      <screenshots>
+        <screenshot image="c5a8dadda0a3e94ee0b80afe8811847c.png"/>
+      </screenshots>
+      <description>When I logout from system</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="698">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>When I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2598">
+      <screenshots>
+        <screenshot image="ffb11d3c1405b7574500fb731eda0ebc.png"/>
+        <screenshot image="752c85ea20f00e2eb85a420d6870f4a5.png"/>
+      </screenshots>
+      <description>And I input my credentials username 22000001 and password 123456</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1694">
+      <screenshots>
+        <screenshot image="751435e6c1f2083e2a5c720ec2883d6a.png"/>
+      </screenshots>
+      <description>And I change language to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1327">
+      <screenshots>
+        <screenshot image="0354daed482b7c80b7a25ee415a25df8.png"/>
+      </screenshots>
+      <description>And I open submenu Register of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="4034">
+      <screenshots>
+        <screenshot image="e51fec8b27d1883f0c7c9f532b6b57da.png"/>
+      </screenshots>
+      <description>And I add new Daily report with data below
+| companyName | content |
+| CIJ | Content for test view notification |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6489">
+      <screenshots>
+        <screenshot image="516d2b047cc3e5b0147195302860e8fd.png"/>
+      </screenshots>
+      <description>Then The system should show message save daily report successfully</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

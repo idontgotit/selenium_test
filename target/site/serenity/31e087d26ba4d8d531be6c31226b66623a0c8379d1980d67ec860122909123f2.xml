@@ -1,0 +1,189 @@
+<acceptance-test-run title="4. Open Maintain credit data, search by customer code, select record, unselect, change page..." name="4. Open Maintain credit data, search by customer code, select record, unselect, change page..." description="" steps="20" successful="14" failures="1" skipped="5" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="20368" timestamp="2017-04-17T17:18:59.763+07:00" session-id="6d2b575ba2fd2d5ef5ceb43fab6dac8e">
+  <user-story id="5-7.-maintain-credit-data" name="5-7. Maintain credit data" path="maintain_credit_data/maintain_credit_data57.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Maintain credit data" type="capability"/>
+    <tag name="5-7. Maintain credit data" type="feature"/>
+    <tag name="Maintain credit data/5 7. maintain credit data" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>maintainMenu</header>
+      <header>pageTitle</header>
+      <header>parentMenuText</header>
+      <header>validCustomerCode</header>
+      <header>fieldCustomer</header>
+      <header>searchBtn</header>
+      <header>selectBtn</header>
+      <header>rowSelect</header>
+      <header>only1</header>
+      <header>fieldIdNamecard</header>
+      <header>next</header>
+      <header>emptyString</header>
+      <header>fieldSansanCompanyId</header>
+      <header>previous</header>
+      <header>fieldCompanyName</header>
+      <header>fullRecord</header>
+      <header>validCompanyName</header>
+    </headers>
+    <rows>
+      <row result="FAILURE">
+        <value>Maintain Credit Data</value>
+        <value>Maintenance accounting data screen</value>
+        <value>Accounting</value>
+        <value>A001</value>
+        <value>Customer code</value>
+        <value>Search</value>
+        <value>Select</value>
+        <value>0</value>
+        <value>1</value>
+        <value>Id Name Card</value>
+        <value>next</value>
+        <value></value>
+        <value>Sansan Company ID</value>
+        <value>previous</value>
+        <value>Company name</value>
+        <value>5</value>
+        <value>NTT</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {maintainMenu=Maintain Credit Data, pageTitle=Maintenance accounting data screen, parentMenuText=Accounting, validCustomerCode=A001, fieldCustomer=Customer code, searchBtn=Search, selectBtn=Select, rowSelect=0, only1=1, fieldIdNamecard=Id Name Card, next=next, emptyString=, fieldSansanCompanyId=Sansan Company ID, previous=previous, fieldCompanyName=Company name, fullRecord=5, validCompanyName=NTT}" result="FAILURE">
+    <screenshots>
+      <screenshot image="211ba72560aa0e05afa6111e50fd8a60.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1567">
+      <screenshots>
+        <screenshot image="8418550d73062864142cf5ecf942fd07.png"/>
+      </screenshots>
+      <description>When I open submenu Maintain Credit Data of parent menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="200">
+      <screenshots>
+        <screenshot image="221cafbdb337e0b85e2a92d86c21ebf0.png"/>
+      </screenshots>
+      <description>And The system should open &apos;Maintenance accounting data screen&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="242">
+      <screenshots>
+        <screenshot image="2e2b90ba659adfc22eed4ee2f6f7e80c.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I type A001 in input field have name is Customer code</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="886">
+      <screenshots>
+        <screenshot image="d75bd24a9edf51533f289a6c58be25bb.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="261">
+      <screenshots>
+        <screenshot image="6ee48bab247cbbf8924eb0efe2db53aa.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, Table below have 1 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="787">
+      <screenshots>
+        <screenshot image="e63d63780d0241d3e524772fe2245b99.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click select checkbox row 0</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1360">
+      <screenshots>
+        <screenshot image="d37dbf4492e3700fed09f8b0c1e9041d.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="502">
+      <screenshots>
+        <screenshot image="6aa96d1347340e76789b0a8cb825bded.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I type NTT in input field have name is Company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="241">
+      <screenshots>
+        <screenshot image="aaecd473bea688778a6b0c16528eec58.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I type  in input field have name is Id Name Card</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="397">
+      <screenshots>
+        <screenshot image="b7f89fd2aabec54e5e63b83c1f70b0cb.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I type  in input field have name is Sansan Company ID</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1437">
+      <screenshots>
+        <screenshot image="d02b6cdaaeab4192044feb4ca400e142.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="192">
+      <screenshots>
+        <screenshot image="623f33a71a3eac8bc76444f66193eb88.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, in search Company Sansan Table below have 5 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="338">
+      <screenshots>
+        <screenshot image="233f0ecdd0cfd0951f68c3b7c90d4dd6.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, in search Company Sansan I click one record can click</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="490">
+      <screenshots>
+        <screenshot image="233f0ecdd0cfd0951f68c3b7c90d4dd6.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, in search Company Sansan I verify field in Trade name of customer</description>
+    </test-step>
+    <test-group name="When In Maintain credit data screen, in search Company Sansan I try select this record again" result="FAILURE">
+      <test-step result="FAILURE" duration="154">
+        <screenshots>
+          <screenshot image="233f0ecdd0cfd0951f68c3b7c90d4dd6.png" source="pagesource5948983656614143488.html.txt"/>
+        </screenshots>
+        <description>Unselect record</description>
+        <error>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: unknown</error>
+        <exception>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException:Expected enabled element was not enabled
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: unknown
+[my.lib.serenity.primefaces.component.TableComponent.click_check_box_by_row_index(TableComponent.java:40), my.lib.serenity.primefaces.sars.page.MaintainCreditDataPage.unselectRecord(MaintainCreditDataPage.java:245), my.lib.serenity.primefaces.sars.steps.MaintainCreditDataSteps.unselectRecord(MaintainCreditDataSteps.java:115), my.lib.serenity.primefaces.sars.definition.MaintainCreditDataScenarioSteps.inMaintainCreditDataScreenInSearchCompanySansanIUnselectRecordClickBefore(MaintainCreditDataScenarioSteps.java:124)]</exception>
+      </test-step>
+    </test-group>
+    <test-step result="SKIPPED" duration="2">
+      <description>Then In Maintain credit data screen, in search Company Sansan I verify field in Trade name of customer</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="6">
+      <description>When In Maintain credit data screen, in search Company Sansan I try select this record again</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>And In Maintain credit data screen, in search Company Sansan table I go to next page</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>And In Maintain credit data screen, in search Company Sansan table I go to previous page</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>Then In Maintain credit data screen, in search Company Sansan record selected still there</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

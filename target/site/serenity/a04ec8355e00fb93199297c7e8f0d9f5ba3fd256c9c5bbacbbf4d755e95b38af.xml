@@ -1,0 +1,112 @@
+<acceptance-test-run title="when edit company, click reset after fill all data" name="when edit company, click reset after fill all data" description="" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="22199" timestamp="2016-11-03T20:13:15.275+07:00" session-id="1ade5611e675970de818aca53ca2e32b">
+  <user-story id="company-management" name="company management" path="companyManagement/companyManagement.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Company management" type="capability"/>
+    <tag name="company management" type="feature"/>
+    <tag name="Company management/Company management" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>filterText</header>
+      <header>columnCompanyNameTitle</header>
+      <header>rowIndex</header>
+      <header>companyName</header>
+      <header>buttonText</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Company Management</value>
+        <value>Common</value>
+        <value>CIJ</value>
+        <value>Company name</value>
+        <value>0</value>
+        <value>Test company</value>
+        <value>Reset</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Company Management, menuText=Common, filterText=CIJ, columnCompanyNameTitle=Company name, rowIndex=0, companyName=Test company, buttonText=Reset}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="a4287703e9620e4f4c28d8f80c43f58f.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1493">
+      <screenshots>
+        <screenshot image="2e9ea0df2ff7046cadd5c782166e35d6.png"/>
+      </screenshots>
+      <description>When I open submenu Company Management of menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="832">
+      <screenshots>
+        <screenshot image="cf6f9baa4327053dda3989fd230fc71e.png"/>
+      </screenshots>
+      <description>And In Company management screen, I fill value &apos;CIJ&apos; for filter in column &apos;Company name&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="832">
+      <screenshots>
+        <screenshot image="60bc9f7566bd0c4f7472aee1ff65390d.png"/>
+      </screenshots>
+      <description>And In Company management screen, I select row &apos;0&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2487">
+      <screenshots>
+        <screenshot image="c622f0526214a22d9096a7272d5b8a40.png"/>
+      </screenshots>
+      <description>And I edit company with name Test company</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6417">
+      <screenshots>
+        <screenshot image="36e72bd766740099812f0e899bf247e2.png"/>
+      </screenshots>
+      <description>And I input company detail as below
+| companyFullName | workType | listed | headOffice | customerCode | branches | website |
+| Test company | 土木 | Type One | 岩手県 | z999 | 静岡県, 岡山県 | anlh2207@gmail.com |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1410">
+      <screenshots>
+        <screenshot image="a4287703e9620e4f4c28d8f80c43f58f.png"/>
+      </screenshots>
+      <description>And In Company Detail screen, I click &apos;Reset&apos; button</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="590">
+      <screenshots>
+        <screenshot image="a4287703e9620e4f4c28d8f80c43f58f.png"/>
+      </screenshots>
+      <description>Then The system should reset Company Detail screen</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

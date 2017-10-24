@@ -1,0 +1,87 @@
+<acceptance-test-run title="create new daily report and fill all fields" name="create new daily report and fill all fields" description="" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="36467" timestamp="2016-11-03T08:42:27.940+07:00" session-id="008fe78f33bb3c47dea87fcc38f436c4">
+  <user-story id="register-daily-report" name="register daily report" path="registerDailyReport/registerDailyReport.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Register daily report" type="capability"/>
+    <tag name="register daily report" type="feature"/>
+    <tag name="Register daily report/Register daily report" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Register</value>
+        <value>Daily Report</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Register, menuText=Daily Report}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="14c731c231cc1f96b073e785a59c5df9.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="932">
+      <screenshots>
+        <screenshot image="db6d2104ae39e74111b705cf179bf5c8.png"/>
+      </screenshots>
+      <description>When I open submenu Register of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="14787">
+      <screenshots>
+        <screenshot image="a0126280c2d652da1cc39acd5525ccc9.png"/>
+      </screenshots>
+      <description>And I add new Daily report with data below
+| companyName | content | branch | personInCharge | department | businessType | purpose | reminder | projectFlag | openFlag |
+| 北開工営 | Verify create new daily report and fill all fields | 北海道 | 庭田次長 | atv | ソフトウェア | クレーム | ON | ON | ON |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6390">
+      <screenshots>
+        <screenshot image="4d937f63c902e5fee0fec06ac6466774.png"/>
+      </screenshots>
+      <description>Then The system should show start time and end time required message</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2030">
+      <screenshots>
+        <screenshot image="7ec8af4a46154127178a6415569816dc.png"/>
+      </screenshots>
+      <description>When I fill Daily report screen with data below
+| reminder | reminderFrom | reminderTo |
+| ON | 2016/10/19 | 2016/10/20 |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="855">
+      <screenshots>
+        <screenshot image="121bf7b028ada2995041e35e830e2875.png"/>
+      </screenshots>
+      <description>And In Register daily report, I click button Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6587">
+      <screenshots>
+        <screenshot image="14c731c231cc1f96b073e785a59c5df9.png"/>
+      </screenshots>
+      <description>Then The system should show message save daily report successfully</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

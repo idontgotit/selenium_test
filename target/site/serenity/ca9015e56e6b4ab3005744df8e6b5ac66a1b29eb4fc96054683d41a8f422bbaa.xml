@@ -1,0 +1,188 @@
+<acceptance-test-run title="17. Change page on paging" name="17. Change page on paging" description="" steps="23" successful="23" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="19264" timestamp="2017-02-02T09:52:27.854+07:00" session-id="22456b9a2391748c5873e905ff2d50f6">
+  <user-story id="accounting" name="Accounting" path="creditManagement/creditManagement.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Credit management" type="capability"/>
+    <tag name="Credit management/Accounting" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>validIdNameCard</header>
+      <header>pageNumberOne</header>
+      <header>pageNumberTwo</header>
+      <header>rowIndex</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Credit Management</value>
+        <value>Accounting</value>
+        <value>EC</value>
+        <value>2</value>
+        <value>4</value>
+        <value>0</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Credit Management, menuText=Accounting, validIdNameCard=EC, pageNumberOne=2, pageNumberTwo=4, rowIndex=0}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="0b13856788e585dbb7fa0982146a5e15.png"/>
+      <screenshot image="e614e775de95486f598c185ff7087f68.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1138">
+      <screenshots>
+        <screenshot image="b7bbf502cdf38fb607c3f8203a8a196d.png"/>
+      </screenshots>
+      <description>When I open submenu Credit Management of menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="740">
+      <screenshots>
+        <screenshot image="333ee29da9d9b10853a32e0939c68c34.png"/>
+      </screenshots>
+      <description>And I fill value EC for input id name card</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="238">
+      <screenshots>
+        <screenshot image="aa13d9d5c6ed82ea4fec554b9a358f61.png"/>
+      </screenshots>
+      <description>And I fill value  for input company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="4425">
+      <screenshots>
+        <screenshot image="3d5e38cbe7efbe25a4f5766ff1a13f50.png"/>
+      </screenshots>
+      <description>And I click search button in Credit management</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="207">
+      <screenshots>
+        <screenshot image="839390d186cfcd91eaf2d603f653660b.png"/>
+      </screenshots>
+      <description>Then The system should show table result with records</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="791">
+      <screenshots>
+        <screenshot image="38cffe4a45cf3961fc4733bcec783fb4.png"/>
+      </screenshots>
+      <description>When In accounting screen, I click button last page on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="162">
+      <screenshots>
+        <screenshot image="38cffe4a45cf3961fc4733bcec783fb4.png"/>
+      </screenshots>
+      <description>Then The table result should show last page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="738">
+      <screenshots>
+        <screenshot image="adc02aa293987f913234cd0813fbd1b0.png"/>
+      </screenshots>
+      <description>When In accounting screen, I click button first page on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="194">
+      <screenshots>
+        <screenshot image="adc02aa293987f913234cd0813fbd1b0.png"/>
+      </screenshots>
+      <description>Then The table result should show first page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="719">
+      <screenshots>
+        <screenshot image="00bf610c7a0d1a05d0273294efd3750c.png"/>
+      </screenshots>
+      <description>When I click page 2 on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="158">
+      <screenshots>
+        <screenshot image="00bf610c7a0d1a05d0273294efd3750c.png"/>
+      </screenshots>
+      <description>Then The system should change table result to selected page 2</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="737">
+      <screenshots>
+        <screenshot image="190172f8bb0d344e92ecb1a9c6794e67.png"/>
+      </screenshots>
+      <description>When In accounting screen, I click button next on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="152">
+      <screenshots>
+        <screenshot image="190172f8bb0d344e92ecb1a9c6794e67.png"/>
+      </screenshots>
+      <description>Then The system should change table result to selected page 2 + 1</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="720">
+      <screenshots>
+        <screenshot image="00588a4c6e1ed89e3a08f38aee8dcfb5.png"/>
+      </screenshots>
+      <description>When I click page 2 on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="219">
+      <screenshots>
+        <screenshot image="00588a4c6e1ed89e3a08f38aee8dcfb5.png"/>
+      </screenshots>
+      <description>Then The system should change table result to selected page 2</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="747">
+      <screenshots>
+        <screenshot image="3cf31ff0a281a82ae536484a8347ed39.png"/>
+      </screenshots>
+      <description>When In accounting screen, I click button back on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="152">
+      <screenshots>
+        <screenshot image="3cf31ff0a281a82ae536484a8347ed39.png"/>
+      </screenshots>
+      <description>Then The system should change table result to selected page 2 - 1</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="229">
+      <screenshots>
+        <screenshot image="945f5fc5b291ad762821bcc7e8065707.png"/>
+      </screenshots>
+      <description>When I click a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="713">
+      <screenshots>
+        <screenshot image="e614e775de95486f598c185ff7087f68.png"/>
+      </screenshots>
+      <description>And I click page 4 on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="157">
+      <screenshots>
+        <screenshot image="e614e775de95486f598c185ff7087f68.png"/>
+      </screenshots>
+      <description>Then The system should change table result to selected page 4</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="159">
+      <screenshots>
+        <screenshot image="e614e775de95486f598c185ff7087f68.png"/>
+      </screenshots>
+      <description>And The table result has no selected row</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="148">
+      <screenshots>
+        <screenshot image="e614e775de95486f598c185ff7087f68.png"/>
+      </screenshots>
+      <description>And The table result show no row selected</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="152">
+      <screenshots>
+        <screenshot image="e614e775de95486f598c185ff7087f68.png"/>
+      </screenshots>
+      <description>And Button Select disabled</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

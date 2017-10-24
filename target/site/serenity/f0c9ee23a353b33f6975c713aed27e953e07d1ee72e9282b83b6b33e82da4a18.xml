@@ -1,0 +1,65 @@
+<acceptance-test-run title="switch to notification setting page" name="switch to notification setting page" description="" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="12331" timestamp="2016-11-03T20:06:23.350+07:00" session-id="5049f77184e1913fa059ff0fb451f225">
+  <user-story id="view-notification" name="View Notification" path="viewNotifications/viewNotifications.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="View notifications" type="capability"/>
+    <tag name="View Notification" type="feature"/>
+    <tag name="View notifications/View notification" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>buttonText</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>View Notifications</value>
+        <value>Notification</value>
+        <value>Notification Setting</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=View Notifications, menuText=Notification, buttonText=Notification Setting}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="e4c9bd7c59197fa37031bcdc1e997b33.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1602">
+      <screenshots>
+        <screenshot image="ab7a9f250836007658f76ae7bdada888.png"/>
+      </screenshots>
+      <description>When I open submenu View Notifications of menu Notification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1969">
+      <screenshots>
+        <screenshot image="e4c9bd7c59197fa37031bcdc1e997b33.png"/>
+      </screenshots>
+      <description>And In View notification screen, I click button &apos;Notification Setting&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="151">
+      <screenshots>
+        <screenshot image="e4c9bd7c59197fa37031bcdc1e997b33.png"/>
+      </screenshots>
+      <description>Then The system should switch to Notification setting screen</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

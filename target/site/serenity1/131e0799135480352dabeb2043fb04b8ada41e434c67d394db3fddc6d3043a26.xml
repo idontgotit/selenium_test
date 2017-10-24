@@ -1,0 +1,96 @@
+<acceptance-test-run title="verify mark all as read function" name="verify mark all as read function" description="" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="15464" timestamp="2016-11-03T08:47:28.616+07:00" session-id="e02788a4687a6dd95353ac181b190d1d">
+  <user-story id="view-notification" name="View Notification" path="viewNotifications/viewNotifications.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="View notifications" type="capability"/>
+    <tag name="View Notification" type="feature"/>
+    <tag name="View notifications/View notification" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>markAllAsReadButtonTitle</header>
+      <header>buttonNoTile</header>
+      <header>buttonYesTile</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>View Notifications</value>
+        <value>Notification</value>
+        <value>Mark all as read</value>
+        <value>No</value>
+        <value>Yes</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=View Notifications, menuText=Notification, markAllAsReadButtonTitle=Mark all as read, buttonNoTile=No, buttonYesTile=Yes}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="07424a867ccd5ed1944295b5ed2a2828.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1358">
+      <screenshots>
+        <screenshot image="3d70d04f3471d6723100146bbf9d9578.png"/>
+      </screenshots>
+      <description>When I open submenu View Notifications of menu Notification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="309">
+      <screenshots>
+        <screenshot image="391608c0b8a2796fe725bc04a2fd781b.png"/>
+      </screenshots>
+      <description>And In View notification screen, I click button &apos;Mark all as read&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="254">
+      <screenshots>
+        <screenshot image="3dad48932dbf86213fc9f954dcc7e36c.png"/>
+      </screenshots>
+      <description>And In View notification screen, I click button &apos;No&apos; in  confirm dialog</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="247">
+      <screenshots>
+        <screenshot image="3dad48932dbf86213fc9f954dcc7e36c.png"/>
+      </screenshots>
+      <description>Then The system should show initialization screen of View Notifications page when have data</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="209">
+      <screenshots>
+        <screenshot image="391608c0b8a2796fe725bc04a2fd781b.png"/>
+      </screenshots>
+      <description>When In View notification screen, I click button &apos;Mark all as read&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="779">
+      <screenshots>
+        <screenshot image="f891557d1690987aed30c3ea74284435.png"/>
+      </screenshots>
+      <description>And In View notification screen, I click button &apos;Yes&apos; in  confirm dialog</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6606">
+      <screenshots>
+        <screenshot image="07424a867ccd5ed1944295b5ed2a2828.png"/>
+      </screenshots>
+      <description>Then The system should show message mark all successfully</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

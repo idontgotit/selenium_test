@@ -1,0 +1,123 @@
+<acceptance-test-run title="when edit company, click cancel after fill all data" name="when edit company, click cancel after fill all data" description="" steps="7" successful="4" failures="0" errors="1" skipped="2" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="18424" timestamp="2016-11-03T20:13:38.718+07:00" session-id="1ade5611e675970de818aca53ca2e32b">
+  <user-story id="company-management" name="company management" path="companyManagement/companyManagement.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Company management" type="capability"/>
+    <tag name="company management" type="feature"/>
+    <tag name="Company management/Company management" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>filterText</header>
+      <header>columnCompanyNameTitle</header>
+      <header>rowIndex</header>
+      <header>companyName</header>
+    </headers>
+    <rows>
+      <row result="ERROR">
+        <value>Company Management</value>
+        <value>Common</value>
+        <value>CIJ</value>
+        <value>Company name</value>
+        <value>0</value>
+        <value>Test company</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Company Management, menuText=Common, filterText=CIJ, columnCompanyNameTitle=Company name, rowIndex=0, companyName=Test company}" result="ERROR">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1168">
+      <screenshots>
+        <screenshot image="ae69aa8fa2d8fa1ac7eec94a5916f8a0.png"/>
+      </screenshots>
+      <description>When I open submenu Company Management of menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="882">
+      <screenshots>
+        <screenshot image="cf6f9baa4327053dda3989fd230fc71e.png"/>
+      </screenshots>
+      <description>And In Company management screen, I fill value &apos;CIJ&apos; for filter in column &apos;Company name&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="779">
+      <screenshots>
+        <screenshot image="e45cd976ce9f10c984e1c230d19772ee.png"/>
+      </screenshots>
+      <description>And In Company management screen, I select row &apos;0&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2382">
+      <screenshots>
+        <screenshot image="c622f0526214a22d9096a7272d5b8a40.png"/>
+      </screenshots>
+      <description>And I edit company with name Test company</description>
+    </test-step>
+    <test-group name="And I input company detail as below&#xa;| companyFullName | workType | listed | headOffice | customerCode | branches | website |&#xa;| Test company | 土木 | Type One | 岩手県 | z999 | 静岡県, 岡山県 | anlh2207@gmail.com |" result="ERROR">
+      <test-step result="ERROR" duration="280">
+        <screenshots>
+          <screenshot image="8628e34fbe164863e0fd7089973bfeb7.png" source="pagesource4596406612230682780.html.txt"/>
+        </screenshots>
+        <description>Input company detail: my.lib.serenity.primefaces.sars.model.CompanyDetailModel@8c2bb88</description>
+        <error>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (413, 664). Other element would receive the click: &lt;td style=&quot;width:75%;&quot;&gt;...&lt;/td&gt;
+  (Session info: chrome=53.0.2785.116)
+  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 136 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.frInIc}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1ade5611e675970de818aca53ca2e32b</error>
+        <exception>org.openqa.selenium.WebDriverException:unknown error: Element is not clickable at point (413, 664). Other element would receive the click: &lt;td style=&quot;width:75%;&quot;&gt;...&lt;/td&gt;
+  (Session info: chrome=53.0.2785.116)
+  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 136 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.frInIc}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1ade5611e675970de818aca53ca2e32b
+[my.lib.serenity.primefaces.sars.page.CompanyManagementPage.select_branch_by_name(CompanyManagementPage.java:240), my.lib.serenity.primefaces.sars.page.CompanyManagementPage.input_company_detail(CompanyManagementPage.java:232), my.lib.serenity.primefaces.sars.steps.CompanyManagementSteps.input_company_detail(CompanyManagementSteps.java:202), my.lib.serenity.primefaces.sars.definition.CompanyManagementScenarioSteps.then_i_input_company_detail(CompanyManagementScenarioSteps.java:122)]</exception>
+      </test-step>
+    </test-group>
+    <test-step result="SKIPPED" duration="1">
+      <description>And In Company Detail screen, I click button back</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>Then The system should show table company with record found</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

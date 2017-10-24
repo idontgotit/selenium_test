@@ -1,0 +1,76 @@
+<acceptance-test-run title="Open Notification Setting click view notification" name="Open Notification Setting click view notification" description="" steps="6" successful="0" failures="1" skipped="5" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="6862" timestamp="2016-11-03T19:55:28.870+07:00" session-id="e5f323a40e5dcd2da3c56b4df45027e8">
+  <user-story id="notification-setting-display" name="Notification Setting display" path="notification_setting/notification_setting.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Notification setting" type="capability"/>
+    <tag name="Notification Setting display" type="feature"/>
+    <tag name="Notification setting/Notification setting display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>notificationMenu</header>
+      <header>parentMenuText</header>
+      <header>viewNotification</header>
+      <header>statusViewNotifications</header>
+    </headers>
+    <rows>
+      <row result="FAILURE">
+        <value>Notification Setting</value>
+        <value>Notification</value>
+        <value>View Notifications</value>
+        <value>Visible</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {notificationMenu=Notification Setting, parentMenuText=Notification, viewNotification=View Notifications, statusViewNotifications=Visible}" result="FAILURE">
+    <test-step result="FAILURE" duration="139">
+      <screenshots>
+        <screenshot image="cb35f7f88f115a334f2b3a336383f7d2.png" source="pagesource7728803223520990165.html.txt"/>
+      </screenshots>
+      <description>Login: 9999999, triarrow</description>
+      <error>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: unknown</error>
+      <exception>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException:Expected enabled element was not enabled
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: unknown
+[my.lib.serenity.primefaces.sars.page.LoginPage.login(LoginPage.java:41), my.lib.serenity.primefaces.sars.steps.LoginSteps.login(LoginSteps.java:32), my.lib.serenity.primefaces.sars.definition.CommonScenarioSteps.beforeLoggedIn(CommonScenarioSteps.java:22)]</exception>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>When I open submenu Notification Setting of parent menu Notification</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="7">
+      <description>Then The system should open &apos;Notification&apos; page</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>And In Notification Setting screen, link View Notifications is Visible</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>And In Notification Setting screen, I click in View Notifications</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>Then In Notification Setting screen, System show screen View Notification have buttons
+| Mark all as read |
+| Notification Setting |</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

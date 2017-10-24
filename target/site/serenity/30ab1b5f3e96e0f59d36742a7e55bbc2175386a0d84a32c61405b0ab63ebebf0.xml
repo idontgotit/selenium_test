@@ -1,0 +1,98 @@
+<acceptance-test-run title="21. Open Employee Management and verify when select 1 record, change page and back" name="21. Open Employee Management and verify when select 1 record, change page and back" description="" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="8854" timestamp="2016-11-21T13:51:14.590+07:00" session-id="066a9777a64f84425d7f4f432120cd68">
+  <user-story id="run-feature-for-debugging" name="Run feature for debugging" path="debug/debug.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Debug" type="capability"/>
+    <tag name="Debug/Run feature for debugging" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>employeeMenu</header>
+      <header>parentMenuText</header>
+      <header>addBtn</header>
+      <header>empName</header>
+      <header>empMaxLength</header>
+      <header>email</header>
+      <header>emailMaxLength</header>
+      <header>tel</header>
+      <header>telMaxLength</header>
+      <header>mobile</header>
+      <header>mobileMaxLength</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>Add</value>
+        <value>Employee Name</value>
+        <value>32</value>
+        <value>Email</value>
+        <value>32</value>
+        <value>Tel.</value>
+        <value>13</value>
+        <value>Mobile</value>
+        <value>13</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, addBtn=Add, empName=Employee Name, empMaxLength=32, email=Email, emailMaxLength=32, tel=Tel., telMaxLength=13, mobile=Mobile, mobileMaxLength=13}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="e31d17f186613744188e5432e4d323f2.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1056">
+      <screenshots>
+        <screenshot image="1884f0e16f4355b54cce2b10b2546ed1.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1299">
+      <screenshots>
+        <screenshot image="fb266caf4d876a3c700c410199de1111.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="270">
+      <screenshots>
+        <screenshot image="e31d17f186613744188e5432e4d323f2.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Verify input field Employee Name with max length 32</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="230">
+      <screenshots>
+        <screenshot image="e31d17f186613744188e5432e4d323f2.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, Verify input field Email with max length 32</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="175">
+      <screenshots>
+        <screenshot image="e31d17f186613744188e5432e4d323f2.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, Verify input field Mobile with max length 13</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="220">
+      <screenshots>
+        <screenshot image="e31d17f186613744188e5432e4d323f2.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, Verify input field Tel. with max length 13</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

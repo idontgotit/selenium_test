@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Run feature for debugging" skipped="0" tests="6" time="67.79" timestamp="2016-11-326 01:14:22"><testcase name="3. Open Employee Management and filter Employee input"/><testcase name="4. Open Employee Management and filter Employee select box"/><testcase name="5. Open Employee Management and sort all column"><failure message="expected:&lt;[tru]e&gt; but was:&lt;[fals]e&gt;" type="java.lang.AssertionError">expected:&lt;[tru]e&gt; but was:&lt;[fals]e&gt;</failure><system-err>expected:&lt;[tru]e&gt; but was:&lt;[fals]e&gt;
+my.lib.serenity.primefaces.sars.steps.EmployeeManagementSteps.verifyResultAfterSort(EmployeeManagementSteps.java:100)
+my.lib.serenity.primefaces.sars.definition.EmployeeManagementScenarioSteps.tableShowResultInColumnIsAscending(EmployeeManagementScenarioSteps.java:95)
+</system-err></testcase></testsuite>

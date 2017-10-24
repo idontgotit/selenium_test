@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: my.lib.serenity.primefaces.sars.features.menu.VerifyAllMenusFeature
+-------------------------------------------------------------------------------
+Tests run: 80, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 71.272 sec - in my.lib.serenity.primefaces.sars.features.menu.VerifyAllMenusFeature

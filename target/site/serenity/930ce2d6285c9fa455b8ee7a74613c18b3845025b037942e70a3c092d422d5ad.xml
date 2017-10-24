@@ -1,0 +1,125 @@
+<acceptance-test-run title="3. Open Notification Setting and verify start screen have setting" name="3. Open Notification Setting and verify start screen have setting" description="" steps="11" successful="11" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="12974" timestamp="2017-01-17T14:50:35.386+07:00" session-id="06e0ad5ac6b979a78306fe6ce7224079">
+  <user-story id="run-feature-for-debugging" name="Run feature for debugging" path="debug/debug.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Debug" type="capability"/>
+    <tag name="Debug/Run feature for debugging" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>notificationMenu</header>
+      <header>pageTitle</header>
+      <header>parentMenuText</header>
+      <header>numberClm</header>
+      <header>statusViewNotifications</header>
+      <header>number</header>
+      <header>string</header>
+      <header>lang</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Notification Setting</value>
+        <value>Notification</value>
+        <value>Notification</value>
+        <value>6</value>
+        <value>Visible</value>
+        <value>4009912</value>
+        <value>123456</value>
+        <value>en</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {notificationMenu=Notification Setting, pageTitle=Notification, parentMenuText=Notification, numberClm=6, statusViewNotifications=Visible, number=4009912, string=123456, lang=en}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4bc7de42b9b0804baad08d9569838ac1.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="3325">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>When I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2670">
+      <screenshots>
+        <screenshot image="617d41b902e1df6119a620f9391ddde8.png"/>
+        <screenshot image="1bcaa3347ef114c4462a3b1e796e6fd6.png"/>
+      </screenshots>
+      <description>And I input my credentials username 4009912 and password 123456</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1885">
+      <screenshots>
+        <screenshot image="27396077e924dabddbf71e6c477f9d9e.png"/>
+      </screenshots>
+      <description>And I change language to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1122">
+      <screenshots>
+        <screenshot image="ed18d19cddb16c62ad38c529cf8d0769.png"/>
+      </screenshots>
+      <description>And I open submenu Notification Setting of parent menu Notification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="409">
+      <screenshots>
+        <screenshot image="49a93d6dbeb6b8c086456cdc2ff23b10.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Notification&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="352">
+      <screenshots>
+        <screenshot image="49a93d6dbeb6b8c086456cdc2ff23b10.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, Table in the right have 6 columns</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="168">
+      <screenshots>
+        <screenshot image="49a93d6dbeb6b8c086456cdc2ff23b10.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, Table in the right have any record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="358">
+      <screenshots>
+        <screenshot image="49a93d6dbeb6b8c086456cdc2ff23b10.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, Table in the right have columns like below
+| Employee Code |
+| Employee Name |
+| Type |
+| Enable? |
+| Unread |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="298">
+      <screenshots>
+        <screenshot image="49a93d6dbeb6b8c086456cdc2ff23b10.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, Table in the left have list select box can select
+| Branch |
+| Position |
+| Employee Name |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="152">
+      <screenshots>
+        <screenshot image="49a93d6dbeb6b8c086456cdc2ff23b10.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, link View Notifications is Visible</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1537">
+      <screenshots>
+        <screenshot image="4bc7de42b9b0804baad08d9569838ac1.png"/>
+      </screenshots>
+      <description>And I logout from system</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

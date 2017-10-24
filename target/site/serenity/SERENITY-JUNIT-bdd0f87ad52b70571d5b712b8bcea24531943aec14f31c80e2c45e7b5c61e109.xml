@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Run feature for debugging" skipped="0" tests="1" time="45.02" timestamp="2016-12-343 02:05:15"><testcase name="8. Change screen and fill sample data New Report--&gt;Back--&gt;Edit--&gt;Back--&gt;View--&gt;Back--&gt;Duplicate."><error message="unknown error: Cannot read property 'ajax' of null&#10;  (Session info: chrome=54.0.2840.100)&#10;  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 4 milliseconds&#10;Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'&#10;System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.AAg24T}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.100, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: 1c20b6be84e43e36a91cb2aaf71bdbaf&#10;Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'&#10;System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.WebDriverException">unknown error: Cannot read property 'ajax' of null
+  (Session info: chrome=54.0.2840.100)
+  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.AAg24T}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.100, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1c20b6be84e43e36a91cb2aaf71bdbaf
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'
+Driver info: driver.version: unknown</error><system-err>unknown error: Cannot read property 'ajax' of null
+  (Session info: chrome=54.0.2840.100)
+  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.AAg24T}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.100, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1c20b6be84e43e36a91cb2aaf71bdbaf
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'
+Driver info: driver.version: unknown
+my.lib.serenity.primefaces.component.WebComponent.executeBooleanJavascript(WebComponent.java:91)
+my.lib.serenity.primefaces.component.WebComponent.access$000(WebComponent.java:18)
+my.lib.serenity.primefaces.component.WebComponent.waitForJQueryAndPrimeFaces(WebComponent.java:51)
+my.lib.serenity.primefaces.component.WebComponent.waitForAjaxDone(WebComponent.java:95)
+my.lib.serenity.primefaces.component.InputTextComponent.type_and_wait(InputTextComponent.java:29)
+my.lib.serenity.primefaces.component.AutoCompleteComponent.input_text(AutoCompleteComponent.java:25)
+my.lib.serenity.primefaces.sars.page.CreditManagementPage.verifyAutoCompleteCanInput(CreditManagementPage.java:505)
+my.lib.serenity.primefaces.sars.steps.CreditManagementCompanyAndCreditDataSteps.autoCompleteCanInput(CreditManagementCompanyAndCreditDataSteps.java:136)
+my.lib.serenity.primefaces.sars.definition.CreditManagementCompanyAndCreditDataScenarioSteps.inCreditManagementPageAutocompleteFieldsCanInput(CreditManagementCompanyAndCreditDataScenarioSteps.java:131)
+</system-err></testcase></testsuite>

@@ -1,0 +1,126 @@
+<acceptance-test-run title="select record -&gt; duplicate -&gt; reset" name="select record -&gt; duplicate -&gt; reset" description="" steps="11" successful="11" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="22969" timestamp="2016-11-03T09:10:09.950+07:00" session-id="63ceda5c400d1bbb0f02bb341b3f6177">
+  <user-story id="credit-management-test-4-6" name="Credit management test 4-6" path="creditManagement/creadit_management_test46_company_and_credit_data.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Credit management" type="capability"/>
+    <tag name="Credit management test 4-6" type="feature"/>
+    <tag name="Credit management/Credit management test 4 6" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>validCustomerCode</header>
+      <header>rowIndex</header>
+      <header>btnReset</header>
+      <header>rowIndex2CreditHistory</header>
+      <header>btnDuplicate</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Credit Management</value>
+        <value>Accounting</value>
+        <value>A567</value>
+        <value>0</value>
+        <value>Reset</value>
+        <value>0</value>
+        <value>Duplicate</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Credit Management, menuText=Accounting, validCustomerCode=A567, rowIndex=0, btnReset=Reset, rowIndex2CreditHistory=0, btnDuplicate=Duplicate}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="594179382487cda8ab388a599b717b3f.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1199">
+      <screenshots>
+        <screenshot image="c4634420ffa7bf01963ee36df4ce3c39.png"/>
+      </screenshots>
+      <description>When I open submenu Credit Management of menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2083">
+      <screenshots>
+        <screenshot image="8ff4a57da07ba804e1ad44fc7a401473.png"/>
+      </screenshots>
+      <description>And I search customer by code A567</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="532">
+      <screenshots>
+        <screenshot image="c58a8514da79c7750217516d8ef162df.png"/>
+      </screenshots>
+      <description>And I click checkbox left of a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1448">
+      <screenshots>
+        <screenshot image="5f13ba653af124cc9b3e9714d79cf457.png"/>
+      </screenshots>
+      <description>And In accounting screen, I click button select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1537">
+      <screenshots>
+        <screenshot image="cef6e729832ee5f4a6f78cf348726d80.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click record 0 in table Credit History in bottom with View enable</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2582">
+      <screenshots>
+        <screenshot image="54f11ddb0a00d79f1bcffb203ae5de74.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Duplicate</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1375">
+      <screenshots>
+        <screenshot image="a2d48d6dec55e941606d551f8fd4d37b.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Reset</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1691">
+      <screenshots>
+        <screenshot image="8456fa0c404d281d9b049fda18f279c2.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I confirm action</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="348">
+      <screenshots>
+        <screenshot image="4107ba641e596022d4eaf3af3d154159.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show list button can use
+| Back |
+| Approve |
+| Save draft |
+| Reset |
+| Choose file upload |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="209">
+      <screenshots>
+        <screenshot image="4107ba641e596022d4eaf3af3d154159.png"/>
+      </screenshots>
+      <description>And In Credit Management page, System show list button can not use
+| Upload |
+| Cancel |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="4204">
+      <screenshots>
+        <screenshot image="407dacddac26b80342e8b806fe8c7fd0.png"/>
+      </screenshots>
+      <description>And In Credit Management page, verify page after reset</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

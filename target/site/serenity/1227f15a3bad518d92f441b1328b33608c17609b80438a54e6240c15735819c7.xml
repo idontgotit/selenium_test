@@ -1,0 +1,53 @@
+<acceptance-test-run title="initialization screen" name="initialization screen" description="" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="10693" timestamp="2016-11-03T19:56:11.764+07:00" session-id="b0757e2a3e35e2909d57069c8784c35b">
+  <user-story id="search-daily-report-by-date" name="Search Daily report by date" path="searchDailyReportByDate/searchDailyReportByDate.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Search daily report by date" type="capability"/>
+    <tag name="Search Daily report by date" type="feature"/>
+    <tag name="Search daily report by date/Search daily report by date" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Search By Date</value>
+        <value>Daily Report</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Search By Date, menuText=Daily Report}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="05fa384c9c63d103400368a0707af3c5.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1590">
+      <screenshots>
+        <screenshot image="c24a46b46a5cb9a2c41e95b652f7fd45.png"/>
+      </screenshots>
+      <description>When I open submenu Search By Date of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="608">
+      <screenshots>
+        <screenshot image="05fa384c9c63d103400368a0707af3c5.png"/>
+      </screenshots>
+      <description>Then The system should show initialization screen of Search by Date page</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

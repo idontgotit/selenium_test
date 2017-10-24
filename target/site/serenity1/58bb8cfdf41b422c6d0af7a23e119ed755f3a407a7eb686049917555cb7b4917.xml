@@ -1,0 +1,103 @@
+<acceptance-test-run title="show all business detail" name="show all business detail" description="" steps="8" successful="8" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="10919" timestamp="2016-11-03T08:39:10.049+07:00" session-id="9c5954d4ef1ac2845c372d3f713dec30">
+  <user-story id="search-daily-report-by-date" name="Search Daily report by date" path="searchDailyReportByDate/searchDailyReportByDate.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Search daily report by date" type="capability"/>
+    <tag name="Search Daily report by date" type="feature"/>
+    <tag name="Search daily report by date/Search daily report by date" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>buttonSearchText</header>
+      <header>branchName</header>
+      <header>employeeInfo</header>
+      <header>date</header>
+      <header>buttonShowAllText</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Search By Date</value>
+        <value>Daily Report</value>
+        <value>Search</value>
+        <value>福岡県</value>
+        <value>40000005</value>
+        <value>2012/11/28</value>
+        <value>Show all Business Detail</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Search By Date, menuText=Daily Report, buttonSearchText=Search, branchName=福岡県, employeeInfo=40000005, date=2012/11/28, buttonShowAllText=Show all Business Detail}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="8aa491677935b6f9d3fa88fccc92e47c.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="862">
+      <screenshots>
+        <screenshot image="097fe16d027553ff2b631803b349f238.png"/>
+      </screenshots>
+      <description>When I open submenu Search By Date of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="968">
+      <screenshots>
+        <screenshot image="f1dc05110e7a7fb215842a03157460b4.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I select date 2012/11/28 in item Date</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="804">
+      <screenshots>
+        <screenshot image="d6218d3ac6ade35c0613b4a6ad772fe8.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I choose a branch 福岡県 in dropdown Branch</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="240">
+      <screenshots>
+        <screenshot image="a407dd4b39143164bfd775b5ccdff52d.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I type value 40000005 for autocomplete Employee</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1342">
+      <screenshots>
+        <screenshot image="a29d1577baa25350cf341c5e00d60430.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I choose 40000005 employee in dropdown of autocomplete Employee</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="776">
+      <screenshots>
+        <screenshot image="350960ac71276c24db9de9cdb49c40bd.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I click button &apos;Search&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="894">
+      <screenshots>
+        <screenshot image="d792b878efa4143c32450610ce3276fd.png"/>
+      </screenshots>
+      <description>When In Search by date screen, I click button &apos;Show all Business Detail&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="195">
+      <screenshots>
+        <screenshot image="8aa491677935b6f9d3fa88fccc92e47c.png"/>
+      </screenshots>
+      <description>Then The table Search by date result should expand all row</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

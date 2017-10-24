@@ -1,0 +1,444 @@
+<acceptance-test-run title="verify approve required data" name="verify approve required data" description="" steps="58" successful="58" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="147610" timestamp="2016-11-03T20:19:20.386+07:00" session-id="a8f12ad9a0f85553a99e2c0b74f4354f">
+  <user-story id="credit-management-add-and-edit" name="Credit management add and edit" path="creditManagement/credit_management_add_edit.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Credit management" type="capability"/>
+    <tag name="Credit management/Credit management add and edit" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>validCustomerCode</header>
+      <header>rowIndex</header>
+      <header>surveySelect</header>
+      <header>indexAccounting</header>
+      <header>valueSurvey</header>
+      <header>valueIndexAccounting</header>
+      <header>dateOfSurvey</header>
+      <header>creditScore</header>
+      <header>valueCreditScore</header>
+      <header>tradingCondition</header>
+      <header>valueTrading</header>
+      <header>zipCode</header>
+      <header>valueZipCode</header>
+      <header>address</header>
+      <header>tel</header>
+      <header>valueTel</header>
+      <header>fiscal</header>
+      <header>valueFiscal</header>
+      <header>tabBussi</header>
+      <header>btnApprove</header>
+      <header>successSave</header>
+      <header>tabIndustry</header>
+      <header>btnNewReport</header>
+      <header>isRequired</header>
+      <header>industryMain</header>
+      <header>industrySub</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Credit Management</value>
+        <value>Accounting</value>
+        <value>a567</value>
+        <value>0</value>
+        <value>Survey institute and information source</value>
+        <value>Index for accounting system</value>
+        <value>帝国データ</value>
+        <value>12</value>
+        <value>Date of survey</value>
+        <value>Credit score number</value>
+        <value>10</value>
+        <value>Trading condition category</value>
+        <value>通常取引</value>
+        <value>Zip code of HQ</value>
+        <value>111-1111</value>
+        <value>Address of HQ (all)</value>
+        <value>Tel.</value>
+        <value>023-345-3212</value>
+        <value>Fiscal closing month</value>
+        <value>01月</value>
+        <value>Business factors</value>
+        <value>Approve</value>
+        <value>Save successfully</value>
+        <value>Industry classification</value>
+        <value>New report</value>
+        <value>is required</value>
+        <value>Industry category code (main)</value>
+        <value>Industry category code (subsidiary)</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Credit Management, menuText=Accounting, validCustomerCode=a567, rowIndex=0, surveySelect=Survey institute and information source, indexAccounting=Index for accounting system, valueSurvey=帝国データ, valueIndexAccounting=12, dateOfSurvey=Date of survey, creditScore=Credit score number, valueCreditScore=10, tradingCondition=Trading condition category, valueTrading=通常取引, zipCode=Zip code of HQ, valueZipCode=111-1111, address=Address of HQ (all), tel=Tel., valueTel=023-345-3212, fiscal=Fiscal closing month, valueFiscal=01月, tabBussi=Business factors, btnApprove=Approve, successSave=Save successfully, tabIndustry=Industry classification, btnNewReport=New report, isRequired=is required, industryMain=Industry category code (main), industrySub=Industry category code (subsidiary)}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="d9d6e042c0207f4ca08831a2af0b94c1.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="891">
+      <screenshots>
+        <screenshot image="4231154e18e9f0e97edf4d2242edcda5.png"/>
+      </screenshots>
+      <description>When I open submenu Credit Management of menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1543">
+      <screenshots>
+        <screenshot image="4dedcc707a23f7254f7ffafec097c010.png"/>
+      </screenshots>
+      <description>And I search customer by code a567</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="435">
+      <screenshots>
+        <screenshot image="577af23306dfde05851ec5a523511b0d.png"/>
+      </screenshots>
+      <description>And I click checkbox left of a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1794">
+      <screenshots>
+        <screenshot image="3e4a252210d89678094633c736cca795.png"/>
+      </screenshots>
+      <description>And In accounting screen, I click button select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="849">
+      <screenshots>
+        <screenshot image="70563eba5cd06ab52b1635844f113e3e.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click record 0 in table Credit History in bottom with View enable</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2298">
+      <screenshots>
+        <screenshot image="64e4451a04ce6e276205f9d14dc2a800.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button New report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1234">
+      <screenshots>
+        <screenshot image="099909cf955cb6104c30c4ee91ae069d.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Approve</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2569">
+      <screenshots>
+        <screenshot image="da25970d37f29f5633666feda923fcc0.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I confirm action</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6869">
+      <screenshots>
+        <screenshot image="dfb878751719a98257fde96cbfc0a92c.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show first message Survey institute and information source is required</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1237">
+      <screenshots>
+        <screenshot image="077ad2e0323ea77e7596e0696735de29.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I select in Survey institute and information source is 帝国データ</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1288">
+      <screenshots>
+        <screenshot image="eee6ba3cffc9440c1b936c71307cb83b.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Approve</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2047">
+      <screenshots>
+        <screenshot image="eface770eba951905e76dff706c3f4e1.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I confirm action</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6783">
+      <screenshots>
+        <screenshot image="4ca29ab16a7744ab9010789c9f8645d9.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show first message Date of survey is required</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1100">
+      <screenshots>
+        <screenshot image="595cd9fa7ea3308be54f94197ba25783.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I change survey date to next day of selected record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1301">
+      <screenshots>
+        <screenshot image="ad9104610eff1f2cc8da027a5cabdc6b.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Approve</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2039">
+      <screenshots>
+        <screenshot image="734d3ae438739a2ca5cf661d5112ded5.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I confirm action</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6831">
+      <screenshots>
+        <screenshot image="be7b73f5f8b4a511c387f9e1304d8f6c.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show first message Index for accounting system is required</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="778">
+      <screenshots>
+        <screenshot image="21092b804a9da28f4078d07a92ff1547.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I type in Index for accounting system is 12</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1245">
+      <screenshots>
+        <screenshot image="ad9104610eff1f2cc8da027a5cabdc6b.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Approve</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1932">
+      <screenshots>
+        <screenshot image="550ae00c37f8a80e8edb27b895c51de1.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I confirm action</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6843">
+      <screenshots>
+        <screenshot image="21092b804a9da28f4078d07a92ff1547.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show first message Credit score number is required</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="788">
+      <screenshots>
+        <screenshot image="de89f1b7ab9613caf2824ccd1cccb958.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I type in Credit score number is 10</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1239">
+      <screenshots>
+        <screenshot image="8d138bd2011222aba78836cab267e85f.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Approve</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1952">
+      <screenshots>
+        <screenshot image="ba8921afadbbd8f1ade4570a96ec5233.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I confirm action</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6845">
+      <screenshots>
+        <screenshot image="dfb07e50d19148a75183ffdaf8dd1b19.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show first message Trading condition category is required</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1008">
+      <screenshots>
+        <screenshot image="6a1c3cb3f82a464210783d05c0b88d86.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I select in Trading condition category is 通常取引</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1242">
+      <screenshots>
+        <screenshot image="4b34918fdaa0b9f09d72cbf042ae3c1d.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Approve</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2039">
+      <screenshots>
+        <screenshot image="1eaf303e24f4212c536c330c54538fe7.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I confirm action</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6814">
+      <screenshots>
+        <screenshot image="6b15212d4d4557a16b6f067b59102adb.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show first message Zip code of HQ is required</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="715">
+      <screenshots>
+        <screenshot image="2312a308426fc2d508eb2b3b442c5d55.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I select tab have name is Business factors</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1174">
+      <screenshots>
+        <screenshot image="749f19aa4d0bee9714ee0a8b20a54f2a.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I type in Zip code of HQ is 111-1111</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1255">
+      <screenshots>
+        <screenshot image="883e9a0f3a61a218311b388876b02d37.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Approve</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1951">
+      <screenshots>
+        <screenshot image="ff28692ef1bf0b6340119841835474f7.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I confirm action</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6828">
+      <screenshots>
+        <screenshot image="6b15212d4d4557a16b6f067b59102adb.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show first message Address of HQ (all) is required</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="706">
+      <screenshots>
+        <screenshot image="5bcd72312f71b96d3bdd535793418dfc.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I select tab have name is Business factors</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1157">
+      <screenshots>
+        <screenshot image="a5f436688fb0a88dba73e9c23f7bb5e2.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I type in Address of HQ (all) is 111-1111</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1248">
+      <screenshots>
+        <screenshot image="2d7eb3f3925841661df969c9189ed07a.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Approve</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1994">
+      <screenshots>
+        <screenshot image="858a2d0e70770b5ed7712fecd3b2ec8c.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I confirm action</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6832">
+      <screenshots>
+        <screenshot image="6b15212d4d4557a16b6f067b59102adb.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show first message Tel. is required</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="689">
+      <screenshots>
+        <screenshot image="a8567a50f3d81541a9cb2a31c12990ae.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I select tab have name is Business factors</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1146">
+      <screenshots>
+        <screenshot image="10fdbd5d89f1de43e8893cec312a5a9c.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I type in Tel. is 023-345-3212</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1274">
+      <screenshots>
+        <screenshot image="36778ddcd15ac5e4cdd58e8c9426eb01.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Approve</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1922">
+      <screenshots>
+        <screenshot image="3b54c1d4fa70012e7403e6a4db8a6a87.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I confirm action</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="756">
+      <screenshots>
+        <screenshot image="b5bf3d8fa3573f183289e0173ef0d4d1.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I select tab have name is Business factors</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1452">
+      <screenshots>
+        <screenshot image="f7f33910e5e9b798681ccd4c01556814.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I select in Fiscal closing month is 01月</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1234">
+      <screenshots>
+        <screenshot image="e0dde86eae58a08d2a71e10a19f11ac5.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Approve</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1962">
+      <screenshots>
+        <screenshot image="11e75304295f0e77afb42b00a1e4e7ed.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I confirm action</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6832">
+      <screenshots>
+        <screenshot image="6b15212d4d4557a16b6f067b59102adb.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show first message Industry category code (main) is required</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="710">
+      <screenshots>
+        <screenshot image="f02e377dfc676e7e3dbb2b2f2eaaa71e.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I select tab have name is Industry classification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2432">
+      <screenshots>
+        <screenshot image="0e9f02886e44ca030ef579339542fcfa.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields required can input
+| Industry category code (main) |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1235">
+      <screenshots>
+        <screenshot image="2c982fd38cb150e8bb0af39f84f1d72e.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Approve</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1987">
+      <screenshots>
+        <screenshot image="33724627ecad2b229bb76002875c98b7.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I confirm action</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6844">
+      <screenshots>
+        <screenshot image="bce571477704f4dd8c217d0b2590b836.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show first message Industry category code (subsidiary) is required</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="720">
+      <screenshots>
+        <screenshot image="e72ef029b912308c74934f332e68a759.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I select tab have name is Industry classification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1866">
+      <screenshots>
+        <screenshot image="bc27d9c0b87ec9d72b2e921af252cf19.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields required can input
+| Industry category code (subsidiary) |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1236">
+      <screenshots>
+        <screenshot image="5a7a1441cce75a9e7e3169d4d294be50.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Approve</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1963">
+      <screenshots>
+        <screenshot image="a8bfa277b1bb323bc75faf71e6638b9b.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I confirm action</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="7991">
+      <screenshots>
+        <screenshot image="d9d6e042c0207f4ca08831a2af0b94c1.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show message Save successfully</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

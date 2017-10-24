@@ -1,0 +1,116 @@
+<acceptance-test-run title="verify screen View-&gt;Duplicate is same" name="verify screen View-&gt;Duplicate is same" description="" steps="10" successful="10" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="32958" timestamp="2016-11-03T08:59:51.537+07:00" session-id="ffe9ecaacec510bdfef8f18b71b87246">
+  <user-story id="credit-management-test-1-3" name="Credit management test 1-3" path="creditManagement/creadit_management_test13_company_and_credit_data.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Credit management" type="capability"/>
+    <tag name="Credit management test 1-3" type="feature"/>
+    <tag name="Credit management/Credit management test 1 3" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>validCustomerCode</header>
+      <header>rowIndex</header>
+      <header>btnBack</header>
+      <header>rowIndex2CreditHistory</header>
+      <header>btnView</header>
+      <header>btnDuplicate</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Credit Management</value>
+        <value>Accounting</value>
+        <value>A567</value>
+        <value>0</value>
+        <value>Back</value>
+        <value>1</value>
+        <value>View</value>
+        <value>Duplicate</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Credit Management, menuText=Accounting, validCustomerCode=A567, rowIndex=0, btnBack=Back, rowIndex2CreditHistory=1, btnView=View, btnDuplicate=Duplicate}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="2007b2967129c445ba8b19b36168243d.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1022">
+      <screenshots>
+        <screenshot image="c4634420ffa7bf01963ee36df4ce3c39.png"/>
+      </screenshots>
+      <description>When I open submenu Credit Management of menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1727">
+      <screenshots>
+        <screenshot image="8ff4a57da07ba804e1ad44fc7a401473.png"/>
+      </screenshots>
+      <description>And I search customer by code A567</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="625">
+      <screenshots>
+        <screenshot image="c58a8514da79c7750217516d8ef162df.png"/>
+      </screenshots>
+      <description>And I click checkbox left of a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1423">
+      <screenshots>
+        <screenshot image="ced77fe1cb8d14dfb188750503161b9b.png"/>
+      </screenshots>
+      <description>And In accounting screen, I click button select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1361">
+      <screenshots>
+        <screenshot image="2d2a1a08e4e19083355f6344554c8ca0.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click record 1 in table Credit History in bottom with View enable</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2585">
+      <screenshots>
+        <screenshot image="8afa302a1a8726181d52846e6e87eda5.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button View</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="5530">
+      <screenshots>
+        <screenshot image="76c3e95de5b3c1f5dc323a8f92ea7fed.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I save data in this page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3092">
+      <screenshots>
+        <screenshot image="730c349f6a3d26d1ee425917df431bd4.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Duplicate</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="5420">
+      <screenshots>
+        <screenshot image="764095dbc1a34af83c7d2238d7a813d2.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, page Duplicate is same page View</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="4423">
+      <screenshots>
+        <screenshot image="2007b2967129c445ba8b19b36168243d.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Back</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

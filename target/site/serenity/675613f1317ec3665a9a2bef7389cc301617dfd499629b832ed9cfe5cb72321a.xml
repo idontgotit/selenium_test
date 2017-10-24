@@ -1,0 +1,371 @@
+<acceptance-test-run title="change screen and fill sample data New Report--&gt;Back--&gt;Edit--&gt;Back--&gt;View--&gt;Back--&gt;Duplicate." name="change screen and fill sample data New Report--&gt;Back--&gt;Edit--&gt;Back--&gt;View--&gt;Back--&gt;Duplicate." description="" steps="43" successful="43" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="82203" timestamp="2016-11-03T20:25:39.415+07:00" session-id="10a47d2674f5a0c8f0ec45a8a2ea6a13">
+  <user-story id="credit-management-test-4-6" name="Credit management test 4-6" path="creditManagement/creadit_management_test46_company_and_credit_data.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Credit management" type="capability"/>
+    <tag name="Credit management test 4-6" type="feature"/>
+    <tag name="Credit management/Credit management test 4 6" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>validCustomerCode</header>
+      <header>rowIndex</header>
+      <header>btnBack</header>
+      <header>btnEdit</header>
+      <header>rowIndexCreditHistory</header>
+      <header>rowIndex2CreditHistory</header>
+      <header>btnView</header>
+      <header>btnDuplicate</header>
+      <header>btnSaveDraft</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Credit Management</value>
+        <value>Accounting</value>
+        <value>A567</value>
+        <value>0</value>
+        <value>Back</value>
+        <value>Edit</value>
+        <value>0</value>
+        <value>1</value>
+        <value>View</value>
+        <value>Duplicate</value>
+        <value>Save draft</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Credit Management, menuText=Accounting, validCustomerCode=A567, rowIndex=0, btnBack=Back, btnEdit=Edit, rowIndexCreditHistory=0, rowIndex2CreditHistory=1, btnView=View, btnDuplicate=Duplicate, btnSaveDraft=Save draft}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="97458f7faa05bc2bfe0f4de1c66db0b5.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1201">
+      <screenshots>
+        <screenshot image="0f001919fcb502930dacee384f82fdd0.png"/>
+      </screenshots>
+      <description>When I open submenu Credit Management of menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2159">
+      <screenshots>
+        <screenshot image="16c98a6d3ada29dc86e87f69910d38a7.png"/>
+      </screenshots>
+      <description>And I search customer by code A567</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="546">
+      <screenshots>
+        <screenshot image="577af23306dfde05851ec5a523511b0d.png"/>
+      </screenshots>
+      <description>And I click checkbox left of a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2008">
+      <screenshots>
+        <screenshot image="5812875fd8a4c2c2217e90f8a98b80fd.png"/>
+      </screenshots>
+      <description>And In accounting screen, I click button select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="5018">
+      <screenshots>
+        <screenshot image="72450c39b7e05d8ee1901e0346ee4732.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Back</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="266">
+      <screenshots>
+        <screenshot image="9c3b3e6105c6c9ece3d1df252ec27259.png"/>
+      </screenshots>
+      <description>And I click checkbox left of a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1991">
+      <screenshots>
+        <screenshot image="5812875fd8a4c2c2217e90f8a98b80fd.png"/>
+      </screenshots>
+      <description>And In accounting screen, I click button select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="868">
+      <screenshots>
+        <screenshot image="2e836db5478da48b360585c33cfa057e.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click record 1 in table Credit History in bottom with View enable</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2678">
+      <screenshots>
+        <screenshot image="71cbe35fc145c55a1eeb935a34a3a09c.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Duplicate</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1061">
+      <screenshots>
+        <screenshot image="1c1846ee90b3af72deca920567f26771.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I change survey date to next day of selected record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2593">
+      <screenshots>
+        <screenshot image="1a036a3678eb88eac1d927d81a56f110.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Save draft</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1640">
+      <screenshots>
+        <screenshot image="97511b7bb8ec4e28604fc1e51e24f46a.png"/>
+      </screenshots>
+      <description>And I open submenu Credit Management of menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2153">
+      <screenshots>
+        <screenshot image="116b1c7c6c28801e3f670e6421f01762.png"/>
+      </screenshots>
+      <description>And I search customer by code A567</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="466">
+      <screenshots>
+        <screenshot image="67c9a43f922ede4fc4f5b96aff33e6e0.png"/>
+      </screenshots>
+      <description>And I click checkbox left of a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2047">
+      <screenshots>
+        <screenshot image="13a12881ad5d295b60d4c9a6a8b5ec4b.png"/>
+      </screenshots>
+      <description>And In accounting screen, I click button select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="825">
+      <screenshots>
+        <screenshot image="0f33086ac51a05debfa80749e6a178df.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click record 0 in table Credit History in bottom</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2563">
+      <screenshots>
+        <screenshot image="305ea45b1f030f97768271c32146ce54.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="208">
+      <screenshots>
+        <screenshot image="a86d46b0f7b712236be09cdd1702e7a2.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show list button can use
+| Back |
+| Approve |
+| Reject |
+| Choose file upload |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2286">
+      <screenshots>
+        <screenshot image="022a7b64c761bfaa131409e6b00575f2.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields can select
+| Survey institute and information source |
+| Credit score rank |
+| Trading condition category |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6722">
+      <screenshots>
+        <screenshot image="3ed43931c07b4ddc713e9e808c72efdb.png"/>
+      </screenshots>
+      <description>And In Credit Management page, autocomplete fields can input
+| Branch Of request user |
+| Authorized by |
+| Final authorized by |
+| Request user account |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="185">
+      <screenshots>
+        <screenshot image="3ed43931c07b4ddc713e9e808c72efdb.png"/>
+      </screenshots>
+      <description>And In Credit Management page, System show list button can not use
+| Upload |
+| Cancel |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="130">
+      <screenshots>
+        <screenshot image="3ed43931c07b4ddc713e9e808c72efdb.png"/>
+      </screenshots>
+      <description>And In Credit Management page, System show list button can use
+| Back |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1612">
+      <screenshots>
+        <screenshot image="18d5dbddb24353e8a54289ea80456867.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields required can input
+| Index for accounting system |
+| Credit score number |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1123">
+      <screenshots>
+        <screenshot image="aee939b69da392c5593ad9c08e9140bb.png"/>
+      </screenshots>
+      <description>And In Credit Management page, textarea can input
+| Cause of decision |
+| Additional direction |
+| Accountant direction |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3738">
+      <screenshots>
+        <screenshot image="43e29ee34241156714d06d32d5091f3f.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I click button Back</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="904">
+      <screenshots>
+        <screenshot image="9aa0869adbb1f172aaaea38b5bc1d2cd.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click record 1 in table Credit History in bottom with View enable</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2542">
+      <screenshots>
+        <screenshot image="ac51d38495d071f85d9eb0546cbcdfdb.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button View</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="216">
+      <screenshots>
+        <screenshot image="a6ad9dd2c5eaf6094a4f5f9a0b2d9793.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show list button can use
+| Back |
+| Duplicate |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="249">
+      <screenshots>
+        <screenshot image="a6ad9dd2c5eaf6094a4f5f9a0b2d9793.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields required can not input
+| Index for accounting system |
+| Credit score number |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="477">
+      <screenshots>
+        <screenshot image="a6ad9dd2c5eaf6094a4f5f9a0b2d9793.png"/>
+      </screenshots>
+      <description>And In Credit Management page, autocomplete fields can not input
+| Branch Of request user |
+| Authorized by |
+| Final authorized by |
+| Request user account |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="327">
+      <screenshots>
+        <screenshot image="a6ad9dd2c5eaf6094a4f5f9a0b2d9793.png"/>
+      </screenshots>
+      <description>And In Credit Management page, textarea can not input
+| Cause of decision |
+| Additional direction |
+| Accountant direction |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="194">
+      <screenshots>
+        <screenshot image="a6ad9dd2c5eaf6094a4f5f9a0b2d9793.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields can not select
+| Survey institute and information source |
+| Credit score rank |
+| Trading condition category |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="5017">
+      <screenshots>
+        <screenshot image="df39db424ca2a0e67d980936bd307e96.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Back</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="322">
+      <screenshots>
+        <screenshot image="e95ce5a40043b0592db466cf6a73ee61.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I click record 1 in table Credit History in bottom with View enable</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2586">
+      <screenshots>
+        <screenshot image="ddd62c1175d63f6f4c2b5cdcc832ed12.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Duplicate</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="227">
+      <screenshots>
+        <screenshot image="1a614647e77f7fea95fcc877099cf823.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show list button can use
+| Back |
+| Approve |
+| Save draft |
+| Reset |
+| Choose file upload |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2262">
+      <screenshots>
+        <screenshot image="a605aa5c71b09b968128ecf240f9509e.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields can select
+| Survey institute and information source |
+| Credit score rank |
+| Trading condition category |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="166">
+      <screenshots>
+        <screenshot image="a605aa5c71b09b968128ecf240f9509e.png"/>
+      </screenshots>
+      <description>And In Credit Management page, System show list button can not use
+| Upload |
+| Cancel |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="123">
+      <screenshots>
+        <screenshot image="a605aa5c71b09b968128ecf240f9509e.png"/>
+      </screenshots>
+      <description>And In Credit Management page, System show list button can use
+| Back |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1659">
+      <screenshots>
+        <screenshot image="b3cb503d1e1ffb2c5eeafcb0034bb674.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields required can input
+| Index for accounting system |
+| Credit score number |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6201">
+      <screenshots>
+        <screenshot image="0fd1498397f07c7550eaacd854470fa1.png"/>
+      </screenshots>
+      <description>And In Credit Management page, autocomplete fields can input
+| Branch Of request user |
+| Authorized by |
+| Final authorized by |
+| Request user account |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1145">
+      <screenshots>
+        <screenshot image="48f398ddb3d341d62a52668dc3b203d5.png"/>
+      </screenshots>
+      <description>And In Credit Management page, textarea can input
+| Cause of decision |
+| Additional direction |
+| Accountant direction |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3689">
+      <screenshots>
+        <screenshot image="97458f7faa05bc2bfe0f4de1c66db0b5.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Back</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

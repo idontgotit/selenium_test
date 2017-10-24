@@ -1,0 +1,102 @@
+<acceptance-test-run title="login with role staff of branch" name="login with role staff of branch" description="" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="8205" timestamp="2016-11-03T08:40:17.431+07:00" session-id="5b71eda647b661547891f68af05fa8d4">
+  <user-story id="verify-all-menus-by-user-role" name="Verify all menus by user role" path="menu/verify_all_menus.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Menu" type="capability"/>
+    <tag name="Menu/Verify all menus by user role" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>username</header>
+      <header>password</header>
+      <header>lang</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>4009911</value>
+        <value>123456</value>
+        <value>en</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {username=4009911, password=123456, lang=en}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="135f166936b98e1a36c835d1bfa50e95.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="999">
+      <screenshots>
+        <screenshot image="45039cf2ba789de48b3ec0bb45f80b26.png"/>
+      </screenshots>
+      <description>Given I logout from system</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1203">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>Given I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2608">
+      <screenshots>
+        <screenshot image="6dadaaa67073d44a3fb90cc24582753c.png"/>
+        <screenshot image="c95b9022edc03505ff0618609d84e947.png"/>
+      </screenshots>
+      <description>When I input my credentials username 4009911 and password 123456</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="264">
+      <screenshots>
+        <screenshot image="c95b9022edc03505ff0618609d84e947.png"/>
+      </screenshots>
+      <description>Then The system should let me in</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1690">
+      <screenshots>
+        <screenshot image="cdfd5f13c124d9308e7ae04264e5ca4e.png"/>
+      </screenshots>
+      <description>When I change language to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="190">
+      <screenshots>
+        <screenshot image="cdfd5f13c124d9308e7ae04264e5ca4e.png"/>
+      </screenshots>
+      <description>Then The system should change all text to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="117">
+      <screenshots>
+        <screenshot image="cdfd5f13c124d9308e7ae04264e5ca4e.png"/>
+      </screenshots>
+      <description>Given List menu I have permission
+| Company Management | Common |
+| Summary Report | Report |
+| Register | Daily Report |
+| Search History | Daily Report |
+| Search By Date | Daily Report |
+| Program Test | Import/Export |
+| Integration Test | Import/Export |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="854">
+      <screenshots>
+        <screenshot image="135f166936b98e1a36c835d1bfa50e95.png"/>
+      </screenshots>
+      <description>Then The system should show all menu I have permission</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="160">
+      <screenshots>
+        <screenshot image="135f166936b98e1a36c835d1bfa50e95.png"/>
+      </screenshots>
+      <description>And The system should show only menu I have permission</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

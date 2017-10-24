@@ -1,0 +1,139 @@
+<acceptance-test-run title="verify create new company when create daily report" name="verify create new company when create daily report" description="" steps="13" successful="13" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="40752" timestamp="2016-11-03T20:02:44.398+07:00" session-id="2b3f3f9feabc2f361c0f10d5b4a15be0">
+  <user-story id="register-daily-report" name="register daily report" path="registerDailyReport/registerDailyReport.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Register daily report" type="capability"/>
+    <tag name="register daily report" type="feature"/>
+    <tag name="Register daily report/Register daily report" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>companyPageTitle</header>
+      <header>saveButtonText</header>
+      <header>dailyReportPageTitle</header>
+      <header>companyName</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Register</value>
+        <value>Daily Report</value>
+        <value>Company Management</value>
+        <value>Save</value>
+        <value>Daily Report</value>
+        <value>Atv</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Register, menuText=Daily Report, companyPageTitle=Company Management, saveButtonText=Save, dailyReportPageTitle=Daily Report, companyName=Atv}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="215494409da231b477df0a3d756ec32c.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="2059">
+      <screenshots>
+        <screenshot image="826d554228e0b2890cf1c21ffb5b410e.png"/>
+      </screenshots>
+      <description>When I open submenu Register of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="160">
+      <screenshots>
+        <screenshot image="826d554228e0b2890cf1c21ffb5b410e.png"/>
+      </screenshots>
+      <description>Then The system should show link Register now is visible and i can click</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1514">
+      <screenshots>
+        <screenshot image="0a544ea3cd0f3f6297d33dc5a4ebe57a.png"/>
+      </screenshots>
+      <description>When In Register daily report, I click link Register now</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="217">
+      <screenshots>
+        <screenshot image="be330ad2b131587d89ac81e3edea12e3.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Company Management&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1329">
+      <screenshots>
+        <screenshot image="b19bed3ddbdc22c6f852eceda3af0325.png"/>
+      </screenshots>
+      <description>And I set name &apos;Atv&apos; for company</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6160">
+      <screenshots>
+        <screenshot image="561d7996511eddf7cfc029b213ac8381.png"/>
+      </screenshots>
+      <description>When I input company detail as below
+| companyFullName | workType | listed | headOffice | branches | website |
+| Atv | 土木 | Not Listed | 岩手県 | 東京都, 山梨県 | anlh@arrow-tech.vn |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2016">
+      <screenshots>
+        <screenshot image="11944b33f3326f9cc70d0a379cf0e370.png"/>
+      </screenshots>
+      <description>And In Company Detail screen, I click &apos;Save&apos; button</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6410">
+      <screenshots>
+        <screenshot image="db53c66c96cae394be1a3ac148d9de6f.png"/>
+      </screenshots>
+      <description>Then The system should save company success</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="222">
+      <screenshots>
+        <screenshot image="db53c66c96cae394be1a3ac148d9de6f.png"/>
+      </screenshots>
+      <description>And The system should open &apos;Daily Report&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="173">
+      <screenshots>
+        <screenshot image="db53c66c96cae394be1a3ac148d9de6f.png"/>
+      </screenshots>
+      <description>And In Register daily report, autocomplete Company should filled value &apos;Atv&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2202">
+      <screenshots>
+        <screenshot image="20b9ffeccd05c1b50e477ef36ff5a18e.png"/>
+      </screenshots>
+      <description>When I fill Daily report screen with data below
+| content | branch |
+| Verify create new company when create daily report | 山形県 |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3987">
+      <screenshots>
+        <screenshot image="91db4916083afa329b001c6136c3c7ea.png"/>
+      </screenshots>
+      <description>And In Register daily report, I click button Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6420">
+      <screenshots>
+        <screenshot image="215494409da231b477df0a3d756ec32c.png"/>
+      </screenshots>
+      <description>Then The system should show message save daily report successfully</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

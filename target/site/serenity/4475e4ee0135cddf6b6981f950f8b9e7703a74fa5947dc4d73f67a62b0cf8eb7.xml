@@ -1,0 +1,137 @@
+<acceptance-test-run title="search customer by code" name="search customer by code" description="" steps="15" successful="15" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="17762" timestamp="2016-11-03T20:22:59.958+07:00" session-id="aab20f15840a1046ced218bb300021ef">
+  <user-story id="accounting" name="Accounting" path="creditManagement/creditManagement.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Credit management" type="capability"/>
+    <tag name="Credit management/Accounting" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>invalidCustomerCode</header>
+      <header>validCustomerCode</header>
+      <header>rowIndex</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Credit Management</value>
+        <value>Accounting</value>
+        <value>a0000000</value>
+        <value>a0010000</value>
+        <value>0</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Credit Management, menuText=Accounting, invalidCustomerCode=a0000000, validCustomerCode=a0010000, rowIndex=0}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="7a349e8d94f6fd179f0fecceba359941.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1307">
+      <screenshots>
+        <screenshot image="3b2f9f611662d0f4cf8f3e279674a382.png"/>
+      </screenshots>
+      <description>When I open submenu Credit Management of menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2110">
+      <screenshots>
+        <screenshot image="0a62b035fc58fa29ba9563a587b44433.png"/>
+      </screenshots>
+      <description>And I search customer by code a0000000</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="389">
+      <screenshots>
+        <screenshot image="4ca3c98d1eda1a211a626ec966564845.png"/>
+      </screenshots>
+      <description>Then The system should show table result with no record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2227">
+      <screenshots>
+        <screenshot image="4b0ae5369f16a08749cd466afa51e7d3.png"/>
+      </screenshots>
+      <description>When I search customer by code a0010000</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="367">
+      <screenshots>
+        <screenshot image="636e572a3f4a4086db63f6e5f573ed0a.png"/>
+      </screenshots>
+      <description>Then The system should show table result with records</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="265">
+      <screenshots>
+        <screenshot image="2eb16bc902080abd69146ca4ef688b21.png"/>
+      </screenshots>
+      <description>When I click checkbox left of a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="191">
+      <screenshots>
+        <screenshot image="2eb16bc902080abd69146ca4ef688b21.png"/>
+      </screenshots>
+      <description>Then The system should enable select button and highlight row 0</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="198">
+      <screenshots>
+        <screenshot image="42b394462ff117afbc634063653cd2e0.png"/>
+      </screenshots>
+      <description>When I click checkbox left of a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="141">
+      <screenshots>
+        <screenshot image="42b394462ff117afbc634063653cd2e0.png"/>
+      </screenshots>
+      <description>Then The system should disable select button and no highlight row 0</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="185">
+      <screenshots>
+        <screenshot image="f70345ecae97bed6b29330f50c220a4b.png"/>
+      </screenshots>
+      <description>When I click a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="141">
+      <screenshots>
+        <screenshot image="f70345ecae97bed6b29330f50c220a4b.png"/>
+      </screenshots>
+      <description>Then The system should enable select button and highlight row 0</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="155">
+      <screenshots>
+        <screenshot image="f70345ecae97bed6b29330f50c220a4b.png"/>
+      </screenshots>
+      <description>When I click a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="140">
+      <screenshots>
+        <screenshot image="f70345ecae97bed6b29330f50c220a4b.png"/>
+      </screenshots>
+      <description>Then The system should enable select button and highlight row 0</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1978">
+      <screenshots>
+        <screenshot image="7a349e8d94f6fd179f0fecceba359941.png"/>
+      </screenshots>
+      <description>When In accounting screen, I click button select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="161">
+      <screenshots>
+        <screenshot image="7a349e8d94f6fd179f0fecceba359941.png"/>
+      </screenshots>
+      <description>Then The system should show customer details screen</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

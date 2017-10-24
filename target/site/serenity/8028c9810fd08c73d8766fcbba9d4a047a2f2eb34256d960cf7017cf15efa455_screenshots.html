@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-bdd-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <a
+                    href="faf90a2b8d8ff365bcf99c0953e3840da5481133f1134fbb118a5006640ba680.html">Run Feature For Debugging</a>
+                > <a
+                    href="8028c9810fd08c73d8766fcbba9d4a047a2f2eb34256d960cf7017cf15efa455.html">14. Verify approve full data </a>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 25-01-2017 10:06</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Run Feature For Debugging</span>
+                                    <span class="badge tag-badge">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As an developer<br>I want to be able to run simplified feature<br>So that I can debug quickly<br>Exception
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="ba9fb54e1af2981411104c56e14ee34928ceb18af19fd6266c85e9ccfcde886c.html">3.1.5
+                                    (version)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="3e0ef395cd6ab697f994c3222494eed334cedf15c4ec046c2c7ce741935db68b.html">
+                                    (issue)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="fbd2c36be7347d6dd6789a9e92b3ecff6b96d9917745cf623004125dde566d3e.html">Debug
+                                    (capability)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="7af145658023301483346e9bf7e7857d3d5d846f49bf9bef46addcc7f8c82094.html">Sprint-1.1
+                                    (version)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-3x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">14. Verify approve full data
+                                    <span class="related-issue-title">()</span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+
+        <div class="scenario">When I open Login page<br>And I input my credentials username 4009912 and password 123456<br>And I change language to en<br>And I open submenu Credit Management of menu Accounting<br>And I search customer by code a567<br>And I click checkbox left of a row 0 into table result<br>And In accounting screen, I click button select<br>And In Credit Management page, I click record 0 in table Credit History in bottom with View enable<br>And In Credit Management page, I click button New report<br>And In Credit Management page, I select in Survey institute and information source is 帝国データ<br>And In Credit Management page, I change survey date to next day of selected record<br>And In Credit Management page, I type in Index for accounting system is 12<br>And In Credit Management page, I type in Credit score number is 10<br>And In Credit Management page, I select in Trading condition category is 通常取引<br>And In Credit Management page, textarea can input<br><table class='embedded'><thead><th>Cause of decision</th></thead><tbody><tr><td>Additional direction</td></tr><tr><td>Accountant direction</td></tr></tbody></table><br>And In Credit Management page, I select tab have name is Business factors<br>And In Credit Management page, I type in Zip code of HQ is 111-1111<br>And In Credit Management page, I type in Address of HQ (all) is 111-1111<br>And In Credit Management page, I type in Tel. is 023-345-3212<br>And In Credit Management page, I select in Fiscal closing month is 01月<br>And In Credit Management page, fields not required can input<br><table class='embedded'><thead><th>Company index of research institute</th></thead><tbody><tr><td>Fax.</td></tr><tr><td>Number of employees</td></tr><tr><td>Capital fund</td></tr><tr><td>Url</td></tr></tbody></table><br>And In Credit Management page, I select tab have name is Industry classification<br>And In Credit Management page, fields required can input<br><table class='embedded'><thead><th>Industry category code (main)</th></thead><tbody><tr><td>Industry category code (subsidiary)</td></tr></tbody></table><br>And In Credit Management page, fields not required can input<br><table class='embedded'><thead><th>Rank of the same sector (Nation wide)</th></thead><tbody><tr><td>Population of the same industry (Nation wide)</td></tr><tr><td>Rank of the same sector (Prefecture)</td></tr><tr><td>Population of the same industry (Prefecture)</td></tr></tbody></table><br>And In Credit Management page, I select tab have name is Input customer data<br>And In Credit Management page, I type name1,name2 in Input related company and choose type is Provider<br>And In Credit Management page, I click button Generate in input customer data<br>And In Credit Management page, I click button Approve<br>And In Credit Management page, I confirm action<br>Then In Credit Management page, System show message Save successfully<br>And I logout from system</div>
+    </div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="35bea53004f39eed20d942bf48fa3e71.png" title="When I open Login page" width="960"/>
+                <img src="617d41b902e1df6119a620f9391ddde8.png" title="And I input my credentials username 4009912 and password 123456" width="960"/>
+                <img src="a4238260deabc52d4f775d3b79bd1054.png" title="And I input my credentials username 4009912 and password 123456" width="960"/>
+                <img src="5a954ee6f2735c8e7593f1333dab07d7.png" title="And I change language to en" width="960"/>
+                <img src="774cd7a292b571f6ad90f1eaf8104a09.png" title="And I open submenu Credit Management of menu Accounting" width="960"/>
+                <img src="scaled_8bd173170975fdfaf105bec9950c6241.png" title="And I search customer by code a567" width="960"/>
+                <img src="3bcfa614a7c468c244d7bb19b0f6c3fb.png" title="And I click checkbox left of a row 0 into table result" width="960"/>
+                <img src="scaled_00826f06ea43e4a638815d8506fa33f3.png" title="And In accounting screen, I click button select" width="960"/>
+                <img src="scaled_8acf18006c8fe9ee30e6a160a064664e.png" title="And In Credit Management page, I click record 0 in table Credit History in bottom with View enable" width="960"/>
+                <img src="scaled_dcdb46905d467e6096411450664b95e7.png" title="And In Credit Management page, I click button New report" width="960"/>
+                <img src="ceaaa0988f7db66c94a2dbace005dd06.png" title="And In Credit Management page, I select in Survey institute and information source is 帝国データ" width="960"/>
+                <img src="scaled_630f3ca39715555c2031d55c01665852.png" title="And In Credit Management page, I change survey date to next day of selected record" width="960"/>
+                <img src="scaled_926564a81792da15c43016c8c1bdbf51.png" title="And In Credit Management page, I type in Index for accounting system is 12" width="960"/>
+                <img src="scaled_387ae43ed56c8b958f9408fceac37f14.png" title="And In Credit Management page, I type in Credit score number is 10" width="960"/>
+                <img src="scaled_5d6f9ac0618b0780ba360edd05bfd429.png" title="And In Credit Management page, I select in Trading condition category is 通常取引" width="960"/>
+                <img src="scaled_b1e782fb3c2266c83f07d5348593119a.png" title="And In Credit Management page, textarea can input
+| Cause of decision |
+| Additional direction |
+| Accountant direction |" width="960"/>
+                <img src="scaled_8aeadb99358d3b43c19dea0375222494.png" title="And In Credit Management page, I select tab have name is Business factors" width="960"/>
+                <img src="scaled_8f9e9d21bf2d8ee3e651aeef2aebb755.png" title="And In Credit Management page, I type in Zip code of HQ is 111-1111" width="960"/>
+                <img src="scaled_d25e59eeeacc6be598b1e64743e1a852.png" title="And In Credit Management page, I type in Address of HQ (all) is 111-1111" width="960"/>
+                <img src="scaled_b23810e391dc555289accf820d137428.png" title="And In Credit Management page, I type in Tel. is 023-345-3212" width="960"/>
+                <img src="scaled_d5c19126d28499d60dba84d907ad7a49.png" title="And In Credit Management page, I select in Fiscal closing month is 01月" width="960"/>
+                <img src="scaled_454ad550cbfbdc5a4135a78086348e50.png" title="And In Credit Management page, fields not required can input
+| Company index of research institute |
+| Fax. |
+| Number of employees |
+| Capital fund |
+| Url |" width="960"/>
+                <img src="scaled_78bc29cafcb00d3ffa43ab60d9e31bfe.png" title="And In Credit Management page, I select tab have name is Industry classification" width="960"/>
+                <img src="scaled_deef87cc125afaa5bc69f6068ccf7c53.png" title="And In Credit Management page, fields required can input
+| Industry category code (main) |
+| Industry category code (subsidiary) |" width="960"/>
+                <img src="scaled_fabc186837c47fd3e036df4be5158174.png" title="And In Credit Management page, fields not required can input
+| Rank of the same sector (Nation wide) |
+| Population of the same industry (Nation wide) |
+| Rank of the same sector (Prefecture) |
+| Population of the same industry (Prefecture) |" width="960"/>
+                <img src="scaled_2716a10e78958b15e974c3a3ec53c6fb.png" title="And In Credit Management page, I select tab have name is Input customer data" width="960"/>
+                <img src="scaled_9e8c43f31c2515579fb8325d2d366112.png" title="And In Credit Management page, I type name1,name2 in Input related company and choose type is Provider" width="960"/>
+                <img src="scaled_510134a21f23aee27f250dd88afade00.png" title="And In Credit Management page, I click button Generate in input customer data" width="960"/>
+                <img src="scaled_3aabd45bb6d5d97b463d6bfdb37119bd.png" title="And In Credit Management page, I click button Approve" width="960"/>
+                <img src="scaled_db365418e006c234058b71d0983dbb1c.png" title="And In Credit Management page, I confirm action" width="960"/>
+                <img src="scaled_afdc97baa4500ef7a35f39c22456daa9.png" title="Then In Credit Management page, System show message Save successfully" width="960"/>
+                <img src="7b40aa3b2b6add185915c2387be9c1db.png" title="And I logout from system: <span class='success-color'>SUCCESS</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.1.36</span>
+</div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<acceptance-test-run title="edit company with only required fields" name="edit company with only required fields" description="" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="25258" timestamp="2016-11-03T20:11:11.821+07:00" session-id="1ade5611e675970de818aca53ca2e32b">
+  <user-story id="company-management" name="company management" path="companyManagement/companyManagement.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Company management" type="capability"/>
+    <tag name="company management" type="feature"/>
+    <tag name="Company management/Company management" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>filterText</header>
+      <header>columnCompanyNameTitle</header>
+      <header>rowIndex</header>
+      <header>buttonText</header>
+      <header>companyName</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Company Management</value>
+        <value>Common</value>
+        <value>Test company</value>
+        <value>Company name</value>
+        <value>0</value>
+        <value>Save</value>
+        <value>Test company edited</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Company Management, menuText=Common, filterText=Test company, columnCompanyNameTitle=Company name, rowIndex=0, buttonText=Save, companyName=Test company edited}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="5b0d7269bf02f4bafd7a2f741f23e1f3.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1372">
+      <screenshots>
+        <screenshot image="2e9ea0df2ff7046cadd5c782166e35d6.png"/>
+      </screenshots>
+      <description>When I open submenu Company Management of menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="803">
+      <screenshots>
+        <screenshot image="8afc74bc2bb2ecbb558fe876c698d815.png"/>
+      </screenshots>
+      <description>And In Company management screen, I fill value &apos;Test company&apos; for filter in column &apos;Company name&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="805">
+      <screenshots>
+        <screenshot image="012e0812f101f7b3a39501b0e91940f6.png"/>
+      </screenshots>
+      <description>And In Company management screen, I select row &apos;0&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2762">
+      <screenshots>
+        <screenshot image="bfc619c2a59b78c60f33bbb1fabed894.png"/>
+      </screenshots>
+      <description>And I edit company with name Test company edited</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3765">
+      <screenshots>
+        <screenshot image="a0c4f0dc72e47a15d2f269cc33e1d6bf.png"/>
+      </screenshots>
+      <description>And I input company detail as below
+| companyFullName | workType | listed | headOffice |
+| Test company edited | コールセンター | Other Type | 静岡県 |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1481">
+      <screenshots>
+        <screenshot image="29b014fe9f813fefb9c3748337a90c25.png"/>
+      </screenshots>
+      <description>And In Company Detail screen, I click &apos;Save&apos; button</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6422">
+      <screenshots>
+        <screenshot image="5b0d7269bf02f4bafd7a2f741f23e1f3.png"/>
+      </screenshots>
+      <description>Then The system should save company success</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

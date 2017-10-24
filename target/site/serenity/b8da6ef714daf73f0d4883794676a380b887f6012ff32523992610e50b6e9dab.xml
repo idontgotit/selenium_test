@@ -1,0 +1,65 @@
+<acceptance-test-run title="initialization screen" name="initialization screen" description="" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="14479" timestamp="2016-11-03T20:07:30.037+07:00" session-id="1ade5611e675970de818aca53ca2e32b">
+  <user-story id="company-management" name="company management" path="companyManagement/companyManagement.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Company management" type="capability"/>
+    <tag name="company management" type="feature"/>
+    <tag name="Company management/Company management" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Company Management</value>
+        <value>Common</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Company Management, menuText=Common}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="52d40e3366db1e141b6d583a8b0c1a1a.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1642">
+      <screenshots>
+        <screenshot image="2e9ea0df2ff7046cadd5c782166e35d6.png"/>
+      </screenshots>
+      <description>When I open submenu Company Management of menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="507">
+      <screenshots>
+        <screenshot image="2e9ea0df2ff7046cadd5c782166e35d6.png"/>
+      </screenshots>
+      <description>Then The system should show initialization screen of Company management page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1323">
+      <screenshots>
+        <screenshot image="52d40e3366db1e141b6d583a8b0c1a1a.png"/>
+      </screenshots>
+      <description>When In Company management screen, I click button Expand Branch</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="180">
+      <screenshots>
+        <screenshot image="52d40e3366db1e141b6d583a8b0c1a1a.png"/>
+      </screenshots>
+      <description>Then The system should expand all row in table company</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

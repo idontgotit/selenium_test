@@ -1,0 +1,135 @@
+<acceptance-test-run title="9. Open Notification Setting,check button Add with other conditions select dropdown" name="9. Open Notification Setting,check button Add with other conditions select dropdown" description="" steps="12" successful="12" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="16013" timestamp="2017-01-17T16:20:22.673+07:00" session-id="3c40a4414679e7c07009274d00303c93">
+  <user-story id="notification-setting-display" name="Notification Setting display" path="notification_setting/notification_setting.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Notification setting" type="capability"/>
+    <tag name="Notification Setting display" type="feature"/>
+    <tag name="Notification setting/Notification setting display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>notificationMenu</header>
+      <header>parentMenuText</header>
+      <header>number</header>
+      <header>string</header>
+      <header>lang</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Notification Setting</value>
+        <value>Notification</value>
+        <value>13000002</value>
+        <value>triarrow</value>
+        <value>en</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {notificationMenu=Notification Setting, parentMenuText=Notification, number=13000002, string=triarrow, lang=en}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="52af3e57b92798a692b990c486caf701.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="853">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>When I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2433">
+      <screenshots>
+        <screenshot image="52f9210a61d4a4bcf8f472236953aaed.png"/>
+        <screenshot image="81fce20f63dd39376c28a70f9a5f3106.png"/>
+      </screenshots>
+      <description>And I input my credentials username 13000002 and password triarrow</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1744">
+      <screenshots>
+        <screenshot image="9a0cd19648fcbd076709a13f1090b4f5.png"/>
+      </screenshots>
+      <description>And I change language to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="910">
+      <screenshots>
+        <screenshot image="7f248dd3884cb12c6dda1d92daeafeee.png"/>
+      </screenshots>
+      <description>And I open submenu Notification Setting of parent menu Notification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="159">
+      <screenshots>
+        <screenshot image="7f248dd3884cb12c6dda1d92daeafeee.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Notification&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1463">
+      <screenshots>
+        <screenshot image="dba47777a6d31e4685dd9e634a9aadb3.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, i select more dropdown with value below
+| valueBranch | valuePosition | valueEmpName |
+| 東北 |  |  |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="153">
+      <screenshots>
+        <screenshot image="dba47777a6d31e4685dd9e634a9aadb3.png"/>
+      </screenshots>
+      <description>Then In Notification Setting screen, System show list button can not use
+| Add |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3227">
+      <screenshots>
+        <screenshot image="a6226b90d59e71bfd81a2fbd69fbdcb7.png"/>
+      </screenshots>
+      <description>When In Notification Setting screen, i select more dropdown with value below
+| valueBranch | valuePosition | valueEmpName |
+| 名古屋 | second in list dropdown |  |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="136">
+      <screenshots>
+        <screenshot image="a6226b90d59e71bfd81a2fbd69fbdcb7.png"/>
+      </screenshots>
+      <description>Then In Notification Setting screen, System show list button can not use
+| Add |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3237">
+      <screenshots>
+        <screenshot image="41be5e049c3aa51493ea340626ef7025.png"/>
+      </screenshots>
+      <description>When In Notification Setting screen, i select more dropdown with value below
+| valueBranch | valuePosition | valueEmpName |
+| first in list dropdown | first in list dropdown | All employee |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="164">
+      <screenshots>
+        <screenshot image="41be5e049c3aa51493ea340626ef7025.png"/>
+      </screenshots>
+      <description>Then In Notification Setting screen, System show list button can use
+| Add |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1413">
+      <screenshots>
+        <screenshot image="52af3e57b92798a692b990c486caf701.png"/>
+      </screenshots>
+      <description>And I logout from system</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: my.lib.serenity.primefaces.sars.features.creditManagement.CreditManagementFeature
+-------------------------------------------------------------------------------
+Tests run: 79, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 93.819 sec - in my.lib.serenity.primefaces.sars.features.creditManagement.CreditManagementFeature

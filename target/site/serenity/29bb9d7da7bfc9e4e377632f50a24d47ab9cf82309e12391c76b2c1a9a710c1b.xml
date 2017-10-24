@@ -1,0 +1,120 @@
+<acceptance-test-run title="Open bass export use save path" name="Open bass export use save path" description="" steps="11" successful="11" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="15854" timestamp="2016-11-03T20:04:50.779+07:00" session-id="056b895be3d8755aa38e8ec0217d312b">
+  <user-story id="bass-export-display" name="Bass export display" path="bassExport/bass_export.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Bass export" type="capability"/>
+    <tag name="Bass export/Bass export display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>menuText</header>
+      <header>parentMenuText</header>
+      <header>location</header>
+      <header>editBtn</header>
+      <header>saveBtn</header>
+      <header>cancelBtn</header>
+      <header>exportBtn</header>
+      <header>textValue</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>BASS Export</value>
+        <value>Import/Export</value>
+        <value>Download location:</value>
+        <value>Edit</value>
+        <value>Save</value>
+        <value>Cancel</value>
+        <value>Export</value>
+        <value>var/sars/bass</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {menuText=BASS Export, parentMenuText=Import/Export, location=Download location:, editBtn=Edit, saveBtn=Save, cancelBtn=Cancel, exportBtn=Export, textValue=var/sars/bass}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="b3432b93cdd62aaef80e86f8323c7e50.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1180">
+      <screenshots>
+        <screenshot image="c2ba5ad80f71f8042984f7f56d917294.png"/>
+      </screenshots>
+      <description>When I open submenu BASS Export of parent menu Import/Export</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2041">
+      <screenshots>
+        <screenshot image="73e7a8546ca4d416d95b95fafab30ea6.png"/>
+      </screenshots>
+      <description>And In Bass export screen, I click button Export</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1263">
+      <screenshots>
+        <screenshot image="9a6653f0edda935f759f0741bbfd9227.png"/>
+      </screenshots>
+      <description>And In Bass export screen, I click button Edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="156">
+      <screenshots>
+        <screenshot image="9a6653f0edda935f759f0741bbfd9227.png"/>
+      </screenshots>
+      <description>And I save path in download location to new variable</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="281">
+      <screenshots>
+        <screenshot image="070ab83959e8266bd0751429e5563b06.png"/>
+      </screenshots>
+      <description>And I type var/sars/bass in downloaded location</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1542">
+      <screenshots>
+        <screenshot image="b3432b93cdd62aaef80e86f8323c7e50.png"/>
+      </screenshots>
+      <description>And In Bass export screen, I click button Save</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="127">
+      <screenshots>
+        <screenshot image="b3432b93cdd62aaef80e86f8323c7e50.png"/>
+      </screenshots>
+      <description>Then In Bass export screen, System show button Edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="134">
+      <screenshots>
+        <screenshot image="b3432b93cdd62aaef80e86f8323c7e50.png"/>
+      </screenshots>
+      <description>And System hide button Save</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="171">
+      <screenshots>
+        <screenshot image="b3432b93cdd62aaef80e86f8323c7e50.png"/>
+      </screenshots>
+      <description>And System hide button Cancel</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="156">
+      <screenshots>
+        <screenshot image="b3432b93cdd62aaef80e86f8323c7e50.png"/>
+      </screenshots>
+      <description>And System show downloaded location Download location: and can not edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="135">
+      <screenshots>
+        <screenshot image="b3432b93cdd62aaef80e86f8323c7e50.png"/>
+      </screenshots>
+      <description>And System show downloaded location with new path var/sars/bass</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

@@ -1,0 +1,196 @@
+<acceptance-test-run title="2. Open Notification Setting and verify paging last, first, next, previous" name="2. Open Notification Setting and verify paging last, first, next, previous" description="" steps="22" successful="22" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="29517" timestamp="2017-01-17T16:04:45.738+07:00" session-id="61fec371b25d01b3472d72727eac1d79">
+  <user-story id="notification-setting-display" name="Notification Setting display" path="notification_setting/notification_setting.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Notification setting" type="capability"/>
+    <tag name="Notification Setting display" type="feature"/>
+    <tag name="Notification setting/Notification setting display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>notificationMenu</header>
+      <header>parentMenuText</header>
+      <header>nextPage</header>
+      <header>lastPage</header>
+      <header>previousPage</header>
+      <header>firstPage</header>
+      <header>numberPaging</header>
+      <header>addBtn</header>
+      <header>number</header>
+      <header>string</header>
+      <header>lang</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Notification Setting</value>
+        <value>Notification</value>
+        <value>next</value>
+        <value>last</value>
+        <value>previous</value>
+        <value>first</value>
+        <value>20</value>
+        <value>Add</value>
+        <value>4009912</value>
+        <value>123456</value>
+        <value>en</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {notificationMenu=Notification Setting, parentMenuText=Notification, nextPage=next, lastPage=last, previousPage=previous, firstPage=first, numberPaging=20, addBtn=Add, number=4009912, string=123456, lang=en}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="c8bc1dff6403190b7318a2ebe1e7f19e.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="4102">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>When I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2468">
+      <screenshots>
+        <screenshot image="617d41b902e1df6119a620f9391ddde8.png"/>
+        <screenshot image="1bcaa3347ef114c4462a3b1e796e6fd6.png"/>
+      </screenshots>
+      <description>And I input my credentials username 4009912 and password 123456</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1725">
+      <screenshots>
+        <screenshot image="27396077e924dabddbf71e6c477f9d9e.png"/>
+      </screenshots>
+      <description>And I change language to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1014">
+      <screenshots>
+        <screenshot image="90cb7248db532e721d1d45680192ddf0.png"/>
+      </screenshots>
+      <description>And I open submenu Notification Setting of parent menu Notification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="397">
+      <screenshots>
+        <screenshot image="bb40568925bdcfd7769fcab1262fad33.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Notification&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2968">
+      <screenshots>
+        <screenshot image="dd9586082046d824133683b0ef6390b4.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, i select more dropdown with value below
+| valueBranch | valuePosition | valueEmpName |
+| random | All position | All employee |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1350">
+      <screenshots>
+        <screenshot image="c71733328ff186c4a7500eb53c9d0814.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, I click in Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2775">
+      <screenshots>
+        <screenshot image="e0eb29b97986a153cbb2244b81092ade.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, i select more dropdown with value below
+| valueBranch | valuePosition | valueEmpName |
+| second in list dropdown | All position | All employee |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1342">
+      <screenshots>
+        <screenshot image="a9ecfe6b34eb5b9519ddfbfa8cf43087.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, I click in Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3054">
+      <screenshots>
+        <screenshot image="b7c4384d867b15d6bcb5bb11e7dadb7e.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, i select more dropdown with value below
+| valueBranch | valuePosition | valueEmpName |
+| 東京 | All position | All employee |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1326">
+      <screenshots>
+        <screenshot image="67d733290ea9fb2419aef55c728288b7.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, I click in Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1055">
+      <screenshots>
+        <screenshot image="1b878d1bbc2706909492149adb42914d.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, I click button next page on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="223">
+      <screenshots>
+        <screenshot image="aa1c4975a546eab15cc40ad7d258bd96.png"/>
+      </screenshots>
+      <description>Then In Notification Setting screen, Table should show next page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="898">
+      <screenshots>
+        <screenshot image="97d3ce319cf30a2d6f7681320fb27950.png"/>
+      </screenshots>
+      <description>When In Notification Setting screen, I click button last page on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="165">
+      <screenshots>
+        <screenshot image="52b7c9188530c3316ca8fa825f42f97d.png"/>
+      </screenshots>
+      <description>Then In Notification Setting screen, Table should show last page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="885">
+      <screenshots>
+        <screenshot image="ae658d38057a032fbea8d4c0be1a3db9.png"/>
+      </screenshots>
+      <description>When In Notification Setting screen, I click button previous page on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="184">
+      <screenshots>
+        <screenshot image="141873557ace197c137199fa7b3557ff.png"/>
+      </screenshots>
+      <description>Then In Notification Setting screen, Table should show previous page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="156">
+      <screenshots>
+        <screenshot image="141873557ace197c137199fa7b3557ff.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, Table show result with 20 results in page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="850">
+      <screenshots>
+        <screenshot image="2f9b9593072ec7be2c91130cfb3b8c42.png"/>
+      </screenshots>
+      <description>When In Notification Setting screen, I click button first page on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="191">
+      <screenshots>
+        <screenshot image="00c84d8f89ad3c7572dec90706d5b5ce.png"/>
+      </screenshots>
+      <description>Then In Notification Setting screen, Table should show first page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="137">
+      <screenshots>
+        <screenshot image="00c84d8f89ad3c7572dec90706d5b5ce.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, Table show result with 20 results in page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1386">
+      <screenshots>
+        <screenshot image="c8bc1dff6403190b7318a2ebe1e7f19e.png"/>
+      </screenshots>
+      <description>And I logout from system</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

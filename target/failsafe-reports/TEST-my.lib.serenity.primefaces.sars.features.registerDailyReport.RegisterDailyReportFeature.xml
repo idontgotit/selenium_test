@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="my.lib.serenity.primefaces.sars.features.registerDailyReport.RegisterDailyReportFeature" time="11.678" tests="88" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.66-b17"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/ngoc/Working/Project/serenity-primefaces"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/ngoc/Working/Project/serenity-primefaces"/>
+    <property name="java.runtime.version" value="1.8.0_66-b17"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.19.0-42-generic"/>
+    <property name="user.home" value="/home/ngoc"/>
+    <property name="user.timezone" value="Asia/Ho_Chi_Minh"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="ngoc"/>
+    <property name="java.class.path" value="/usr/share/maven3/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher verify"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_66"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="Given A list of column title need toggle in Register Daily report" classname="| Register | Daily Report | 10 |" time="0"/>
+  <testcase name="When I open submenu Register of menu Daily Report" classname="| Register | Daily Report | 10 |" time="0"/>
+  <testcase name="Then The system should show initialization screen of Register Daily report" classname="| Register | Daily Report | 10 |" time="0"/>
+  <testcase name="When I open toggle menu in table daily report history" classname="| Register | Daily Report | 10 |" time="0"/>
+  <testcase name="And I toggle all column in table daily report history" classname="| Register | Daily Report | 10 |" time="0"/>
+  <testcase name="Then The system should show table daily report history has 10 columns" classname="| Register | Daily Report | 10 |" time="0"/>
+  <testcase name="| Register | Daily Report | 10 |" classname="| Register | Daily Report | 10 |" time="1.534"/>
+  <testcase name="When I open submenu Search By Date of menu Daily Report" classname="| Search By Date | Daily Report | Search | 福岡県 | 40000005 | 2012/11/28 | 0 | Edit |" time="0"/>
+  <testcase name="And In Search by date screen, I select date 2012/11/28 in item Date" classname="| Search By Date | Daily Report | Search | 福岡県 | 40000005 | 2012/11/28 | 0 | Edit |" time="0"/>
+  <testcase name="And In Search by date screen, I choose a branch 福岡県 in dropdown Branch" classname="| Search By Date | Daily Report | Search | 福岡県 | 40000005 | 2012/11/28 | 0 | Edit |" time="0"/>
+  <testcase name="And In Search by date screen, I type value 40000005 for autocomplete Employee" classname="| Search By Date | Daily Report | Search | 福岡県 | 40000005 | 2012/11/28 | 0 | Edit |" time="0"/>
+  <testcase name="And In Search by date screen, I choose 40000005 employee in dropdown of autocomplete Employee" classname="| Search By Date | Daily Report | Search | 福岡県 | 40000005 | 2012/11/28 | 0 | Edit |" time="0"/>
+  <testcase name="And In Search by date screen, I click button &apos;Search&apos;" classname="| Search By Date | Daily Report | Search | 福岡県 | 40000005 | 2012/11/28 | 0 | Edit |" time="0.001"/>
+  <testcase name="And In Search by date screen, I select row 0" classname="| Search By Date | Daily Report | Search | 福岡県 | 40000005 | 2012/11/28 | 0 | Edit |" time="0"/>
+  <testcase name="And In Search by date screen, I click button &apos;Edit&apos;" classname="| Search By Date | Daily Report | Search | 福岡県 | 40000005 | 2012/11/28 | 0 | Edit |" time="0"/>
+  <testcase name="Then The system should show initialization screen of Register Daily report when access from Search by date screen" classname="| Search By Date | Daily Report | Search | 福岡県 | 40000005 | 2012/11/28 | 0 | Edit |" time="0"/>
+  <testcase name="| Search By Date | Daily Report | Search | 福岡県 | 40000005 | 2012/11/28 | 0 | Edit |" classname="| Search By Date | Daily Report | Search | 福岡県 | 40000005 | 2012/11/28 | 0 | Edit |" time="1.139"/>
+  <testcase name="When I open Login page" classname="| 40000005 | 19851129 | en | Register | Daily Report | 2 | 2012/11/28 |" time="0"/>
+  <testcase name="Then I input my credentials username 40000005 and password 19851129" classname="| 40000005 | 19851129 | en | Register | Daily Report | 2 | 2012/11/28 |" time="0"/>
+  <testcase name="And I change language to en" classname="| 40000005 | 19851129 | en | Register | Daily Report | 2 | 2012/11/28 |" time="0"/>
+  <testcase name="And I open submenu Register of menu Daily Report" classname="| 40000005 | 19851129 | en | Register | Daily Report | 2 | 2012/11/28 |" time="0"/>
+  <testcase name="And In Register daily report, I choose date 2012/11/28 in calendar date" classname="| 40000005 | 19851129 | en | Register | Daily Report | 2 | 2012/11/28 |" time="0"/>
+  <testcase name="And In Table daily report history, I click button last page on paging" classname="| 40000005 | 19851129 | en | Register | Daily Report | 2 | 2012/11/28 |" time="0"/>
+  <testcase name="Then The table daily report history should show last page" classname="| 40000005 | 19851129 | en | Register | Daily Report | 2 | 2012/11/28 |" time="0.001"/>
+  <testcase name="When In Table daily report history, I click button first page on paging" classname="| 40000005 | 19851129 | en | Register | Daily Report | 2 | 2012/11/28 |" time="0"/>
+  <testcase name="Then The table daily report history should show first page" classname="| 40000005 | 19851129 | en | Register | Daily Report | 2 | 2012/11/28 |" time="0"/>
+  <testcase name="When In Table daily report history, I click page 2 on paging" classname="| 40000005 | 19851129 | en | Register | Daily Report | 2 | 2012/11/28 |" time="0"/>
+  <testcase name="Then The table daily report history should change to selected page 2" classname="| 40000005 | 19851129 | en | Register | Daily Report | 2 | 2012/11/28 |" time="0"/>
+  <testcase name="Then The table daily report history should change to selected page 2" classname="| 40000005 | 19851129 | en | Register | Daily Report | 2 | 2012/11/28 |" time="0"/>
+  <testcase name="When In Table daily report history, I click button back on paging" classname="| 40000005 | 19851129 | en | Register | Daily Report | 2 | 2012/11/28 |" time="0"/>
+  <testcase name="Then The table daily report history should change to selected page 2 - 1" classname="| 40000005 | 19851129 | en | Register | Daily Report | 2 | 2012/11/28 |" time="0"/>
+  <testcase name="When In Table daily report history, I click button next on paging" classname="| 40000005 | 19851129 | en | Register | Daily Report | 2 | 2012/11/28 |" time="0"/>
+  <testcase name="| 40000005 | 19851129 | en | Register | Daily Report | 2 | 2012/11/28 |" classname="| 40000005 | 19851129 | en | Register | Daily Report | 2 | 2012/11/28 |" time="0.273"/>
+  <testcase name="Given I logout from system" classname="Scenario: logout from system" time="0"/>
+  <testcase name="Scenario: logout from system" classname="Scenario: logout from system" time="0.256"/>
+  <testcase name="When I open submenu Register of menu Daily Report" classname="| Register | Daily Report |" time="0"/>
+  <testcase name="When I open submenu Register of menu Daily Report" classname="| Register | Daily Report |" time="0"/>
+  <testcase name="And I add new Daily report with data below" classname="| Register | Daily Report |" time="0"/>
+  <testcase name="And I add new Daily report with data below" classname="| Register | Daily Report |" time="0"/>
+  <testcase name="Then The system should show message save daily report successfully" classname="| Register | Daily Report |" time="0"/>
+  <testcase name="Then The system should show message save daily report successfully" classname="| Register | Daily Report |" time="0"/>
+  <testcase name="| Register | Daily Report |" classname="| Register | Daily Report |" time="2.032"/>
+  <testcase name="| Register | Daily Report |" classname="| Register | Daily Report |" time="1.446"/>
+  <testcase name="When I open submenu Register of menu Daily Report" classname="| Register | Daily Report | Other works |" time="0"/>
+  <testcase name="And In Register daily report, I choose category &apos;Other works&apos;" classname="| Register | Daily Report | Other works |" time="0"/>
+  <testcase name="And I add new Daily report with data below" classname="| Register | Daily Report | Other works |" time="0"/>
+  <testcase name="Then The system should show message save daily report successfully" classname="| Register | Daily Report | Other works |" time="0"/>
+  <testcase name="| Register | Daily Report | Other works |" classname="| Register | Daily Report | Other works |" time="1.504"/>
+  <testcase name="Then The system should show start time and end time required message" classname="| Register | Daily Report |" time="0"/>
+  <testcase name="When I fill Daily report screen with data below" classname="| Register | Daily Report |" time="0"/>
+  <testcase name="And In Register daily report, I click button Add" classname="| Register | Daily Report |" time="0"/>
+  <testcase name="When I open submenu Register of menu Daily Report" classname="| Register | Daily Report | 0 | Other works |" time="0.001"/>
+  <testcase name="Then The system should show table daily report history has data" classname="| Register | Daily Report | 0 | Other works |" time="0"/>
+  <testcase name="When In Register daily report, I choose row 0 in table daily report history" classname="| Register | Daily Report | 0 | Other works |" time="0"/>
+  <testcase name="When In Register daily report, I choose row 0 in table daily report history" classname="| Register | Daily Report | 0 | Other works |" time="0"/>
+  <testcase name="When In Register daily report, I choose row 0 in table daily report history" classname="| Register | Daily Report | 0 | Other works |" time="0"/>
+  <testcase name="Then The system should show daily report can update" classname="| Register | Daily Report | 0 | Other works |" time="0"/>
+  <testcase name="When In Register daily report, I choose category &apos;Other works&apos;" classname="| Register | Daily Report | 0 | Other works |" time="0"/>
+  <testcase name="And I update Daily report with data below" classname="| Register | Daily Report | 0 | Other works |" time="0"/>
+  <testcase name="Then The system should show message save daily report successfully" classname="| Register | Daily Report | 0 | Other works |" time="0"/>
+  <testcase name="Then The system should show message save daily report successfully" classname="| Register | Daily Report | 0 | Other works |" time="0"/>
+  <testcase name="Then The system should show details like below" classname="| Register | Daily Report | 0 | Other works |" time="0"/>
+  <testcase name="Then The system should show details like below" classname="| Register | Daily Report | 0 | Other works |" time="0"/>
+  <testcase name="When I update Daily report with data below" classname="| Register | Daily Report | 0 | Other works |" time="0"/>
+  <testcase name="| Register | Daily Report | 0 | Other works |" classname="| Register | Daily Report | 0 | Other works |" time="1.782"/>
+  <testcase name="When I open submenu Register of menu Daily Report" classname="| Register | Daily Report | Company Management | Save | Daily Report | Atv |" time="0"/>
+  <testcase name="Then The system should show link Register now is visible and i can click" classname="| Register | Daily Report | Company Management | Save | Daily Report | Atv |" time="0"/>
+  <testcase name="When In Register daily report, I click link Register now" classname="| Register | Daily Report | Company Management | Save | Daily Report | Atv |" time="0"/>
+  <testcase name="Then The system should open &apos;Company Management&apos; page" classname="| Register | Daily Report | Company Management | Save | Daily Report | Atv |" time="0"/>
+  <testcase name="And I set name &apos;Atv&apos; for company" classname="| Register | Daily Report | Company Management | Save | Daily Report | Atv |" time="0"/>
+  <testcase name="When I input company detail as below" classname="| Register | Daily Report | Company Management | Save | Daily Report | Atv |" time="0"/>
+  <testcase name="And In Company Detail screen, I click &apos;Save&apos; button" classname="| Register | Daily Report | Company Management | Save | Daily Report | Atv |" time="0"/>
+  <testcase name="Then The system should save company success" classname="| Register | Daily Report | Company Management | Save | Daily Report | Atv |" time="0"/>
+  <testcase name="And The system should open &apos;Daily Report&apos; page" classname="| Register | Daily Report | Company Management | Save | Daily Report | Atv |" time="0"/>
+  <testcase name="And In Register daily report, autocomplete Company should filled value &apos;Atv&apos;" classname="| Register | Daily Report | Company Management | Save | Daily Report | Atv |" time="0"/>
+  <testcase name="When I fill Daily report screen with data below" classname="| Register | Daily Report | Company Management | Save | Daily Report | Atv |" time="0"/>
+  <testcase name="And In Register daily report, I click button Add" classname="| Register | Daily Report | Company Management | Save | Daily Report | Atv |" time="0"/>
+  <testcase name="Then The system should show message save daily report successfully" classname="| Register | Daily Report | Company Management | Save | Daily Report | Atv |" time="0"/>
+  <testcase name="| Register | Daily Report | Company Management | Save | Daily Report | Atv |" classname="| Register | Daily Report | Company Management | Save | Daily Report | Atv |" time="1.705"/>
+  <testcase name="When I open submenu Register of menu Daily Report" classname="| Register | Daily Report | No | Yes |" time="0"/>
+  <testcase name="And In Register daily report, I select rows in table daily report history to delete" classname="| Register | Daily Report | No | Yes |" time="0"/>
+  <testcase name="And In Register daily report, I click button Delete" classname="| Register | Daily Report | No | Yes |" time="0"/>
+  <testcase name="And In Register daily report, I click button No in popup confirm delete daily report" classname="| Register | Daily Report | No | Yes |" time="0"/>
+  <testcase name="Then The system should show table daily report history has data" classname="| Register | Daily Report | No | Yes |" time="0"/>
+  <testcase name="When In Register daily report, I click button Delete" classname="| Register | Daily Report | No | Yes |" time="0"/>
+  <testcase name="And In Register daily report, I click button Yes in popup confirm delete daily report" classname="| Register | Daily Report | No | Yes |" time="0"/>
+  <testcase name="Then The system should show message delete daily report successfully" classname="| Register | Daily Report | No | Yes |" time="0"/>
+  <testcase name="| Register | Daily Report | No | Yes |" classname="| Register | Daily Report | No | Yes |" time="1.45"/>
+</testsuite>

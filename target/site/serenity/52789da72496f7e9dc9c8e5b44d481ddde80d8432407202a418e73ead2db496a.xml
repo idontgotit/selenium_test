@@ -1,0 +1,100 @@
+<acceptance-test-run title="4. Open Employee Management and filter Employee select box" name="4. Open Employee Management and filter Employee select box" description="" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="26054" timestamp="2016-11-24T11:03:22.585+07:00" session-id="dee658dc9b58a166de8f8743e2bf720a">
+  <user-story id="employee-management-display" name="Employee Management display" path="employee_management/employee_management.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Employee management" type="capability"/>
+    <tag name="Employee Management display" type="feature"/>
+    <tag name="Employee management/Employee management display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>employeeMenu</header>
+      <header>parentMenuText</header>
+      <header>column</header>
+      <header>textFilter</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>Head Office</value>
+        <value>東京</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>Privilege</value>
+        <value>管理職</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, column=Head Office, textFilter=東京}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="67cf122c3472b907fc086594aab9049c.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1051">
+      <screenshots>
+        <screenshot image="863dc3af722eaf9a863543a85b26f622.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1240">
+      <screenshots>
+        <screenshot image="c0e28e230ceb04755a06e900d0088a44.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I choose 東京 in Head Office column filter</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="792">
+      <screenshots>
+        <screenshot image="67cf122c3472b907fc086594aab9049c.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result in column Head Office have 東京</description>
+    </test-step>
+  </test-group>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, column=Privilege, textFilter=管理職}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="0504c445a2fb405cdf6beb04cd37ecd3.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="950">
+      <screenshots>
+        <screenshot image="e43d1a55594edb20c84afbca8bd7e0d5.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2566">
+      <screenshots>
+        <screenshot image="0504c445a2fb405cdf6beb04cd37ecd3.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I choose 管理職 in Privilege column filter</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="807">
+      <screenshots>
+        <screenshot image="0504c445a2fb405cdf6beb04cd37ecd3.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result in column Privilege have 管理職</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

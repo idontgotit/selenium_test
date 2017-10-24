@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Run feature for debugging" skipped="0" tests="1" time="44.67" timestamp="2016-12-343 11:04:41"><testcase name="6. Open Notification Setting, select one branch, one position, one employee name and add"><failure message="expected:&lt;[tru]e&gt; but was:&lt;[fals]e&gt;" type="java.lang.AssertionError">expected:&lt;[tru]e&gt; but was:&lt;[fals]e&gt;</failure><system-err>expected:&lt;[tru]e&gt; but was:&lt;[fals]e&gt;
+my.lib.serenity.primefaces.sars.steps.NotificationSettingSteps.verifyStatusViewNotification(NotificationSettingSteps.java:38)
+my.lib.serenity.primefaces.sars.definition.NotificationSettingScenarioSteps.inNotificationSettingScreenLinkViewNotificationsIsStatusViewNotifications(NotificationSettingScenarioSteps.java:46)
+</system-err></testcase></testsuite>

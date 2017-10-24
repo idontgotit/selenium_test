@@ -1,0 +1,290 @@
+<acceptance-test-run title="select record -&gt; duplicate start screen" name="select record -&gt; duplicate start screen" description="" steps="28" successful="27" failures="0" errors="1" skipped="0" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="63692" timestamp="2016-11-03T09:00:25.755+07:00" session-id="ffe9ecaacec510bdfef8f18b71b87246">
+  <user-story id="credit-management-test-1-3" name="Credit management test 1-3" path="creditManagement/creadit_management_test13_company_and_credit_data.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Credit management" type="capability"/>
+    <tag name="Credit management test 1-3" type="feature"/>
+    <tag name="Credit management/Credit management test 1 3" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>validCustomerCode</header>
+      <header>rowIndex</header>
+      <header>btnBack</header>
+      <header>rowIndex2CreditHistory</header>
+      <header>tabBusiness</header>
+      <header>btnDuplicate</header>
+      <header>tabIndustryClassification</header>
+      <header>tabInputFinance</header>
+      <header>tabInputCustomer</header>
+    </headers>
+    <rows>
+      <row result="ERROR">
+        <value>Credit Management</value>
+        <value>Accounting</value>
+        <value>A567</value>
+        <value>0</value>
+        <value>Back</value>
+        <value>0</value>
+        <value>Business factors</value>
+        <value>Duplicate</value>
+        <value>Industry classification</value>
+        <value>Input finance data</value>
+        <value>Input customer data</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Credit Management, menuText=Accounting, validCustomerCode=A567, rowIndex=0, btnBack=Back, rowIndex2CreditHistory=0, tabBusiness=Business factors, btnDuplicate=Duplicate, tabIndustryClassification=Industry classification, tabInputFinance=Input finance data, tabInputCustomer=Input customer data}" result="ERROR">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1127">
+      <screenshots>
+        <screenshot image="c4634420ffa7bf01963ee36df4ce3c39.png"/>
+      </screenshots>
+      <description>When I open submenu Credit Management of menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1747">
+      <screenshots>
+        <screenshot image="504d8bdf1741c80e6f1be90227114737.png"/>
+      </screenshots>
+      <description>And I search customer by code A567</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="617">
+      <screenshots>
+        <screenshot image="1fbc365f8cebeda723bc419d3ed61098.png"/>
+      </screenshots>
+      <description>And I click checkbox left of a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1516">
+      <screenshots>
+        <screenshot image="ced77fe1cb8d14dfb188750503161b9b.png"/>
+      </screenshots>
+      <description>And In accounting screen, I click button select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1530">
+      <screenshots>
+        <screenshot image="2d2a1a08e4e19083355f6344554c8ca0.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click record 0 in table Credit History in bottom with View enable</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2138">
+      <screenshots>
+        <screenshot image="967e3dbbb4b7f677d2fb10a78104e60e.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Duplicate</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="321">
+      <screenshots>
+        <screenshot image="54f11ddb0a00d79f1bcffb203ae5de74.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show list button can use
+| Back |
+| Approve |
+| Save draft |
+| Reset |
+| Choose file upload |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="179">
+      <screenshots>
+        <screenshot image="54f11ddb0a00d79f1bcffb203ae5de74.png"/>
+      </screenshots>
+      <description>And In Credit Management page, System show list button can not use
+| Upload |
+| Cancel |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2097">
+      <screenshots>
+        <screenshot image="a7cf5ed9b609d7c39b66975a564dd7a7.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields required can input
+| Index for accounting system |
+| Credit score number |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1229">
+      <screenshots>
+        <screenshot image="ad7bbe7e6e71ed64d65b4c1d9f1aa7a4.png"/>
+      </screenshots>
+      <description>And In Credit Management page, textarea can input
+| Cause of decision |
+| Additional direction |
+| Accountant direction |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="755">
+      <screenshots>
+        <screenshot image="869d6a1d4aeada820fb339c082231170.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I select tab have name is Business factors</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="543">
+      <screenshots>
+        <screenshot image="f9de396dd92fabf4c13facfda4fac624.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show list button can use
+| Back |
+| Approve |
+| Save draft |
+| Reset |
+| Choose file upload |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="4783">
+      <screenshots>
+        <screenshot image="f1b4ed8830aa5b1869008082f87cef39.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields required can input
+| Index for accounting system |
+| Zip code of HQ |
+| Address of HQ (all) |
+| Tel. |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="834">
+      <screenshots>
+        <screenshot image="28adacc730af91d08f99a535b78adfa7.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields can select
+| Fiscal closing month |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="4230">
+      <screenshots>
+        <screenshot image="d4fb97cd973c6ed35629d04ceb02b5d2.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields not required can input
+| Company index of research institute |
+| Fax. |
+| Number of employees |
+| Capital fund |
+| Url |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="722">
+      <screenshots>
+        <screenshot image="f95dbf9329beff036e7f11d8d0ff8836.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I select tab have name is Industry classification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1684">
+      <screenshots>
+        <screenshot image="08b4361c06e41483bd05f44e301dae39.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields not required can input
+| Rank of the same sector (Nation wide) |
+| Population of the same industry (Nation wide) |
+| Rank of the same sector (Prefecture) |
+| Population of the same industry (Prefecture) |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="698">
+      <screenshots>
+        <screenshot image="137f3d02ed400b4825fad782ecd54584.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I select tab have name is Input finance data</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="534">
+      <screenshots>
+        <screenshot image="2472b0582098ee44e35bedba03265d86.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show list button can use
+| Back |
+| Approve |
+| Save draft |
+| Reset |
+| Add new |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="176">
+      <screenshots>
+        <screenshot image="2472b0582098ee44e35bedba03265d86.png"/>
+      </screenshots>
+      <description>And In Credit Management page, System show list button can not use
+| Edit |
+| Delete |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="726">
+      <screenshots>
+        <screenshot image="89ccd133da482e5576f5cff5d57b5932.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I select tab have name is Input customer data</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="407">
+      <screenshots>
+        <screenshot image="585d5da9c827c517cc595069b6a3a41c.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show list button can use
+| Back |
+| Approve |
+| Save draft |
+| Reset |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="171">
+      <screenshots>
+        <screenshot image="ea4a16c98078f80e84aa5a07cc911a3b.png"/>
+      </screenshots>
+      <description>And In Credit Management page, System show list button can not use
+| Edit |
+| Delete |
+| Cancel |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2939">
+      <screenshots>
+        <screenshot image="db4458664144ad7ca9ce79c6099acdc4.png"/>
+      </screenshots>
+      <description>And In Credit Management page, autocomplete fields can input
+| Branch Of request user |
+| Request user account |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="957">
+      <screenshots>
+        <screenshot image="0cbbe8625fbeac1bfede4e0a9e5918ea.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields can select
+| Survey institute and information source |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="374">
+      <screenshots>
+        <screenshot image="920694551503439f426262d30026fde7.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields required can input
+| Index for accounting system |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="270">
+      <screenshots>
+        <screenshot image="d3d08f66ff6a2f77bbe014b974ae10dc.png"/>
+      </screenshots>
+      <description>And In Credit Management page, tab Input customer data textarea can input</description>
+    </test-step>
+    <test-group name="And In Credit Management page, I click button Back" result="ERROR">
+      <test-step result="ERROR" duration="148">
+        <screenshots>
+          <screenshot image="2007b2967129c445ba8b19b36168243d.png" source="pagesource8918787933714739139.html.txt"/>
+        </screenshots>
+        <description>Click button: Back</description>
+        <error>org.openqa.selenium.TimeoutException: Timed out after 10000 milliseconds: my.lib.serenity.primefaces.component.WebComponent$1@271f9a43
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: unknown</error>
+        <exception>org.openqa.selenium.TimeoutException:Timed out after 10000 milliseconds: my.lib.serenity.primefaces.component.WebComponent$1@271f9a43
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: unknown
+[my.lib.serenity.primefaces.component.WebComponent.waitForJQueryAndPrimeFaces(WebComponent.java:51), my.lib.serenity.primefaces.component.WebComponent.waitForAjaxDone(WebComponent.java:95), my.lib.serenity.primefaces.component.ButtonComponent.click_and_wait(ButtonComponent.java:31), my.lib.serenity.primefaces.sars.page.CreditManagementPage.clickBackButton(CreditManagementPage.java:361), my.lib.serenity.primefaces.sars.page.CreditManagementPage.clickButton(CreditManagementPage.java:347), my.lib.serenity.primefaces.sars.steps.CreditManagementCompanyAndCreditDataSteps.clickButton(CreditManagementCompanyAndCreditDataSteps.java:43), my.lib.serenity.primefaces.sars.definition.CreditManagementCompanyAndCreditDataScenarioSteps.inCreditManagementPageIClickBack(CreditManagementCompanyAndCreditDataScenarioSteps.java:42)]</exception>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

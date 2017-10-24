@@ -1,0 +1,221 @@
+<acceptance-test-run title="verify when delete tracking a user then add tracking that user again" name="verify when delete tracking a user then add tracking that user again" description="" steps="23" successful="23" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="280144" timestamp="2016-11-03T08:47:45.007+07:00" session-id="e02788a4687a6dd95353ac181b190d1d">
+  <user-story id="view-notification" name="View Notification" path="viewNotifications/viewNotifications.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="View notifications" type="capability"/>
+    <tag name="View Notification" type="feature"/>
+    <tag name="View notifications/View notification" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>staffUsername</header>
+      <header>staffPassword</header>
+      <header>lang</header>
+      <header>registerMenuText</header>
+      <header>notificationSettingMenuText</header>
+      <header>dailyReportMenuText</header>
+      <header>managerUsername</header>
+      <header>managerPassword</header>
+      <header>viewNotificationsMenuText</header>
+      <header>notificationMenuText</header>
+      <header>notificationSettingText</header>
+      <header>addBtn</header>
+      <header>successSave</header>
+      <header>deleteSuccess</header>
+      <header>viewNotification</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>27000002</value>
+        <value>123456</value>
+        <value>en</value>
+        <value>Register</value>
+        <value>Notification Setting</value>
+        <value>Daily Report</value>
+        <value>9999999</value>
+        <value>triarrow</value>
+        <value>View Notifications</value>
+        <value>Notification</value>
+        <value>Notification Setting</value>
+        <value>Add</value>
+        <value>Save successfully</value>
+        <value>Delete successfully</value>
+        <value>View Notifications</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {staffUsername=27000002, staffPassword=123456, lang=en, registerMenuText=Register, notificationSettingMenuText=Notification Setting, dailyReportMenuText=Daily Report, managerUsername=9999999, managerPassword=triarrow, viewNotificationsMenuText=View Notifications, notificationMenuText=Notification, notificationSettingText=Notification Setting, addBtn=Add, successSave=Save successfully, deleteSuccess=Delete successfully, viewNotification=View Notifications}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="62b0143fabc0793ee481968d6ea9c8c0.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1159">
+      <screenshots>
+        <screenshot image="35b37a459c0c9f5fe999629b60084b62.png"/>
+      </screenshots>
+      <description>When I open submenu Notification Setting of menu Notification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1426">
+      <screenshots>
+        <screenshot image="9c1d029365f4751c6042eece58824e95.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, i select more dropdown with value below
+| valueBranch | valuePosition | valueEmpName |
+|  |  | All employee |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1348">
+      <screenshots>
+        <screenshot image="4a5c541331c63cb8a3ae641608472673.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, I click in Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1273">
+      <screenshots>
+        <screenshot image="2accc31adc4d5bb99a06920ffa7e5450.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, I click in View Notifications</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="864">
+      <screenshots>
+        <screenshot image="bd1ba7e2681c669a56e0311fe77f8634.png"/>
+      </screenshots>
+      <description>When I logout from system</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="874">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>When I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3129">
+      <screenshots>
+        <screenshot image="189286e4901e89826b9c62f0fca5f4a1.png"/>
+        <screenshot image="6fe6e097412e817170f7f9fc17d480d7.png"/>
+      </screenshots>
+      <description>And I input my credentials username 27000002 and password 123456</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2192">
+      <screenshots>
+        <screenshot image="b39be9bd7154da505f5e947285666766.png"/>
+      </screenshots>
+      <description>And I change language to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1537">
+      <screenshots>
+        <screenshot image="f0bc483792913b41d2f23bf6652ec411.png"/>
+      </screenshots>
+      <description>And I open submenu Register of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="4647">
+      <screenshots>
+        <screenshot image="ac94b8ef0ee07b52e48fcf1092f23fef.png"/>
+      </screenshots>
+      <description>And I add new Daily report with data below
+| companyName | content |
+| CIJ | content |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6390">
+      <screenshots>
+        <screenshot image="9cc8dea8cbd95b355244fe50950fe7ff.png"/>
+      </screenshots>
+      <description>Then The system should show message save daily report successfully</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1064">
+      <screenshots>
+        <screenshot image="885cf0cb7e582dd238b6b2d8a5545945.png"/>
+      </screenshots>
+      <description>When I logout from system</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3779">
+      <screenshots>
+        <screenshot image="7deacf8bba3ce0bb82e28c944bdbcded.png"/>
+        <screenshot image="c2d56c2e8c8eeda6f6105b255018be28.png"/>
+      </screenshots>
+      <description>And I input my credentials username 9999999 and password triarrow</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2778">
+      <screenshots>
+        <screenshot image="c2d56c2e8c8eeda6f6105b255018be28.png"/>
+      </screenshots>
+      <description>And I change language to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1407">
+      <screenshots>
+        <screenshot image="67017c188e6f72ee4ecdd496bf910ebb.png"/>
+      </screenshots>
+      <description>And I open submenu View Notifications of menu Notification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="277">
+      <screenshots>
+        <screenshot image="67017c188e6f72ee4ecdd496bf910ebb.png"/>
+      </screenshots>
+      <description>Then The system should show initialization screen of View Notifications page when have data</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1011">
+      <screenshots>
+        <screenshot image="99c1730233c016be067d60403ea0145a.png"/>
+      </screenshots>
+      <description>When In View notification screen, I click button &apos;Notification Setting&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="226390">
+      <screenshots>
+        <screenshot image="1dcda47633d45ea925b358d0ecb2b635.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, I delete all in table notification, show message Delete successfully</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2570">
+      <screenshots>
+        <screenshot image="266feaf1d091237716216841dd438ff1.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, i select more dropdown with value below
+| valueBranch | valuePosition | valueEmpName |
+| 大阪府 | All position | 岡本力 |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1328">
+      <screenshots>
+        <screenshot image="d9394947228bd20dc047a957d4745651.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, I click in Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="8433">
+      <screenshots>
+        <screenshot image="c3aca3e77fd3798316290d6b0f851c62.png"/>
+      </screenshots>
+      <description>Then In Notification Setting screen, System show message Save successfully</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1269">
+      <screenshots>
+        <screenshot image="5422191656fdea32aa6e0bc2806a3256.png"/>
+      </screenshots>
+      <description>When In Notification Setting screen, I click in View Notifications</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="264">
+      <screenshots>
+        <screenshot image="62b0143fabc0793ee481968d6ea9c8c0.png"/>
+      </screenshots>
+      <description>Then The system should show initialization screen of View Notifications page</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

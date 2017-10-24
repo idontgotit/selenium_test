@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"company management","delete company after edit company","ERROR","2016-11-03T08:55:09.610+07:00","0.0","6.81"
+"company management","edit company and fill all field","ERROR","2016-11-03T08:55:02.106+07:00","0.0","6.64"
+"company management","edit company with only required fields","ERROR","2016-11-03T08:54:54.500+07:00","0.0","6.73"
+"company management","verify recent activities","ERROR","2016-11-03T08:54:30.694+07:00","0.0","6.71"

@@ -1,0 +1,261 @@
+<acceptance-test-run title="16. Search customer by other conditions" name="16. Search customer by other conditions" description="" steps="35" successful="35" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="28882" timestamp="2017-02-02T09:22:43.008+07:00" session-id="befdc3dd30909a16e039df4979bff0fc">
+  <user-story id="accounting" name="Accounting" path="creditManagement/creditManagement.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Credit management" type="capability"/>
+    <tag name="Credit management/Accounting" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>invalidIdNameCard</header>
+      <header>validIdNameCard</header>
+      <header>invalidCompanyName</header>
+      <header>validCompanyName</header>
+      <header>rowIndex</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Credit Management</value>
+        <value>Accounting</value>
+        <value>aaaaa</value>
+        <value>EC7B840A</value>
+        <value>aaaaa</value>
+        <value>コペル株式会社</value>
+        <value>0</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Credit Management, menuText=Accounting, invalidIdNameCard=aaaaa, validIdNameCard=EC7B840A, invalidCompanyName=aaaaa, validCompanyName=コペル株式会社, rowIndex=0}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="92610131ea392ea2027f4ea3fd00a48c.png"/>
+      <screenshot image="b0bae6ed69e0051235c0ca521f670168.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1631">
+      <screenshots>
+        <screenshot image="4d8f2821c20552104a5c982e9b69dfc1.png"/>
+      </screenshots>
+      <description>When I open submenu Credit Management of menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="784">
+      <screenshots>
+        <screenshot image="a23760b880ba35ef5750b46ddf0558d7.png"/>
+      </screenshots>
+      <description>And I fill value aaaaa for input id name card</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="287">
+      <screenshots>
+        <screenshot image="c4d2c38410b898ae66926a9d73ff23bf.png"/>
+      </screenshots>
+      <description>And I fill value  for input company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1452">
+      <screenshots>
+        <screenshot image="177729200f482c1b47b51a63c391d569.png"/>
+      </screenshots>
+      <description>And I click search button in tab other conditions</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="221">
+      <screenshots>
+        <screenshot image="d9f7953f2f01381c0e18ac90f6c78a03.png"/>
+      </screenshots>
+      <description>Then The system should show table result with no record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="988">
+      <screenshots>
+        <screenshot image="9b1f16bb6f60d63a2d3a48720e885f8d.png"/>
+      </screenshots>
+      <description>When I fill value EC7B840A for input id name card</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="221">
+      <screenshots>
+        <screenshot image="f64abde530bd5f042af8c0574aa3a15b.png"/>
+      </screenshots>
+      <description>And I fill value  for input company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1401">
+      <screenshots>
+        <screenshot image="e7224a6d923811ebd9fce2ad893200c3.png"/>
+      </screenshots>
+      <description>And I click search button in tab other conditions</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="200">
+      <screenshots>
+        <screenshot image="620a717ed4f9ceeb43f33748d1e510c1.png"/>
+      </screenshots>
+      <description>Then The system should show table result with records</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1064">
+      <screenshots>
+        <screenshot image="663b7ef6d7ce5b9ea27fea830c11d306.png"/>
+      </screenshots>
+      <description>When I fill value  for input id name card</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="239">
+      <screenshots>
+        <screenshot image="cb6f286e5666dbf59f2bb07864849c19.png"/>
+      </screenshots>
+      <description>And I fill value aaaaa for input company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="893">
+      <screenshots>
+        <screenshot image="a3409d8bd4cbb7c6114d2e9b10b5b8be.png"/>
+      </screenshots>
+      <description>And I click search button in tab other conditions</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="260">
+      <screenshots>
+        <screenshot image="4c67edb83befcb33b62028a2f9df78e7.png"/>
+      </screenshots>
+      <description>Then The system should show table result with no record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="703">
+      <screenshots>
+        <screenshot image="fc013b3d4b1f4ed918d1d96d0dbf3b1f.png"/>
+      </screenshots>
+      <description>When I fill value  for input id name card</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="465">
+      <screenshots>
+        <screenshot image="3bcb3cf89629d33b1f34fdd3aeaa6f93.png"/>
+      </screenshots>
+      <description>And I fill value コペル株式会社 for input company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1414">
+      <screenshots>
+        <screenshot image="7fbdf5ec1eae635c8c3941f35ed9a1a2.png"/>
+      </screenshots>
+      <description>And I click search button in tab other conditions</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="256">
+      <screenshots>
+        <screenshot image="eb2f2d662d67b808cab2553fc6a7f76d.png"/>
+      </screenshots>
+      <description>Then The system should show table result with records</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="702">
+      <screenshots>
+        <screenshot image="6d60fe083485fa67f42c94a97ddb87c1.png"/>
+      </screenshots>
+      <description>When I fill value aaaaa for input id name card</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="573">
+      <screenshots>
+        <screenshot image="cb04aafe090f22ce7fa7f0a5db692c71.png"/>
+      </screenshots>
+      <description>And I fill value aaaaa for input company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="912">
+      <screenshots>
+        <screenshot image="1b03ea64f5b49cec613a073d2e6f3b79.png"/>
+      </screenshots>
+      <description>And I click search button in tab other conditions</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="271">
+      <screenshots>
+        <screenshot image="00d994c1e8b5a44d0096fcfc43735269.png"/>
+      </screenshots>
+      <description>Then The system should show table result with no record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="939">
+      <screenshots>
+        <screenshot image="65d52a230c9a81a234073e1276bd50bd.png"/>
+      </screenshots>
+      <description>When I fill value EC7B840A for input id name card</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="433">
+      <screenshots>
+        <screenshot image="a33e4f329e236b433bd983d89665fc21.png"/>
+      </screenshots>
+      <description>And I fill value コペル株式会社 for input company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="923">
+      <screenshots>
+        <screenshot image="8c4a42378f0c6bc43d0293a71d1e0714.png"/>
+      </screenshots>
+      <description>And I click search button in tab other conditions</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="243">
+      <screenshots>
+        <screenshot image="8c5683e0b46a85ed0d3d8c6de082fe54.png"/>
+      </screenshots>
+      <description>Then The system should show table result with records</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="297">
+      <screenshots>
+        <screenshot image="c6bea6cee89ddfeb01968faab8ea2194.png"/>
+      </screenshots>
+      <description>When I click checkbox left of a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="219">
+      <screenshots>
+        <screenshot image="c6bea6cee89ddfeb01968faab8ea2194.png"/>
+      </screenshots>
+      <description>Then The system should enable select button and highlight row 0</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="255">
+      <screenshots>
+        <screenshot image="a99b38c0fd0045a97ac7086b96a3fce1.png"/>
+      </screenshots>
+      <description>When I click checkbox left of a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="171">
+      <screenshots>
+        <screenshot image="a99b38c0fd0045a97ac7086b96a3fce1.png"/>
+      </screenshots>
+      <description>Then The system should disable select button and no highlight row 0</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="232">
+      <screenshots>
+        <screenshot image="c5b8c0adadfd1aaa65e756d02c18c40e.png"/>
+      </screenshots>
+      <description>When I click a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="155">
+      <screenshots>
+        <screenshot image="c5b8c0adadfd1aaa65e756d02c18c40e.png"/>
+      </screenshots>
+      <description>Then The system should enable select button and highlight row 0</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="238">
+      <screenshots>
+        <screenshot image="c5b8c0adadfd1aaa65e756d02c18c40e.png"/>
+      </screenshots>
+      <description>When I click a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="149">
+      <screenshots>
+        <screenshot image="c5b8c0adadfd1aaa65e756d02c18c40e.png"/>
+      </screenshots>
+      <description>Then The system should enable select button and highlight row 0</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2417">
+      <screenshots>
+        <screenshot image="b0bae6ed69e0051235c0ca521f670168.png"/>
+      </screenshots>
+      <description>When In accounting screen, I click button select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="167">
+      <screenshots>
+        <screenshot image="b0bae6ed69e0051235c0ca521f670168.png"/>
+      </screenshots>
+      <description>Then The system should show customer details screen</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

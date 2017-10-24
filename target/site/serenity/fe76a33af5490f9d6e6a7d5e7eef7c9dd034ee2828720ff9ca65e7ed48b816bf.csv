@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"View Notification","initialization screen when have no data","SUCCESS","2016-11-03T20:05:36.266+07:00","0.0","12.58"
+"View Notification","logout from system","SUCCESS","2016-11-03T20:05:48.864+07:00","0.0","1.24"
+"View Notification","switch to notification setting page","SUCCESS","2016-11-03T20:06:23.350+07:00","0.0","12.33"

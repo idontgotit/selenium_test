@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.4/media/jqueryui/dataTables.jqueryui.css" rel="Stylesheet"/>
+<link type="text/css" href="css/tables.css" rel="stylesheet" />
+
+<script type="text/javascript" src="datatables/1.10.4/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.4/media/jqueryui/dataTables.jqueryui.min.js"></script>
+    <script class="code" type="text/javascript">$(document).ready(function () {
+
+        // Results table
+        $('#tag-list-table').DataTable( {
+            "order": [
+                [ 1, "asc" ]
+            ],
+            "pageLength": 25
+        } );
+
+        $("test-list").tabs();
+    });
+    </script>
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-bdd-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs"><a href="index.html">Home</a>  > Loggedin
+                > Features
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-11-2016 20:37</span>
+    <br style="clear:left"/>
+</div>
+
+
+
+   <div class="clr"></div>
+    <div id="beforetable"></div>
+    <div id="results-dashboard">
+        <div class="middlb">
+            <div class="table">
+                <table>
+                 <tr>
+                   <td>
+                    <div id="test-list">
+                        <ul>
+                            <li><a href="test-list-1">Features</a></li>
+                        </ul>
+                    </div>
+                    <div id="test-list-1" class="table">
+                        <div class="test-results">
+                            <table id="tag-list-table">
+                                <thead>
+                                    <tr>
+                                        <th width="30" class="test-results-heading">&nbsp;</th>
+                                        <th width="750" class="test-results-heading">Feature</th>
+                                        <th width="70" class="test-results-heading">Tests</th>
+                                        <th width="70" class="test-results-heading">Steps</th>
+                                        <th width="65" class="test-results-heading">Duration</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Bass export display</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-SUCCESS">
+                                        <td><span class="summary-icon"/><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span><span style="display:none">SUCCESS</span></td>
+                                        <td class="SUCCESS-text"><a href="a92842d78881f215a25edbd48570d01506328c29b1cd0b786ae189869ef670cb.html">Bass Export Display</a></td>
+
+                                        <td class="lightgreentext">5</td>
+                                        <td class="lightgreentext">62</td>
+
+                                        <td class="lightgreentext">82.171</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>company management</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="a1f95cdef57350f4611cda50d0340bcdd8d5eb1ea6723ba9e107da36dc974194.html">Company Management</a></td>
+
+                                        <td class="lightgreentext">17</td>
+                                        <td class="lightgreentext">161</td>
+
+                                        <td class="lightgreentext">364.236</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Company management</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="b9847e0541e537e24b4c1a36c1f9738355b169d0ce74722877ebac6934c9f590.html">Company Management</a></td>
+
+                                        <td class="lightgreentext">17</td>
+                                        <td class="lightgreentext">161</td>
+
+                                        <td class="lightgreentext">364.236</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Credit management test 1-3</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="c116739f51c8a8e7c8c64355303c2567fd11ecf73659f527d1b1e06656789a55.html">Credit Management Test 1-3</a></td>
+
+                                        <td class="lightgreentext">6</td>
+                                        <td class="lightgreentext">106</td>
+
+                                        <td class="lightgreentext">204.176</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Credit management test 4-6</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-SUCCESS">
+                                        <td><span class="summary-icon"/><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span><span style="display:none">SUCCESS</span></td>
+                                        <td class="SUCCESS-text"><a href="2680e6c9a0168ef3ed58a0b6ce6825a26db252ae003789dfc273670433d106fd.html">Credit Management Test 4-6</a></td>
+
+                                        <td class="lightgreentext">4</td>
+                                        <td class="lightgreentext">110</td>
+
+                                        <td class="lightgreentext">239.42</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Accounting</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-SUCCESS">
+                                        <td><span class="summary-icon"/><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span><span style="display:none">SUCCESS</span></td>
+                                        <td class="SUCCESS-text"><a href="e46126d035e89ae293f382f88480a1a8622b689b5c13c7727542fd8b1658bdf8.html">Accounting</a></td>
+
+                                        <td class="lightgreentext">4</td>
+                                        <td class="lightgreentext">79</td>
+
+                                        <td class="lightgreentext">88.497</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Credit management add and edit</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-SUCCESS">
+                                        <td><span class="summary-icon"/><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span><span style="display:none">SUCCESS</span></td>
+                                        <td class="SUCCESS-text"><a href="c010532482248be6325799f676fcad2a08e7d01a614d02101c8bd8788c4d41f3.html">Credit Management Add And Edit</a></td>
+
+                                        <td class="lightgreentext">4</td>
+                                        <td class="lightgreentext">158</td>
+
+                                        <td class="lightgreentext">310.207</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Credit management test 1 3</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="37e486b7a5dbab05ed27e48a59f1ea874bf655224045e4aca1dd7b0d76395bc8.html">Credit Management Test 1 3</a></td>
+
+                                        <td class="lightgreentext">6</td>
+                                        <td class="lightgreentext">106</td>
+
+                                        <td class="lightgreentext">204.176</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Credit management test 4 6</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-SUCCESS">
+                                        <td><span class="summary-icon"/><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span><span style="display:none">SUCCESS</span></td>
+                                        <td class="SUCCESS-text"><a href="4a663de4f4d8d46fe1fe9edd8bd521f648879b573158e6c76b7721136de1a5a7.html">Credit Management Test 4 6</a></td>
+
+                                        <td class="lightgreentext">4</td>
+                                        <td class="lightgreentext">110</td>
+
+                                        <td class="lightgreentext">239.42</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Employee Management display</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="3c0f13ccefc8a7a6ed196fe75cff912cfa3cd9b0b10c5f4c414fdf41b279ff0f.html">Employee Management Display</a></td>
+
+                                        <td class="lightgreentext">23</td>
+                                        <td class="lightgreentext">169</td>
+
+                                        <td class="lightgreentext">456.912</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Employee management display</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="f5bfa36056abdc6c3bf248efca9d75722974bc971f2d467961fc5b8ce013b20c.html">Employee Management Display</a></td>
+
+                                        <td class="lightgreentext">23</td>
+                                        <td class="lightgreentext">169</td>
+
+                                        <td class="lightgreentext">456.912</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Notification Setting display</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-FAILURE">
+                                        <td><span class="summary-icon"/><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span><span style="display:none">FAILURE</span></td>
+                                        <td class="FAILURE-text"><a href="0b28d59f3c3d12246fc436339e32a6e306cdee30a2aa2f3a125e4b7214bc5ccd.html">Notification Setting Display</a></td>
+
+                                        <td class="lightgreentext">4</td>
+                                        <td class="lightgreentext">41</td>
+
+                                        <td class="lightgreentext">57.779</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Notification setting display</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-FAILURE">
+                                        <td><span class="summary-icon"/><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span><span style="display:none">FAILURE</span></td>
+                                        <td class="FAILURE-text"><a href="ffa0c73fcd262b0e7b78687a04bd1271ffb98ac8081e6b1826b7a4e7416f8fdc.html">Notification Setting Display</a></td>
+
+                                        <td class="lightgreentext">4</td>
+                                        <td class="lightgreentext">41</td>
+
+                                        <td class="lightgreentext">57.779</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>register daily report</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-SUCCESS">
+                                        <td><span class="summary-icon"/><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span><span style="display:none">SUCCESS</span></td>
+                                        <td class="SUCCESS-text"><a href="686b9491240bed5aa8d46ef346733a280c6bd22dce9372ff5ff7c4d276d671ea.html">Register Daily Report</a></td>
+
+                                        <td class="lightgreentext">8</td>
+                                        <td class="lightgreentext">70</td>
+
+                                        <td class="lightgreentext">233.771</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Register daily report</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-SUCCESS">
+                                        <td><span class="summary-icon"/><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span><span style="display:none">SUCCESS</span></td>
+                                        <td class="SUCCESS-text"><a href="bc5eadaa4897ddffd39020d8792edfb5cb4bdbcbd54c7f3acc1f9d7e97401d07.html">Register Daily Report</a></td>
+
+                                        <td class="lightgreentext">8</td>
+                                        <td class="lightgreentext">70</td>
+
+                                        <td class="lightgreentext">233.771</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Search Daily report by date</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="f9a5b6f1391b3f94c96f1c8fbee400748ab39b07de351a45d26226a98fd53d28.html">Search Daily Report By Date</a></td>
+
+                                        <td class="lightgreentext">8</td>
+                                        <td class="lightgreentext">90</td>
+
+                                        <td class="lightgreentext">106.434</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Search daily report by date</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="33d371a693ce0cf261d441137a895db46709fc2dda88c530787e8c7ad98e6ad3.html">Search Daily Report By Date</a></td>
+
+                                        <td class="lightgreentext">8</td>
+                                        <td class="lightgreentext">90</td>
+
+                                        <td class="lightgreentext">106.434</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>View Notification</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="b49a256b8c3c118b671c8ebb3480313ea4f40d37b92803f0afe5cf77b297ca41.html">View Notification</a></td>
+
+                                        <td class="lightgreentext">5</td>
+                                        <td class="lightgreentext">52</td>
+
+                                        <td class="lightgreentext">69.613</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>View notification</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="6cf56e43a8a8d33041170384098259e13eb5f15ea2bd71b49c8b8bb563a559fd.html">View Notification</a></td>
+
+                                        <td class="lightgreentext">5</td>
+                                        <td class="lightgreentext">52</td>
+
+                                        <td class="lightgreentext">69.613</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                   </td>
+                  </tr>
+                 </table>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter"></div>
+
+</body>
+</html>

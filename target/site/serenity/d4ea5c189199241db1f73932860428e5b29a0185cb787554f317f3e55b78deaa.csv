@@ -1,0 +1,8 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Employee Management display","Open Employee Management and verify when select 1 record, change page and back","FAILURE","2016-11-03T20:37:05.056+07:00","0.0","16.56"
+"Notification Setting display","Open Notification Setting and verify start screen have setting","FAILURE","2016-11-03T19:55:18.740+07:00","0.0","9.9"
+"Notification Setting display","Open Notification Setting click view notification","FAILURE","2016-11-03T19:55:28.870+07:00","0.0","6.86"
+"View Notification","initialization screen when have data","FAILURE","2016-11-03T20:06:11.722+07:00","0.0","10.54"
+"Search Daily report by date","search daily report","FAILURE","2016-11-03T19:56:23.239+07:00","0.0","14.99"
+"View Notification","verify mark all as read function","FAILURE","2016-11-03T20:06:52.395+07:00","0.0","14.88"
+"View Notification","view details notification","FAILURE","2016-11-03T20:06:40.793+07:00","0.0","10.52"

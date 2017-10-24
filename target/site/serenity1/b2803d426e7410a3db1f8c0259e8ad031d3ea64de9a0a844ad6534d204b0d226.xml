@@ -1,0 +1,138 @@
+<acceptance-test-run title="Open Notification Setting and verify start screen with out setting" name="Open Notification Setting and verify start screen with out setting" description="" steps="12" successful="12" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="8397" timestamp="2016-11-03T08:35:12.602+07:00" session-id="5b802c89a9981e25507d160b7ded548a">
+  <user-story id="notification-setting-display" name="Notification Setting display" path="notification_setting/notification_setting.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Notification setting" type="capability"/>
+    <tag name="Notification Setting display" type="feature"/>
+    <tag name="Notification setting/Notification setting display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>notificationMenu</header>
+      <header>pageTitle</header>
+      <header>parentMenuText</header>
+      <header>numberClm</header>
+      <header>statusViewNotifications</header>
+      <header>number</header>
+      <header>string</header>
+      <header>lang</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Notification Setting</value>
+        <value>Notification</value>
+        <value>Notification</value>
+        <value>6</value>
+        <value>Not Visible</value>
+        <value>13000002</value>
+        <value>triarrow</value>
+        <value>en</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {notificationMenu=Notification Setting, pageTitle=Notification, parentMenuText=Notification, numberClm=6, statusViewNotifications=Not Visible, number=13000002, string=triarrow, lang=en}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="52af3e57b92798a692b990c486caf701.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="684">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>When I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2620">
+      <screenshots>
+        <screenshot image="52f9210a61d4a4bcf8f472236953aaed.png"/>
+        <screenshot image="12dda5d5955172e78bfbf0b7b9609c28.png"/>
+      </screenshots>
+      <description>And I input my credentials username 13000002 and password triarrow</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1853">
+      <screenshots>
+        <screenshot image="3fe1885681dc6bd142a4a2a9c6c181cd.png"/>
+      </screenshots>
+      <description>And I change language to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="898">
+      <screenshots>
+        <screenshot image="09e1d0742c2d42188fb123d52b5c32ef.png"/>
+      </screenshots>
+      <description>And I open submenu Notification Setting of parent menu Notification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="190">
+      <screenshots>
+        <screenshot image="09e1d0742c2d42188fb123d52b5c32ef.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Notification&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="158">
+      <screenshots>
+        <screenshot image="09e1d0742c2d42188fb123d52b5c32ef.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, System show list button can not use
+| Add |
+| Delete |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="187">
+      <screenshots>
+        <screenshot image="09e1d0742c2d42188fb123d52b5c32ef.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, Table in the right have 6 columns</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="327">
+      <screenshots>
+        <screenshot image="09e1d0742c2d42188fb123d52b5c32ef.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, Table in the right have columns like below
+| Employee Code |
+| Employee Name |
+| Type |
+| Enable? |
+| Unread |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="146">
+      <screenshots>
+        <screenshot image="09e1d0742c2d42188fb123d52b5c32ef.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, Table in the right do not have any record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="202">
+      <screenshots>
+        <screenshot image="09e1d0742c2d42188fb123d52b5c32ef.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, Table in the left have list select box can select
+| Branch |
+| Position |
+| Employee Name |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="129">
+      <screenshots>
+        <screenshot image="09e1d0742c2d42188fb123d52b5c32ef.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, link View Notifications is Not Visible</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="882">
+      <screenshots>
+        <screenshot image="52af3e57b92798a692b990c486caf701.png"/>
+      </screenshots>
+      <description>And I logout from system</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

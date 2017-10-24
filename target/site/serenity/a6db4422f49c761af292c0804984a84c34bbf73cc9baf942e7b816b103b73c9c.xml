@@ -1,0 +1,91 @@
+<acceptance-test-run title="7. Open Employee Management and use toggle working" name="7. Open Employee Management and use toggle working" description="" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="27549" timestamp="2016-11-21T13:23:03.136+07:00" session-id="d83d5f10a6b35a58e6daaefdfc9bd473">
+  <user-story id="run-feature-for-debugging" name="Run feature for debugging" path="debug/debug.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Debug" type="capability"/>
+    <tag name="Debug/Run feature for debugging" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>employeeMenu</header>
+      <header>parentMenuText</header>
+      <header>firstRecord</header>
+      <header>secondRecord</header>
+      <header>toggleWorkingStatusBtn</header>
+      <header>successChangeStatus</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>1</value>
+        <value>5</value>
+        <value>Toggle Working Status</value>
+        <value>Change Status Successfully</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, firstRecord=1, secondRecord=5, toggleWorkingStatusBtn=Toggle Working Status, successChangeStatus=Change Status Successfully}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="496b099cda60c36b1d2960dfaebc0eea.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1043">
+      <screenshots>
+        <screenshot image="4295460ede9a1004e45a821902a84688.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="963">
+      <screenshots>
+        <screenshot image="6e719849acf0a80aa88fb8e89d2647f7.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click in number 1 record can click</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1406">
+      <screenshots>
+        <screenshot image="ca71f744a4aa5f3c5de3d369d1e38b13.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Toggle Working Status</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="8475">
+      <screenshots>
+        <screenshot image="68ba9e89cb61eb4808781c9676ad14ff.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, System show message Change Status Successfully</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="925">
+      <screenshots>
+        <screenshot image="cea93262dc2235870f0df3a2b8bfff4a.png"/>
+      </screenshots>
+      <description>When In Employee Management screen, I click in number 5 record can click</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1424">
+      <screenshots>
+        <screenshot image="71e1f05c3c568b2e32ddb7f18e26f1d8.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Toggle Working Status</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="8411">
+      <screenshots>
+        <screenshot image="496b099cda60c36b1d2960dfaebc0eea.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, System show message Change Status Successfully</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

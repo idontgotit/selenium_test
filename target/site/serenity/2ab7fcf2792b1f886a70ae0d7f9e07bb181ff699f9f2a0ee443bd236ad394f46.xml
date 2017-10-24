@@ -1,0 +1,233 @@
+<acceptance-test-run title="10. Verify approve customer data" name="10. Verify approve customer data" description="" steps="29" successful="29" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="43350" timestamp="2017-01-25T09:41:17.072+07:00" session-id="34b05d9769fbf68e1f1468dab3840ffa">
+  <user-story id="run-feature-for-debugging" name="Run feature for debugging" path="debug/debug.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Debug" type="capability"/>
+    <tag name="Debug/Run feature for debugging" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>customerCode</header>
+      <header>rowIndex</header>
+      <header>btnDuplicate</header>
+      <header>btnApprove</header>
+      <header>number</header>
+      <header>string</header>
+      <header>lang</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Credit Management</value>
+        <value>Accounting</value>
+        <value>A567</value>
+        <value>0</value>
+        <value>Duplicate</value>
+        <value>Approve</value>
+        <value>4009912</value>
+        <value>123456</value>
+        <value>en</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Credit Management, menuText=Accounting, customerCode=A567, rowIndex=0, btnDuplicate=Duplicate, btnApprove=Approve, number=4009912, string=123456, lang=en}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="7b40aa3b2b6add185915c2387be9c1db.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="683">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>When I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2404">
+      <screenshots>
+        <screenshot image="617d41b902e1df6119a620f9391ddde8.png"/>
+        <screenshot image="a4238260deabc52d4f775d3b79bd1054.png"/>
+      </screenshots>
+      <description>And I input my credentials username 4009912 and password 123456</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1638">
+      <screenshots>
+        <screenshot image="5a954ee6f2735c8e7593f1333dab07d7.png"/>
+      </screenshots>
+      <description>And I change language to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="935">
+      <screenshots>
+        <screenshot image="4fa92ada79baf505bc035bd7f7c72ef6.png"/>
+      </screenshots>
+      <description>When I open submenu Credit Management of menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1554">
+      <screenshots>
+        <screenshot image="97e249d4d5166061efa13da51a5c085b.png"/>
+      </screenshots>
+      <description>And I search customer by code A567</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="384">
+      <screenshots>
+        <screenshot image="6c792ba625552a4fa804dafeec9ec329.png"/>
+      </screenshots>
+      <description>And I click checkbox left of a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1342">
+      <screenshots>
+        <screenshot image="117f4c26e133306d34a053e69384cf58.png"/>
+      </screenshots>
+      <description>And In accounting screen, I click button select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="902">
+      <screenshots>
+        <screenshot image="2477e0471cf0db04877a49a30a295276.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click record 0 in table Credit History in bottom with View enable</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1879">
+      <screenshots>
+        <screenshot image="4a30fbca5a1354ecea6c3e7e54b05985.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Duplicate</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1250">
+      <screenshots>
+        <screenshot image="c306428f14be98c5e2df12f4255b5cd5.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Approve</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="149">
+      <screenshots>
+        <screenshot image="c306428f14be98c5e2df12f4255b5cd5.png"/>
+      </screenshots>
+      <description>Then The system should show approve confirm dialog</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="238">
+      <screenshots>
+        <screenshot image="62920b6c80a9127ba67de00d6af0c4f1.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I decline action</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="228">
+      <screenshots>
+        <screenshot image="e0a7ab8cf08f9a3dfbfb36837ea5e612.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show list button can use
+| Back |
+| Approve |
+| Save draft |
+| Reset |
+| Choose file upload |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1253">
+      <screenshots>
+        <screenshot image="c306428f14be98c5e2df12f4255b5cd5.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I click button Approve</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1387">
+      <screenshots>
+        <screenshot image="3d37e38ab64f5de21146e9eb6a3a5069.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I confirm action</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="844">
+      <screenshots>
+        <screenshot image="f7bd25f9bf9ae5467b5cfa84c7e2a694.png"/>
+      </screenshots>
+      <description>And I open submenu Credit Management of menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1505">
+      <screenshots>
+        <screenshot image="10873eb93e20380bf838186aba012a35.png"/>
+      </screenshots>
+      <description>And I search customer by code A567</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="490">
+      <screenshots>
+        <screenshot image="3790ebd2495020e1c66dfd97fe9ef125.png"/>
+      </screenshots>
+      <description>And I click checkbox left of a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1333">
+      <screenshots>
+        <screenshot image="beae4ce11f35c752e80240bcb8dfddca.png"/>
+      </screenshots>
+      <description>And In accounting screen, I click button select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="871">
+      <screenshots>
+        <screenshot image="dea0fd5f8bef05fd2c811d6ebce475cc.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click record 0 in table Credit History in bottom with View enable</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1844">
+      <screenshots>
+        <screenshot image="4ec2271857fa06b4f441d3cddf4c47e7.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Duplicate</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1244">
+      <screenshots>
+        <screenshot image="c306428f14be98c5e2df12f4255b5cd5.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I click button Approve</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1794">
+      <screenshots>
+        <screenshot image="cc94342d52a7a4233b2cc56345a0a681.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I confirm action</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="5889">
+      <screenshots>
+        <screenshot image="9523bc93da40e541c4ce9bc4e87ab86a.png"/>
+      </screenshots>
+      <description>Then The system should show approve failure message because survey already existed</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1072">
+      <screenshots>
+        <screenshot image="16aa13a01cba3b236db18a818a837d7a.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I change survey date to next day of selected record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1232">
+      <screenshots>
+        <screenshot image="c306428f14be98c5e2df12f4255b5cd5.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Approve</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1285">
+      <screenshots>
+        <screenshot image="7657ee5bc4c511cc6f1987b80a7de3e5.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I confirm action</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6209">
+      <screenshots>
+        <screenshot image="9cde41ce38b6cbc1286d944d57532271.png"/>
+      </screenshots>
+      <description>Then The system should show approve success message</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1383">
+      <screenshots>
+        <screenshot image="7b40aa3b2b6add185915c2387be9c1db.png"/>
+      </screenshots>
+      <description>And I logout from system</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

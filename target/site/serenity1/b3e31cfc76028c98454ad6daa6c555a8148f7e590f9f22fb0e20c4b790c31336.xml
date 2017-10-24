@@ -1,0 +1,82 @@
+<acceptance-test-run title="initialization screen when create new daily report and verify toggle column" name="initialization screen when create new daily report and verify toggle column" description="" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="9727" timestamp="2016-11-03T08:41:19.053+07:00" session-id="008fe78f33bb3c47dea87fcc38f436c4">
+  <user-story id="register-daily-report" name="register daily report" path="registerDailyReport/registerDailyReport.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Register daily report" type="capability"/>
+    <tag name="register daily report" type="feature"/>
+    <tag name="Register daily report/Register daily report" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>totalColumn</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Register</value>
+        <value>Daily Report</value>
+        <value>10</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Register, menuText=Daily Report, totalColumn=10}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="8d362a2acd3438c51d97bec39f7a1117.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="133">
+      <screenshots>
+        <screenshot image="11c235d44c3987c37636d287d06e3fc2.png"/>
+      </screenshots>
+      <description>Given A list of column title need toggle in Register Daily report
+| Purpose |
+| Reminder start time |
+| Reminder end time |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1005">
+      <screenshots>
+        <screenshot image="6383ef157cc86f70b91e0fe398484dfa.png"/>
+      </screenshots>
+      <description>When I open submenu Register of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1140">
+      <screenshots>
+        <screenshot image="0c56f9b771f47cf7e8223404e0e0b8a0.png"/>
+      </screenshots>
+      <description>Then The system should show initialization screen of Register Daily report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="256">
+      <screenshots>
+        <screenshot image="3950fdcf78febaf54223080fe0ec49df.png"/>
+      </screenshots>
+      <description>When I open toggle menu in table daily report history</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="861">
+      <screenshots>
+        <screenshot image="8d362a2acd3438c51d97bec39f7a1117.png"/>
+      </screenshots>
+      <description>And I toggle all column in table daily report history</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="142">
+      <screenshots>
+        <screenshot image="8d362a2acd3438c51d97bec39f7a1117.png"/>
+      </screenshots>
+      <description>Then The system should show table daily report history has 10 columns</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

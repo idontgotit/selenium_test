@@ -1,0 +1,272 @@
+<acceptance-test-run title="5. Select record -&gt; duplicate start screen" name="5. Select record -&gt; duplicate start screen" description="" steps="28" successful="28" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="37756" timestamp="2017-01-25T09:35:50.365+07:00" session-id="83047ac8bd104e2774f35d766ec3ef97">
+  <user-story id="run-feature-for-debugging" name="Run feature for debugging" path="debug/debug.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Debug" type="capability"/>
+    <tag name="Debug/Run feature for debugging" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>validCustomerCode</header>
+      <header>rowIndex</header>
+      <header>btnBack</header>
+      <header>rowIndex2CreditHistory</header>
+      <header>tabBusiness</header>
+      <header>btnDuplicate</header>
+      <header>tabIndustryClassification</header>
+      <header>tabInputFinance</header>
+      <header>tabInputCustomer</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Credit Management</value>
+        <value>Accounting</value>
+        <value>A567</value>
+        <value>0</value>
+        <value>Back</value>
+        <value>0</value>
+        <value>Business factors</value>
+        <value>Duplicate</value>
+        <value>Industry classification</value>
+        <value>Input finance data</value>
+        <value>Input customer data</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Credit Management, menuText=Accounting, validCustomerCode=A567, rowIndex=0, btnBack=Back, rowIndex2CreditHistory=0, tabBusiness=Business factors, btnDuplicate=Duplicate, tabIndustryClassification=Industry classification, tabInputFinance=Input finance data, tabInputCustomer=Input customer data}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="0b13856788e585dbb7fa0982146a5e15.png"/>
+      <screenshot image="36141809b57e78ca8d90b2736c26a021.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1016">
+      <screenshots>
+        <screenshot image="660da60ecc1eed8563a15e0e09e63199.png"/>
+      </screenshots>
+      <description>When I open submenu Credit Management of menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1589">
+      <screenshots>
+        <screenshot image="46978148e573b50de2674269f48cdd36.png"/>
+      </screenshots>
+      <description>And I search customer by code A567</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="422">
+      <screenshots>
+        <screenshot image="f28807eb483e52dbe5c017028e9de25c.png"/>
+      </screenshots>
+      <description>And I click checkbox left of a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1401">
+      <screenshots>
+        <screenshot image="ee7909a47065cdddf32f1e7088c8ab99.png"/>
+      </screenshots>
+      <description>And In accounting screen, I click button select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="887">
+      <screenshots>
+        <screenshot image="df5a0aa4d137cd4679c6074759f1817c.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click record 0 in table Credit History in bottom with View enable</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1827">
+      <screenshots>
+        <screenshot image="812748e5b6f37ebce3128c1a0e127205.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Duplicate</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="298">
+      <screenshots>
+        <screenshot image="e90a7303fb65c7929b7c711765efbb80.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show list button can use
+| Back |
+| Save draft |
+| Reset |
+| Choose file upload |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="204">
+      <screenshots>
+        <screenshot image="d77f3d6d404dd5c43b8296fa2bb9e8b5.png"/>
+      </screenshots>
+      <description>And In Credit Management page, System show list button can not use
+| Upload |
+| Cancel |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1673">
+      <screenshots>
+        <screenshot image="00ad84209a7d052b797906b32f9cbcb5.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields required can input
+| Index for accounting system |
+| Credit score number |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1052">
+      <screenshots>
+        <screenshot image="8d4db5febe2025a40502ef60afd848a0.png"/>
+      </screenshots>
+      <description>And In Credit Management page, textarea can input
+| Cause of decision |
+| Additional direction |
+| Accountant direction |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="681">
+      <screenshots>
+        <screenshot image="98407f9db0653545ca27f2bef138f0a8.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I select tab have name is Business factors</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="214">
+      <screenshots>
+        <screenshot image="4dec48c0b9ce50c65de416c2fb222b4b.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show list button can use
+| Back |
+| Save draft |
+| Reset |
+| Choose file upload |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="4613">
+      <screenshots>
+        <screenshot image="ece35520c92a0647321a22e69be859bb.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields required can input
+| Index for accounting system |
+| Zip code of HQ |
+| Address of HQ (all) |
+| Tel. |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="954">
+      <screenshots>
+        <screenshot image="756a7b8e22dd6af748a527720e739a86.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields can select
+| Fiscal closing month |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3504">
+      <screenshots>
+        <screenshot image="f27c6689f207d88f5af100ab24981672.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields not required can input
+| Company index of research institute |
+| Fax. |
+| Number of employees |
+| Capital fund |
+| Url |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="695">
+      <screenshots>
+        <screenshot image="a011d2a27110c8fcd0a7145f61a9d18a.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I select tab have name is Industry classification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1225">
+      <screenshots>
+        <screenshot image="c8b97806a681547447b94710e7908b36.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields not required can input
+| Rank of the same sector (Nation wide) |
+| Population of the same industry (Nation wide) |
+| Rank of the same sector (Prefecture) |
+| Population of the same industry (Prefecture) |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="693">
+      <screenshots>
+        <screenshot image="b68075c1c40597d9987d5c5e2567f7e1.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I select tab have name is Input finance data</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="287">
+      <screenshots>
+        <screenshot image="c98570e7a7ff0dd2bcd0605f3059dc2e.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show list button can use
+| Back |
+| Save draft |
+| Reset |
+| Add new |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="204">
+      <screenshots>
+        <screenshot image="f0426ed31e7ce58307f2ec73ca197def.png"/>
+      </screenshots>
+      <description>And In Credit Management page, System show list button can not use
+| Edit |
+| Delete |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="691">
+      <screenshots>
+        <screenshot image="7a7d3abd42cc1fd857cf553b083d5ae3.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I select tab have name is Input customer data</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="214">
+      <screenshots>
+        <screenshot image="824140e43924b4e917a9d436103f5d25.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show list button can use
+| Back |
+| Save draft |
+| Reset |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="216">
+      <screenshots>
+        <screenshot image="bd39710693c51064efdf09cd22237cca.png"/>
+      </screenshots>
+      <description>And In Credit Management page, System show list button can not use
+| Edit |
+| Delete |
+| Cancel |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3283">
+      <screenshots>
+        <screenshot image="01ca94d640d0ce0766df99dedfd0453f.png"/>
+      </screenshots>
+      <description>And In Credit Management page, autocomplete fields can input
+| Branch of request user |
+| Request user account |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="878">
+      <screenshots>
+        <screenshot image="cfc744b78c6bbcafe2b183286f374efd.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields can select
+| Survey institute and information source |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="450">
+      <screenshots>
+        <screenshot image="dfb2c766a320bb3469803249192a2b50.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields required can input
+| Index for accounting system |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="244">
+      <screenshots>
+        <screenshot image="47ec17d4c5464469a862fdb8df1175b5.png"/>
+      </screenshots>
+      <description>And In Credit Management page, tab Input customer data textarea can input</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3731">
+      <screenshots>
+        <screenshot image="36141809b57e78ca8d90b2736c26a021.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Back</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

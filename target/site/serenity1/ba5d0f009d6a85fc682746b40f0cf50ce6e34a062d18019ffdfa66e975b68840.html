@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>select record -> duplicate -> save draft -> fail -> Reject->save draft -> success</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.4/media/jqueryui/dataTables.jqueryui.css" rel="Stylesheet"/>
+<link type="text/css" href="css/tables.css" rel="stylesheet" />
+
+<script type="text/javascript" src="datatables/1.10.4/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.4/media/jqueryui/dataTables.jqueryui.min.js"></script><!-- ImgPreview -->
+<script src="scripts/imgpreview.full.jquery.js" type="text/javascript"></script>
+</head>
+
+<body class="results-page">
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-bdd-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+        <span class="breadcrumbs">
+            <a href="index.html" class="breadcrumbs">Home</a>
+
+            > <a href="fc61e3e04e1b2e2c86db64adca29dc6190a133154dc78ac2a796dd409873bacd.html">Credit Management</a>
+            > <a href="179afaf5c9c1e478ad9bd454bad63b6be799850be122836caa5cf4396bd7e2f7.html">Credit Management Test 4-6</a>
+            > select record -> duplicate -> save draft -> fail -> Reject->save draft -> succes&hellip;
+        </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-11-2016 09:11</span>
+    <br style="clear:left"/>
+</div>
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Credit Management Test 4-6</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a user<br>I want use Credit management
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="ba9fb54e1af2981411104c56e14ee34928ceb18af19fd6266c85e9ccfcde886c.html">3.1.5
+                                    (version)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="fc61e3e04e1b2e2c86db64adca29dc6190a133154dc78ac2a796dd409873bacd.html">Credit Management
+                                    (capability)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="3e0ef395cd6ab697f994c3222494eed334cedf15c4ec046c2c7ce741935db68b.html">
+                                    (issue)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="221df95d1ff617be56b46a3e9a1f6c3e8e17fe899523d17e144aa0aed60dc835.html">Loggedin
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="3eabc930129068005f42b2f0091043c9d0fb9ba85057a80cc434feccdd4ca4f7.html">Credit Management Test 4 6
+                                    (feature)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="7af145658023301483346e9bf7e7857d3d5d846f49bf9bef46addcc7f8c82094.html">Sprint-1.1
+                                    (version)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-3x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+
+                                <span class="success-color">Select Record -> Duplicate -> Save Draft -> Fail -> Reject->Save Draft -> Success
+                                    <span class="related-issue-title">()</span>
+                            </span>
+                        </span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3 class="story-header">Scenario:</h3>
+
+        <div class="scenario">When I open submenu Credit Management of menu Accounting<br>And I search customer by code A567<br>And I click checkbox left of a row 0 into table result<br>And In accounting screen, I click button select<br>And In Credit Management page, I click record 0 in table Credit History in bottom with View enable<br>And In Credit Management page, I click button Duplicate<br>And In Credit Management page, I change survey date to next day of selected record<br>And In Credit Management page, I click button Save draft<br>And I open submenu Credit Management of menu Accounting<br>And I search customer by code A567<br>And I click checkbox left of a row 0 into table result<br>And In accounting screen, I click button select<br>And In Credit Management page, I click record 0 in table Credit History in bottom with View enable<br>And In Credit Management page, I click button Duplicate<br>And In Credit Management page, I click button Save draft<br>Then In Credit Management page, System show message Cannot make new draft report because you could only have 1 draft report for this company once time.<br>When In Credit Management page, I click button back<br>And In Credit Management page, I click record 0 in table Credit History in bottom<br>And In Credit Management page, I click button Edit<br>And In Credit Management page, I click button Reject<br>And In Credit Management page, I confirm action<br>And In Credit Management page, System show message Reject successful<br>And In Credit Management page, I click record 0 in table Credit History in bottom with View enable<br>And In Credit Management page, I click button Duplicate<br>And In Credit Management page, I change survey date to next day of selected record<br>And In Credit Management page, I click button Save draft<br>Then In Credit Management page, System show message Save successfully</div>
+
+    </div>
+
+    <div id="beforetable"></div>
+
+
+
+        <h3 class="story-header">Examples:</h3>
+            <div class="requirementNarrative"></div>
+        <div class="example-table">
+            <table>
+                <thead>
+                <tr>
+                        <th>Submenutext</th>
+                        <th>Menutext</th>
+                        <th>Validcustomercode</th>
+                        <th>Rowindex</th>
+                        <th>Btnback</th>
+                        <th>Rowindex2credithistory</th>
+                        <th>Btnduplicate</th>
+                        <th>Btnsavedraft</th>
+                        <th>Failmessage</th>
+                        <th>Number0</th>
+                        <th>Btnedit</th>
+                        <th>Btnreject</th>
+                        <th>Successreject</th>
+                        <th>Successsavedraft</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                            <td class="test-SUCCESS"><a href="#0">Credit Management</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">Accounting</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">A567</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">0</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">back</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">0</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">Duplicate</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">Save draft</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">Cannot make new draft report because you could only have 1 draft report for this company once time.</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">0</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">Edit</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">Reject</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">Reject successful</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">Save successfully</a>
+                            </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    <div id="tablecontents">
+        <div>
+            <table class="step-table">
+                <tr class="step-titles">
+                    <th width="65">                        &nbsp;
+                    </th>
+
+                    <th width="%" class="step-description-column greentext">
+                        Steps
+                    </th>
+                    <th width="120" class="greentext">Screenshot</th>
+                    <th width="100" class="greentext">Outcome</th>
+                    <th width="75" class="greentext">Duration</th>
+                </tr>
+                <tr class="step-table-separator">
+                    <td colspan="5"></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="0"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')" style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection0 success-icon" style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block;">
+                            <span class="top-level-step">[1] {submenuText=Credit Management, menuText=Accounting, validCustomerCode=A567, rowIndex=0, btnBack=back, rowIndex2CreditHistory=0, btnDuplicate=Duplicate, btnSaveDraft=Save draft, failMessage=Cannot make new draft report because you could only have 1 draft report for this company once time., number0=0, btnEdit=Edit, btnReject=Reject, successReject=Reject successful, successSaveDraft=Save successfully}</span>
+                            </a>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">69.49s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">When I open submenu Credit Management of menu Accounting</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=0">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="c4634420ffa7bf01963ee36df4ce3c39.png"
+                                         href="c4634420ffa7bf01963ee36df4ce3c39.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.08s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And I search customer by code A567</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=1">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="8ff4a57da07ba804e1ad44fc7a401473.png"
+                                         href="8ff4a57da07ba804e1ad44fc7a401473.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.77s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And I click checkbox left of a row 0 into table result</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=2">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="00a7b2d3dfb810eb8ef1c41eef793320.png"
+                                         href="00a7b2d3dfb810eb8ef1c41eef793320.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.54s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And In accounting screen, I click button select</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=3">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="e91d499f75f96f06a5319a7fc7bf24ea.png"
+                                         href="e91d499f75f96f06a5319a7fc7bf24ea.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.52s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And In Credit Management page, I click record 0 in table Credit History in bottom with View enable</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=4">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="fa58ba5847a2ef7de6b7c98d549012a9.png"
+                                         href="fa58ba5847a2ef7de6b7c98d549012a9.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.85s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And In Credit Management page, I click button Duplicate</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=5">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="d483536245749a437bcdca614001dc15.png"
+                                         href="d483536245749a437bcdca614001dc15.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">2.34s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And In Credit Management page, I change survey date to next day of selected record</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=6">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="4b0e93ac50d7e9b3b9cd1f7c94da6e4e.png"
+                                         href="4b0e93ac50d7e9b3b9cd1f7c94da6e4e.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.91s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And In Credit Management page, I click button Save draft</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=7">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="afac3ba8848b76be08674245f67fa762.png"
+                                         href="afac3ba8848b76be08674245f67fa762.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.98s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And I open submenu Credit Management of menu Accounting</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=8">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="b42ae8d1a6415a9f60e7db438ac1d344.png"
+                                         href="b42ae8d1a6415a9f60e7db438ac1d344.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.36s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And I search customer by code A567</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=9">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="c5458693d5dc13e97a5f9579d43c8132.png"
+                                         href="c5458693d5dc13e97a5f9579d43c8132.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.74s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And I click checkbox left of a row 0 into table result</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=10">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="54048fadfadd9e8987f5a4ba793ed961.png"
+                                         href="54048fadfadd9e8987f5a4ba793ed961.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.51s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And In accounting screen, I click button select</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=11">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="c7394f31c7f149ce9bd7e8bec7b9de04.png"
+                                         href="c7394f31c7f149ce9bd7e8bec7b9de04.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.45s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And In Credit Management page, I click record 0 in table Credit History in bottom with View enable</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=12">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="f3eb54bab018cd2308f97f5fbe8daa39.png"
+                                         href="f3eb54bab018cd2308f97f5fbe8daa39.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.55s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And In Credit Management page, I click button Duplicate</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=13">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="2ac47754680c3461ebcafdd81996ea1a.png"
+                                         href="2ac47754680c3461ebcafdd81996ea1a.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">2.39s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And In Credit Management page, I click button Save draft</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=14">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="12b51baf853aaa5730bf600ef6ab8e96.png"
+                                         href="12b51baf853aaa5730bf600ef6ab8e96.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">2.18s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Then In Credit Management page, System show message Cannot make new draft report because you could only have 1 draft report for this company once time.</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=15">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="edc11f58e19ca023093d1c149cede850.png"
+                                         href="edc11f58e19ca023093d1c149cede850.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">7.84s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">When In Credit Management page, I click button back</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=16">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="04471604f066a0fb722ab30ee9944892.png"
+                                         href="04471604f066a0fb722ab30ee9944892.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.93s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And In Credit Management page, I click record 0 in table Credit History in bottom</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=17">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="24a46d2ea7d06e505c5feb17857e5b3a.png"
+                                         href="24a46d2ea7d06e505c5feb17857e5b3a.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.87s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And In Credit Management page, I click button Edit</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=18">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="98b0417b56fefa318be3ad7de3d57ebe.png"
+                                         href="98b0417b56fefa318be3ad7de3d57ebe.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">2s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And In Credit Management page, I click button Reject</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=19">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="d53d5efa45fdf0a9739f425075b3ea49.png"
+                                         href="d53d5efa45fdf0a9739f425075b3ea49.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.26s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And In Credit Management page, I confirm action</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=20">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="f16fdbff9c18fa5323844de8ca2955b9.png"
+                                         href="f16fdbff9c18fa5323844de8ca2955b9.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.81s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And In Credit Management page, System show message Reject successful</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=21">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="6dabdcfec7e59136e865048667677d98.png"
+                                         href="6dabdcfec7e59136e865048667677d98.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">7.85s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And In Credit Management page, I click record 0 in table Credit History in bottom with View enable</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=22">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="bb95463578caeda2a11710feeaa341d7.png"
+                                         href="bb95463578caeda2a11710feeaa341d7.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.37s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And In Credit Management page, I click button Duplicate</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=23">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="73bfd6e7a457920297ed356907888493.png"
+                                         href="73bfd6e7a457920297ed356907888493.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">2.07s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And In Credit Management page, I change survey date to next day of selected record</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=24">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="8cc248a4d0281d4b987aacdf84c92e68.png"
+                                         href="8cc248a4d0281d4b987aacdf84c92e68.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.96s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And In Credit Management page, I click button Save draft</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=25">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="a9a36098f42c6e91caa5460c22286b82.png"
+                                         href="a9a36098f42c6e91caa5460c22286b82.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.88s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Then In Credit Management page, System show message Save successfully</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="ba5d0f009d6a85fc682746b40f0cf50ce6e34a062d18019ffdfa66e975b68840_screenshots.html#screenshots?screenshot=26">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="826764978a188fde1855b6240fdabda3.png"
+                                         href="826764978a188fde1855b6240fdabda3.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">8.15s</span></td>
+                </tr>
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                        <td colspan="3"></td>
+                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>69.49s</em></span></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <div id="beforefooter"></div>
+    <div id="bottomfooter">
+        <span class="version">Serenity BDD version 1.1.36</span>
+    </div>
+
+
+    <script type="text/javascript">
+        function toggleDiv(divId) {
+            $("#" + divId).toggle();
+            var imgsrc = $(".img" + divId).attr('src');
+            if (imgsrc == 'images/plus.png') {
+                $(".img" + divId).attr("src", function () {
+                    return "images/minus.png";
+                });
+
+            }
+            else {
+                $(".img" + divId).attr("src", function () {
+                    return "images/plus.png";
+                });
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        $('.example-table table').DataTable({
+            "order": [
+                [1, "asc"]
+            ],
+            "pageLength": 25,
+            "scrollX": "100%",
+            "scrollXInner": "100%",
+            "scrollCollapse": true
+        });
+    </script>
+
+    <script type="text/javascript">
+        //<![CDATA[
+
+        $(document).ready(function () {
+            $('img.screenshot').imgPreview({
+                imgCSS: {
+                    width: '500px'
+                },
+                distanceFromCursor: {top: 10, left: -200}
+            });
+        });
+
+        //]]>
+    </script>
+    <div id="imgPreviewContainer" style="position: absolute; top: 612px; left: 355px; display: none; " class=""><img
+            src="" style="display: none; "></div>
+    <div id="imgPreviewContainer2" style="position: absolute; top: 925px; left: 320px; display: none; " class="">
+        <img style="width: 200px; display: none; " src=""></div>
+    <div id="imgPreviewWithStyles" style="position: absolute; top: 1272px; left: 321px; display: none; " class="">
+        <img style="height: 200px; opacity: 1; display: none; " src=""></div>
+    <div id="imgPreviewWithStyles2" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+    <div id="imgPreviewWithStyles3" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+
+</body>
+</html>

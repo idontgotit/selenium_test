@@ -1,0 +1,165 @@
+<acceptance-test-run title="1. Open Maintain credit data, search by customer code, select one record and verify value start screen" name="1. Open Maintain credit data, search by customer code, select one record and verify value start screen" description="" steps="16" successful="16" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="21549" timestamp="2016-11-23T13:40:21.453+07:00" session-id="44c728dbf715871fbc5e7ef27ad53214">
+  <user-story id="run-feature-for-debugging" name="Run feature for debugging" path="debug/debug.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Debug" type="capability"/>
+    <tag name="Debug/Run feature for debugging" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>maintainMenu</header>
+      <header>pageTitle</header>
+      <header>parentMenuText</header>
+      <header>validCustomerCode</header>
+      <header>fieldCustomer</header>
+      <header>searchBtn</header>
+      <header>selectBtn</header>
+      <header>rowSelect</header>
+      <header>only1</header>
+      <header>toggleBtn</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Maintain Credit Data</value>
+        <value>Maintenance accounting data screen</value>
+        <value>Accounting</value>
+        <value>A001</value>
+        <value>Customer code</value>
+        <value>Search</value>
+        <value>Select</value>
+        <value>0</value>
+        <value>1</value>
+        <value>Toggle Column</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {maintainMenu=Maintain Credit Data, pageTitle=Maintenance accounting data screen, parentMenuText=Accounting, validCustomerCode=A001, fieldCustomer=Customer code, searchBtn=Search, selectBtn=Select, rowSelect=0, only1=1, toggleBtn=Toggle Column}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="b5c2264ad1a08a14a6e48b0757630e0c.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1353">
+      <screenshots>
+        <screenshot image="d1f173c8aafd7b1709d5373179921303.png"/>
+      </screenshots>
+      <description>When I open submenu Maintain Credit Data of parent menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="415">
+      <screenshots>
+        <screenshot image="47db709da3d1ac77ee7f5486dd64468c.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Maintenance accounting data screen&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="276">
+      <screenshots>
+        <screenshot image="47db709da3d1ac77ee7f5486dd64468c.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, System show list button can not use
+| Search |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="278">
+      <screenshots>
+        <screenshot image="791d3396c5cc1c9031b7e2a85f5f9c63.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, I type A001 in input field have name is Customer code</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="879">
+      <screenshots>
+        <screenshot image="43770a25f170152d51102734d892c92b.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="256">
+      <screenshots>
+        <screenshot image="43408f737a7382ea80b27d8cc3694df7.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, Table below have 1 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="300">
+      <screenshots>
+        <screenshot image="0cb15854d7d1c8718e7985e061b003b0.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Toggle Column</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1026">
+      <screenshots>
+        <screenshot image="75490bc40a2d204f43d8a1f9a230c506.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I toggle all column
+| Year of starting business |
+| Year of official establishment |
+| Last Export |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="813">
+      <screenshots>
+        <screenshot image="de2a420e5576442eb1e6d01efa5a333b.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Toggle Column</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1967">
+      <screenshots>
+        <screenshot image="de2a420e5576442eb1e6d01efa5a333b.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I memory data in this table</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="288">
+      <screenshots>
+        <screenshot image="b18ce53b78761cead9e55ca13c433187.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click select checkbox row 0</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1360">
+      <screenshots>
+        <screenshot image="6963ead86e2b2702939b32127503ead4.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="907">
+      <screenshots>
+        <screenshot image="6963ead86e2b2702939b32127503ead4.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, I verify Table below have value like row select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="357">
+      <screenshots>
+        <screenshot image="6963ead86e2b2702939b32127503ead4.png"/>
+      </screenshots>
+      <description>And In Credit Management page, System show list button can use
+| Search |
+| Cancel |
+| Save |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="140">
+      <screenshots>
+        <screenshot image="6963ead86e2b2702939b32127503ead4.png"/>
+      </screenshots>
+      <description>And In Credit Management page, System show list button can not use
+| Select |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1804">
+      <screenshots>
+        <screenshot image="b5c2264ad1a08a14a6e48b0757630e0c.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, System show field can input
+| Customer code |
+| Id Name Card |
+| Company name in Kana |
+| Year of starting business |
+| Year of official establishment |</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

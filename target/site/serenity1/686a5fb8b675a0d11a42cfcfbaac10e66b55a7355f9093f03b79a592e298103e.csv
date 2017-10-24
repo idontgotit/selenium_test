@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Credit management test 4-6","change screen and fill sample data New Report-->Back-->Edit-->Back-->View-->Back-->Duplicate.","SUCCESS","2016-11-03T09:08:55.363+07:00","0.0","73.4"
+"Credit management test 4-6","select record -> duplicate -> reset","SUCCESS","2016-11-03T09:10:09.950+07:00","0.0","22.97"
+"Credit management test 4-6","select record -> duplicate -> save draft -> fail -> Reject->save draft -> success","SUCCESS","2016-11-03T09:07:44.737+07:00","0.0","69.49"
+"Credit management test 4-6","verify approve customer data","SUCCESS","2016-11-03T09:10:33.760+07:00","0.0","47.78"

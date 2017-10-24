@@ -1,0 +1,231 @@
+<acceptance-test-run title="Sorter" name="sorter" description="" steps="28" successful="28" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="26647" timestamp="2016-11-03T08:53:12.759+07:00" session-id="d5e3d34aabe3bb85d896e5672144ef84">
+  <user-story id="company-management" name="company management" path="companyManagement/companyManagement.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Company management" type="capability"/>
+    <tag name="company management" type="feature"/>
+    <tag name="Company management/Company management" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>columnCompanyNameTitle</header>
+      <header>columnCustomerCodeTitle</header>
+      <header>columnHeadOfficeTitle</header>
+      <header>columnWorkTypeTitle</header>
+      <header>columnListedTitle</header>
+      <header>columnWebsiteTitle</header>
+      <header>sortType</header>
+      <header>descending</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Company Management</value>
+        <value>Common</value>
+        <value>Company name</value>
+        <value>Customer code</value>
+        <value>Head office</value>
+        <value>Work type</value>
+        <value>Listed</value>
+        <value>Website</value>
+        <value>ASC</value>
+        <value>DESC</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Company Management, menuText=Common, columnCompanyNameTitle=Company name, columnCustomerCodeTitle=Customer code, columnHeadOfficeTitle=Head office, columnWorkTypeTitle=Work type, columnListedTitle=Listed, columnWebsiteTitle=Website, sortType=ASC, descending=DESC}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="f149f7453985a142153de9070174ca20.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="123">
+      <screenshots>
+        <screenshot image="11c235d44c3987c37636d287d06e3fc2.png"/>
+      </screenshots>
+      <description>Given A list of column title need toggle in Company management
+| Listed |
+| Website |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="916">
+      <screenshots>
+        <screenshot image="e2c40aa3083a0ad2620a4c3155128f6e.png"/>
+      </screenshots>
+      <description>When I open submenu Company Management of menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="282">
+      <screenshots>
+        <screenshot image="1b71a9e8ad59efad8f9808f020efdd00.png"/>
+      </screenshots>
+      <description>And I open toggle menu in table company</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1142">
+      <screenshots>
+        <screenshot image="aa63ff57e615835829a9f9adb18d6893.png"/>
+      </screenshots>
+      <description>And I toggle all column in table company</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="901">
+      <screenshots>
+        <screenshot image="03bf842629bc801bbbf016e89f57923b.png"/>
+      </screenshots>
+      <description>And In Company management screen, I sort Company name column by ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="765">
+      <screenshots>
+        <screenshot image="03a2970f34cb9a32e6ca858147349361.png"/>
+      </screenshots>
+      <description>Then The system should show table company sorted by column Company name and ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="816">
+      <screenshots>
+        <screenshot image="6f3415b5e7e3b9ed1e1868d32c146d60.png"/>
+      </screenshots>
+      <description>When In Company management screen, I sort Company name column by ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="784">
+      <screenshots>
+        <screenshot image="e5311bcfcc6111598f33725ba7592c1a.png"/>
+      </screenshots>
+      <description>Then The system should show table company sorted by column Company name and DESC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="862">
+      <screenshots>
+        <screenshot image="b469d48848f3f3e9f0ba2c04d97ece92.png"/>
+      </screenshots>
+      <description>When In Company management screen, I sort Customer code column by ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="820">
+      <screenshots>
+        <screenshot image="f90928be3de0d661ce8e7da186832b4d.png"/>
+      </screenshots>
+      <description>Then The system should show table company sorted by column Customer code and ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="847">
+      <screenshots>
+        <screenshot image="ba5eee7f6df7acfaf23f37e2124d8196.png"/>
+      </screenshots>
+      <description>When In Company management screen, I sort Customer code column by ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="757">
+      <screenshots>
+        <screenshot image="22cebed67c78e3503fc59d399f3dcc93.png"/>
+      </screenshots>
+      <description>Then The system should show table company sorted by column Customer code and DESC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="823">
+      <screenshots>
+        <screenshot image="c14a1ae55aa84e49c48d23f8b7ed408d.png"/>
+      </screenshots>
+      <description>When In Company management screen, I sort Head office column by ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="734">
+      <screenshots>
+        <screenshot image="7b80d8a98cb7210b89230525dd095f1c.png"/>
+      </screenshots>
+      <description>Then The system should show table company sorted by column Head office and ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="790">
+      <screenshots>
+        <screenshot image="9ef080c14512cd11a2e5a399d8b130af.png"/>
+      </screenshots>
+      <description>When In Company management screen, I sort Head office column by DESC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="801">
+      <screenshots>
+        <screenshot image="288a64e78580cc13cb0ef6adca5674fc.png"/>
+      </screenshots>
+      <description>Then The system should show table company sorted by column Head office and DESC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="864">
+      <screenshots>
+        <screenshot image="c28018f78932c68854d008fd8dde172e.png"/>
+      </screenshots>
+      <description>When In Company management screen, I sort Work type column by ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="734">
+      <screenshots>
+        <screenshot image="4b7f5f057c6a09508cb11ec30b3eb140.png"/>
+      </screenshots>
+      <description>Then The system should show table company sorted by column Work type and ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="822">
+      <screenshots>
+        <screenshot image="63cfd99371774ce571974da78d65ac44.png"/>
+      </screenshots>
+      <description>When In Company management screen, I sort Work type column by DESC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="802">
+      <screenshots>
+        <screenshot image="633d96b59b39acd71ab98c426e1611b2.png"/>
+      </screenshots>
+      <description>Then The system should show table company sorted by column Work type and DESC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="850">
+      <screenshots>
+        <screenshot image="90014b8684b7b22b678430c5117ae5ab.png"/>
+      </screenshots>
+      <description>When In Company management screen, I sort Listed column by ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="867">
+      <screenshots>
+        <screenshot image="0af300b2ff6789231aee348b5d5f67ed.png"/>
+      </screenshots>
+      <description>Then The system should show table company sorted by column Listed and ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="819">
+      <screenshots>
+        <screenshot image="592f8f182f204683dccf6925b88f992b.png"/>
+      </screenshots>
+      <description>When In Company management screen, I sort Listed column by ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="747">
+      <screenshots>
+        <screenshot image="4057890a34df7abae74627cc1abdf6fb.png"/>
+      </screenshots>
+      <description>Then The system should show table company sorted by column Listed and DESC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="857">
+      <screenshots>
+        <screenshot image="07022f703b396478edc976c9972ea09d.png"/>
+      </screenshots>
+      <description>When In Company management screen, I sort Website column by ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="845">
+      <screenshots>
+        <screenshot image="d434eeb682f8f74a7ca478f6150bc495.png"/>
+      </screenshots>
+      <description>Then The system should show table company sorted by column Website and ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="822">
+      <screenshots>
+        <screenshot image="a38a595265ca5678955b84633706d770.png"/>
+      </screenshots>
+      <description>When In Company management screen, I sort Website column by ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="721">
+      <screenshots>
+        <screenshot image="f149f7453985a142153de9070174ca20.png"/>
+      </screenshots>
+      <description>Then The system should show table company sorted by column Website and DESC</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

@@ -1,0 +1,121 @@
+<acceptance-test-run title="19. Open Employee Management and verify paging last, first, next, previous" name="19. Open Employee Management and verify paging last, first, next, previous" description="" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="14357" timestamp="2016-11-24T11:10:26.444+07:00" session-id="dee658dc9b58a166de8f8743e2bf720a">
+  <user-story id="employee-management-display" name="Employee Management display" path="employee_management/employee_management.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Employee management" type="capability"/>
+    <tag name="Employee Management display" type="feature"/>
+    <tag name="Employee management/Employee management display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>employeeMenu</header>
+      <header>parentMenuText</header>
+      <header>nextPage</header>
+      <header>lastPage</header>
+      <header>previousPage</header>
+      <header>firstPage</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>next</value>
+        <value>last</value>
+        <value>previous</value>
+        <value>first</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, nextPage=next, lastPage=last, previousPage=previous, firstPage=first}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="d1e72ab51c46ad1ca2c589db21dcba98.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="970">
+      <screenshots>
+        <screenshot image="ccdaa0dd9dbb1a6a421c92182a1ff887.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1950">
+      <screenshots>
+        <screenshot image="f17fc69d25beb3760b68adf090ba233c.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button next page on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="211">
+      <screenshots>
+        <screenshot image="59d4ecc4048198f5916cbe9fe7735748.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table should show next page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="855">
+      <screenshots>
+        <screenshot image="4eb22e28ca74146e776d161809eca36e.png"/>
+      </screenshots>
+      <description>When In Employee Management screen, I click button last page on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="165">
+      <screenshots>
+        <screenshot image="3c9ca0663c4fba46971174aedc1c42ad.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table should show last page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="946">
+      <screenshots>
+        <screenshot image="207748c715ee691119069d982bfa8913.png"/>
+      </screenshots>
+      <description>When In Employee Management screen, I click button previous page on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="180">
+      <screenshots>
+        <screenshot image="a7c1576daedc79eb4fb1c8e19bed3382.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table should show previous page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1845">
+      <screenshots>
+        <screenshot image="d1e72ab51c46ad1ca2c589db21dcba98.png"/>
+      </screenshots>
+      <description>When In Employee Management screen, I click button first page on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="168">
+      <screenshots>
+        <screenshot image="d1e72ab51c46ad1ca2c589db21dcba98.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table should show first page</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

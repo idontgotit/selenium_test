@@ -1,0 +1,140 @@
+<acceptance-test-run title="verify delete daily report with user is manager" name="verify delete daily report with user is manager" description="" steps="13" successful="13" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="19649" timestamp="2016-11-03T19:57:45.077+07:00" session-id="b0757e2a3e35e2909d57069c8784c35b">
+  <user-story id="search-daily-report-by-date" name="Search Daily report by date" path="searchDailyReportByDate/searchDailyReportByDate.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Search daily report by date" type="capability"/>
+    <tag name="Search Daily report by date" type="feature"/>
+    <tag name="Search daily report by date/Search daily report by date" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>buttonSearchText</header>
+      <header>branchName</header>
+      <header>employeeInfo</header>
+      <header>deleteButtonText</header>
+      <header>rowIndex</header>
+      <header>noButtonText</header>
+      <header>yesButtonText</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Search By Date</value>
+        <value>Daily Report</value>
+        <value>Search</value>
+        <value>東京都</value>
+        <value>9999999</value>
+        <value>Delete</value>
+        <value>0</value>
+        <value>No</value>
+        <value>Yes</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Search By Date, menuText=Daily Report, buttonSearchText=Search, branchName=東京都, employeeInfo=9999999, deleteButtonText=Delete, rowIndex=0, noButtonText=No, yesButtonText=Yes}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="8dff85fccfbb98f1288395cb1e1c8bbd.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="957">
+      <screenshots>
+        <screenshot image="58631cd0159802f12788e9a61767a219.png"/>
+      </screenshots>
+      <description>When I open submenu Search By Date of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="918">
+      <screenshots>
+        <screenshot image="574072557ec49de78bd87f521c577f3e.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I choose a branch 東京都 in dropdown Branch</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="249">
+      <screenshots>
+        <screenshot image="5e3d2b38ad00568d9d7c8c80082a9ee7.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I type value 9999999 for autocomplete Employee</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1427">
+      <screenshots>
+        <screenshot image="09147e7ab0f3813ed2d9a55331c5ebe6.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I choose 9999999 employee in dropdown of autocomplete Employee</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="823">
+      <screenshots>
+        <screenshot image="db3e68b22e32fd1adaada415e9a6e9b3.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I click button &apos;Search&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="352">
+      <screenshots>
+        <screenshot image="49209a0950dbb62123920be70a6e9899.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I select row 0</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="271">
+      <screenshots>
+        <screenshot image="c464937c1d10ba6293e2ff5a351e0fd5.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I click button &apos;Delete&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="166">
+      <screenshots>
+        <screenshot image="c464937c1d10ba6293e2ff5a351e0fd5.png"/>
+      </screenshots>
+      <description>Then The system should show confirm delete popup</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="211">
+      <screenshots>
+        <screenshot image="682a082da024f11aafc75ce645f70b9a.png"/>
+      </screenshots>
+      <description>When In Search by date screen, I click button &apos;No&apos; in confirm delete popup</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="149">
+      <screenshots>
+        <screenshot image="682a082da024f11aafc75ce645f70b9a.png"/>
+      </screenshots>
+      <description>Then The system should show table Search by date result has record found</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="209">
+      <screenshots>
+        <screenshot image="c464937c1d10ba6293e2ff5a351e0fd5.png"/>
+      </screenshots>
+      <description>When In Search by date screen, I click button &apos;Delete&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="847">
+      <screenshots>
+        <screenshot image="bc753864c56c56d1fd3dde0755cb19ec.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I click button &apos;Yes&apos; in confirm delete popup</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6697">
+      <screenshots>
+        <screenshot image="8dff85fccfbb98f1288395cb1e1c8bbd.png"/>
+      </screenshots>
+      <description>Then The system should show message delete successfully</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

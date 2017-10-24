@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="my.lib.serenity.primefaces.sars.features.creditManagement.CreditManagementTest13Feature" time="6.959" tests="105" errors="2" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.66-b17"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/ngoc/Working/Project/serenity-primefaces"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/ngoc/Working/Project/serenity-primefaces"/>
+    <property name="java.runtime.version" value="1.8.0_66-b17"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.19.0-42-generic"/>
+    <property name="user.home" value="/home/ngoc"/>
+    <property name="user.timezone" value="Asia/Ho_Chi_Minh"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="ngoc"/>
+    <property name="java.class.path" value="/usr/share/maven3/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher verify"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_66"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="When I open submenu Credit Management of menu Accounting" classname="| Credit Management | Accounting | EC7B840A | 0 | Back |" time="0"/>
+  <testcase name="And I fill value EC7B840A for input id name card" classname="| Credit Management | Accounting | EC7B840A | 0 | Back |" time="0"/>
+  <testcase name="And I click search button in tab other conditions" classname="| Credit Management | Accounting | EC7B840A | 0 | Back |" time="0"/>
+  <testcase name="And The system should show table result with records" classname="| Credit Management | Accounting | EC7B840A | 0 | Back |" time="0"/>
+  <testcase name="And I click checkbox left of a row 0 into table result" classname="| Credit Management | Accounting | EC7B840A | 0 | Back |" time="0"/>
+  <testcase name="And In accounting screen, I click button select" classname="| Credit Management | Accounting | EC7B840A | 0 | Back |" time="0"/>
+  <testcase name="Then The system should show customer details screen" classname="| Credit Management | Accounting | EC7B840A | 0 | Back |" time="0"/>
+  <testcase name="And In Credit Management page, Table Credit History no record" classname="| Credit Management | Accounting | EC7B840A | 0 | Back |" time="0"/>
+  <testcase name="And In Credit Management page, System show list button can use" classname="| Credit Management | Accounting | EC7B840A | 0 | Back |" time="0"/>
+  <testcase name="And In Credit Management page, fields required can input" classname="| Credit Management | Accounting | EC7B840A | 0 | Back |" time="0"/>
+  <testcase name="And In Credit Management page, fields can select" classname="| Credit Management | Accounting | EC7B840A | 0 | Back |" time="0"/>
+  <testcase name="And In Credit Management page, fields not required can input" classname="| Credit Management | Accounting | EC7B840A | 0 | Back |" time="0"/>
+  <testcase name="And In Credit Management page, I click button Back" classname="| Credit Management | Accounting | EC7B840A | 0 | Back |" time="0"/>
+  <testcase name="| Credit Management | Accounting | EC7B840A | 0 | Back |" classname="| Credit Management | Accounting | EC7B840A | 0 | Back |" time="1.05"/>
+  <testcase name="When I open submenu Credit Management of menu Accounting" classname="| Credit Management | Accounting | A567 | 0 |" time="0"/>
+  <testcase name="And I search customer by code A567" classname="| Credit Management | Accounting | A567 | 0 |" time="0"/>
+  <testcase name="And I click checkbox left of a row 0 into table result" classname="| Credit Management | Accounting | A567 | 0 |" time="0"/>
+  <testcase name="And In accounting screen, I click button select" classname="| Credit Management | Accounting | A567 | 0 |" time="0"/>
+  <testcase name="Then The system should show customer details screen" classname="| Credit Management | Accounting | A567 | 0 |" time="0"/>
+  <testcase name="And In Credit Management page, System show list button can use" classname="| Credit Management | Accounting | A567 | 0 |" time="0"/>
+  <testcase name="And In Credit Management page, fields required can not input" classname="| Credit Management | Accounting | A567 | 0 |" time="0"/>
+  <testcase name="And In Credit Management page, fields can not select" classname="| Credit Management | Accounting | A567 | 0 |" time="0"/>
+  <testcase name="And In Credit Management page, fields not required can not input" classname="| Credit Management | Accounting | A567 | 0 |" time="0"/>
+  <testcase name="And In Credit Management page, I verify status edit, view, duplicate every record in table Credit History is true" classname="| Credit Management | Accounting | A567 | 0 |" time="0.001">
+    <error message="unknown error: Element is not clickable at point (52, 455). Other element would receive the click: &lt;div class=&quot;blockUI blockOverlay ui-widget-overlay&quot; style=&quot;z-index: 1000; cursor: default; position: absolute; opacity: 0.000295991;&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=53.0.2785.116)&#10;  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 48 milliseconds&#10;Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;&#10;System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.OYy3BJ}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: 69571d52d44df950dc593646343390c1" type="net.serenitybdd.core.exceptions.SerenityManagedException"><![CDATA[net.serenitybdd.core.exceptions.SerenityManagedException: unknown error: Element is not clickable at point (52, 455). Other element would receive the click: <div class="blockUI blockOverlay ui-widget-overlay" style="z-index: 1000; cursor: default; position: absolute; opacity: 0.000295991;"></div>
+  (Session info: chrome=53.0.2785.116)
+  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 48 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.OYy3BJ}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 69571d52d44df950dc593646343390c1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at my.lib.serenity.primefaces.component.TableComponent.click_radio_box_by_row_index(TableComponent.java:215)
+	at my.lib.serenity.primefaces.sars.steps.CreditManagementCompanyAndCreditDataSteps.verifyStatusEveryRecordInTableCreditHistory(CreditManagementCompanyAndCreditDataSteps.java:66)
+	at my.lib.serenity.primefaces.sars.steps.CreditManagementCompanyAndCreditDataSteps$$EnhancerByCGLIB$$a8529a14.CGLIB$verifyStatusEveryRecordInTableCreditHistory$7(<generated>)
+	at my.lib.serenity.primefaces.sars.steps.CreditManagementCompanyAndCreditDataSteps$$EnhancerByCGLIB$$a8529a14$$FastClassByCGLIB$$a45aa7a4.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:269)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:127)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)
+	at my.lib.serenity.primefaces.sars.steps.CreditManagementCompanyAndCreditDataSteps$$EnhancerByCGLIB$$a8529a14.verifyStatusEveryRecordInTableCreditHistory(<generated>)
+	at my.lib.serenity.primefaces.sars.definition.CreditManagementCompanyAndCreditDataScenarioSteps.inCreditManagementPageIVerifyStatusEditViewDuplicateEveryRecordInTableIsTrue(CreditManagementCompanyAndCreditDataScenarioSteps.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at cucumber.runtime.Utils$1.call(Utils.java:37)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
+	at cucumber.runtime.Utils.invoke(Utils.java:31)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:98)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]></error>
+  </testcase>
+  <testcase name="| Credit Management | Accounting | A567 | 0 |" classname="| Credit Management | Accounting | A567 | 0 |" time="0.001">
+    <error message="unknown error: Element is not clickable at point (52, 455). Other element would receive the click: &lt;div class=&quot;blockUI blockOverlay ui-widget-overlay&quot; style=&quot;z-index: 1000; cursor: default; position: absolute; opacity: 0.000295991;&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=53.0.2785.116)&#10;  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 48 milliseconds&#10;Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;&#10;System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.OYy3BJ}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: 69571d52d44df950dc593646343390c1" type="net.serenitybdd.core.exceptions.SerenityManagedException"><![CDATA[net.serenitybdd.core.exceptions.SerenityManagedException: unknown error: Element is not clickable at point (52, 455). Other element would receive the click: <div class="blockUI blockOverlay ui-widget-overlay" style="z-index: 1000; cursor: default; position: absolute; opacity: 0.000295991;"></div>
+  (Session info: chrome=53.0.2785.116)
+  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 48 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.OYy3BJ}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 69571d52d44df950dc593646343390c1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at my.lib.serenity.primefaces.component.TableComponent.click_radio_box_by_row_index(TableComponent.java:215)
+	at my.lib.serenity.primefaces.sars.steps.CreditManagementCompanyAndCreditDataSteps.verifyStatusEveryRecordInTableCreditHistory(CreditManagementCompanyAndCreditDataSteps.java:66)
+	at my.lib.serenity.primefaces.sars.steps.CreditManagementCompanyAndCreditDataSteps$$EnhancerByCGLIB$$a8529a14.CGLIB$verifyStatusEveryRecordInTableCreditHistory$7(<generated>)
+	at my.lib.serenity.primefaces.sars.steps.CreditManagementCompanyAndCreditDataSteps$$EnhancerByCGLIB$$a8529a14$$FastClassByCGLIB$$a45aa7a4.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:269)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:127)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)
+	at my.lib.serenity.primefaces.sars.steps.CreditManagementCompanyAndCreditDataSteps$$EnhancerByCGLIB$$a8529a14.verifyStatusEveryRecordInTableCreditHistory(<generated>)
+	at my.lib.serenity.primefaces.sars.definition.CreditManagementCompanyAndCreditDataScenarioSteps.inCreditManagementPageIVerifyStatusEditViewDuplicateEveryRecordInTableIsTrue(CreditManagementCompanyAndCreditDataScenarioSteps.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at cucumber.runtime.Utils$1.call(Utils.java:37)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
+	at cucumber.runtime.Utils.invoke(Utils.java:31)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:98)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]></error>
+  </testcase>
+  <testcase name="When I open submenu Credit Management of menu Accounting" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0.001"/>
+  <testcase name="And I search customer by code a555" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0"/>
+  <testcase name="And The system should show table result with records" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0"/>
+  <testcase name="And I click checkbox left of a row 0 into table result" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0"/>
+  <testcase name="And In accounting screen, I click button select" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0"/>
+  <testcase name="And In Credit Management page, Table Credit History no record" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0"/>
+  <testcase name="And In Credit Management page, I click button New report" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0"/>
+  <testcase name="And In Credit Management page, I select in Survey institute and information source is 帝国データ" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0"/>
+  <testcase name="And In Credit Management page, I select date in Date of survey is 2016/10/18" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0"/>
+  <testcase name="And In Credit Management page, I type in Index for accounting system is 12" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0"/>
+  <testcase name="And In Credit Management page, I click button Save draft" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0"/>
+  <testcase name="And In Credit Management page, System show message Save successfully" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0"/>
+  <testcase name="And In Credit Management page, I click record 0 in table Credit History in bottom" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0"/>
+  <testcase name="And In Credit Management page, I click button Edit" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0"/>
+  <testcase name="And In Credit Management page, I click button Reject" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0"/>
+  <testcase name="And In Credit Management page, I confirm action" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0"/>
+  <testcase name="And In Credit Management page, System show message Reject successful" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0"/>
+  <testcase name="Then In Credit Management page, Table Credit History no record" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0"/>
+  <testcase name="And In Credit Management page, System show list button can use" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0"/>
+  <testcase name="And In Credit Management page, System show list button can not use" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0"/>
+  <testcase name="And In Credit Management page, fields required can input" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0"/>
+  <testcase name="And In Credit Management page, fields can select" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0"/>
+  <testcase name="And In Credit Management page, fields not required can input" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0"/>
+  <testcase name="And In Credit Management page, I click button Back" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="0"/>
+  <testcase name="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" classname="| Credit Management | Accounting | a555 | 0 | New report | Survey institute and information source | Date of survey | Index for accounting system | 帝国データ | 2016/10/18 | 12 | Save draft | 0 | Edit | Reject | Back | Save successfully | Reject successful |" time="1.055"/>
+  <testcase name="When I open submenu Credit Management of menu Accounting" classname="| Credit Management | Accounting | A567 | 0 | Back | 1 | View | Duplicate |" time="0"/>
+  <testcase name="And I search customer by code A567" classname="| Credit Management | Accounting | A567 | 0 | Back | 1 | View | Duplicate |" time="0"/>
+  <testcase name="And I click checkbox left of a row 0 into table result" classname="| Credit Management | Accounting | A567 | 0 | Back | 1 | View | Duplicate |" time="0"/>
+  <testcase name="And In accounting screen, I click button select" classname="| Credit Management | Accounting | A567 | 0 | Back | 1 | View | Duplicate |" time="0"/>
+  <testcase name="And In Credit Management page, I click record 1 in table Credit History in bottom with View enable" classname="| Credit Management | Accounting | A567 | 0 | Back | 1 | View | Duplicate |" time="0"/>
+  <testcase name="And In Credit Management page, I click button View" classname="| Credit Management | Accounting | A567 | 0 | Back | 1 | View | Duplicate |" time="0"/>
+  <testcase name="And In Credit Management page, I save data in this page" classname="| Credit Management | Accounting | A567 | 0 | Back | 1 | View | Duplicate |" time="0"/>
+  <testcase name="And In Credit Management page, I click button Duplicate" classname="| Credit Management | Accounting | A567 | 0 | Back | 1 | View | Duplicate |" time="0"/>
+  <testcase name="Then In Credit Management page, page Duplicate is same page View" classname="| Credit Management | Accounting | A567 | 0 | Back | 1 | View | Duplicate |" time="0"/>
+  <testcase name="And In Credit Management page, I click button Back" classname="| Credit Management | Accounting | A567 | 0 | Back | 1 | View | Duplicate |" time="0"/>
+  <testcase name="| Credit Management | Accounting | A567 | 0 | Back | 1 | View | Duplicate |" classname="| Credit Management | Accounting | A567 | 0 | Back | 1 | View | Duplicate |" time="1.62"/>
+  <testcase name="When I open submenu Credit Management of menu Accounting" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="And I search customer by code A567" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="And I click checkbox left of a row 0 into table result" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="And In accounting screen, I click button select" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="And In Credit Management page, I click record 0 in table Credit History in bottom with View enable" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="And In Credit Management page, I click button Duplicate" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0.001"/>
+  <testcase name="Then In Credit Management page, System show list button can use" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="Then In Credit Management page, System show list button can use" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="Then In Credit Management page, System show list button can use" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="Then In Credit Management page, System show list button can use" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="And In Credit Management page, System show list button can not use" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="And In Credit Management page, System show list button can not use" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="And In Credit Management page, System show list button can not use" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="And In Credit Management page, fields required can input" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="And In Credit Management page, fields required can input" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="And In Credit Management page, fields required can input" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="And In Credit Management page, textarea can input" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="When In Credit Management page, I select tab have name is Business factors" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="And In Credit Management page, fields can select" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="And In Credit Management page, fields can select" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="And In Credit Management page, fields not required can input" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="And In Credit Management page, fields not required can input" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="When In Credit Management page, I select tab have name is Industry classification" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="When In Credit Management page, I select tab have name is Input finance data" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="When In Credit Management page, I select tab have name is Input customer data" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="And In Credit Management page, autocomplete fields can input" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="And In Credit Management page, tab Input customer data textarea can input" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="And In Credit Management page, I click button Back" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="0"/>
+  <testcase name="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Business factors | Duplicate | Industry classification | Input finance data | Input customer data |" time="1.714"/>
+  <testcase name="When I open submenu Credit Management of menu Accounting" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Duplicate |" time="0"/>
+  <testcase name="And I search customer by code A567" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Duplicate |" time="0"/>
+  <testcase name="And I click checkbox left of a row 0 into table result" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Duplicate |" time="0"/>
+  <testcase name="And In accounting screen, I click button select" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Duplicate |" time="0"/>
+  <testcase name="And In Credit Management page, I click record 0 in table Credit History in bottom with View enable" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Duplicate |" time="0"/>
+  <testcase name="And In Credit Management page, I memory data in table" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Duplicate |" time="0"/>
+  <testcase name="And In Credit Management page, I click button Duplicate" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Duplicate |" time="0"/>
+  <testcase name="And In Credit Management page, I click button Back" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Duplicate |" time="0"/>
+  <testcase name="Then In Credit Management page, System show list button can use" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Duplicate |" time="0"/>
+  <testcase name="Then In Credit Management page, System show list button can not use" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Duplicate |" time="0"/>
+  <testcase name="And In Credit Management page, fields required can not input" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Duplicate |" time="0"/>
+  <testcase name="And In Credit Management page, fields can not select" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Duplicate |" time="0"/>
+  <testcase name="And In Credit Management page, fields not required can not input" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Duplicate |" time="0"/>
+  <testcase name="And In Credit Management page, data in table when back is same before" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Duplicate |" time="0"/>
+  <testcase name="| Credit Management | Accounting | A567 | 0 | Back | 0 | Duplicate |" classname="| Credit Management | Accounting | A567 | 0 | Back | 0 | Duplicate |" time="1.516"/>
+</testsuite>

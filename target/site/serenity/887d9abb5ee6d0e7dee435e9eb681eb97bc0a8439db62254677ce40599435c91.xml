@@ -1,0 +1,180 @@
+<acceptance-test-run title="5. Open Employee Management and sort all column" name="5. Open Employee Management and sort all column" description="" steps="21" successful="21" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="26455" timestamp="2016-11-21T14:17:59.206+07:00" session-id="94cea79346eba31e299e090e95687220">
+  <user-story id="run-feature-for-debugging" name="Run feature for debugging" path="debug/debug.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Debug" type="capability"/>
+    <tag name="Debug/Run feature for debugging" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>employeeMenu</header>
+      <header>parentMenuText</header>
+      <header>empCode</header>
+      <header>ascending</header>
+      <header>descending</header>
+      <header>employeeName</header>
+      <header>headOffice</header>
+      <header>pos</header>
+      <header>email</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>Employee Code</value>
+        <value>ASC</value>
+        <value>DESC</value>
+        <value>Employee Name</value>
+        <value>Head Office</value>
+        <value>Privilege</value>
+        <value>Email</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, empCode=Employee Code, ascending=ASC, descending=DESC, employeeName=Employee Name, headOffice=Head Office, pos=Privilege, email=Email}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="acd301b5abdd2be6f3fe1c70d2136d15.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1355">
+      <screenshots>
+        <screenshot image="84e568571864360e305b233233995896.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="951">
+      <screenshots>
+        <screenshot image="e4575928e1f0e5b70e9aad3b137cfa0a.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I sort Employee Code column by ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="931">
+      <screenshots>
+        <screenshot image="60505a957758ef5e24bebc9e0a5542d7.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result in Employee Code is ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="958">
+      <screenshots>
+        <screenshot image="671bae664b4ecd28845b16357124d195.png"/>
+      </screenshots>
+      <description>When In Employee Management screen, I sort Employee Code column by DESC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="822">
+      <screenshots>
+        <screenshot image="671bae664b4ecd28845b16357124d195.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result in Employee Code is DESC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="918">
+      <screenshots>
+        <screenshot image="20aeebabe033ec2700579277734c651e.png"/>
+      </screenshots>
+      <description>When In Employee Management screen, I sort Employee Name column by ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="842">
+      <screenshots>
+        <screenshot image="10640b35865424e5dc07e6d6e8bbd9ad.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result in Employee Name is ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="870">
+      <screenshots>
+        <screenshot image="7d905699561bbcf6ed7154a4d2fe5a2c.png"/>
+      </screenshots>
+      <description>When In Employee Management screen, I sort Employee Name column by DESC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="823">
+      <screenshots>
+        <screenshot image="1667c4cddde56a04c54029921e4738f3.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result in Employee Name is DESC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="926">
+      <screenshots>
+        <screenshot image="7d738a32a618f39701d8a09cff21d4eb.png"/>
+      </screenshots>
+      <description>When In Employee Management screen, I sort Head Office column by ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="721">
+      <screenshots>
+        <screenshot image="7d738a32a618f39701d8a09cff21d4eb.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result in Head Office is ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="857">
+      <screenshots>
+        <screenshot image="afde916782dc91299addff32ba82511b.png"/>
+      </screenshots>
+      <description>When In Employee Management screen, I sort Head Office column by DESC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="842">
+      <screenshots>
+        <screenshot image="a13a04d0b660360b8d868521192f5639.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result in Head Office is DESC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="909">
+      <screenshots>
+        <screenshot image="d15f1b21e209d6e4405a8d40c5c7a7a9.png"/>
+      </screenshots>
+      <description>When In Employee Management screen, I sort Privilege column by ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="777">
+      <screenshots>
+        <screenshot image="23d274dfe0d0bc324420bb7ae7171bb8.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result in Privilege is ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="882">
+      <screenshots>
+        <screenshot image="3cb0fd20cbea9b14ab99ba1fa47409c5.png"/>
+      </screenshots>
+      <description>When In Employee Management screen, I sort Privilege column by DESC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="792">
+      <screenshots>
+        <screenshot image="a5d1dc2cbf543d99f8c1fb74d513bb75.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result in Privilege is DESC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="892">
+      <screenshots>
+        <screenshot image="81c3836f89685cc378b87d0d9b8a4c65.png"/>
+      </screenshots>
+      <description>When In Employee Management screen, I sort Email column by ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="877">
+      <screenshots>
+        <screenshot image="f612f2032f9b285f618c018ff6b13212.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result in Email is ASC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="867">
+      <screenshots>
+        <screenshot image="72a97d3a78fb2b91825bb2e88daf5c6f.png"/>
+      </screenshots>
+      <description>When In Employee Management screen, I sort Email column by DESC</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="784">
+      <screenshots>
+        <screenshot image="acd301b5abdd2be6f3fe1c70d2136d15.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result in Email is DESC</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

@@ -1,0 +1,142 @@
+<acceptance-test-run title="Paging" name="paging" description="" steps="15" successful="15" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="13975" timestamp="2016-11-03T19:59:59.038+07:00" session-id="2b3f3f9feabc2f361c0f10d5b4a15be0">
+  <user-story id="register-daily-report" name="register daily report" path="registerDailyReport/registerDailyReport.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Register daily report" type="capability"/>
+    <tag name="register daily report" type="feature"/>
+    <tag name="Register daily report/Register daily report" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>username</header>
+      <header>password</header>
+      <header>lang</header>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>pageNumberOne</header>
+      <header>date</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>40000005</value>
+        <value>19851129</value>
+        <value>en</value>
+        <value>Register</value>
+        <value>Daily Report</value>
+        <value>2</value>
+        <value>2012/11/28</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {username=40000005, password=19851129, lang=en, submenuText=Register, menuText=Daily Report, pageNumberOne=2, date=2012/11/28}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="ea5598096ccee10db395e2af6c5eb1e5.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1095">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>When I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3065">
+      <screenshots>
+        <screenshot image="c0ffa7e283a724a7d0422531b77cf231.png"/>
+        <screenshot image="04182927843c247023befe982a067931.png"/>
+      </screenshots>
+      <description>Then I input my credentials username 40000005 and password 19851129</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2131">
+      <screenshots>
+        <screenshot image="e005cfc038212477e50cf3e4b3ff103d.png"/>
+      </screenshots>
+      <description>And I change language to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1406">
+      <screenshots>
+        <screenshot image="3e1bb6e524c3344500b42f7da9ce53ff.png"/>
+      </screenshots>
+      <description>And I open submenu Register of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1582">
+      <screenshots>
+        <screenshot image="eb3c9e656262b4af3cf4d30d4fb0e0b8.png"/>
+      </screenshots>
+      <description>And In Register daily report, I choose date 2012/11/28 in calendar date</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="848">
+      <screenshots>
+        <screenshot image="8e1566c4377730784de7b16550db030b.png"/>
+      </screenshots>
+      <description>And In Table daily report history, I click button last page on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="165">
+      <screenshots>
+        <screenshot image="8e1566c4377730784de7b16550db030b.png"/>
+      </screenshots>
+      <description>Then The table daily report history should show last page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="738">
+      <screenshots>
+        <screenshot image="a4f89c9d1675616fda96dc43fa48b751.png"/>
+      </screenshots>
+      <description>When In Table daily report history, I click button first page on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="159">
+      <screenshots>
+        <screenshot image="a4f89c9d1675616fda96dc43fa48b751.png"/>
+      </screenshots>
+      <description>Then The table daily report history should show first page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="725">
+      <screenshots>
+        <screenshot image="41bb89a723b62dd64c3b14ea0d0493d7.png"/>
+      </screenshots>
+      <description>When In Table daily report history, I click page 2 on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="179">
+      <screenshots>
+        <screenshot image="41bb89a723b62dd64c3b14ea0d0493d7.png"/>
+      </screenshots>
+      <description>Then The table daily report history should change to selected page 2</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="719">
+      <screenshots>
+        <screenshot image="a4f89c9d1675616fda96dc43fa48b751.png"/>
+      </screenshots>
+      <description>When In Table daily report history, I click button back on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="153">
+      <screenshots>
+        <screenshot image="a4f89c9d1675616fda96dc43fa48b751.png"/>
+      </screenshots>
+      <description>Then The table daily report history should change to selected page 2 - 1</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="720">
+      <screenshots>
+        <screenshot image="ea5598096ccee10db395e2af6c5eb1e5.png"/>
+      </screenshots>
+      <description>When In Table daily report history, I click button next on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="169">
+      <screenshots>
+        <screenshot image="ea5598096ccee10db395e2af6c5eb1e5.png"/>
+      </screenshots>
+      <description>Then The table daily report history should change to selected page 2</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

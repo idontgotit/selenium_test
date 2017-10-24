@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"company management","add new company and fill all fields","FAILURE","2016-11-03T08:54:16.132+07:00","0.0","12.76"
+"Search Daily report by date","search daily report","FAILURE","2016-11-03T08:38:27.458+07:00","0.0","12.84"
+"Credit management test 1-3","select record -> duplicate -> back","FAILURE","2016-11-03T09:01:30.258+07:00","0.0","8.39"

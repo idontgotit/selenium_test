@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: my.lib.serenity.primefaces.sars.features.login.LoginAnChangeLocaleFeature
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.903 sec - in my.lib.serenity.primefaces.sars.features.login.LoginAnChangeLocaleFeature

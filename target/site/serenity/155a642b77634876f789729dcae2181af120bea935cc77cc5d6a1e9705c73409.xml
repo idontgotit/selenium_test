@@ -1,0 +1,101 @@
+<acceptance-test-run title="create new daily report and logout from system" name="create new daily report and logout from system" description="" steps="9" successful="2" failures="0" errors="1" skipped="6" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="3906" timestamp="2016-11-03T20:06:36.845+07:00" session-id="5049f77184e1913fa059ff0fb451f225">
+  <user-story id="view-notification" name="View Notification" path="viewNotifications/viewNotifications.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="View notifications" type="capability"/>
+    <tag name="View Notification" type="feature"/>
+    <tag name="View notifications/View notification" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>staffUsername</header>
+      <header>staffPassword</header>
+      <header>lang</header>
+      <header>submenuText</header>
+      <header>menuText</header>
+    </headers>
+    <rows>
+      <row result="ERROR">
+        <value>22000001</value>
+        <value>123456</value>
+        <value>en</value>
+        <value>Register</value>
+        <value>Daily Report</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {staffUsername=22000001, staffPassword=123456, lang=en, submenuText=Register, menuText=Daily Report}" result="ERROR">
+    <test-step result="SUCCESS" duration="1233">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>When I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2447">
+      <screenshots>
+        <screenshot image="ffb11d3c1405b7574500fb731eda0ebc.png"/>
+        <screenshot image="19c770b34e8d7634442223e3b54330fe.png"/>
+      </screenshots>
+      <description>And I input my credentials username 22000001 and password 123456</description>
+    </test-step>
+    <test-group name="And I change language to en" result="ERROR">
+      <test-step result="ERROR" duration="175">
+        <screenshots>
+          <screenshot image="15af4c249ad689bfee897a5c6d9828c2.png" source="pagesource2425265291847387858.html.txt"/>
+        </screenshots>
+        <description>Change locale: en</description>
+        <error>org.openqa.selenium.NoSuchElementException: Timed out after 0 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: unknown</error>
+        <exception>org.openqa.selenium.NoSuchElementException:Timed out after 0 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: unknown
+[my.lib.serenity.primefaces.sars.page.TopPage.change_locale_and_wait(TopPage.java:35), my.lib.serenity.primefaces.sars.steps.LoginSteps.change_locale(LoginSteps.java:45), my.lib.serenity.primefaces.sars.definition.LoginFeatureScenarioSteps.when_I_change_language_to(LoginFeatureScenarioSteps.java:39)]</exception>
+      </test-step>
+    </test-group>
+    <test-step result="SKIPPED" duration="1">
+      <description>And I open submenu Register of menu Daily Report</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>And I add new Daily report with data below
+| companyName | content |
+| CIJ | First daily report |</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>Then The system should show message save daily report successfully</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>When I add new Daily report with data below
+| companyName | content |
+| CIJ | Second daily report |</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>Then The system should show message save daily report successfully</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>When I logout from system</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

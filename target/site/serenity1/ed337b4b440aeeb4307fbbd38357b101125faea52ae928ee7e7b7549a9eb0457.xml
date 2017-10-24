@@ -1,0 +1,57 @@
+<acceptance-test-run title="login success" name="login success" description="" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="4892" timestamp="2016-11-03T08:44:48.630+07:00" session-id="f615f4aca3e5794d6d9970dd7362d611">
+  <user-story id="login" name="Login" path="login/login.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Login" type="capability"/>
+    <tag name="Login/Login" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>username</header>
+      <header>password</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>9999999</value>
+        <value>triarrow</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {username=9999999, password=triarrow}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="11c235d44c3987c37636d287d06e3fc2.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="2086">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>Given I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2444">
+      <screenshots>
+        <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+        <screenshot image="11c235d44c3987c37636d287d06e3fc2.png"/>
+      </screenshots>
+      <description>When I input my credentials username 9999999 and password triarrow</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="248">
+      <screenshots>
+        <screenshot image="11c235d44c3987c37636d287d06e3fc2.png"/>
+      </screenshots>
+      <description>Then The system should let me in</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

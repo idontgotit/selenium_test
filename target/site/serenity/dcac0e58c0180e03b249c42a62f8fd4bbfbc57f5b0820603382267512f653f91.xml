@@ -1,0 +1,98 @@
+<acceptance-test-run title="add new company and fill only required field" name="add new company and fill only required field" description="" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="24499" timestamp="2016-11-03T20:09:18.102+07:00" session-id="1ade5611e675970de818aca53ca2e32b">
+  <user-story id="company-management" name="company management" path="companyManagement/companyManagement.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Company management" type="capability"/>
+    <tag name="company management" type="feature"/>
+    <tag name="Company management/Company management" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>companyName</header>
+      <header>buttonText</header>
+      <header>filterText</header>
+      <header>columnCompanyNameTitle</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Company Management</value>
+        <value>Common</value>
+        <value>Test company</value>
+        <value>Save</value>
+        <value>Test company</value>
+        <value>Company name</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Company Management, menuText=Common, companyName=Test company, buttonText=Save, filterText=Test company, columnCompanyNameTitle=Company name}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="9433596f88b11a442f4fa96c4e079a57.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1227">
+      <screenshots>
+        <screenshot image="de42ef41ec9ea9d98cf79c11a8feb3e4.png"/>
+      </screenshots>
+      <description>When I open submenu Company Management of menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2188">
+      <screenshots>
+        <screenshot image="c8654361c10f25cf6744931512031f40.png"/>
+      </screenshots>
+      <description>And I create new company with name &apos;Test company&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3675">
+      <screenshots>
+        <screenshot image="9e47042430fbc0fffc45efbc27ae265b.png"/>
+      </screenshots>
+      <description>And I input company detail as below
+| companyFullName | workType | listed | headOffice |
+| Test company | 土木 | Type One | 岩手県 |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1520">
+      <screenshots>
+        <screenshot image="b02ff6a0c3cc113927c8389cdfb1f4a0.png"/>
+      </screenshots>
+      <description>And In Company Detail screen, I click &apos;Save&apos; button</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6419">
+      <screenshots>
+        <screenshot image="63e42988f9a12013c28fe71508027a4a.png"/>
+      </screenshots>
+      <description>Then The system should save company success</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="900">
+      <screenshots>
+        <screenshot image="9433596f88b11a442f4fa96c4e079a57.png"/>
+      </screenshots>
+      <description>When In Company management screen, I fill value &apos;Test company&apos; for filter in column &apos;Company name&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="165">
+      <screenshots>
+        <screenshot image="9433596f88b11a442f4fa96c4e079a57.png"/>
+      </screenshots>
+      <description>Then The system should show table company with record found</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

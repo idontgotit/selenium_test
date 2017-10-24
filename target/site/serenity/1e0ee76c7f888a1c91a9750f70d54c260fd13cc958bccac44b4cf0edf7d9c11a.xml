@@ -1,0 +1,82 @@
+<acceptance-test-run title="6. Open Employee Management and verify paging" name="6. Open Employee Management and verify paging" description="" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="11179" timestamp="2016-11-21T13:22:49.903+07:00" session-id="d83d5f10a6b35a58e6daaefdfc9bd473">
+  <user-story id="run-feature-for-debugging" name="Run feature for debugging" path="debug/debug.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Debug" type="capability"/>
+    <tag name="Debug/Run feature for debugging" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>employeeMenu</header>
+      <header>parentMenuText</header>
+      <header>numberPaging</header>
+      <header>pageNumber2</header>
+      <header>pageNumber1</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>20</value>
+        <value>2</value>
+        <value>1</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, numberPaging=20, pageNumber2=2, pageNumber1=1}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="62967331bcb55d845239e3cbe6c4f417.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1107">
+      <screenshots>
+        <screenshot image="7fe4882663a82479eabab779c58a1e1a.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="367">
+      <screenshots>
+        <screenshot image="e112b81886f2dd49ecc6a52958adc4a5.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result with 20 results in page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="290">
+      <screenshots>
+        <screenshot image="a8d6b1710f4845f6d9a9f67ee241d019.png"/>
+      </screenshots>
+      <description>When In Employee Management screen, I click page 1</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="183">
+      <screenshots>
+        <screenshot image="a8d6b1710f4845f6d9a9f67ee241d019.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result with 20 results in page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="924">
+      <screenshots>
+        <screenshot image="29a6b7452745f0ff17d55f5fa3d2e88f.png"/>
+      </screenshots>
+      <description>When In Employee Management screen, I click page 2</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="175">
+      <screenshots>
+        <screenshot image="62967331bcb55d845239e3cbe6c4f417.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result with 20 results in page</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

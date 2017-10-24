@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-bdd-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <a
+                    href="faf90a2b8d8ff365bcf99c0953e3840da5481133f1134fbb118a5006640ba680.html">Run Feature For Debugging</a>
+                > <a
+                    href="d39d0c4f7e5e3d55e8e146f1c9b6214613bff7a1e5c5a41bdcac26d6a1f5436c.html">13. Verify approve required data </a>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 25-01-2017 10:02</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Run Feature For Debugging</span>
+                                    <span class="badge tag-badge">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As an developer<br>I want to be able to run simplified feature<br>So that I can debug quickly<br>Exception
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="ba9fb54e1af2981411104c56e14ee34928ceb18af19fd6266c85e9ccfcde886c.html">3.1.5
+                                    (version)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="3e0ef395cd6ab697f994c3222494eed334cedf15c4ec046c2c7ce741935db68b.html">
+                                    (issue)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="fbd2c36be7347d6dd6789a9e92b3ecff6b96d9917745cf623004125dde566d3e.html">Debug
+                                    (capability)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="7af145658023301483346e9bf7e7857d3d5d846f49bf9bef46addcc7f8c82094.html">Sprint-1.1
+                                    (version)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-3x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">13. Verify approve required data
+                                    <span class="related-issue-title">()</span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+
+        <div class="scenario">When I open Login page<br>And I input my credentials username 4009912 and password 123456<br>And I change language to en<br>And I open submenu Credit Management of menu Accounting<br>And I search customer by code a567<br>And I click checkbox left of a row 0 into table result<br>And In accounting screen, I click button select<br>And In Credit Management page, I click record 0 in table Credit History in bottom with View enable<br>And In Credit Management page, I click button New report<br>And In Credit Management page, I click button Approve<br>And In Credit Management page, I confirm action<br>Then In Credit Management page, System show first message Survey institute and information source is required<br>When In Credit Management page, I select in Survey institute and information source is 帝国データ<br>And In Credit Management page, I click button Approve<br>And In Credit Management page, I confirm action<br>Then In Credit Management page, System show first message Trading condition category is required<br>When In Credit Management page, I select in Trading condition category is 通常取引<br>And In Credit Management page, I click button Approve<br>And In Credit Management page, I confirm action<br>Then In Credit Management page, System show first message Date of survey is required<br>When In Credit Management page, I change survey date to next day of selected record<br>And In Credit Management page, I click button Approve<br>And In Credit Management page, I confirm action<br>Then In Credit Management page, System show first message Index for accounting system is required<br>When In Credit Management page, I type in Index for accounting system is 12<br>And In Credit Management page, I click button Approve<br>And In Credit Management page, I confirm action<br>Then In Credit Management page, System show first message Zip code of HQ is required<br>When In Credit Management page, I type in Credit score number is 10<br>And In Credit Management page, I click button Approve<br>And In Credit Management page, I confirm action<br>When In Credit Management page, I select tab have name is Business factors<br>And In Credit Management page, I type in Zip code of HQ is 111-1111<br>And In Credit Management page, I click button Approve<br>And In Credit Management page, I confirm action<br>Then In Credit Management page, System show first message Address of HQ (all) is required<br>When In Credit Management page, I select tab have name is Business factors<br>And In Credit Management page, I type in Address of HQ (all) is 111-1111<br>And In Credit Management page, I click button Approve<br>And In Credit Management page, I confirm action<br>Then In Credit Management page, System show first message Tel. is required<br>When In Credit Management page, I select tab have name is Business factors<br>And In Credit Management page, I type in Tel. is 023-345-3212<br>And In Credit Management page, I click button Approve<br>And In Credit Management page, I confirm action<br>Then In Credit Management page, System show first message Fiscal closing month is required<br>When In Credit Management page, I select tab have name is Business factors<br>And In Credit Management page, I select in Fiscal closing month is 01月<br>And In Credit Management page, I click button Approve<br>And In Credit Management page, I confirm action<br>Then In Credit Management page, System show message Save successfully<br>And I logout from system</div>
+    </div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="35bea53004f39eed20d942bf48fa3e71.png" title="When I open Login page" width="960"/>
+                <img src="617d41b902e1df6119a620f9391ddde8.png" title="And I input my credentials username 4009912 and password 123456" width="960"/>
+                <img src="a4238260deabc52d4f775d3b79bd1054.png" title="And I input my credentials username 4009912 and password 123456" width="960"/>
+                <img src="5a954ee6f2735c8e7593f1333dab07d7.png" title="And I change language to en" width="960"/>
+                <img src="1727dcd9b4fb494aaa3c8e99479ef602.png" title="And I open submenu Credit Management of menu Accounting" width="960"/>
+                <img src="scaled_ef176ebc718c8d9e60a1c0d661aa5ddb.png" title="And I search customer by code a567" width="960"/>
+                <img src="3bcfa614a7c468c244d7bb19b0f6c3fb.png" title="And I click checkbox left of a row 0 into table result" width="960"/>
+                <img src="scaled_a8c343cf8217047cbc81ac15c495a22d.png" title="And In accounting screen, I click button select" width="960"/>
+                <img src="scaled_0ad9bfd7d08255181f031e8133e9e006.png" title="And In Credit Management page, I click record 0 in table Credit History in bottom with View enable" width="960"/>
+                <img src="scaled_f508128c4fac03ba256047e31d3a2a0d.png" title="And In Credit Management page, I click button New report" width="960"/>
+                <img src="2bed8602ce36fcb9e4f56a550c26374a.png" title="And In Credit Management page, I click button Approve" width="960"/>
+                <img src="scaled_21da4c1e5f97050387c1d739117102b3.png" title="And In Credit Management page, I confirm action" width="960"/>
+                <img src="d9393398dfeeb2bc3c6f4b47ec69a5f3.png" title="Then In Credit Management page, System show first message Survey institute and information source is required" width="960"/>
+                <img src="ff0101feb79dce31a897dd295bc8693b.png" title="When In Credit Management page, I select in Survey institute and information source is 帝国データ" width="960"/>
+                <img src="21c3c7631eaa5c3d537e3d5b6124fb5b.png" title="And In Credit Management page, I click button Approve" width="960"/>
+                <img src="scaled_dec7cff96ec179297b8c921e5f70adea.png" title="And In Credit Management page, I confirm action" width="960"/>
+                <img src="72e8b3f87417c6db211eadb535ee5fd6.png" title="Then In Credit Management page, System show first message Trading condition category is required" width="960"/>
+                <img src="0110d4189c98e147d30a10411cacccd1.png" title="When In Credit Management page, I select in Trading condition category is 通常取引" width="960"/>
+                <img src="2bed8602ce36fcb9e4f56a550c26374a.png" title="And In Credit Management page, I click button Approve" width="960"/>
+                <img src="scaled_5c2cf3e1d6a141e067a17c1efc147991.png" title="And In Credit Management page, I confirm action" width="960"/>
+                <img src="scaled_4ec00e6fdb9d0d4a96fefd2f1826e48c.png" title="Then In Credit Management page, System show first message Date of survey is required" width="960"/>
+                <img src="scaled_b0bb5a815e270c576e0791f41fd77f5d.png" title="When In Credit Management page, I change survey date to next day of selected record" width="960"/>
+                <img src="2bed8602ce36fcb9e4f56a550c26374a.png" title="And In Credit Management page, I click button Approve" width="960"/>
+                <img src="scaled_c1007eed1b56e70587008f111a2ffd08.png" title="And In Credit Management page, I confirm action" width="960"/>
+                <img src="scaled_dd7cb74462220f05edc041da5e896e64.png" title="Then In Credit Management page, System show first message Index for accounting system is required" width="960"/>
+                <img src="scaled_20223c75bf79f976c9c7c330f7c661e5.png" title="When In Credit Management page, I type in Index for accounting system is 12" width="960"/>
+                <img src="2bed8602ce36fcb9e4f56a550c26374a.png" title="And In Credit Management page, I click button Approve" width="960"/>
+                <img src="scaled_98a892ceb9108e17c467bb114fcdb470.png" title="And In Credit Management page, I confirm action" width="960"/>
+                <img src="scaled_d650d07568d60434e1599a5667baaf6c.png" title="Then In Credit Management page, System show first message Zip code of HQ is required" width="960"/>
+                <img src="scaled_6573eb1d8d3013baa99f095bc7100586.png" title="When In Credit Management page, I type in Credit score number is 10" width="960"/>
+                <img src="1e33dd5907e1367ac838cd7f3b85f456.png" title="And In Credit Management page, I click button Approve" width="960"/>
+                <img src="scaled_63a70c1c3ae96f7928faeb5d2b7619ad.png" title="And In Credit Management page, I confirm action" width="960"/>
+                <img src="scaled_f86a47447499f86144c6447f2a67970b.png" title="When In Credit Management page, I select tab have name is Business factors" width="960"/>
+                <img src="scaled_24947a7bc632053d9a6870d2725dd005.png" title="And In Credit Management page, I type in Zip code of HQ is 111-1111" width="960"/>
+                <img src="scaled_193304047aaf4a969e2c9c356f4ab600.png" title="And In Credit Management page, I click button Approve" width="960"/>
+                <img src="scaled_9ce4fc40824918ca47ac64e399a56cb3.png" title="And In Credit Management page, I confirm action" width="960"/>
+                <img src="scaled_b2f3c2f1938d3ea8340030df58c5976a.png" title="Then In Credit Management page, System show first message Address of HQ (all) is required" width="960"/>
+                <img src="scaled_15d2212c0ae9a2bdd19db9b2ee51d2ab.png" title="When In Credit Management page, I select tab have name is Business factors" width="960"/>
+                <img src="scaled_2087dd7505d4efed79ea4a2af5a3feda.png" title="And In Credit Management page, I type in Address of HQ (all) is 111-1111" width="960"/>
+                <img src="scaled_428e47bd2e4c89d1c5459abfc790e801.png" title="And In Credit Management page, I click button Approve" width="960"/>
+                <img src="scaled_4c1e2b4355c9cb9edb96eaa2c0a264c8.png" title="And In Credit Management page, I confirm action" width="960"/>
+                <img src="b2f3c2f1938d3ea8340030df58c5976a.png" title="Then In Credit Management page, System show first message Tel. is required" width="960"/>
+                <img src="scaled_6737179256890a5659d42d37af035247.png" title="When In Credit Management page, I select tab have name is Business factors" width="960"/>
+                <img src="scaled_2d6c95d39bfd4fd24a41bff3a58bcfe5.png" title="And In Credit Management page, I type in Tel. is 023-345-3212" width="960"/>
+                <img src="scaled_3840674599aac3acd1af7a95f6e95492.png" title="And In Credit Management page, I click button Approve" width="960"/>
+                <img src="scaled_b8742675143c98e0f593556bf20f3270.png" title="And In Credit Management page, I confirm action" width="960"/>
+                <img src="scaled_4b900dbe4874009756bb584f1cd8a691.png" title="Then In Credit Management page, System show first message Fiscal closing month is required" width="960"/>
+                <img src="scaled_84079673b650a5bd670d7eb6232b7698.png" title="When In Credit Management page, I select tab have name is Business factors" width="960"/>
+                <img src="scaled_270c5eb85bef6303918f7d3641e4222f.png" title="And In Credit Management page, I select in Fiscal closing month is 01月" width="960"/>
+                <img src="scaled_71b555031d42c1e34645c339e67c9c86.png" title="And In Credit Management page, I click button Approve" width="960"/>
+                <img src="scaled_c8cb88924e90e9d1d874da12f6f99d6a.png" title="And In Credit Management page, I confirm action" width="960"/>
+                <img src="scaled_0e13cb11048594103c8184add12529c3.png" title="Then In Credit Management page, System show message Save successfully" width="960"/>
+                <img src="7b40aa3b2b6add185915c2387be9c1db.png" title="And I logout from system: <span class='success-color'>SUCCESS</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.1.36</span>
+</div>
+</body>
+</html>

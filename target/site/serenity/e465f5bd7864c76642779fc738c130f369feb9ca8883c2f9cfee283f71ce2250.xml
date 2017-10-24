@@ -1,0 +1,110 @@
+<acceptance-test-run title="2. Open Maintain credit data and search customer code" name="2. Open Maintain credit data and search customer code" description="" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="9427" timestamp="2016-11-23T13:38:19.936+07:00" session-id="7e5d4d57a5294b6e8b6d652e7e5830a9">
+  <user-story id="run-feature-for-debugging" name="Run feature for debugging" path="debug/debug.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Debug" type="capability"/>
+    <tag name="Debug/Run feature for debugging" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>maintainMenu</header>
+      <header>pageTitle</header>
+      <header>parentMenuText</header>
+      <header>validCustomerCode</header>
+      <header>fieldCustomer</header>
+      <header>searchBtn</header>
+      <header>invalidCustomerCode</header>
+      <header>empty</header>
+      <header>numberOfRecord</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Maintain Credit Data</value>
+        <value>Maintenance accounting data screen</value>
+        <value>Accounting</value>
+        <value>A211</value>
+        <value>Customer code</value>
+        <value>Search</value>
+        <value>p665</value>
+        <value>0</value>
+        <value>1</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {maintainMenu=Maintain Credit Data, pageTitle=Maintenance accounting data screen, parentMenuText=Accounting, validCustomerCode=A211, fieldCustomer=Customer code, searchBtn=Search, invalidCustomerCode=p665, empty=0, numberOfRecord=1}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="14d41d437f194fadc2cf829595b3e192.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1031">
+      <screenshots>
+        <screenshot image="b6e7fa35d0b8aef59f70713c327d8523.png"/>
+      </screenshots>
+      <description>When I open submenu Maintain Credit Data of parent menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="243">
+      <screenshots>
+        <screenshot image="9be4921a435beb4ee3b902c71f1e49f8.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Maintenance accounting data screen&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="197">
+      <screenshots>
+        <screenshot image="9be4921a435beb4ee3b902c71f1e49f8.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, System show list button can not use
+| Search |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="262">
+      <screenshots>
+        <screenshot image="8fb563337e65361e6e33096d74ab65ee.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, I type p665 in input field have name is Customer code</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="897">
+      <screenshots>
+        <screenshot image="7f357efb4010f19ef6b0267b52015479.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="238">
+      <screenshots>
+        <screenshot image="c9e8a7e4e5a016275cb1ed830bda0aa7.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, Table below have 0 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="370">
+      <screenshots>
+        <screenshot image="d076be2a5c15cf339162e8ba8d224968.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, I type A211 in input field have name is Customer code</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="881">
+      <screenshots>
+        <screenshot image="c6a60333544c519280e46de19b7be124.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="245">
+      <screenshots>
+        <screenshot image="14d41d437f194fadc2cf829595b3e192.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, Table below have 1 record</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

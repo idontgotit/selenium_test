@@ -1,0 +1,108 @@
+<acceptance-test-run title="Open bass export and verify" name="Open bass export and verify" description="" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="15493" timestamp="2016-11-03T20:04:08.231+07:00" session-id="056b895be3d8755aa38e8ec0217d312b">
+  <user-story id="bass-export-display" name="Bass export display" path="bassExport/bass_export.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Bass export" type="capability"/>
+    <tag name="Bass export/Bass export display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>menuText</header>
+      <header>parentMenuText</header>
+      <header>pageTitle</header>
+      <header>exportBtn</header>
+      <header>tableName</header>
+      <header>downloadAllButton</header>
+      <header>location</header>
+      <header>copyBtn</header>
+      <header>editBtn</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>BASS Export</value>
+        <value>Import/Export</value>
+        <value>BASS Export</value>
+        <value>Export</value>
+        <value>Files Exported</value>
+        <value>Download all</value>
+        <value>Download location:</value>
+        <value>Copy</value>
+        <value>Edit</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {menuText=BASS Export, parentMenuText=Import/Export, pageTitle=BASS Export, exportBtn=Export, tableName=Files Exported, downloadAllButton=Download all, location=Download location:, copyBtn=Copy, editBtn=Edit}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="5542b2a3c757d3db74db132ee7410c11.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1205">
+      <screenshots>
+        <screenshot image="29553e6f9415a3c6b2dd9e55effe62cc.png"/>
+      </screenshots>
+      <description>When I open submenu BASS Export of parent menu Import/Export</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="187">
+      <screenshots>
+        <screenshot image="d0c0552a47a8030dc91d89e922529b6d.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;BASS Export&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="154">
+      <screenshots>
+        <screenshot image="d0c0552a47a8030dc91d89e922529b6d.png"/>
+      </screenshots>
+      <description>And In Bass export screen, System show button Export</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2460">
+      <screenshots>
+        <screenshot image="5542b2a3c757d3db74db132ee7410c11.png"/>
+      </screenshots>
+      <description>When In Bass export screen, I click button Export</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="212">
+      <screenshots>
+        <screenshot image="5542b2a3c757d3db74db132ee7410c11.png"/>
+      </screenshots>
+      <description>Then System show table Files Exported with 6 download link</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="133">
+      <screenshots>
+        <screenshot image="5542b2a3c757d3db74db132ee7410c11.png"/>
+      </screenshots>
+      <description>And In Bass export screen, System show button Download all</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="170">
+      <screenshots>
+        <screenshot image="5542b2a3c757d3db74db132ee7410c11.png"/>
+      </screenshots>
+      <description>And System show downloaded location Download location: and can not edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="127">
+      <screenshots>
+        <screenshot image="5542b2a3c757d3db74db132ee7410c11.png"/>
+      </screenshots>
+      <description>And In Bass export screen, System show button Copy</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="135">
+      <screenshots>
+        <screenshot image="5542b2a3c757d3db74db132ee7410c11.png"/>
+      </screenshots>
+      <description>And In Bass export screen, System show button Edit</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

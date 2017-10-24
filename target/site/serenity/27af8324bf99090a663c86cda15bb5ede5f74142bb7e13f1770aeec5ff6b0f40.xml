@@ -1,0 +1,96 @@
+<acceptance-test-run title="20. Open Employee Management and verify when select 1 record, change page and back" name="20. Open Employee Management and verify when select 1 record, change page and back" description="" steps="5" successful="5" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="11644" timestamp="2016-11-24T11:10:42.204+07:00" session-id="dee658dc9b58a166de8f8743e2bf720a">
+  <user-story id="employee-management-display" name="Employee Management display" path="employee_management/employee_management.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Employee management" type="capability"/>
+    <tag name="Employee Management display" type="feature"/>
+    <tag name="Employee management/Employee management display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>employeeMenu</header>
+      <header>parentMenuText</header>
+      <header>firstRecord</header>
+      <header>pageNumber</header>
+      <header>pageNumber1</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>1</value>
+        <value>2</value>
+        <value>1</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, firstRecord=1, pageNumber=2, pageNumber1=1}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="93d1cdf87f53cf96ab0689aafc838186.png"/>
+      <screenshot image="7b5df1c377f8ad0d41256c99de450381.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="995">
+      <screenshots>
+        <screenshot image="36c7e5dcc85f985db63c4b430429b272.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="970">
+      <screenshots>
+        <screenshot image="3352ee68e03b02fd1270fa31a1bf1341.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click in number 1 record can click</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1840">
+      <screenshots>
+        <screenshot image="7cdcd456fa3509cfff8d8243f0ca3c9a.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click page 2</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="867">
+      <screenshots>
+        <screenshot image="cef541e240271441b9e753da39dcd31e.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click page 1</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="158">
+      <screenshots>
+        <screenshot image="7b5df1c377f8ad0d41256c99de450381.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table should show 1 is selected</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

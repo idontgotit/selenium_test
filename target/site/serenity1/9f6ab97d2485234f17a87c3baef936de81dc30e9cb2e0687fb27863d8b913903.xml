@@ -1,0 +1,38 @@
+<acceptance-test-run title="logout from system" name="logout from system" description="" steps="1" successful="1" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="889" timestamp="2016-11-03T08:55:23.824+07:00" session-id="d5e3d34aabe3bb85d896e5672144ef84">
+  <user-story id="company-management" name="company management" path="companyManagement/companyManagement.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Company management" type="capability"/>
+    <tag name="company management" type="feature"/>
+    <tag name="Company management/Company management" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <test-step result="SUCCESS" duration="812">
+    <screenshots>
+      <screenshot image="d0d34f4260a34427dffac7f75fb55d14.png"/>
+    </screenshots>
+    <description>When I logout from system</description>
+  </test-step>
+</acceptance-test-run>

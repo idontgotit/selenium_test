@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Credit management add and edit","select record draft -> approve","SUCCESS","2016-11-03T09:02:30.392+07:00","0.0","55.19"
+"Credit management add and edit","verify approve full data","SUCCESS","2016-11-03T09:05:46.079+07:00","0.0","46.19"
+"Credit management add and edit","verify approve required data","SUCCESS","2016-11-03T09:03:26.396+07:00","0.0","138.81"
+"Credit management add and edit","verify tab input customer data","SUCCESS","2016-11-03T09:01:39.616+07:00","0.0","49.85"

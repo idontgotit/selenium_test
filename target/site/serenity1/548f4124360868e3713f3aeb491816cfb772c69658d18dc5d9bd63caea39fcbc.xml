@@ -1,0 +1,115 @@
+<acceptance-test-run title="verify recent activities" name="verify recent activities" description="" steps="9" successful="2" failures="0" errors="1" skipped="6" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="6708" timestamp="2016-11-03T08:54:30.694+07:00" session-id="d5e3d34aabe3bb85d896e5672144ef84">
+  <user-story id="company-management" name="company management" path="companyManagement/companyManagement.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Company management" type="capability"/>
+    <tag name="company management" type="feature"/>
+    <tag name="Company management/Company management" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>filterText</header>
+      <header>columnCompanyNameTitle</header>
+      <header>rowIndex</header>
+    </headers>
+    <rows>
+      <row result="ERROR">
+        <value>Company Management</value>
+        <value>Common</value>
+        <value>Test company</value>
+        <value>Company name</value>
+        <value>0</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Company Management, menuText=Common, filterText=Test company, columnCompanyNameTitle=Company name, rowIndex=0}" result="ERROR">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="905">
+      <screenshots>
+        <screenshot image="c495a4619f555a9fa218ed665456bcc8.png"/>
+      </screenshots>
+      <description>When I open submenu Company Management of menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="871">
+      <screenshots>
+        <screenshot image="45b3b80abe722f7772e50147340126d4.png"/>
+      </screenshots>
+      <description>And In Company management screen, I fill value &apos;Test company&apos; for filter in column &apos;Company name&apos;</description>
+    </test-step>
+    <test-group name="And In Company management screen, I select row &apos;0&apos;" result="ERROR">
+      <test-step result="ERROR" duration="143">
+        <screenshots>
+          <screenshot image="5c4e149cbe0a1fffaccdc31bf490beca.png" source="pagesource4602730426767495247.html.txt"/>
+        </screenshots>
+        <description>Select row: 0</description>
+        <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;*//div[contains(@class, &apos;ui-radiobutton-box ui-widget&apos;)]&quot;}
+  (Session info: chrome=53.0.2785.116)
+  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.qB4eGt}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d5e3d34aabe3bb85d896e5672144ef84
+*** Element info: {Using=xpath, value=*//div[contains(@class, &apos;ui-radiobutton-box ui-widget&apos;)]}</error>
+        <exception>org.openqa.selenium.NoSuchElementException:no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;*//div[contains(@class, &apos;ui-radiobutton-box ui-widget&apos;)]&quot;}
+  (Session info: chrome=53.0.2785.116)
+  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.qB4eGt}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d5e3d34aabe3bb85d896e5672144ef84
+*** Element info: {Using=xpath, value=*//div[contains(@class, &apos;ui-radiobutton-box ui-widget&apos;)]}
+[my.lib.serenity.primefaces.component.TableComponent.click_radio_box_by_row_index(TableComponent.java:214), my.lib.serenity.primefaces.sars.page.CompanyManagementPage.select_row(CompanyManagementPage.java:264), my.lib.serenity.primefaces.sars.steps.CompanyManagementSteps.select_row(CompanyManagementSteps.java:218), my.lib.serenity.primefaces.sars.definition.CompanyManagementScenarioSteps.when_in_company_management_screen_i_select_row(CompanyManagementScenarioSteps.java:142)]</exception>
+      </test-step>
+    </test-group>
+    <test-step result="SKIPPED" duration="1">
+      <description>And In Company management screen, I click button Edit</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>And In Company Detail screen, I view recent activities with company</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>Then The system should open recent activities screen</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>When In Company Detail screen, I close recent activities screen</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>And In Company Detail screen, I click button back</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>Then The system should show table company with record found</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

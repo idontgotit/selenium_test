@@ -1,0 +1,109 @@
+<acceptance-test-run title="verify edit daily report" name="verify edit daily report" description="" steps="8" successful="1" failures="0" errors="1" skipped="6" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="7307" timestamp="2016-11-03T19:57:36.902+07:00" session-id="b0757e2a3e35e2909d57069c8784c35b">
+  <user-story id="search-daily-report-by-date" name="Search Daily report by date" path="searchDailyReportByDate/searchDailyReportByDate.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Search daily report by date" type="capability"/>
+    <tag name="Search Daily report by date" type="feature"/>
+    <tag name="Search daily report by date/Search daily report by date" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>buttonSearchText</header>
+      <header>branchName</header>
+      <header>employeeInfo</header>
+      <header>editButtonText</header>
+      <header>rowIndex</header>
+      <header>pageTitle</header>
+    </headers>
+    <rows>
+      <row result="ERROR">
+        <value>Search By Date</value>
+        <value>Daily Report</value>
+        <value>Search</value>
+        <value>東京都</value>
+        <value>9999999</value>
+        <value>Edit</value>
+        <value>0</value>
+        <value>Daily Report</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Search By Date, menuText=Daily Report, buttonSearchText=Search, branchName=東京都, employeeInfo=9999999, editButtonText=Edit, rowIndex=0, pageTitle=Daily Report}" result="ERROR">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="961">
+      <screenshots>
+        <screenshot image="83ead199a8387ba38fef13985be63524.png"/>
+      </screenshots>
+      <description>When I open submenu Search By Date of menu Daily Report</description>
+    </test-step>
+    <test-group name="And In Search by date screen, I choose a branch 東京都 in dropdown Branch" result="ERROR">
+      <test-step result="ERROR" duration="144">
+        <screenshots>
+          <screenshot image="39175e1024358e5c44d6544fbbf83ac6.png" source="pagesource1569793757288776261.html.txt"/>
+        </screenshots>
+        <description>Choose a branch in dropdown branch: 東京都</description>
+        <error>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (577, 178). Other element would receive the click: &lt;div class=&quot;blockUI blockOverlay ui-widget-overlay&quot; style=&quot;z-index: 1000; cursor: default; position: absolute; opacity: 0.0101041;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=53.0.2785.116)
+  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 38 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.g0mNyt}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b0757e2a3e35e2909d57069c8784c35b</error>
+        <exception>org.openqa.selenium.WebDriverException:unknown error: Element is not clickable at point (577, 178). Other element would receive the click: &lt;div class=&quot;blockUI blockOverlay ui-widget-overlay&quot; style=&quot;z-index: 1000; cursor: default; position: absolute; opacity: 0.0101041;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=53.0.2785.116)
+  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 38 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.g0mNyt}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b0757e2a3e35e2909d57069c8784c35b
+[my.lib.serenity.primefaces.component.SelectOneMenuComponent.open_menu_options(SelectOneMenuComponent.java:18), my.lib.serenity.primefaces.component.SelectOneMenuComponent.select_option_by_text(SelectOneMenuComponent.java:23), my.lib.serenity.primefaces.sars.page.SearchHistoryByDatePage.choose_a_branch_in_dropdown_branch(SearchHistoryByDatePage.java:147), my.lib.serenity.primefaces.sars.steps.SearchHistoryByDateSteps.choose_a_branch_in_dropdown_branch(SearchHistoryByDateSteps.java:30), my.lib.serenity.primefaces.sars.definition.SearchDailyReportByDateFeatureScenarioSteps.when_in_search_by_date_screen_i_choose_a_branch_in_dropdown_branch(SearchDailyReportByDateFeatureScenarioSteps.java:46)]</exception>
+      </test-step>
+    </test-group>
+    <test-step result="SKIPPED" duration="0">
+      <description>And In Search by date screen, I type value 9999999 for autocomplete Employee</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>And In Search by date screen, I choose 9999999 employee in dropdown of autocomplete Employee</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>And In Search by date screen, I click button &apos;Search&apos;</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>And In Search by date screen, I select row 0</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>And In Search by date screen, I click button &apos;Edit&apos;</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>Then The system should open &apos;Daily Report&apos; page</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

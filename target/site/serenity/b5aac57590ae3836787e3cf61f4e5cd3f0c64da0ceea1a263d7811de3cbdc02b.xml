@@ -1,0 +1,168 @@
+<acceptance-test-run title="Open Employee Management and verify when select 1 record, change page and back" name="Open Employee Management and verify when select 1 record, change page and back" description="" steps="12" successful="6" failures="1" skipped="5" ignored="0" pending="0" result="FAILURE" duration="16558" timestamp="2016-11-03T20:37:05.056+07:00" session-id="7f901579dbc98742cb659af9cd730134">
+  <user-story id="employee-management-display" name="Employee Management display" path="employee_management/employee_management.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Employee management" type="capability"/>
+    <tag name="Employee Management display" type="feature"/>
+    <tag name="Employee management/Employee management display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="1" name="" description=""/>
+      <dataset startRow="1" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>employeeMenu</header>
+      <header>parentMenuText</header>
+      <header>firstRecord</header>
+      <header>pageNumber</header>
+      <header>pageNumber1</header>
+    </headers>
+    <rows>
+      <row result="FAILURE">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>1</value>
+        <value>2</value>
+        <value>1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Common</value>
+        <value>13</value>
+        <value>Employee Management</value>
+        <value>Employee Name</value>
+        <value>32</value>
+        <value>Mobile</value>
+        <value>Tel.</value>
+        <value>32</value>
+        <value>Add</value>
+        <value>Email</value>
+        <value>13</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, firstRecord=1, pageNumber=2, pageNumber1=1}" result="FAILURE">
+    <test-step result="FAILURE" duration="131">
+      <screenshots>
+        <screenshot image="486a8d5123e4a737a6f430ed62a11db7.png" source="pagesource5175897786006939152.html.txt"/>
+      </screenshots>
+      <description>Login: 9999999, triarrow</description>
+      <error>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: unknown</error>
+      <exception>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException:Expected enabled element was not enabled
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: driver.version: unknown
+[my.lib.serenity.primefaces.sars.page.LoginPage.login(LoginPage.java:41), my.lib.serenity.primefaces.sars.steps.LoginSteps.login(LoginSteps.java:32), my.lib.serenity.primefaces.sars.definition.CommonScenarioSteps.beforeLoggedIn(CommonScenarioSteps.java:22)]</exception>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>And In Employee Management screen, I click in number 1 record can click</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>And In Employee Management screen, I click page 2</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>And In Employee Management screen, I click page 1</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>Then In Employee Management screen, Table should show 1 is selected</description>
+    </test-step>
+  </test-group>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, addBtn=Add, empName=Employee Name, empMaxLength=32, email=Email, emailMaxLength=32, tel=Tel., telMaxLength=13, mobile=Mobile, mobileMaxLength=13}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="50dba66f4169242ae9123a5e5f19eaa9.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="986">
+      <screenshots>
+        <screenshot image="b822d82a801100a517ba0ce05f1b9cd1.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1381">
+      <screenshots>
+        <screenshot image="15e16d33b5ae3d70b0e0f9b6f976f453.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="273">
+      <screenshots>
+        <screenshot image="50dba66f4169242ae9123a5e5f19eaa9.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Verify input field Employee Name with max length 32</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="222">
+      <screenshots>
+        <screenshot image="50dba66f4169242ae9123a5e5f19eaa9.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, Verify input field Email with max length 32</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="164">
+      <screenshots>
+        <screenshot image="50dba66f4169242ae9123a5e5f19eaa9.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, Verify input field Mobile with max length 13</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="164">
+      <screenshots>
+        <screenshot image="50dba66f4169242ae9123a5e5f19eaa9.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, Verify input field Tel. with max length 13</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

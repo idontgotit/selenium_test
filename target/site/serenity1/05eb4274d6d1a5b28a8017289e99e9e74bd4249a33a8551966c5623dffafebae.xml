@@ -1,0 +1,62 @@
+<acceptance-test-run title="initialization screen when have data" name="initialization screen when have data" description="" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="7669" timestamp="2016-11-03T08:46:31.783+07:00" session-id="e02788a4687a6dd95353ac181b190d1d">
+  <user-story id="view-notification" name="View Notification" path="viewNotifications/viewNotifications.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="View notifications" type="capability"/>
+    <tag name="View Notification" type="feature"/>
+    <tag name="View notifications/View notification" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>View Notifications</value>
+        <value>Notification</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=View Notifications, menuText=Notification}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="50eb2a4528d21a046ae7d51500c29bf8.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1340">
+      <screenshots>
+        <screenshot image="50eb2a4528d21a046ae7d51500c29bf8.png"/>
+      </screenshots>
+      <description>When I open submenu View Notifications of menu Notification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="214">
+      <screenshots>
+        <screenshot image="50eb2a4528d21a046ae7d51500c29bf8.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Notification&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="247">
+      <screenshots>
+        <screenshot image="50eb2a4528d21a046ae7d51500c29bf8.png"/>
+      </screenshots>
+      <description>And The system should show initialization screen of View Notifications page when have data</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

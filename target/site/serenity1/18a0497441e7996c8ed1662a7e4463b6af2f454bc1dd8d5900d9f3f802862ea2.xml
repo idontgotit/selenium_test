@@ -1,0 +1,65 @@
+<acceptance-test-run title="create new daily report and fill only required fields" name="create new daily report and fill only required fields" description="" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="16086" timestamp="2016-11-03T08:41:55.545+07:00" session-id="008fe78f33bb3c47dea87fcc38f436c4">
+  <user-story id="register-daily-report" name="register daily report" path="registerDailyReport/registerDailyReport.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Register daily report" type="capability"/>
+    <tag name="register daily report" type="feature"/>
+    <tag name="Register daily report/Register daily report" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Register</value>
+        <value>Daily Report</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Register, menuText=Daily Report}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="b175ea737c0ba071d87994a20548fa89.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="889">
+      <screenshots>
+        <screenshot image="4e2fcb4d4262a3a29ab5ebbfbce0ac84.png"/>
+      </screenshots>
+      <description>When I open submenu Register of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="4109">
+      <screenshots>
+        <screenshot image="940c9db43a0f403d0b53f269243d963a.png"/>
+      </screenshots>
+      <description>And I add new Daily report with data below
+| companyName | content |
+| CIJ | Verify create new daily report when fill only required fields |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6396">
+      <screenshots>
+        <screenshot image="b175ea737c0ba071d87994a20548fa89.png"/>
+      </screenshots>
+      <description>Then The system should show message save daily report successfully</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

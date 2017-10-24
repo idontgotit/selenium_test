@@ -1,0 +1,124 @@
+<acceptance-test-run title="3. Open Employee Management and filter Employee input" name="3. Open Employee Management and filter Employee input" description="" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="34494" timestamp="2016-11-21T13:14:22.959+07:00" session-id="57363161510ffbb1b7b048a0aef98d4f">
+  <user-story id="run-feature-for-debugging" name="Run feature for debugging" path="debug/debug.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Debug" type="capability"/>
+    <tag name="Debug/Run feature for debugging" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>employeeMenu</header>
+      <header>parentMenuText</header>
+      <header>column</header>
+      <header>textFilter</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>Employee Code</value>
+        <value>1000</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>Employee Name</value>
+        <value>シ</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>Email</value>
+        <value>tri-arrow</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, column=Employee Code, textFilter=1000}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="b14c41782a3be3db6f78d5380ab03fb9.png"/>
+      <screenshot image="f752b446c356ead7f3414ac89086c8c4.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1618">
+      <screenshots>
+        <screenshot image="10c2e113117a84f8d1b40b0290cd5c05.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1083">
+      <screenshots>
+        <screenshot image="a7e27e08c17d2c16869ff605df755b0c.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I type 1000 in Employee Code column filter</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="843">
+      <screenshots>
+        <screenshot image="f752b446c356ead7f3414ac89086c8c4.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result in column Employee Code have 1000</description>
+    </test-step>
+  </test-group>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, column=Employee Name, textFilter=シ}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="a9d4425d3f586951a294d68f874127a5.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1072">
+      <screenshots>
+        <screenshot image="1581828cc53aa1d2f20d2e31f9c1b9f3.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1452">
+      <screenshots>
+        <screenshot image="c32c4e134b738f4543bd5d6c704480b0.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I type シ in Employee Name column filter</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="383">
+      <screenshots>
+        <screenshot image="a9d4425d3f586951a294d68f874127a5.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result in column Employee Name have シ</description>
+    </test-step>
+  </test-group>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, column=Email, textFilter=tri-arrow}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="3fbeff67744af77fa6eb6537123e5924.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1043">
+      <screenshots>
+        <screenshot image="df7f339150c150ea3b06af17e214102a.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="950">
+      <screenshots>
+        <screenshot image="3635fc70f44f75e5a02c9a2f1a59c766.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I type tri-arrow in Email column filter</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="297">
+      <screenshots>
+        <screenshot image="3fbeff67744af77fa6eb6537123e5924.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result in column Email have tri-arrow</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

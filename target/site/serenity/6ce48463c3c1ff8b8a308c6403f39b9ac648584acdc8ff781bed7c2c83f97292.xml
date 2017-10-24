@@ -1,0 +1,108 @@
+<acceptance-test-run title="initialization screen when access from search by date screen" name="initialization screen when access from search by date screen" description="" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="14542" timestamp="2016-11-03T19:59:43.591+07:00" session-id="2b3f3f9feabc2f361c0f10d5b4a15be0">
+  <user-story id="register-daily-report" name="register daily report" path="registerDailyReport/registerDailyReport.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Register daily report" type="capability"/>
+    <tag name="register daily report" type="feature"/>
+    <tag name="Register daily report/Register daily report" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>buttonText</header>
+      <header>branchName</header>
+      <header>employeeInfo</header>
+      <header>date</header>
+      <header>rowIndex</header>
+      <header>editButtonText</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Search By Date</value>
+        <value>Daily Report</value>
+        <value>Search</value>
+        <value>福岡県</value>
+        <value>40000005</value>
+        <value>2012/11/28</value>
+        <value>0</value>
+        <value>Edit</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Search By Date, menuText=Daily Report, buttonText=Search, branchName=福岡県, employeeInfo=40000005, date=2012/11/28, rowIndex=0, editButtonText=Edit}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="2161c5caffcc785d2215cd1d595eedb7.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1029">
+      <screenshots>
+        <screenshot image="3e3d1fd346340d20479b55caec09e8ce.png"/>
+      </screenshots>
+      <description>When I open submenu Search By Date of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1552">
+      <screenshots>
+        <screenshot image="198cabaa2735801c00fa32c4685f3b53.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I select date 2012/11/28 in item Date</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="820">
+      <screenshots>
+        <screenshot image="6c054a83b124b0ca1bd3fcf37a19a484.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I choose a branch 福岡県 in dropdown Branch</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="242">
+      <screenshots>
+        <screenshot image="86c59231d7c1229d9a745f82736e13dc.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I type value 40000005 for autocomplete Employee</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1384">
+      <screenshots>
+        <screenshot image="e26f591b6d336decdaab77a230c46d34.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I choose 40000005 employee in dropdown of autocomplete Employee</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1266">
+      <screenshots>
+        <screenshot image="421644752d520ef47a38ca88f630c004.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I click button &apos;Search&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="245">
+      <screenshots>
+        <screenshot image="d05400dc6267b7bb32dbbad88377156c.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I select row 0</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1485">
+      <screenshots>
+        <screenshot image="d94955a4f6e5ea12c79e1a0bd951f013.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I click button &apos;Edit&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="628">
+      <screenshots>
+        <screenshot image="2161c5caffcc785d2215cd1d595eedb7.png"/>
+      </screenshots>
+      <description>Then The system should show initialization screen of Register Daily report when access from Search by date screen</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

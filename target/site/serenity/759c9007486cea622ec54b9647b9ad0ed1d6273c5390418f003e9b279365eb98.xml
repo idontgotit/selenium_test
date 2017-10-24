@@ -1,0 +1,52 @@
+<acceptance-test-run title="initialization screen" name="initialization screen" description="" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="11139" timestamp="2016-11-03T20:22:47.847+07:00" session-id="aab20f15840a1046ced218bb300021ef">
+  <user-story id="accounting" name="Accounting" path="creditManagement/creditManagement.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Credit management" type="capability"/>
+    <tag name="Credit management/Accounting" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Credit Management</value>
+        <value>Accounting</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Credit Management, menuText=Accounting}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="b392f17b87c32049712aa8d981d9aeb1.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1290">
+      <screenshots>
+        <screenshot image="31b7ecf15e68218791888be3495e46e0.png"/>
+      </screenshots>
+      <description>When I open submenu Credit Management of menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="356">
+      <screenshots>
+        <screenshot image="b392f17b87c32049712aa8d981d9aeb1.png"/>
+      </screenshots>
+      <description>Then The system should open initialization screen of Credit Management page</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

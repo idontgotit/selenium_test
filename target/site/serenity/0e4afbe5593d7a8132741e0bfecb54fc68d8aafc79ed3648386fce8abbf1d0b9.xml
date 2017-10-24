@@ -1,0 +1,135 @@
+<acceptance-test-run title="2. Open Maintain credit data, search by customer code, select one record and try save and cancel immediately" name="2. Open Maintain credit data, search by customer code, select one record and try save and cancel immediately" description="" steps="12" successful="12" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="25171" timestamp="2017-04-17T17:17:49.314+07:00" session-id="6d2b575ba2fd2d5ef5ceb43fab6dac8e">
+  <user-story id="5-7.-maintain-credit-data" name="5-7. Maintain credit data" path="maintain_credit_data/maintain_credit_data57.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Maintain credit data" type="capability"/>
+    <tag name="5-7. Maintain credit data" type="feature"/>
+    <tag name="Maintain credit data/5 7. maintain credit data" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>maintainMenu</header>
+      <header>pageTitle</header>
+      <header>parentMenuText</header>
+      <header>validCustomerCode</header>
+      <header>fieldCustomer</header>
+      <header>searchBtn</header>
+      <header>selectBtn</header>
+      <header>rowSelect</header>
+      <header>only1</header>
+      <header>saveSuccess</header>
+      <header>saveBtn</header>
+      <header>cancelBtn</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Maintain Credit Data</value>
+        <value>Maintenance accounting data screen</value>
+        <value>Accounting</value>
+        <value>A001</value>
+        <value>Customer code</value>
+        <value>Search</value>
+        <value>Select</value>
+        <value>0</value>
+        <value>1</value>
+        <value>Save successfully</value>
+        <value>Save</value>
+        <value>Cancel</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {maintainMenu=Maintain Credit Data, pageTitle=Maintenance accounting data screen, parentMenuText=Accounting, validCustomerCode=A001, fieldCustomer=Customer code, searchBtn=Search, selectBtn=Select, rowSelect=0, only1=1, saveSuccess=Save successfully, saveBtn=Save, cancelBtn=Cancel}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="211ba72560aa0e05afa6111e50fd8a60.png"/>
+      <screenshot image="7d2c3c9e7e49169bf1be1e4055ccd025.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1567">
+      <screenshots>
+        <screenshot image="b37ce9b9df5a6d02caed46739fa93bab.png"/>
+      </screenshots>
+      <description>When I open submenu Maintain Credit Data of parent menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="181">
+      <screenshots>
+        <screenshot image="221cafbdb337e0b85e2a92d86c21ebf0.png"/>
+      </screenshots>
+      <description>And The system should open &apos;Maintenance accounting data screen&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="318">
+      <screenshots>
+        <screenshot image="2e2b90ba659adfc22eed4ee2f6f7e80c.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I type A001 in input field have name is Customer code</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1365">
+      <screenshots>
+        <screenshot image="243164ea1c450904658ddd9381c92657.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="180">
+      <screenshots>
+        <screenshot image="243164ea1c450904658ddd9381c92657.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, Table below have 1 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="826">
+      <screenshots>
+        <screenshot image="e63d63780d0241d3e524772fe2245b99.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click select checkbox row 0</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1436">
+      <screenshots>
+        <screenshot image="9b6245ef6a9567dfd12d475eee2a6913.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1438">
+      <screenshots>
+        <screenshot image="889a8735c6b556d809db18707c4a09e7.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Cancel</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="144">
+      <screenshots>
+        <screenshot image="889a8735c6b556d809db18707c4a09e7.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show list button can use
+| Select |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1356">
+      <screenshots>
+        <screenshot image="9b6245ef6a9567dfd12d475eee2a6913.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, I click button Select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1822">
+      <screenshots>
+        <screenshot image="183e4b5aaff3ab482e436a8ac73fa8f6.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Save</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="7335">
+      <screenshots>
+        <screenshot image="7d2c3c9e7e49169bf1be1e4055ccd025.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, System show message Save successfully</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

@@ -1,0 +1,82 @@
+<acceptance-test-run title="13. Open Employee Management and edit and back" name="13. Open Employee Management and edit and back" description="" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="23662" timestamp="2016-11-21T13:45:49.188+07:00" session-id="e2444c95b63da33f508d104e6323f048">
+  <user-story id="run-feature-for-debugging" name="Run feature for debugging" path="debug/debug.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Debug" type="capability"/>
+    <tag name="Debug/Run feature for debugging" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>employeeMenu</header>
+      <header>parentMenuText</header>
+      <header>editBtn</header>
+      <header>firstRecord</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>Edit</value>
+        <value>1</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, editBtn=Edit, firstRecord=1}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="445d8874014afde120f2dddb952e0610.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1325">
+      <screenshots>
+        <screenshot image="a5c9a3a07f7a1a65bf167a9f1562b3c2.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1060">
+      <screenshots>
+        <screenshot image="0ae10610ace27f55af88c202227e3d00.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click in number 1 record can click</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1358">
+      <screenshots>
+        <screenshot image="8af42d56c85c9426b5c8897db813f221.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="7812">
+      <screenshots>
+        <screenshot image="4925d4a4aa52b1656432e390794ade24.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I fill all data as below with employee name auto generate
+| hireDate | status | baseLocation | privilege | email | tel | mobile |
+| 2016/05/01 | Working | 東京 | 管理職 | ngocpt@arrow-tech.vn | 03-1234-5678 | 090-1234-5678 |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3975">
+      <screenshots>
+        <screenshot image="445d8874014afde120f2dddb952e0610.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click back button</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="215">
+      <screenshots>
+        <screenshot image="445d8874014afde120f2dddb952e0610.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, The system should show table Employee</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.4/media/jqueryui/dataTables.jqueryui.css" rel="Stylesheet"/>
+<link type="text/css" href="css/tables.css" rel="stylesheet" />
+
+<script type="text/javascript" src="datatables/1.10.4/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.4/media/jqueryui/dataTables.jqueryui.min.js"></script>
+    <script class="code" type="text/javascript">$(document).ready(function () {
+
+        // Results table
+        $('#tag-list-table').DataTable( {
+            "order": [
+                [ 1, "asc" ]
+            ],
+            "pageLength": 25
+        } );
+
+        $("test-list").tabs();
+    });
+    </script>
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-bdd-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs"><a href="index.html">Home</a> 
+                > Capabilities
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-11-2016 09:18</span>
+    <br style="clear:left"/>
+</div>
+
+
+
+   <div class="clr"></div>
+    <div id="beforetable"></div>
+    <div id="results-dashboard">
+        <div class="middlb">
+            <div class="table">
+                <table>
+                 <tr>
+                   <td>
+                    <div id="test-list">
+                        <ul>
+                            <li><a href="test-list-1">Capabilities</a></li>
+                        </ul>
+                    </div>
+                    <div id="test-list-1" class="table">
+                        <div class="test-results">
+                            <table id="tag-list-table">
+                                <thead>
+                                    <tr>
+                                        <th width="30" class="test-results-heading">&nbsp;</th>
+                                        <th width="750" class="test-results-heading">Capability</th>
+                                        <th width="70" class="test-results-heading">Tests</th>
+                                        <th width="70" class="test-results-heading">Steps</th>
+                                        <th width="65" class="test-results-heading">Duration</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Bass export</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-SUCCESS">
+                                        <td><span class="summary-icon"/><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span><span style="display:none">SUCCESS</span></td>
+                                        <td class="SUCCESS-text"><a href="64178cbda422bbafe882cc16f3e9fe23c3ac3c58c393e6117b20946c78cba9b4.html">Bass Export</a></td>
+
+                                        <td class="lightgreentext">5</td>
+                                        <td class="lightgreentext">62</td>
+
+                                        <td class="lightgreentext">57.314</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Company management</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="52242a4b808cc3a4d04054db2bcd5c7f79526a0fa7af5b250ed9cbab7511660e.html">Company Management</a></td>
+
+                                        <td class="lightgreentext">19</td>
+                                        <td class="lightgreentext">172</td>
+
+                                        <td class="lightgreentext">224.182</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Credit management</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-ERROR">
+                                        <td><span class="summary-icon"/><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span><span style="display:none">ERROR</span></td>
+                                        <td class="ERROR-text"><a href="69788b2fa213489f92961793caebdf5f1294c3094f2a822c9299e24143bccafd.html">Credit Management</a></td>
+
+                                        <td class="lightgreentext">18</td>
+                                        <td class="lightgreentext">454</td>
+
+                                        <td class="lightgreentext">874</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Employee management</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-SUCCESS">
+                                        <td><span class="summary-icon"/><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span><span style="display:none">SUCCESS</span></td>
+                                        <td class="SUCCESS-text"><a href="2d06aa5c7b92915148c45fd7252bfe1a54f6d38589ad1bc63198cdcb859ebd5e.html">Employee Management</a></td>
+
+                                        <td class="lightgreentext">23</td>
+                                        <td class="lightgreentext">166</td>
+
+                                        <td class="lightgreentext">362.207</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Login</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-SUCCESS">
+                                        <td><span class="summary-icon"/><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span><span style="display:none">SUCCESS</span></td>
+                                        <td class="SUCCESS-text"><a href="7bc0f0a7f0a314166970da42624110434e2b268d97622e5cd7f8edd1ec00e114.html">Login</a></td>
+
+                                        <td class="lightgreentext">2</td>
+                                        <td class="lightgreentext">10</td>
+
+                                        <td class="lightgreentext">12.008</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Menu</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-SUCCESS">
+                                        <td><span class="summary-icon"/><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span><span style="display:none">SUCCESS</span></td>
+                                        <td class="SUCCESS-text"><a href="9fc2d7dee2e6bc696cb05dfe5934fee21f9e879bf3c65c490ba380a61f830456.html">Menu</a></td>
+
+                                        <td class="lightgreentext">8</td>
+                                        <td class="lightgreentext">80</td>
+
+                                        <td class="lightgreentext">61.135</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Notification setting</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-SUCCESS">
+                                        <td><span class="summary-icon"/><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span><span style="display:none">SUCCESS</span></td>
+                                        <td class="SUCCESS-text"><a href="605a7ae301f7028da78c65d98284cc96bdd1821f8cb4f6641d11ace1899870de.html">Notification Setting</a></td>
+
+                                        <td class="lightgreentext">9</td>
+                                        <td class="lightgreentext">122</td>
+
+                                        <td class="lightgreentext">246.713</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Register daily report</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-SUCCESS">
+                                        <td><span class="summary-icon"/><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span><span style="display:none">SUCCESS</span></td>
+                                        <td class="SUCCESS-text"><a href="3b81e0d62a6ce51ead652a39e62661477df52527660ee240f974dbd612993b25.html">Register Daily Report</a></td>
+
+                                        <td class="lightgreentext">10</td>
+                                        <td class="lightgreentext">87</td>
+
+                                        <td class="lightgreentext">195.294</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>Search daily report by date</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-FAILURE">
+                                        <td><span class="summary-icon"/><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span><span style="display:none">FAILURE</span></td>
+                                        <td class="FAILURE-text"><a href="7a54c9f48d207a0ed642678a0625ee5801d81956f7e4644692884863aaab1d04.html">Search Daily Report By Date</a></td>
+
+                                        <td class="lightgreentext">9</td>
+                                        <td class="lightgreentext">99</td>
+
+                                        <td class="lightgreentext">112.041</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td><h3>View notifications</h3></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                    <tr class="test-SUCCESS">
+                                        <td><span class="summary-icon"/><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span><span style="display:none">SUCCESS</span></td>
+                                        <td class="SUCCESS-text"><a href="efb513a9454107dae555ab40746fed6d0338f5459d41e6bd81f2afd58a8bdcb7.html">View Notifications</a></td>
+
+                                        <td class="lightgreentext">8</td>
+                                        <td class="lightgreentext">66</td>
+
+                                        <td class="lightgreentext">359.023</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                   </td>
+                  </tr>
+                 </table>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter"></div>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<acceptance-test-run title="Filter" name="filter" description="" steps="13" successful="13" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="14139" timestamp="2016-11-03T08:52:57.759+07:00" session-id="d5e3d34aabe3bb85d896e5672144ef84">
+  <user-story id="company-management" name="company management" path="companyManagement/companyManagement.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Company management" type="capability"/>
+    <tag name="company management" type="feature"/>
+    <tag name="Company management/Company management" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>filterText</header>
+      <header>columnCompanyNameTitle</header>
+      <header>columnCustomerCodeTitle</header>
+      <header>columnHeadOfficeTitle</header>
+      <header>columnWorkTypeTitle</header>
+      <header>headOfficeFilterText</header>
+      <header>workTypeFilterText</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Company Management</value>
+        <value>Common</value>
+        <value>a</value>
+        <value>Company name</value>
+        <value>Customer code</value>
+        <value>Head office</value>
+        <value>Work type</value>
+        <value>東京都</value>
+        <value>ソフトウェア</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Company Management, menuText=Common, filterText=a, columnCompanyNameTitle=Company name, columnCustomerCodeTitle=Customer code, columnHeadOfficeTitle=Head office, columnWorkTypeTitle=Work type, headOfficeFilterText=東京都, workTypeFilterText=ソフトウェア}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="89f69dbd9b1f38aed7df5f97dae1d89f.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="877">
+      <screenshots>
+        <screenshot image="2da63bd9cbd42ee87fdc61be38a561e9.png"/>
+      </screenshots>
+      <description>When I open submenu Company Management of menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="843">
+      <screenshots>
+        <screenshot image="6c11d7daebb9b6d504de1f031ec2a2e5.png"/>
+      </screenshots>
+      <description>And In Company management screen, I fill value &apos;a&apos; for filter in column &apos;Company name&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="735">
+      <screenshots>
+        <screenshot image="83700e9fd4d1d89ccef47e35ad2d8687.png"/>
+      </screenshots>
+      <description>Then Table Company should show only records contain text &apos;a&apos; in column &apos;Company name&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="912">
+      <screenshots>
+        <screenshot image="d771b84e0a4840a466e740919f383a1f.png"/>
+      </screenshots>
+      <description>When In Company management screen, I fill value &apos;a&apos; for filter in column &apos;Company name&apos; and enter</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="738">
+      <screenshots>
+        <screenshot image="17d2fb6c0426a772590508750db2dd25.png"/>
+      </screenshots>
+      <description>Then Table Company should show only records contain text &apos;a&apos; in column &apos;Company name&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="806">
+      <screenshots>
+        <screenshot image="64ef179f247d8c4304fdee35df19fa4a.png"/>
+      </screenshots>
+      <description>When In Company management screen, I fill value &apos;a&apos; for filter in column &apos;Customer code&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="507">
+      <screenshots>
+        <screenshot image="cee134843ee47daca55de4ab5cd2b8e6.png"/>
+      </screenshots>
+      <description>Then Table Company should show only records contain text &apos;a&apos; in column &apos;Customer code&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="854">
+      <screenshots>
+        <screenshot image="91666330b0fbbd656718423ed04ed735.png"/>
+      </screenshots>
+      <description>When In Company management screen, I fill value &apos;a&apos; for filter in column &apos;Customer code&apos; and enter</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="419">
+      <screenshots>
+        <screenshot image="f5e313724aedcd9ff3074712e727284c.png"/>
+      </screenshots>
+      <description>Then Table Company should show only records contain text &apos;a&apos; in column &apos;Customer code&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1000">
+      <screenshots>
+        <screenshot image="673f986ff348f1bf01145ef9b922b852.png"/>
+      </screenshots>
+      <description>When In Company management screen, I choose value &apos;東京都&apos; for dropdown filter in column &apos;Head office&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="325">
+      <screenshots>
+        <screenshot image="eafb05df08269b85893fbabccce4d49a.png"/>
+      </screenshots>
+      <description>Then Table Company should show only records contain text &apos;東京都&apos; in column &apos;Head office&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="989">
+      <screenshots>
+        <screenshot image="2b264afacacb0e61fcf1d85d2e20f87f.png"/>
+      </screenshots>
+      <description>When In Company management screen, I choose value &apos;ソフトウェア&apos; for dropdown filter in column &apos;Work type&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="349">
+      <screenshots>
+        <screenshot image="89f69dbd9b1f38aed7df5f97dae1d89f.png"/>
+      </screenshots>
+      <description>Then Table Company should show only records contain text &apos;ソフトウェア&apos; in column &apos;Work type&apos;</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Maintain credit data" skipped="0" tests="1" time="16.52" timestamp="2016-11-313 10:09:43"><testcase name="2. Open Maintain credit data, search and use toggle column"><failure message="expected:&lt;[9]&gt; but was:&lt;[10]&gt;" type="java.lang.AssertionError">expected:&lt;[9]&gt; but was:&lt;[10]&gt;</failure><system-err>expected:&lt;[9]&gt; but was:&lt;[10]&gt;
+my.lib.serenity.primefaces.sars.steps.MaintainCreditDataSteps.tableHaveNumberClm(MaintainCreditDataSteps.java:53)
+my.lib.serenity.primefaces.sars.definition.MaintainCreditDataScenarioSteps.inMaintainCreditDataScreenTableBelowHaveNumberClmColumns(MaintainCreditDataScenarioSteps.java:69)
+</system-err></testcase></testsuite>

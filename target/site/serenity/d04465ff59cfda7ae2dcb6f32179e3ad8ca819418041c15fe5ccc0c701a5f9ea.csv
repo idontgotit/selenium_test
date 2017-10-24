@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Notification Setting display","Open Notification Setting and verify paging last, first, next, previous","SUCCESS","2016-11-03T19:54:57.263+07:00","0.0","20.41"
+"Notification Setting display","Open Notification Setting click check box enable","SUCCESS","2016-11-03T19:54:34.496+07:00","0.0","20.6"

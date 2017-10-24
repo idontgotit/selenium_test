@@ -1,0 +1,177 @@
+<acceptance-test-run title="7. Select record -&gt; duplicate -&gt; save draft -&gt; fail -&gt; Reject-&gt;save draft -&gt; success" name="7. Select record -&gt; duplicate -&gt; save draft -&gt; fail -&gt; Reject-&gt;save draft -&gt; success" description="" steps="18" successful="18" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="42018" timestamp="2017-01-25T09:38:31.769+07:00" session-id="6d6bc20b0a38f57a5cc0a82f870d069c">
+  <user-story id="run-feature-for-debugging" name="Run feature for debugging" path="debug/debug.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Debug" type="capability"/>
+    <tag name="Debug/Run feature for debugging" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>validCustomerCode</header>
+      <header>rowIndex</header>
+      <header>btnBack</header>
+      <header>rowIndex2CreditHistory</header>
+      <header>btnDuplicate</header>
+      <header>btnSaveDraft</header>
+      <header>failMessage</header>
+      <header>number0</header>
+      <header>btnEdit</header>
+      <header>btnReject</header>
+      <header>successReject</header>
+      <header>successSaveDraft</header>
+      <header>number</header>
+      <header>string</header>
+      <header>lang</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Credit Management</value>
+        <value>Accounting</value>
+        <value>A567</value>
+        <value>0</value>
+        <value>back</value>
+        <value>0</value>
+        <value>Duplicate</value>
+        <value>Save draft</value>
+        <value>Cannot make new draft report because you could only have 1 draft report for this company once time.</value>
+        <value>0</value>
+        <value>Edit</value>
+        <value>Reject</value>
+        <value>Reject successful</value>
+        <value>Save successfully</value>
+        <value>4009912</value>
+        <value>123456</value>
+        <value>en</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Credit Management, menuText=Accounting, validCustomerCode=A567, rowIndex=0, btnBack=back, rowIndex2CreditHistory=0, btnDuplicate=Duplicate, btnSaveDraft=Save draft, failMessage=Cannot make new draft report because you could only have 1 draft report for this company once time., number0=0, btnEdit=Edit, btnReject=Reject, successReject=Reject successful, successSaveDraft=Save successfully, number=4009912, string=123456, lang=en}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="7b40aa3b2b6add185915c2387be9c1db.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="3616">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>When I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2610">
+      <screenshots>
+        <screenshot image="4e9702b045edc81c463feda726776d87.png"/>
+        <screenshot image="a4238260deabc52d4f775d3b79bd1054.png"/>
+      </screenshots>
+      <description>And I input my credentials username 4009912 and password 123456</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1709">
+      <screenshots>
+        <screenshot image="5a954ee6f2735c8e7593f1333dab07d7.png"/>
+      </screenshots>
+      <description>And I change language to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1000">
+      <screenshots>
+        <screenshot image="1d4266c873394eec33b96022cc8d8e5f.png"/>
+      </screenshots>
+      <description>When I open submenu Credit Management of menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1536">
+      <screenshots>
+        <screenshot image="bacd8f236585c3bc6ae03a593d2c270c.png"/>
+      </screenshots>
+      <description>And I search customer by code A567</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="451">
+      <screenshots>
+        <screenshot image="92cc9b476dd95a321e8a4c0e31b7cc14.png"/>
+      </screenshots>
+      <description>And I click checkbox left of a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1436">
+      <screenshots>
+        <screenshot image="117f4c26e133306d34a053e69384cf58.png"/>
+      </screenshots>
+      <description>And In accounting screen, I click button select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="927">
+      <screenshots>
+        <screenshot image="c724d4a1dd94bd08abf36b81d3c78e7b.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click record 0 in table Credit History in bottom with View enable</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1916">
+      <screenshots>
+        <screenshot image="24db0b85db949aa48417ca05dd554992.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Duplicate</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1277">
+      <screenshots>
+        <screenshot image="51fbc8ff4d92e59f0041ca92cff4f775.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I change survey date to next day of selected record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1858">
+      <screenshots>
+        <screenshot image="93cd2b4cd8713863f2243cd0950f1561.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Save draft</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="8144">
+      <screenshots>
+        <screenshot image="ee3b0e7f85080807fe94b8f14beea99f.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show message Save successfully</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="905">
+      <screenshots>
+        <screenshot image="4c1c23fed22bb728587e3f81d8247496.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click record 0 in table Credit History in bottom</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1782">
+      <screenshots>
+        <screenshot image="c6a8c1750201a604fe9734f9d57d4771.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1274">
+      <screenshots>
+        <screenshot image="031cb77ca964edde7a26706ee2d13116.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Reject</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1292">
+      <screenshots>
+        <screenshot image="06cb91c141c86eee7d1e8a522f5bb826.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I confirm action</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="8125">
+      <screenshots>
+        <screenshot image="4bd6070ce42d3f150ded9df9e4f27e5a.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show message Reject successful</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1424">
+      <screenshots>
+        <screenshot image="7b40aa3b2b6add185915c2387be9c1db.png"/>
+      </screenshots>
+      <description>And I logout from system</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

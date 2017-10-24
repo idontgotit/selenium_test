@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"company management","cannot delete a company if user is not admin","ERROR","2016-11-03T20:12:28.184+07:00","0.0","3.92"
+"company management","when edit company, click cancel after fill all data","ERROR","2016-11-03T20:13:38.718+07:00","0.0","18.42"

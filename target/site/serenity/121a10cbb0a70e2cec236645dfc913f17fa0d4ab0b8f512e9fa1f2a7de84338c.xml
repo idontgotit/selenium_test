@@ -1,0 +1,107 @@
+<acceptance-test-run title="login with role system support of branch" name="login with role system support of branch" description="" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="8652" timestamp="2016-11-03T19:58:55.374+07:00" session-id="54ee6b77c5df034a0379d4e5f2f20495">
+  <user-story id="verify-all-menus-by-user-role" name="Verify all menus by user role" path="menu/verify_all_menus.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Menu" type="capability"/>
+    <tag name="Menu/Verify all menus by user role" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>username</header>
+      <header>password</header>
+      <header>lang</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>4009907</value>
+        <value>123456</value>
+        <value>en</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {username=4009907, password=123456, lang=en}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="7c64ab644a267eda7c85d0b0336839b4.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="918">
+      <screenshots>
+        <screenshot image="968fbe9f69b3c2f3079f78f4bff8f6b4.png"/>
+      </screenshots>
+      <description>Given I logout from system</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="791">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>Given I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3072">
+      <screenshots>
+        <screenshot image="e28670b8911efc5b2247fa07f7f52d1b.png"/>
+        <screenshot image="49db9e4c69193fbc8dc1815bd145c85e.png"/>
+      </screenshots>
+      <description>When I input my credentials username 4009907 and password 123456</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="263">
+      <screenshots>
+        <screenshot image="49db9e4c69193fbc8dc1815bd145c85e.png"/>
+      </screenshots>
+      <description>Then The system should let me in</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2226">
+      <screenshots>
+        <screenshot image="83e3943792bba6f2f7887f555e323af8.png"/>
+      </screenshots>
+      <description>When I change language to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="227">
+      <screenshots>
+        <screenshot image="83e3943792bba6f2f7887f555e323af8.png"/>
+      </screenshots>
+      <description>Then The system should change all text to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="113">
+      <screenshots>
+        <screenshot image="83e3943792bba6f2f7887f555e323af8.png"/>
+      </screenshots>
+      <description>Given List menu I have permission
+| Company Management | Common |
+| Branch Management | Common |
+| Summary Report | Report |
+| Register | Daily Report |
+| Search History | Daily Report |
+| Search By Date | Daily Report |
+| Program Test | Import/Export |
+| Integration Test | Import/Export |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="785">
+      <screenshots>
+        <screenshot image="7c64ab644a267eda7c85d0b0336839b4.png"/>
+      </screenshots>
+      <description>Then The system should show all menu I have permission</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="140">
+      <screenshots>
+        <screenshot image="7c64ab644a267eda7c85d0b0336839b4.png"/>
+      </screenshots>
+      <description>And The system should show only menu I have permission</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

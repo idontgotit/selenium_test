@@ -1,0 +1,74 @@
+<acceptance-test-run title="create new daily report with category is other works" name="create new daily report with category is other works" description="" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="14750" timestamp="2016-11-03T08:42:12.412+07:00" session-id="008fe78f33bb3c47dea87fcc38f436c4">
+  <user-story id="register-daily-report" name="register daily report" path="registerDailyReport/registerDailyReport.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Register daily report" type="capability"/>
+    <tag name="register daily report" type="feature"/>
+    <tag name="Register daily report/Register daily report" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>categoryType</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Register</value>
+        <value>Daily Report</value>
+        <value>Other works</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Register, menuText=Daily Report, categoryType=Other works}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="ea115760fda47e156a218af9ac3e5107.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="914">
+      <screenshots>
+        <screenshot image="36c5bc0d52588adc0ad01c3495efa5b8.png"/>
+      </screenshots>
+      <description>When I open submenu Register of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="893">
+      <screenshots>
+        <screenshot image="425ddbf91e378342db5667fca6633e8d.png"/>
+      </screenshots>
+      <description>And In Register daily report, I choose category &apos;Other works&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1687">
+      <screenshots>
+        <screenshot image="ea9737b9ab626370acf53a31bf090977.png"/>
+      </screenshots>
+      <description>And I add new Daily report with data below
+| content |
+| Verify create new daily report with category is other |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6494">
+      <screenshots>
+        <screenshot image="ea115760fda47e156a218af9ac3e5107.png"/>
+      </screenshots>
+      <description>Then The system should show message save daily report successfully</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

@@ -1,0 +1,134 @@
+<acceptance-test-run title="search customer by other conditions, mapping sansan with credit data and Credit Investigation" name="search customer by other conditions, mapping sansan with credit data and Credit Investigation" description="" steps="10" successful="9" failures="0" errors="1" skipped="0" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="35890" timestamp="2016-11-03T20:14:29.668+07:00" session-id="69571d52d44df950dc593646343390c1">
+  <user-story id="credit-management-test-1-3" name="Credit management test 1-3" path="creditManagement/creadit_management_test13_company_and_credit_data.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Credit management" type="capability"/>
+    <tag name="Credit management test 1-3" type="feature"/>
+    <tag name="Credit management/Credit management test 1 3" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>validCustomerCode</header>
+      <header>rowIndex</header>
+    </headers>
+    <rows>
+      <row result="ERROR">
+        <value>Credit Management</value>
+        <value>Accounting</value>
+        <value>A567</value>
+        <value>0</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Credit Management, menuText=Accounting, validCustomerCode=A567, rowIndex=0}" result="ERROR">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="908">
+      <screenshots>
+        <screenshot image="7587fe8af8cdef923b74db62b1217235.png"/>
+      </screenshots>
+      <description>When I open submenu Credit Management of menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1594">
+      <screenshots>
+        <screenshot image="0806a419ea1dfd802a9ee9353a08e6c9.png"/>
+      </screenshots>
+      <description>And I search customer by code A567</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="443">
+      <screenshots>
+        <screenshot image="577af23306dfde05851ec5a523511b0d.png"/>
+      </screenshots>
+      <description>And I click checkbox left of a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1849">
+      <screenshots>
+        <screenshot image="8db7b6c22aa45ed65f9e51503f2d3b39.png"/>
+      </screenshots>
+      <description>And In accounting screen, I click button select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="167">
+      <screenshots>
+        <screenshot image="8db7b6c22aa45ed65f9e51503f2d3b39.png"/>
+      </screenshots>
+      <description>Then The system should show customer details screen</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="160">
+      <screenshots>
+        <screenshot image="8db7b6c22aa45ed65f9e51503f2d3b39.png"/>
+      </screenshots>
+      <description>And In Credit Management page, System show list button can use
+| New report |
+| Back |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="332">
+      <screenshots>
+        <screenshot image="8db7b6c22aa45ed65f9e51503f2d3b39.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields required can not input
+| Customer code (index) |
+| Company name |
+| Company name in Kana |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="144">
+      <screenshots>
+        <screenshot image="8db7b6c22aa45ed65f9e51503f2d3b39.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields can not select
+| Client code status |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="234">
+      <screenshots>
+        <screenshot image="8db7b6c22aa45ed65f9e51503f2d3b39.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields not required can not input
+| Year of starting business |
+| Year of official establishment |</description>
+    </test-step>
+    <test-group name="And In Credit Management page, I verify status edit, view, duplicate every record in table Credit History is true" result="ERROR">
+      <test-step result="ERROR" duration="146">
+        <screenshots>
+          <screenshot image="b2d8e9443227172f0b68aaff78cacf91.png" source="pagesource3097158932259764064.html.txt"/>
+        </screenshots>
+        <description>Verify status every record in table credit history</description>
+        <error>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (52, 455). Other element would receive the click: &lt;div class=&quot;blockUI blockOverlay ui-widget-overlay&quot; style=&quot;z-index: 1000; cursor: default; position: absolute; opacity: 0.000295991;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=53.0.2785.116)
+  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 48 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.OYy3BJ}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 69571d52d44df950dc593646343390c1</error>
+        <exception>org.openqa.selenium.WebDriverException:unknown error: Element is not clickable at point (52, 455). Other element would receive the click: &lt;div class=&quot;blockUI blockOverlay ui-widget-overlay&quot; style=&quot;z-index: 1000; cursor: default; position: absolute; opacity: 0.000295991;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=53.0.2785.116)
+  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 48 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.OYy3BJ}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=53.0.2785.116, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 69571d52d44df950dc593646343390c1
+[my.lib.serenity.primefaces.component.TableComponent.click_radio_box_by_row_index(TableComponent.java:215), my.lib.serenity.primefaces.sars.steps.CreditManagementCompanyAndCreditDataSteps.verifyStatusEveryRecordInTableCreditHistory(CreditManagementCompanyAndCreditDataSteps.java:66), my.lib.serenity.primefaces.sars.definition.CreditManagementCompanyAndCreditDataScenarioSteps.inCreditManagementPageIVerifyStatusEditViewDuplicateEveryRecordInTableIsTrue(CreditManagementCompanyAndCreditDataScenarioSteps.java:68)]</exception>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

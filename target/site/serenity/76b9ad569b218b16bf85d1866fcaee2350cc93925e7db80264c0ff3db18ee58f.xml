@@ -1,0 +1,455 @@
+<acceptance-test-run title="5. Create new daily report and fill only required fields" name="5. Create new daily report and fill only required fields" description="" steps="55" successful="55" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="195100" timestamp="2016-12-16T10:40:23.709+07:00" session-id="9fa9e1d3c439c57de08988c41a4e6213">
+  <user-story id="run-feature-for-debugging" name="Run feature for debugging" path="debug/debug.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Debug" type="capability"/>
+    <tag name="Debug/Run feature for debugging" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="1" name="" description=""/>
+      <dataset startRow="1" rowCount="1" name="" description=""/>
+      <dataset startRow="2" rowCount="1" name="" description=""/>
+      <dataset startRow="3" rowCount="1" name="" description=""/>
+      <dataset startRow="4" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>number</header>
+      <header>string</header>
+      <header>lang</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Register</value>
+        <value>Daily Report</value>
+        <value>4009907</value>
+        <value>123456</value>
+        <value>en</value>
+      </row>
+      <row result="SUCCESS">
+        <value>4009907</value>
+        <value>123456</value>
+        <value>en</value>
+        <value>Register</value>
+        <value>Daily Report</value>
+      </row>
+      <row result="SUCCESS">
+        <value>4009907</value>
+        <value>123456</value>
+        <value>en</value>
+        <value>Register</value>
+        <value>Daily Report</value>
+      </row>
+      <row result="SUCCESS">
+        <value>4009907</value>
+        <value>123456</value>
+        <value>en</value>
+        <value>Register</value>
+        <value>Daily Report</value>
+      </row>
+      <row result="SUCCESS">
+        <value>4009907</value>
+        <value>123456</value>
+        <value>en</value>
+        <value>Register</value>
+        <value>Daily Report</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Register, menuText=Daily Report, number=4009907, string=123456, lang=en}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="5b39d89e1d82a5ebd162869340142215.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="2976">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>When I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3182">
+      <screenshots>
+        <screenshot image="e28670b8911efc5b2247fa07f7f52d1b.png"/>
+        <screenshot image="d739b8ccd71b202ace5275a9acaa6c72.png"/>
+      </screenshots>
+      <description>And I input my credentials username 4009907 and password 123456</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2383">
+      <screenshots>
+        <screenshot image="17b0f09f5f7e9be92285e49967f95a39.png"/>
+      </screenshots>
+      <description>And I change language to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1021">
+      <screenshots>
+        <screenshot image="c2c3098cbeafa812b1d5f1ea4c97a017.png"/>
+      </screenshots>
+      <description>When I open submenu Register of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="347">
+      <screenshots>
+        <screenshot image="c66c4a45aa83971e1a5402ed2b05705b.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Daily Report&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="13580">
+      <screenshots>
+        <screenshot image="aec2ef0a68661ab4786085b972e3e76c.png"/>
+      </screenshots>
+      <description>When I add new Daily report with data below
+| companyName | content | personInCharge | department | businessType | purpose | reminder | projectFlag | openFlag |
+| 北開工営 | Verify create new daily report and fill all fields | 庭田次長 | atv | ソフトウェア | クレーム | ON | ON | ON |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6630">
+      <screenshots>
+        <screenshot image="fb8d0bb14c5b1dc20e55a7b301187cd0.png"/>
+      </screenshots>
+      <description>Then The system should show start time and end time required message</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2524">
+      <screenshots>
+        <screenshot image="aca89434b5784ebdda9f42334630d679.png"/>
+      </screenshots>
+      <description>When I fill Daily report screen with data below
+| reminder | reminderFrom | reminderTo |
+| ON | 2016/10/19 | 2016/10/20 |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="889">
+      <screenshots>
+        <screenshot image="9cc5648f03d6d0764f4bfb1062ea7de5.png"/>
+      </screenshots>
+      <description>And In Register daily report, I click button Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6484">
+      <screenshots>
+        <screenshot image="35ce6051cfb2c3bf463b470dab484eb0.png"/>
+      </screenshots>
+      <description>Then The system should show message save daily report successfully</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1427">
+      <screenshots>
+        <screenshot image="5b39d89e1d82a5ebd162869340142215.png"/>
+      </screenshots>
+      <description>And I logout from system</description>
+    </test-step>
+  </test-group>
+  <test-group name="[1] {submenuText=Register, menuText=Daily Report, number=4009907, string=123456, lang=en}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="8e75bf85699b296084103e1641988cbc.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="718">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>When I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3081">
+      <screenshots>
+        <screenshot image="e28670b8911efc5b2247fa07f7f52d1b.png"/>
+        <screenshot image="d739b8ccd71b202ace5275a9acaa6c72.png"/>
+      </screenshots>
+      <description>And I input my credentials username 4009907 and password 123456</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2318">
+      <screenshots>
+        <screenshot image="17b0f09f5f7e9be92285e49967f95a39.png"/>
+      </screenshots>
+      <description>And I change language to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="999">
+      <screenshots>
+        <screenshot image="337d7236ce24456991390a5157095434.png"/>
+      </screenshots>
+      <description>When I open submenu Register of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="246">
+      <screenshots>
+        <screenshot image="1ba79ce45e7dbc540c69063eed7e5024.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Daily Report&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="13144">
+      <screenshots>
+        <screenshot image="21549e3e9767ed480beca8989686af8d.png"/>
+      </screenshots>
+      <description>When I add new Daily report with data below
+| companyName | content | personInCharge | department | businessType | purpose | reminder | projectFlag | openFlag |
+| 北開工営 | Verify create new daily report and fill all fields | 庭田次長 | atv | ソフトウェア | クレーム | ON | ON | ON |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6631">
+      <screenshots>
+        <screenshot image="6074863d3ed2aba774ff838982918b64.png"/>
+      </screenshots>
+      <description>Then The system should show start time and end time required message</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2330">
+      <screenshots>
+        <screenshot image="fe4044f75535b70976d4dd095712a830.png"/>
+      </screenshots>
+      <description>When I fill Daily report screen with data below
+| reminder | reminderFrom | reminderTo |
+| ON | 2016/10/19 | 2016/10/20 |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="886">
+      <screenshots>
+        <screenshot image="8da50f9f34f66ab72f4283d553697f6c.png"/>
+      </screenshots>
+      <description>And In Register daily report, I click button Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6466">
+      <screenshots>
+        <screenshot image="2f03682edaef042025accf79f7ba0b95.png"/>
+      </screenshots>
+      <description>Then The system should show message save daily report successfully</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1401">
+      <screenshots>
+        <screenshot image="5b39d89e1d82a5ebd162869340142215.png"/>
+      </screenshots>
+      <description>And I logout from system</description>
+    </test-step>
+  </test-group>
+  <test-group name="[1] {submenuText=Register, menuText=Daily Report, number=4009907, string=123456, lang=en}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="5b39d89e1d82a5ebd162869340142215.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="667">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>When I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2922">
+      <screenshots>
+        <screenshot image="e28670b8911efc5b2247fa07f7f52d1b.png"/>
+        <screenshot image="b6e0d419081c581e7637298c933b85d7.png"/>
+      </screenshots>
+      <description>And I input my credentials username 4009907 and password 123456</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2075">
+      <screenshots>
+        <screenshot image="bee995d054e88e73b0b2be0e89f69aaa.png"/>
+      </screenshots>
+      <description>And I change language to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="963">
+      <screenshots>
+        <screenshot image="fd090548a2bc412c4c452e4841687296.png"/>
+      </screenshots>
+      <description>When I open submenu Register of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="197">
+      <screenshots>
+        <screenshot image="2fdec18f3b466d6f76891d38e7eab7f6.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Daily Report&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="12963">
+      <screenshots>
+        <screenshot image="5073c2650469f1dd00d9d33f181dd17a.png"/>
+      </screenshots>
+      <description>When I add new Daily report with data below
+| companyName | content | personInCharge | department | businessType | purpose | reminder | projectFlag | openFlag |
+| 北開工営 | Verify create new daily report and fill all fields | 庭田次長 | atv | ソフトウェア | クレーム | ON | ON | ON |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6583">
+      <screenshots>
+        <screenshot image="27414971addb8643ab77009710de1e63.png"/>
+      </screenshots>
+      <description>Then The system should show start time and end time required message</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2406">
+      <screenshots>
+        <screenshot image="b1cb8c7ed74e15e71330d39badfaa327.png"/>
+      </screenshots>
+      <description>When I fill Daily report screen with data below
+| reminder | reminderFrom | reminderTo |
+| ON | 2016/10/19 | 2016/10/20 |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1005">
+      <screenshots>
+        <screenshot image="cbbeb8427896b20cb749caef0b4ef6a9.png"/>
+      </screenshots>
+      <description>And In Register daily report, I click button Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6454">
+      <screenshots>
+        <screenshot image="5dfe15abf59ff3adc7056305f5b6c094.png"/>
+      </screenshots>
+      <description>Then The system should show message save daily report successfully</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1387">
+      <screenshots>
+        <screenshot image="5b39d89e1d82a5ebd162869340142215.png"/>
+      </screenshots>
+      <description>And I logout from system</description>
+    </test-step>
+  </test-group>
+  <test-group name="[1] {submenuText=Register, menuText=Daily Report, number=4009907, string=123456, lang=en}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="5b39d89e1d82a5ebd162869340142215.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="653">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>When I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2911">
+      <screenshots>
+        <screenshot image="e28670b8911efc5b2247fa07f7f52d1b.png"/>
+        <screenshot image="6b7d843f951a3c09df498d0f51c34e62.png"/>
+      </screenshots>
+      <description>And I input my credentials username 4009907 and password 123456</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2196">
+      <screenshots>
+        <screenshot image="15b34acdd455b3cca46e2c02bb77a3b0.png"/>
+      </screenshots>
+      <description>And I change language to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="903">
+      <screenshots>
+        <screenshot image="0c64a1677d614e89d3fae5102089a5df.png"/>
+      </screenshots>
+      <description>When I open submenu Register of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="233">
+      <screenshots>
+        <screenshot image="be0adbaa6f599b93939081348c0e3e54.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Daily Report&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="13093">
+      <screenshots>
+        <screenshot image="2dd02187867a8d70b8cb32ad0fb78895.png"/>
+      </screenshots>
+      <description>When I add new Daily report with data below
+| companyName | content | personInCharge | department | businessType | purpose | reminder | projectFlag | openFlag |
+| 北開工営 | Verify create new daily report and fill all fields | 庭田次長 | atv | ソフトウェア | クレーム | ON | ON | ON |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6645">
+      <screenshots>
+        <screenshot image="ee71c5f90daed2fec54d7e11a8fb4ace.png"/>
+      </screenshots>
+      <description>Then The system should show start time and end time required message</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2215">
+      <screenshots>
+        <screenshot image="d38b5354430a1734b02a28d30be452f4.png"/>
+      </screenshots>
+      <description>When I fill Daily report screen with data below
+| reminder | reminderFrom | reminderTo |
+| ON | 2016/10/19 | 2016/10/20 |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="933">
+      <screenshots>
+        <screenshot image="e0868682d49caa42c27b59e2b526c66f.png"/>
+      </screenshots>
+      <description>And In Register daily report, I click button Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6595">
+      <screenshots>
+        <screenshot image="f943f7fe6b3d4d35d336e013f5a00b87.png"/>
+      </screenshots>
+      <description>Then The system should show message save daily report successfully</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1413">
+      <screenshots>
+        <screenshot image="5b39d89e1d82a5ebd162869340142215.png"/>
+      </screenshots>
+      <description>And I logout from system</description>
+    </test-step>
+  </test-group>
+  <test-group name="[1] {submenuText=Register, menuText=Daily Report, number=4009907, string=123456, lang=en}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="5b39d89e1d82a5ebd162869340142215.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="669">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>When I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2880">
+      <screenshots>
+        <screenshot image="e28670b8911efc5b2247fa07f7f52d1b.png"/>
+        <screenshot image="d739b8ccd71b202ace5275a9acaa6c72.png"/>
+      </screenshots>
+      <description>And I input my credentials username 4009907 and password 123456</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2135">
+      <screenshots>
+        <screenshot image="f224479d387ae994c1c4bcc69d58b41f.png"/>
+      </screenshots>
+      <description>And I change language to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="934">
+      <screenshots>
+        <screenshot image="800beabadc051255aa2948cae8f296f4.png"/>
+      </screenshots>
+      <description>When I open submenu Register of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="203">
+      <screenshots>
+        <screenshot image="d0174f88f8d74203f5653cae994c1495.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Daily Report&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="12975">
+      <screenshots>
+        <screenshot image="55c385aed9927a14aa6b422cc93f699f.png"/>
+      </screenshots>
+      <description>When I add new Daily report with data below
+| companyName | content | personInCharge | department | businessType | purpose | reminder | projectFlag | openFlag |
+| 北開工営 | Verify create new daily report and fill all fields | 庭田次長 | atv | ソフトウェア | クレーム | ON | ON | ON |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6651">
+      <screenshots>
+        <screenshot image="2971bfa23af0e14d9cb267597fc827dc.png"/>
+      </screenshots>
+      <description>Then The system should show start time and end time required message</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2287">
+      <screenshots>
+        <screenshot image="8c00c2e5dab7a505f9f60cae2b5448c1.png"/>
+      </screenshots>
+      <description>When I fill Daily report screen with data below
+| reminder | reminderFrom | reminderTo |
+| ON | 2016/10/19 | 2016/10/20 |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="921">
+      <screenshots>
+        <screenshot image="49e2a9be4fefdffb05af465e594ecf59.png"/>
+      </screenshots>
+      <description>And In Register daily report, I click button Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6581">
+      <screenshots>
+        <screenshot image="782dbb77c1b9173f196bbfddce038449.png"/>
+      </screenshots>
+      <description>Then The system should show message save daily report successfully</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1411">
+      <screenshots>
+        <screenshot image="5b39d89e1d82a5ebd162869340142215.png"/>
+      </screenshots>
+      <description>And I logout from system</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

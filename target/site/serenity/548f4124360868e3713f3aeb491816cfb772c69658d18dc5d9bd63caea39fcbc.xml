@@ -1,0 +1,109 @@
+<acceptance-test-run title="verify recent activities" name="verify recent activities" description="" steps="9" successful="9" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="16853" timestamp="2016-11-03T20:10:32.994+07:00" session-id="1ade5611e675970de818aca53ca2e32b">
+  <user-story id="company-management" name="company management" path="companyManagement/companyManagement.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Company management" type="capability"/>
+    <tag name="company management" type="feature"/>
+    <tag name="Company management/Company management" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>filterText</header>
+      <header>columnCompanyNameTitle</header>
+      <header>rowIndex</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Company Management</value>
+        <value>Common</value>
+        <value>Test company</value>
+        <value>Company name</value>
+        <value>0</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Company Management, menuText=Common, filterText=Test company, columnCompanyNameTitle=Company name, rowIndex=0}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="ba5df95103b7b4a9f65f1c28945ecfb4.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1246">
+      <screenshots>
+        <screenshot image="cef73dc0551b0541f10c66b50d59c46a.png"/>
+      </screenshots>
+      <description>When I open submenu Company Management of menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="908">
+      <screenshots>
+        <screenshot image="8afc74bc2bb2ecbb558fe876c698d815.png"/>
+      </screenshots>
+      <description>And In Company management screen, I fill value &apos;Test company&apos; for filter in column &apos;Company name&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="801">
+      <screenshots>
+        <screenshot image="012e0812f101f7b3a39501b0e91940f6.png"/>
+      </screenshots>
+      <description>And In Company management screen, I select row &apos;0&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1684">
+      <screenshots>
+        <screenshot image="06c1a1c50a13007fbdcceeda2f8697a1.png"/>
+      </screenshots>
+      <description>And In Company management screen, I click button Edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1387">
+      <screenshots>
+        <screenshot image="841d3dcdf0251b7e2e69d8ce5a98b426.png"/>
+      </screenshots>
+      <description>And In Company Detail screen, I view recent activities with company</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="138">
+      <screenshots>
+        <screenshot image="841d3dcdf0251b7e2e69d8ce5a98b426.png"/>
+      </screenshots>
+      <description>Then The system should open recent activities screen</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="199">
+      <screenshots>
+        <screenshot image="06c1a1c50a13007fbdcceeda2f8697a1.png"/>
+      </screenshots>
+      <description>When In Company Detail screen, I close recent activities screen</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1773">
+      <screenshots>
+        <screenshot image="ba5df95103b7b4a9f65f1c28945ecfb4.png"/>
+      </screenshots>
+      <description>And In Company Detail screen, I click button back</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="249">
+      <screenshots>
+        <screenshot image="ba5df95103b7b4a9f65f1c28945ecfb4.png"/>
+      </screenshots>
+      <description>Then The system should show table company with record found</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

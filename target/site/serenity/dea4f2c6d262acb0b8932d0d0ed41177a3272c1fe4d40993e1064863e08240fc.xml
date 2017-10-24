@@ -1,0 +1,85 @@
+<acceptance-test-run title="Open Employee Management and verify when start" name="Open Employee Management and verify when start" description="" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="12211" timestamp="2016-11-03T20:28:27.301+07:00" session-id="7f901579dbc98742cb659af9cd730134">
+  <user-story id="employee-management-display" name="Employee Management display" path="employee_management/employee_management.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Employee management" type="capability"/>
+    <tag name="Employee Management display" type="feature"/>
+    <tag name="Employee management/Employee management display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>employeeMenu</header>
+      <header>pageTitle</header>
+      <header>parentMenuText</header>
+      <header>numberClm</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>9</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {employeeMenu=Employee Management, pageTitle=Employee Management, parentMenuText=Common, numberClm=9}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="9982a1e38519b89ce0601b83efa4913d.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1606">
+      <screenshots>
+        <screenshot image="8c268c6d221438bbc9ffd332b76b1baf.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="189">
+      <screenshots>
+        <screenshot image="9982a1e38519b89ce0601b83efa4913d.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Employee Management&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="172">
+      <screenshots>
+        <screenshot image="9982a1e38519b89ce0601b83efa4913d.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, System show list button can use
+| Add |
+| Toggle Column |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="158">
+      <screenshots>
+        <screenshot image="9982a1e38519b89ce0601b83efa4913d.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, System show list button can not use
+| Edit |
+| Toggle Working Status |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="147">
+      <screenshots>
+        <screenshot image="9982a1e38519b89ce0601b83efa4913d.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, The system should show table Employee</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="133">
+      <screenshots>
+        <screenshot image="9982a1e38519b89ce0601b83efa4913d.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, Table have 9 columns not hidden</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

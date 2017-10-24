@@ -1,0 +1,80 @@
+<acceptance-test-run title="Open Notification Setting click view notification" name="Open Notification Setting click view notification" description="" steps="5" successful="5" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="9722" timestamp="2016-11-03T08:35:01.980+07:00" session-id="5b802c89a9981e25507d160b7ded548a">
+  <user-story id="notification-setting-display" name="Notification Setting display" path="notification_setting/notification_setting.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Notification setting" type="capability"/>
+    <tag name="Notification Setting display" type="feature"/>
+    <tag name="Notification setting/Notification setting display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>notificationMenu</header>
+      <header>parentMenuText</header>
+      <header>viewNotification</header>
+      <header>statusViewNotifications</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Notification Setting</value>
+        <value>Notification</value>
+        <value>View Notifications</value>
+        <value>Visible</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {notificationMenu=Notification Setting, parentMenuText=Notification, viewNotification=View Notifications, statusViewNotifications=Visible}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="62b0143fabc0793ee481968d6ea9c8c0.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="889">
+      <screenshots>
+        <screenshot image="302c1ecf571af1a18c3bd842715ba7ce.png"/>
+      </screenshots>
+      <description>When I open submenu Notification Setting of parent menu Notification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="253">
+      <screenshots>
+        <screenshot image="e4d244fa90c745d2e7b49a5dbdb4a3e0.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Notification&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="147">
+      <screenshots>
+        <screenshot image="e4d244fa90c745d2e7b49a5dbdb4a3e0.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, link View Notifications is Visible</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1271">
+      <screenshots>
+        <screenshot image="ba88c40f52c908cb2108948c119e9e60.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, I click in View Notifications</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2168">
+      <screenshots>
+        <screenshot image="62b0143fabc0793ee481968d6ea9c8c0.png"/>
+      </screenshots>
+      <description>Then In Notification Setting screen, System show screen View Notification have buttons
+| Mark all as read |
+| Notification Setting |</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

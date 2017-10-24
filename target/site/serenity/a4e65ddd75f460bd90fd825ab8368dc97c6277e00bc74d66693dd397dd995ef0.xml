@@ -1,0 +1,79 @@
+<acceptance-test-run title="20. Open Employee Management and verify when select 1 record, change page and back" name="20. Open Employee Management and verify when select 1 record, change page and back" description="" steps="5" successful="5" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="9072" timestamp="2016-11-21T13:51:04.107+07:00" session-id="066a9777a64f84425d7f4f432120cd68">
+  <user-story id="run-feature-for-debugging" name="Run feature for debugging" path="debug/debug.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Debug" type="capability"/>
+    <tag name="Debug/Run feature for debugging" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>employeeMenu</header>
+      <header>parentMenuText</header>
+      <header>firstRecord</header>
+      <header>pageNumber</header>
+      <header>pageNumber1</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>1</value>
+        <value>2</value>
+        <value>1</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, firstRecord=1, pageNumber=2, pageNumber1=1}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="364a68e01898c3880d978a87f131d214.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1001">
+      <screenshots>
+        <screenshot image="b327d21fc3fd841c8957680cddebbb9a.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="925">
+      <screenshots>
+        <screenshot image="7735d917b73f97f88f1821a0bdaae497.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click in number 1 record can click</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="899">
+      <screenshots>
+        <screenshot image="3252b54ad15e7005b4ca2a62b432d4cc.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click page 2</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1032">
+      <screenshots>
+        <screenshot image="de9e0cb8f776ba7a17a796ca1fc799c9.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click page 1</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="193">
+      <screenshots>
+        <screenshot image="364a68e01898c3880d978a87f131d214.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table should show 1 is selected</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

@@ -1,0 +1,152 @@
+<!--?xml version="1.0" encoding="UTF-8"?--><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head><link type="text/css" rel="stylesheet" href="/sars_it/javax.faces.resource/theme.css.xhtml?ln=primefaces-mems800" /><link type="text/css" rel="stylesheet" href="/sars_it/javax.faces.resource/fa/font-awesome.css.xhtml?ln=primefaces" /><link type="text/css" rel="stylesheet" href="/sars_it/javax.faces.resource/min/offline-theme-chrome.css.xhtml?ln=css" media="screen" /><link type="text/css" rel="stylesheet" href="/sars_it/javax.faces.resource/min/offline-language-ja.css.xhtml?ln=css" media="screen" /><link type="text/css" rel="stylesheet" href="/sars_it/javax.faces.resource/min/timepicker.css.xhtml?ln=css" media="screen" /><link type="text/css" rel="stylesheet" href="/sars_it/javax.faces.resource/primefaces.css.xhtml?ln=primefaces" /><script type="text/javascript" src="/sars_it/javax.faces.resource/jquery/jquery.js.xhtml?ln=primefaces"></script><script type="text/javascript" src="/sars_it/javax.faces.resource/jquery/jquery-plugins.js.xhtml?ln=primefaces"></script><script type="text/javascript" src="/sars_it/javax.faces.resource/primefaces.js.xhtml?ln=primefaces"></script><script type="text/javascript" src="/sars_it/javax.faces.resource/primefaces-extensions.js.xhtml?ln=primefaces-extensions&amp;v=3.2.0"></script><link type="text/css" rel="stylesheet" href="/sars_it/javax.faces.resource/blockui/blockui.css.xhtml?ln=primefaces-extensions&amp;v=3.2.0" /><script type="text/javascript" src="/sars_it/javax.faces.resource/blockui/blockui.js.xhtml?ln=primefaces-extensions&amp;v=3.2.0"></script><link type="text/css" rel="stylesheet" href="/sars_it/javax.faces.resource/layout/layout.css.xhtml?ln=primefaces" /><script type="text/javascript" src="/sars_it/javax.faces.resource/layout/layout.js.xhtml?ln=primefaces"></script><link type="text/css" rel="stylesheet" href="/sars_it/javax.faces.resource/min/main.css.xhtml?ln=css" media="screen" /><link type="text/css" rel="stylesheet" href="/sars_it/javax.faces.resource/min/customize.css.xhtml?ln=css" media="screen" /><link type="text/css" rel="stylesheet" href="/sars_it/javax.faces.resource/min/icon-it-override.css.xhtml?ln=css" media="screen" /><script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.projectStage='Development';}</script>
+		<title>営業日報システム</title><script type="text/javascript" src="/sars_it/javax.faces.resource/min/locale/locale.js.xhtml?ln=js"></script><script type="text/javascript" src="/sars_it/javax.faces.resource/min/store.js.xhtml?ln=js"></script><script type="text/javascript" src="/sars_it/javax.faces.resource/min/toggleColumn.js.xhtml?ln=js"></script></head><body id="contentPage" class="body-content">
+		<script>
+			function alertUnsavedChanges() {
+			    if (isModified) {
+			        var result = confirm('他のページへ移動する前に、データを保存してください。');
+			        if (result) {
+			        	resetChangeEvent();
+			        	showBlockUI();
+			        } else {
+			            hideBlockUI();
+			            return false;
+			        }
+			    }
+			    else {
+					showBlockUI();
+			    }
+			}
+
+			window.onbeforeunload = function(event)
+		    {
+				if (isModified) {
+			        return '他のページへ移動する前に、データを保存してください。';
+			    }
+		    }
+		</script><script type="text/javascript" src="/sars_it/javax.faces.resource/min/offline/offline.js.xhtml?ln=js"></script><script type="text/javascript" src="/sars_it/javax.faces.resource/min/offline/ui.js.xhtml?ln=js"></script><script type="text/javascript" src="/sars_it/javax.faces.resource/min/offline/reconnect.js.xhtml?ln=js"></script><script type="text/javascript" src="/sars_it/javax.faces.resource/min/offline/requests.js.xhtml?ln=js"></script><script type="text/javascript" src="/sars_it/javax.faces.resource/min/jquery-ui.js.xhtml?ln=js"></script><script type="text/javascript" src="/sars_it/javax.faces.resource/min/main.js.xhtml?ln=js"></script><script type="text/javascript" src="/sars_it/javax.faces.resource/min/customize.js.xhtml?ln=js"></script><script type="text/javascript" src="/sars_it/javax.faces.resource/min/pivot.js.xhtml?ln=js"></script><script type="text/javascript" src="/sars_it/javax.faces.resource/min/locale/messages_ja.js.xhtml?ln=js"></script>
+
+	<script type="text/javascript">
+		Offline.options = {
+			checks: {
+				xhr: {
+					url: function () {
+						return "/sars_it/resources/images/triarrow-logo.png?_=" + Math.floor(1e9 * Math.random())
+					}, timeout: 5e3
+				}, image: {
+					url: function () {
+						return "/sars_it/resources/images/triarrow-logo.png?_=" + Math.floor(1e9 * Math.random())
+					}
+				}, active: "xhr"
+			}, checkOnLoad: !0, interceptRequests: !0, reconnect: {initialDelay: 3, delay: 1.5}, requests: !0, game: !1
+		}
+	</script><span id="growl"></span><script id="growl_s" type="text/javascript">$(function(){PrimeFaces.cw('Growl','growl_js',{id:'growl',sticky:false,life:6000,escape:false,msgs:[]});});</script>
+<form id="j_idt21" name="j_idt21" method="post" action="/sars_it/index.xhtml?cid=3" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt21" value="j_idt21" />
+<script id="j_idt21:j_idt22_s" type="text/javascript">$(function(){PrimeFaces.cw("ConfirmDialog","widget_j_idt21_j_idt22",{id:"j_idt21:j_idt22",widgetVar:"widget_j_idt21_j_idt22",appendTo:"@(body)",closeOnEscape:true,global:true});});</script><div id="j_idt21:j_idt22" class="ui-confirm-dialog ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span class="ui-dialog-title"></span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><span class="ui-icon ui-confirm-dialog-severity"></span><span class="ui-confirm-dialog-message"></span></div><div class="ui-dialog-buttonpane ui-dialog-footer ui-widget-content ui-helper-clearfix"><button id="j_idt21:j_idt23" name="j_idt21:j_idt23" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-confirmdialog-yes" type="button"><span class="ui-button-icon-left ui-icon ui-c ui-icon-check"></span><span class="ui-button-text ui-c">はい</span></button><script id="j_idt21:j_idt23_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt21_j_idt23",{id:"j_idt21:j_idt23",widgetVar:"widget_j_idt21_j_idt23"});</script><button id="j_idt21:j_idt24" name="j_idt21:j_idt24" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-confirmdialog-no" type="button"><span class="ui-button-icon-left ui-icon ui-c ui-icon-close"></span><span class="ui-button-text ui-c">いいえ</span></button><script id="j_idt21:j_idt24_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt21_j_idt24",{id:"j_idt21:j_idt24",widgetVar:"widget_j_idt21_j_idt24"});</script></div></div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="4598719276205476958:-8642579347796987467" autocomplete="off" />
+</form><div id="dialogPanel" class="ui-outputpanel ui-widget"></div><div id="globalAjaxStatus"><div id="globalAjaxStatus_start" style="display:none">
+ 			        Loading...
+ 		</div><div id="globalAjaxStatus_complete" style="display:none"></div></div><script id="globalAjaxStatus_s" type="text/javascript">$(function(){PrimeFaces.cw("AjaxStatus","globalAjaxStatus_js",{id:"globalAjaxStatus",widgetVar:"globalAjaxStatus_js"});});</script><div id="globalBlockUI_content" style="display: none;"><table>
+<tbody>
+<tr>
+<td><img src="/sars_it/javax.faces.resource/loading.gif.xhtml?ln=images" style="margin-right: 12px; vertical-align: middle;" /></td>
+<td><span style="white-space: nowrap;">読み込み中...</span></td>
+</tr>
+</tbody>
+</table>
+</div><script id="globalBlockUI_s" type="text/javascript">$(function() {PrimeFacesExt.cw('BlockUI', 'globalBlockUI_js',{id:'globalBlockUI',widgetVar:'globalBlockUI_js',source:'contentPage',target:'contentPage',autoShow:true,centerX:true,centerY:true,content:'#globalBlockUI_content',contentExtern:false,namingContSep:':',regEx:/javax.faces.behavior.event=expand|javax.faces.behavior.event=select|javax.faces.behavior.event=unselect|javax.faces.behavior.event=change|javax.faces.behavior.event=click/},true);});</script><script id="pageLayout_s" type="text/javascript">$(function(){PrimeFaces.cw("Layout","pageLayout_js",{id:"pageLayout",widgetVar:"pageLayout_js",full:true,north:{paneSelector:'#northPane',size:"40",resizable:false,closable:true,spacing_open:6,spacing_closed:25,fxName:"none"},center:{paneSelector:'#centerPane',size:"auto",resizable:false,closable:false}},"layout");});</script>
+<form id="timeoutForm" name="timeoutForm" method="post" action="/sars_it/index.xhtml?cid=3" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="timeoutForm" value="timeoutForm" />
+
+       	<script>
+        $(document).ready(function () {
+            $(document).idleTimeout({
+              idleTimeLimit: 30*60*1000 ,
+              customCallback:    function() { 
+            	  $('#hiddenLogout').click();
+    	       },
+            });
+          });
+        </script>
+          <input type="hidden" id="isLoggedInId" value="false" /><div id="otherScreensTimeoutSession" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="otherScreensTimeoutSession_title" class="ui-dialog-title">警告</span></div><div class="ui-dialog-content ui-widget-content">
+               <div><label class="text-warning">システムを30分放置しましたので、セッションタイムアウトになり、入力中のデータが全部なくなりました。</label>		
+               </div>
+            	<div align="center"><button id="j_idt38" name="j_idt38" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PF('timeoutOtherScreensDialog').hide();PrimeFaces.ab({s:&quot;j_idt38&quot;,ps:true,onco:function(xhr,status,args){location.reload(true);}});return false;" type="submit"><span class="ui-button-text ui-c">今の状態をそのまま保留しますか？</span></button><script id="j_idt38_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt38",{id:"j_idt38",widgetVar:"widget_j_idt38"});</script> --&gt;
+                    
+                    <button id="j_idt40" name="j_idt40" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PF('timeoutOtherScreensDialog').hide();PrimeFaces.ab({s:&quot;j_idt40&quot;,ps:true,onco:function(xhr,status,args){location.reload(true);}});return false;" type="submit"><span class="ui-button-text ui-c">今の状態をそのまま保留しますか？</span></button><script id="j_idt40_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt40",{id:"j_idt40",widgetVar:"widget_j_idt40"});</script><button id="hiddenLogout" name="hiddenLogout" class="" onclick="PrimeFaces.ab({s:&quot;hiddenLogout&quot;,p:&quot;hiddenLogout&quot;,u:&quot;contentPane @([id$=northPane]) @([id$=timeoutForm])&quot;,ps:true,onco:function(xhr,status,args){store.set('isLoggin',false);}});return false;" style="display:none" type="submit"><span class="ui-button-text ui-c">ui-button</span></button><script id="hiddenLogout_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_hiddenLogout",{id:"hiddenLogout",widgetVar:"widget_hiddenLogout"});</script><button id="hiddenSwitchToExpiredPage" name="hiddenSwitchToExpiredPage" class="" onclick="PrimeFaces.ab({s:&quot;hiddenSwitchToExpiredPage&quot;,p:&quot;hiddenSwitchToExpiredPage&quot;,u:&quot;contentPane @([id$=northPane]) @([id$=timeoutForm])&quot;,ps:true,onco:function(xhr,status,args){store.set('isLoggin',false);}});return false;" style="display:none" type="submit"><span class="ui-button-text ui-c">ui-button</span></button><script id="hiddenSwitchToExpiredPage_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_hiddenSwitchToExpiredPage",{id:"hiddenSwitchToExpiredPage",widgetVar:"widget_hiddenSwitchToExpiredPage"});</script>
+               </div></div></div><script id="otherScreensTimeoutSession_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","timeoutOtherScreensDialog",{id:"otherScreensTimeoutSession",widgetVar:"timeoutOtherScreensDialog",draggable:false,resizable:false,modal:true,showEffect:"fade",hideEffect:"fade"});});</script><div id="loginScreenTimeoutSession" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="loginScreenTimeoutSession_title" class="ui-dialog-title">警告</span></div><div class="ui-dialog-content ui-widget-content"><label class="text-warning">長い間システムを利用しません。システムは自動的にログアウトしました。もう一度ログオンしてください。</label>
+               <br />
+               <br />
+               <div align="center"><button id="j_idt44" name="j_idt44" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.ab({s:&quot;j_idt44&quot;,ps:true,onco:function(xhr,status,args){location.reload(true);}});return false;" type="submit"><span class="ui-button-text ui-c">OK</span></button><script id="j_idt44_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt44",{id:"j_idt44",widgetVar:"widget_j_idt44"});</script>
+               </div></div></div><script id="loginScreenTimeoutSession_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","timeoutLoginScreenDialog",{id:"loginScreenTimeoutSession",widgetVar:"timeoutLoginScreenDialog",draggable:false,resizable:false,modal:true,showEffect:"fade",hideEffect:"fade"});});</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:1" value="4598719276205476958:-8642579347796987467" autocomplete="off" />
+</form><div id="j_idt46" class="ui-outputpanel ui-widget">
+    	<script>
+			 var isLoggin = '';
+		</script></div>
+     <script type="text/javascript">
+		var idleTimeout = setInterval(checkLogin, 2000);
+	</script><div id="northPane" class="ui-layout-unit ui-widget ui-widget-content ui-corner-all ui-layout-north"><div class="ui-layout-unit-content ui-widget-content"><div id="coverHeaderPane" class="ui-outputpanel ui-widget"></div></div></div><div id="centerPane" class="ui-layout-unit ui-widget ui-widget-content ui-corner-all ui-layout-center" style="border:none"><div class="ui-layout-unit-content ui-widget-content"><div id="contentPane" class="ui-outputpanel ui-widget"><span id="j_idt115"></span><script type="text/javascript">$(function(){PrimeFaces.focus('login');});</script>
+    <div class="card" style="border: none;">
+    	<div class="class-block">
+   			<div class="form-group">
+   				<div style="margin: auto;">
+				   	
+   				</div>
+   			</div>
+   		</div>
+	    <div class="class-block">
+	    	<div class="form-group">
+	    		<div class="login-header">
+		    		<h1>営業日報システム</h1>
+	    		</div>
+	    	</div>
+	    	<div class="form-group">
+<form id="login" name="login" method="post" action="/sars_it/index.xhtml?cid=3" class="login-form">
+<input type="hidden" name="login" value="login" />
+
+		    		<div class="form-input">
+			    		<label class="top-label">社員ID</label><div id="login:username:tooltip" aria-live="polite" class="ui-message ui-helper-hidden"></div><script id="login:username:tooltip_s" type="text/javascript">$(function(){PrimeFaces.cw("Message","widget_login_username_tooltip",{id:"login:username:tooltip",widgetVar:"widget_login_username_tooltip",target:"login:username:text"});});</script><input id="login:username:text" name="login:username:text" type="text" autocomplete="false" maxlength="256" title="" onchange="PrimeFaces.ab({s:&quot;login:username:text&quot;,e:&quot;change&quot;,f:&quot;login&quot;,p:&quot;login:username:text&quot;,u:&quot;login:username:text&quot;,ps:true});" style="width: 310px; min-width: 310px; max-width: 310px;" aria-required="true" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all value" /><script id="login:username:text_s" type="text/javascript">PrimeFaces.cw("InputText","widget_login_username_text",{id:"login:username:text",widgetVar:"widget_login_username_text"});</script>
+		    		</div>
+		    		<div class="form-input input-padding">
+					    <label class="top-label">パスワード</label><input id="login:passwd" name="login:passwd" type="password" class="ui-inputfield ui-password ui-widget ui-state-default ui-corner-all login-input" autocomplete="false" title="" aria-required="true" /><script id="login:passwd_s" type="text/javascript">$(function(){PrimeFaces.cw("Password","widget_login_passwd",{id:"login:passwd",widgetVar:"widget_login_passwd"});});</script><div id="login:j_idt120" aria-live="polite" class="ui-message ui-helper-hidden"></div><script id="login:j_idt120_s" type="text/javascript">$(function(){PrimeFaces.cw("Message","widget_login_j_idt120",{id:"login:j_idt120",widgetVar:"widget_login_j_idt120",target:"login:passwd"});});</script>
+		    		</div>
+		    		<div class="form-input input-padding"><button id="login:btnLogin" name="login:btnLogin" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only login-button" onclick="PrimeFaces.ab({s:&quot;login:btnLogin&quot;,u:&quot;login&quot;,ps:true,onst:function(cfg){showBlockUI();;}});return false;" style="margin-left: 0;" type="submit"><span class="ui-button-text ui-c">ログイン</span></button><script id="login:btnLogin_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_login_btnLogin",{id:"login:btnLogin",widgetVar:"widget_login_btnLogin"});</script>
+		    		</div>
+		    		<div class="form-input forgot-password"><a id="login:lnkForgotPassword" href="#" class="ui-commandlink ui-widget arrow-link forgot-password-link" onclick="PrimeFaces.ab({s:&quot;login:lnkForgotPassword&quot;,p:&quot;login:lnkForgotPassword&quot;,u:&quot;contentPane&quot;,ps:true,onst:function(cfg){showBlockUI();;},onco:function(xhr,status,args){hideBlockUI();;}});return false;">パスワードを忘れたときは ?</a>
+		    		</div>
+		    		<script>
+			    		$(document).ready(function(){
+							var messages = document.getElementById('growl_container').getElementsByTagName('div');
+							if(messages.length !== 0) {
+								if(PF('globalBlockUI_js')){
+									hideBlockUI();
+								}
+							}
+							store.set('isLoggin',false);
+							store.set('isExpiredSession', false)
+						})
+    				</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:2" value="4598719276205476958:-8642579347796987467" autocomplete="off" />
+</form>
+	    	</div>
+	    </div>
+    </div></div><div id="j_idt212" class="ui-outputpanel ui-widget" style="height: 50px;">
+					<div style="positon:relative">
+	
+
+
+
+
+
+	<div id="companyTradeMark" style="position: relative;width: 100%;border-top:solid 1px #dedede;padding-top: 15px;">
+		<span style="float:left;position: absolute;bottom: 0px;"><font size="0.2em">commit 5a45591201a609428da622ffb466df8a473995f7</font></span>
+		<a href="http://" style="float:right"><img src="/sars_it/resources/images/triarrow-logo.png" />
+		</a>
+		<h4 style="color:black; right: 100px; bottom: 0px;float:right;margin:0px;">
+			Copyright (C) TRI-ARROW Corporation.All rights reserved.
+			<br />
+			<font size="0.5em">Business Tracebility System version Alpha 02 rev. 3.1-SNAPSHOT</font>
+			<br />
+
+		</h4>
+	</div>
+					</div></div></div></div>
+<div id="textarea_simulator" style="position: absolute; top: 0px; left: 0px; visibility: hidden;"></div></body></html>

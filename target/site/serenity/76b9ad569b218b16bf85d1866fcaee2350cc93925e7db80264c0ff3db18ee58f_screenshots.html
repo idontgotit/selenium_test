@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-bdd-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <a
+                    href="faf90a2b8d8ff365bcf99c0953e3840da5481133f1134fbb118a5006640ba680.html">Run Feature For Debugging</a>
+                > <a
+                    href="76b9ad569b218b16bf85d1866fcaee2350cc93925e7db80264c0ff3db18ee58f.html">5. Create new daily report and fill only required fields </a>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 16-12-2016 10:43</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Run Feature For Debugging</span>
+                                    <span class="badge tag-badge">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As an developer<br>I want to be able to run simplified feature<br>So that I can debug quickly<br>Exception
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="ba9fb54e1af2981411104c56e14ee34928ceb18af19fd6266c85e9ccfcde886c.html">3.1.5
+                                    (version)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="3e0ef395cd6ab697f994c3222494eed334cedf15c4ec046c2c7ce741935db68b.html">
+                                    (issue)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="fbd2c36be7347d6dd6789a9e92b3ecff6b96d9917745cf623004125dde566d3e.html">Debug
+                                    (capability)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="7af145658023301483346e9bf7e7857d3d5d846f49bf9bef46addcc7f8c82094.html">Sprint-1.1
+                                    (version)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-3x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">5. Create new daily report and fill only required fields
+                                    <span class="related-issue-title">()</span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+
+        <div class="scenario">When I open Login page<br>And I input my credentials username 4009907 and password 123456<br>And I change language to en<br>When I open submenu Register of menu Daily Report<br>Then The system should open 'Daily Report' page<br>When I add new Daily report with data below<br><table class='embedded'><thead><th>companyName</th><th>content</th><th>personInCharge</th><th>department</th><th>businessType</th><th>purpose</th><th>reminder</th><th>projectFlag</th><th>openFlag</th></thead><tbody><tr><td>北開工営</td><td>Verify create new daily report and fill all fields</td><td>庭田次長</td><td>atv</td><td>ソフトウェア</td><td>クレーム</td><td>ON</td><td>ON</td><td>ON</td></tr></tbody></table><br>Then The system should show start time and end time required message<br>When I fill Daily report screen with data below<br><table class='embedded'><thead><th>reminder</th><th>reminderFrom</th><th>reminderTo</th></thead><tbody><tr><td>ON</td><td>2016/10/19</td><td>2016/10/20</td></tr></tbody></table><br>And In Register daily report, I click button Add<br>Then The system should show message save daily report successfully<br>And I logout from system</div>
+    </div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="35bea53004f39eed20d942bf48fa3e71.png" title="When I open Login page" width="960"/>
+                <img src="e28670b8911efc5b2247fa07f7f52d1b.png" title="And I input my credentials username 4009907 and password 123456" width="960"/>
+                <img src="d739b8ccd71b202ace5275a9acaa6c72.png" title="And I input my credentials username 4009907 and password 123456" width="960"/>
+                <img src="17b0f09f5f7e9be92285e49967f95a39.png" title="And I change language to en" width="960"/>
+                <img src="c2c3098cbeafa812b1d5f1ea4c97a017.png" title="When I open submenu Register of menu Daily Report" width="960"/>
+                <img src="c66c4a45aa83971e1a5402ed2b05705b.png" title="Then The system should open 'Daily Report' page" width="960"/>
+                <img src="aec2ef0a68661ab4786085b972e3e76c.png" title="When I add new Daily report with data below
+| companyName | content | personInCharge | department | businessType | purpose | reminder | projectFlag | openFlag |
+| 北開工営 | Verify create new daily report and fill all fields | 庭田次長 | atv | ソフトウェア | クレーム | ON | ON | ON |" width="960"/>
+                <img src="fb8d0bb14c5b1dc20e55a7b301187cd0.png" title="Then The system should show start time and end time required message" width="960"/>
+                <img src="aca89434b5784ebdda9f42334630d679.png" title="When I fill Daily report screen with data below
+| reminder | reminderFrom | reminderTo |
+| ON | 2016/10/19 | 2016/10/20 |" width="960"/>
+                <img src="9cc5648f03d6d0764f4bfb1062ea7de5.png" title="And In Register daily report, I click button Add" width="960"/>
+                <img src="35ce6051cfb2c3bf463b470dab484eb0.png" title="Then The system should show message save daily report successfully" width="960"/>
+                <img src="5b39d89e1d82a5ebd162869340142215.png" title="And I logout from system" width="960"/>
+                <img src="35bea53004f39eed20d942bf48fa3e71.png" title="When I open Login page" width="960"/>
+                <img src="e28670b8911efc5b2247fa07f7f52d1b.png" title="And I input my credentials username 4009907 and password 123456" width="960"/>
+                <img src="d739b8ccd71b202ace5275a9acaa6c72.png" title="And I input my credentials username 4009907 and password 123456" width="960"/>
+                <img src="17b0f09f5f7e9be92285e49967f95a39.png" title="And I change language to en" width="960"/>
+                <img src="337d7236ce24456991390a5157095434.png" title="When I open submenu Register of menu Daily Report" width="960"/>
+                <img src="1ba79ce45e7dbc540c69063eed7e5024.png" title="Then The system should open 'Daily Report' page" width="960"/>
+                <img src="21549e3e9767ed480beca8989686af8d.png" title="When I add new Daily report with data below
+| companyName | content | personInCharge | department | businessType | purpose | reminder | projectFlag | openFlag |
+| 北開工営 | Verify create new daily report and fill all fields | 庭田次長 | atv | ソフトウェア | クレーム | ON | ON | ON |" width="960"/>
+                <img src="6074863d3ed2aba774ff838982918b64.png" title="Then The system should show start time and end time required message" width="960"/>
+                <img src="fe4044f75535b70976d4dd095712a830.png" title="When I fill Daily report screen with data below
+| reminder | reminderFrom | reminderTo |
+| ON | 2016/10/19 | 2016/10/20 |" width="960"/>
+                <img src="8da50f9f34f66ab72f4283d553697f6c.png" title="And In Register daily report, I click button Add" width="960"/>
+                <img src="2f03682edaef042025accf79f7ba0b95.png" title="Then The system should show message save daily report successfully" width="960"/>
+                <img src="5b39d89e1d82a5ebd162869340142215.png" title="And I logout from system" width="960"/>
+                <img src="35bea53004f39eed20d942bf48fa3e71.png" title="When I open Login page" width="960"/>
+                <img src="e28670b8911efc5b2247fa07f7f52d1b.png" title="And I input my credentials username 4009907 and password 123456" width="960"/>
+                <img src="b6e0d419081c581e7637298c933b85d7.png" title="And I input my credentials username 4009907 and password 123456" width="960"/>
+                <img src="bee995d054e88e73b0b2be0e89f69aaa.png" title="And I change language to en" width="960"/>
+                <img src="fd090548a2bc412c4c452e4841687296.png" title="When I open submenu Register of menu Daily Report" width="960"/>
+                <img src="2fdec18f3b466d6f76891d38e7eab7f6.png" title="Then The system should open 'Daily Report' page" width="960"/>
+                <img src="5073c2650469f1dd00d9d33f181dd17a.png" title="When I add new Daily report with data below
+| companyName | content | personInCharge | department | businessType | purpose | reminder | projectFlag | openFlag |
+| 北開工営 | Verify create new daily report and fill all fields | 庭田次長 | atv | ソフトウェア | クレーム | ON | ON | ON |" width="960"/>
+                <img src="27414971addb8643ab77009710de1e63.png" title="Then The system should show start time and end time required message" width="960"/>
+                <img src="b1cb8c7ed74e15e71330d39badfaa327.png" title="When I fill Daily report screen with data below
+| reminder | reminderFrom | reminderTo |
+| ON | 2016/10/19 | 2016/10/20 |" width="960"/>
+                <img src="cbbeb8427896b20cb749caef0b4ef6a9.png" title="And In Register daily report, I click button Add" width="960"/>
+                <img src="5dfe15abf59ff3adc7056305f5b6c094.png" title="Then The system should show message save daily report successfully" width="960"/>
+                <img src="5b39d89e1d82a5ebd162869340142215.png" title="And I logout from system" width="960"/>
+                <img src="35bea53004f39eed20d942bf48fa3e71.png" title="When I open Login page" width="960"/>
+                <img src="e28670b8911efc5b2247fa07f7f52d1b.png" title="And I input my credentials username 4009907 and password 123456" width="960"/>
+                <img src="6b7d843f951a3c09df498d0f51c34e62.png" title="And I input my credentials username 4009907 and password 123456" width="960"/>
+                <img src="15b34acdd455b3cca46e2c02bb77a3b0.png" title="And I change language to en" width="960"/>
+                <img src="0c64a1677d614e89d3fae5102089a5df.png" title="When I open submenu Register of menu Daily Report" width="960"/>
+                <img src="be0adbaa6f599b93939081348c0e3e54.png" title="Then The system should open 'Daily Report' page" width="960"/>
+                <img src="2dd02187867a8d70b8cb32ad0fb78895.png" title="When I add new Daily report with data below
+| companyName | content | personInCharge | department | businessType | purpose | reminder | projectFlag | openFlag |
+| 北開工営 | Verify create new daily report and fill all fields | 庭田次長 | atv | ソフトウェア | クレーム | ON | ON | ON |" width="960"/>
+                <img src="ee71c5f90daed2fec54d7e11a8fb4ace.png" title="Then The system should show start time and end time required message" width="960"/>
+                <img src="d38b5354430a1734b02a28d30be452f4.png" title="When I fill Daily report screen with data below
+| reminder | reminderFrom | reminderTo |
+| ON | 2016/10/19 | 2016/10/20 |" width="960"/>
+                <img src="e0868682d49caa42c27b59e2b526c66f.png" title="And In Register daily report, I click button Add" width="960"/>
+                <img src="f943f7fe6b3d4d35d336e013f5a00b87.png" title="Then The system should show message save daily report successfully" width="960"/>
+                <img src="5b39d89e1d82a5ebd162869340142215.png" title="And I logout from system" width="960"/>
+                <img src="35bea53004f39eed20d942bf48fa3e71.png" title="When I open Login page" width="960"/>
+                <img src="e28670b8911efc5b2247fa07f7f52d1b.png" title="And I input my credentials username 4009907 and password 123456" width="960"/>
+                <img src="d739b8ccd71b202ace5275a9acaa6c72.png" title="And I input my credentials username 4009907 and password 123456" width="960"/>
+                <img src="scaled_f224479d387ae994c1c4bcc69d58b41f.png" title="And I change language to en" width="960"/>
+                <img src="scaled_800beabadc051255aa2948cae8f296f4.png" title="When I open submenu Register of menu Daily Report" width="960"/>
+                <img src="scaled_d0174f88f8d74203f5653cae994c1495.png" title="Then The system should open 'Daily Report' page" width="960"/>
+                <img src="scaled_55c385aed9927a14aa6b422cc93f699f.png" title="When I add new Daily report with data below
+| companyName | content | personInCharge | department | businessType | purpose | reminder | projectFlag | openFlag |
+| 北開工営 | Verify create new daily report and fill all fields | 庭田次長 | atv | ソフトウェア | クレーム | ON | ON | ON |" width="960"/>
+                <img src="scaled_2971bfa23af0e14d9cb267597fc827dc.png" title="Then The system should show start time and end time required message" width="960"/>
+                <img src="scaled_8c00c2e5dab7a505f9f60cae2b5448c1.png" title="When I fill Daily report screen with data below
+| reminder | reminderFrom | reminderTo |
+| ON | 2016/10/19 | 2016/10/20 |" width="960"/>
+                <img src="scaled_49e2a9be4fefdffb05af465e594ecf59.png" title="And In Register daily report, I click button Add" width="960"/>
+                <img src="scaled_782dbb77c1b9173f196bbfddce038449.png" title="Then The system should show message save daily report successfully" width="960"/>
+                <img src="5b39d89e1d82a5ebd162869340142215.png" title="And I logout from system: <span class='success-color'>SUCCESS</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.1.36</span>
+</div>
+</body>
+</html>

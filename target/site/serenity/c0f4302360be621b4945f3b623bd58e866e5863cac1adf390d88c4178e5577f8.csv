@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Login","login success","SUCCESS","2016-11-03T20:04:01.005+07:00","0.0","7.11"
+"Change Locale","login success and change locale","SUCCESS","2016-11-03T20:03:50.107+07:00","0.0","10.78"

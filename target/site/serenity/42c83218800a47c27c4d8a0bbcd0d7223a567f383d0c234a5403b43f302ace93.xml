@@ -1,0 +1,138 @@
+<acceptance-test-run title="5. Open Maintain credit data, search by customer code, select one record and verify value" name="5. Open Maintain credit data, search by customer code, select one record and verify value" description="" steps="13" successful="13" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="19616" timestamp="2016-11-08T14:43:41.052+07:00" session-id="f3ade93900ada4d51d8bfa1b86e3d4df">
+  <user-story id="maintain-credit-data" name="Maintain credit data" path="maintain_credit_data/maintain_credit_data14.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Maintain credit data" type="capability"/>
+    <tag name="Maintain credit data/Maintain credit data" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>maintainMenu</header>
+      <header>pageTitle</header>
+      <header>parentMenuText</header>
+      <header>validCustomerCode</header>
+      <header>fieldCustomer</header>
+      <header>searchBtn</header>
+      <header>selectBtn</header>
+      <header>rowSelect</header>
+      <header>only1</header>
+      <header>toggleBtn</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Maintain Credit Data</value>
+        <value>Maintenance accounting data screen</value>
+        <value>Accounting</value>
+        <value>A001</value>
+        <value>Customer code</value>
+        <value>Search</value>
+        <value>Select</value>
+        <value>0</value>
+        <value>1</value>
+        <value>Toggle Column</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {maintainMenu=Maintain Credit Data, pageTitle=Maintenance accounting data screen, parentMenuText=Accounting, validCustomerCode=A001, fieldCustomer=Customer code, searchBtn=Search, selectBtn=Select, rowSelect=0, only1=1, toggleBtn=Toggle Column}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="c916cbba871d95e34a0d652678d51a44.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1875">
+      <screenshots>
+        <screenshot image="f84ff3e2fc80acdd265f61803594af09.png"/>
+      </screenshots>
+      <description>When I open submenu Maintain Credit Data of parent menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="183">
+      <screenshots>
+        <screenshot image="f84ff3e2fc80acdd265f61803594af09.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Maintenance accounting data screen&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="230">
+      <screenshots>
+        <screenshot image="f84ff3e2fc80acdd265f61803594af09.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, System show list button can not use
+| Search |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="267">
+      <screenshots>
+        <screenshot image="8c6cf092ba5962ca8dee6043a210f0f4.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, I type A001 in input field have name is Customer code</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1327">
+      <screenshots>
+        <screenshot image="c70e30e94f0597ac1ae31990129264bd.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="195">
+      <screenshots>
+        <screenshot image="c70e30e94f0597ac1ae31990129264bd.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, Table below have 1 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="310">
+      <screenshots>
+        <screenshot image="9c3bcacbc2963032cbc00315f96087a4.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Toggle Column</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1243">
+      <screenshots>
+        <screenshot image="f4d1802a26053714b584c355f9d9d872.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I toggle all column
+| Year of starting business |
+| Year of official establishment |
+| Last Export |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1331">
+      <screenshots>
+        <screenshot image="d8d2edcdfb86e764b39b9743603cbd4e.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Toggle Column</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1911">
+      <screenshots>
+        <screenshot image="d8d2edcdfb86e764b39b9743603cbd4e.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I memory data in this table</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="304">
+      <screenshots>
+        <screenshot image="0c85e75703b3f9e615187da522b8151b.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click select checkbox row 0</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1341">
+      <screenshots>
+        <screenshot image="c916cbba871d95e34a0d652678d51a44.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="380">
+      <screenshots>
+        <screenshot image="c916cbba871d95e34a0d652678d51a44.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, I verify Table below have value like row select</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

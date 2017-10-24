@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Accounting","change page on paging","SUCCESS","2016-11-03T09:07:26.104+07:00","0.0","17.49"
+"Accounting","initialization screen","SUCCESS","2016-11-03T09:06:33.277+07:00","0.0","7.26"
+"Accounting","search customer by code","SUCCESS","2016-11-03T09:06:41.269+07:00","0.0","14.87"
+"Accounting","search customer by other conditions","SUCCESS","2016-11-03T09:06:57.120+07:00","0.0","27.87"

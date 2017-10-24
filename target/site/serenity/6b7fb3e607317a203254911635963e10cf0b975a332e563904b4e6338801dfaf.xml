@@ -1,0 +1,133 @@
+<acceptance-test-run title="1. Search customer by other conditions, not mapping sansan with credit data" name="1. Search customer by other conditions, not mapping sansan with credit data" description="" steps="13" successful="13" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="26961" timestamp="2017-02-02T09:32:20.292+07:00" session-id="4066341c1537039f90c7f0015f1e99b3">
+  <user-story id="credit-management-test-1-3" name="Credit management test 1-3" path="creditManagement/creadit_management_test13_company_and_credit_data.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Credit management" type="capability"/>
+    <tag name="Credit management test 1-3" type="feature"/>
+    <tag name="Credit management/Credit management test 1 3" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>validIdNameCard</header>
+      <header>rowIndex</header>
+      <header>btnBack</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Credit Management</value>
+        <value>Accounting</value>
+        <value>A28088961BA2D90F3C3C3CBBEC55BC4D</value>
+        <value>0</value>
+        <value>Back</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Credit Management, menuText=Accounting, validIdNameCard=A28088961BA2D90F3C3C3CBBEC55BC4D, rowIndex=0, btnBack=Back}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="0b13856788e585dbb7fa0982146a5e15.png"/>
+      <screenshot image="6a5489245486a1475b9497a9e6cb9907.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1691">
+      <screenshots>
+        <screenshot image="bdf35f6bb2d5f47881ed078523ddbc1c.png"/>
+      </screenshots>
+      <description>When I open submenu Credit Management of menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="861">
+      <screenshots>
+        <screenshot image="1976f05b9f0eb7799f608e953f59456e.png"/>
+      </screenshots>
+      <description>And I fill value A28088961BA2D90F3C3C3CBBEC55BC4D for input id name card</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1112">
+      <screenshots>
+        <screenshot image="79bc9ef1d29fe7c1dc507b084b124250.png"/>
+      </screenshots>
+      <description>And I click search button in tab other conditions</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="300">
+      <screenshots>
+        <screenshot image="979159ef1cdf54923147065718c39541.png"/>
+      </screenshots>
+      <description>And The system should show table result with records</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="356">
+      <screenshots>
+        <screenshot image="cd5784868dc1d625b2dfb2c5172fdaa1.png"/>
+      </screenshots>
+      <description>And I click checkbox left of a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1886">
+      <screenshots>
+        <screenshot image="b4e37b5b8531d22c28f13edea4a16351.png"/>
+      </screenshots>
+      <description>And In accounting screen, I click button select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="214">
+      <screenshots>
+        <screenshot image="b4e37b5b8531d22c28f13edea4a16351.png"/>
+      </screenshots>
+      <description>Then The system should show customer details screen</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="153">
+      <screenshots>
+        <screenshot image="b4e37b5b8531d22c28f13edea4a16351.png"/>
+      </screenshots>
+      <description>And In Credit Management page, Table Credit History no record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="172">
+      <screenshots>
+        <screenshot image="b4e37b5b8531d22c28f13edea4a16351.png"/>
+      </screenshots>
+      <description>And In Credit Management page, System show list button can use
+| New report |
+| Back |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2565">
+      <screenshots>
+        <screenshot image="a770e061e1f5a6ddb61564512fe4d4ef.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields required can input
+| Customer code (index) |
+| Company name |
+| Company name in Kana |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="892">
+      <screenshots>
+        <screenshot image="989b4398b7e66c2a3def4f5a6782c7f6.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields can select
+| Client code status |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1968">
+      <screenshots>
+        <screenshot image="e0d0afc68906dea47afba66205358657.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields not required can input
+| Year of starting business |
+| Year of official establishment |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="5215">
+      <screenshots>
+        <screenshot image="6a5489245486a1475b9497a9e6cb9907.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Back</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

@@ -1,0 +1,84 @@
+<acceptance-test-run title="save immediately after open edit screen" name="save immediately after open edit screen" description="" steps="5" successful="5" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="15402" timestamp="2016-11-03T08:54:38.232+07:00" session-id="d5e3d34aabe3bb85d896e5672144ef84">
+  <user-story id="company-management" name="company management" path="companyManagement/companyManagement.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Company management" type="capability"/>
+    <tag name="company management" type="feature"/>
+    <tag name="Company management/Company management" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>rowIndex</header>
+      <header>buttonText</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Company Management</value>
+        <value>Common</value>
+        <value>0</value>
+        <value>Save</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Company Management, menuText=Common, rowIndex=0, buttonText=Save}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="938f41ddd4b00b02ef68ad684a512b22.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="890">
+      <screenshots>
+        <screenshot image="e98a3e89599105f9d27f7f9aa49c38b3.png"/>
+      </screenshots>
+      <description>When I open submenu Company Management of menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="812">
+      <screenshots>
+        <screenshot image="a512f6fefdf838ba90154a17d57e2990.png"/>
+      </screenshots>
+      <description>And In Company management screen, I select row &apos;0&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1333">
+      <screenshots>
+        <screenshot image="295d4d31521c0c8e359a90f2da25f580.png"/>
+      </screenshots>
+      <description>And In Company management screen, I click button Edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="802">
+      <screenshots>
+        <screenshot image="a2409e78afa9faee99d2a4e80e6c639d.png"/>
+      </screenshots>
+      <description>And In Company Detail screen, I click &apos;Save&apos; button</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6554">
+      <screenshots>
+        <screenshot image="938f41ddd4b00b02ef68ad684a512b22.png"/>
+      </screenshots>
+      <description>Then The system should save company success</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

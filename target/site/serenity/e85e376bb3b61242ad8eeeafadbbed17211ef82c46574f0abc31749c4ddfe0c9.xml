@@ -1,0 +1,115 @@
+<acceptance-test-run title="21. Open Employee Management and verify when select 1 record, change page and back" name="21. Open Employee Management and verify when select 1 record, change page and back" description="" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="11050" timestamp="2016-11-24T11:10:55.249+07:00" session-id="dee658dc9b58a166de8f8743e2bf720a">
+  <user-story id="employee-management-display" name="Employee Management display" path="employee_management/employee_management.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Employee management" type="capability"/>
+    <tag name="Employee Management display" type="feature"/>
+    <tag name="Employee management/Employee management display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>employeeMenu</header>
+      <header>parentMenuText</header>
+      <header>addBtn</header>
+      <header>empName</header>
+      <header>empMaxLength</header>
+      <header>email</header>
+      <header>emailMaxLength</header>
+      <header>tel</header>
+      <header>telMaxLength</header>
+      <header>mobile</header>
+      <header>mobileMaxLength</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>Add</value>
+        <value>Employee Name</value>
+        <value>32</value>
+        <value>Email</value>
+        <value>32</value>
+        <value>Tel.</value>
+        <value>13</value>
+        <value>Mobile</value>
+        <value>13</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, addBtn=Add, empName=Employee Name, empMaxLength=32, email=Email, emailMaxLength=32, tel=Tel., telMaxLength=13, mobile=Mobile, mobileMaxLength=13}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="e31d17f186613744188e5432e4d323f2.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1014">
+      <screenshots>
+        <screenshot image="b349b4a9c096ecdca034695b797c8c6d.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2334">
+      <screenshots>
+        <screenshot image="46e56b0244be3f1a611e4e8b109f7af3.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="170">
+      <screenshots>
+        <screenshot image="e31d17f186613744188e5432e4d323f2.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Verify input field Employee Name with max length 32</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="181">
+      <screenshots>
+        <screenshot image="e31d17f186613744188e5432e4d323f2.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, Verify input field Email with max length 32</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="164">
+      <screenshots>
+        <screenshot image="e31d17f186613744188e5432e4d323f2.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, Verify input field Mobile with max length 13</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="171">
+      <screenshots>
+        <screenshot image="e31d17f186613744188e5432e4d323f2.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, Verify input field Tel. with max length 13</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

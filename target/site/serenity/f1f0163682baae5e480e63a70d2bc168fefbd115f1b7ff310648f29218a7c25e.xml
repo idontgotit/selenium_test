@@ -1,0 +1,230 @@
+<acceptance-test-run title="search customer by other conditions, mapping sansan with credit data but not have Credit Investigation" name="search customer by other conditions, mapping sansan with credit data but not have Credit Investigation" description="" steps="24" successful="24" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="50242" timestamp="2016-11-03T20:15:06.821+07:00" session-id="69571d52d44df950dc593646343390c1">
+  <user-story id="credit-management-test-1-3" name="Credit management test 1-3" path="creditManagement/creadit_management_test13_company_and_credit_data.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Credit management" type="capability"/>
+    <tag name="Credit management test 1-3" type="feature"/>
+    <tag name="Credit management/Credit management test 1 3" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>validCustomerCode</header>
+      <header>rowIndex</header>
+      <header>newRpBtn</header>
+      <header>surveySelect</header>
+      <header>indexSelect</header>
+      <header>indexAccounting</header>
+      <header>valueSurvey</header>
+      <header>valueIndex</header>
+      <header>valueIndexAccounting</header>
+      <header>btnSaveDraft</header>
+      <header>rowIndexCreditHistory</header>
+      <header>btnEdit</header>
+      <header>btnReject</header>
+      <header>btnBack</header>
+      <header>successSave</header>
+      <header>successReject</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Credit Management</value>
+        <value>Accounting</value>
+        <value>a555</value>
+        <value>0</value>
+        <value>New report</value>
+        <value>Survey institute and information source</value>
+        <value>Date of survey</value>
+        <value>Index for accounting system</value>
+        <value>帝国データ</value>
+        <value>2016/10/18</value>
+        <value>12</value>
+        <value>Save draft</value>
+        <value>0</value>
+        <value>Edit</value>
+        <value>Reject</value>
+        <value>Back</value>
+        <value>Save successfully</value>
+        <value>Reject successful</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Credit Management, menuText=Accounting, validCustomerCode=a555, rowIndex=0, newRpBtn=New report, surveySelect=Survey institute and information source, indexSelect=Date of survey, indexAccounting=Index for accounting system, valueSurvey=帝国データ, valueIndex=2016/10/18, valueIndexAccounting=12, btnSaveDraft=Save draft, rowIndexCreditHistory=0, btnEdit=Edit, btnReject=Reject, btnBack=Back, successSave=Save successfully, successReject=Reject successful}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="27a7dce3a5068fd706ffcb5e4ca9f52e.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="970">
+      <screenshots>
+        <screenshot image="8e2225753235bed3ccc12a601352f26a.png"/>
+      </screenshots>
+      <description>When I open submenu Credit Management of menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1535">
+      <screenshots>
+        <screenshot image="4dd32535ba21a9c56a25f3bf14ec9433.png"/>
+      </screenshots>
+      <description>And I search customer by code a555</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="328">
+      <screenshots>
+        <screenshot image="d843bf1ed5e0e759cf786e9212e29ae1.png"/>
+      </screenshots>
+      <description>And The system should show table result with records</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="322">
+      <screenshots>
+        <screenshot image="648ea24ef1791656751de90d1567e4d5.png"/>
+      </screenshots>
+      <description>And I click checkbox left of a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1798">
+      <screenshots>
+        <screenshot image="6855a8fe3622bbde2f9046aae384b59a.png"/>
+      </screenshots>
+      <description>And In accounting screen, I click button select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="171">
+      <screenshots>
+        <screenshot image="6855a8fe3622bbde2f9046aae384b59a.png"/>
+      </screenshots>
+      <description>And In Credit Management page, Table Credit History no record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2289">
+      <screenshots>
+        <screenshot image="fd7972a9232a77c77a59b23488c9e6ed.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button New report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="922">
+      <screenshots>
+        <screenshot image="028edc7874c6c47f1d8416e067bed7d1.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I select in Survey institute and information source is 帝国データ</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1103">
+      <screenshots>
+        <screenshot image="80209e568df5cca7e5fb30a8cfff6994.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I select date in Date of survey is 2016/10/18</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1266">
+      <screenshots>
+        <screenshot image="a1f3b0ee06d93b35e73e560f323728d0.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I type in Index for accounting system is 12</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2318">
+      <screenshots>
+        <screenshot image="c67191fa27623f119e5eddceb0da23f3.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Save draft</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="7915">
+      <screenshots>
+        <screenshot image="fa31a3cbfc041395713c1ad1bebbc92d.png"/>
+      </screenshots>
+      <description>And In Credit Management page, System show message Save successfully</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="823">
+      <screenshots>
+        <screenshot image="3e224b5acae193ad5be92522eac4d9e5.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click record 0 in table Credit History in bottom</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2351">
+      <screenshots>
+        <screenshot image="63d2851ca985c18a3220decd46d1bab0.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1228">
+      <screenshots>
+        <screenshot image="845315b97f6634c8bd13a71f86e0b3f2.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Reject</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1791">
+      <screenshots>
+        <screenshot image="ff21efffbe052514ffbce7061432543a.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I confirm action</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="7845">
+      <screenshots>
+        <screenshot image="d0980a96cc8a156f872ed256b41052b3.png"/>
+      </screenshots>
+      <description>And In Credit Management page, System show message Reject successful</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="182">
+      <screenshots>
+        <screenshot image="d0980a96cc8a156f872ed256b41052b3.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, Table Credit History no record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="170">
+      <screenshots>
+        <screenshot image="d0980a96cc8a156f872ed256b41052b3.png"/>
+      </screenshots>
+      <description>And In Credit Management page, System show list button can use
+| New report |
+| Back |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="183">
+      <screenshots>
+        <screenshot image="d0980a96cc8a156f872ed256b41052b3.png"/>
+      </screenshots>
+      <description>And In Credit Management page, System show list button can not use
+| Edit |
+| View |
+| Duplicate |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2845">
+      <screenshots>
+        <screenshot image="797a2444439076c21ee835bc5f545ff9.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields required can input
+| Customer code (index) |
+| Company name |
+| Company name in Kana |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="798">
+      <screenshots>
+        <screenshot image="1df99ba1da6d48738935b6baa104a247.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields can select
+| Client code status |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1435">
+      <screenshots>
+        <screenshot image="ece4f41efb85961f99d3cee69be339da.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields not required can input
+| Year of starting business |
+| Year of official establishment |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3692">
+      <screenshots>
+        <screenshot image="27a7dce3a5068fd706ffcb5e4ca9f52e.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Back</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

@@ -1,0 +1,122 @@
+<acceptance-test-run title="verify delete daily report with user isn&apos;t manager" name="verify delete daily report with user isn&apos;t manager" description="" steps="10" successful="10" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="13437" timestamp="2016-11-03T19:58:05.645+07:00" session-id="b0757e2a3e35e2909d57069c8784c35b">
+  <user-story id="search-daily-report-by-date" name="Search Daily report by date" path="searchDailyReportByDate/searchDailyReportByDate.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Search daily report by date" type="capability"/>
+    <tag name="Search Daily report by date" type="feature"/>
+    <tag name="Search daily report by date/Search daily report by date" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>username</header>
+      <header>password</header>
+      <header>lang</header>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>buttonSearchText</header>
+      <header>branchName</header>
+      <header>employeeInfo</header>
+      <header>date</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>12000001</value>
+        <value>123456</value>
+        <value>en</value>
+        <value>Search By Date</value>
+        <value>Daily Report</value>
+        <value>Search</value>
+        <value>北海道</value>
+        <value>濱谷賢児</value>
+        <value>2010/09/14</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {username=12000001, password=123456, lang=en, submenuText=Search By Date, menuText=Daily Report, buttonSearchText=Search, branchName=北海道, employeeInfo=濱谷賢児, date=2010/09/14}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="1ca383364fb80a66bff25ba9a83f773f.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1235">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>When I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3025">
+      <screenshots>
+        <screenshot image="fde769d7d69a2aec55fb3fa0ebd33da0.png"/>
+        <screenshot image="dfed03d01e5ff19ac1c31300c06342dd.png"/>
+      </screenshots>
+      <description>And I input my credentials username 12000001 and password 123456</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2362">
+      <screenshots>
+        <screenshot image="dfed03d01e5ff19ac1c31300c06342dd.png"/>
+      </screenshots>
+      <description>And I change language to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="939">
+      <screenshots>
+        <screenshot image="b3888a90d668e176fec004aef8afb38b.png"/>
+      </screenshots>
+      <description>And I open submenu Search By Date of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1633">
+      <screenshots>
+        <screenshot image="a76418d81b231a49e968238a7e84206c.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I select date 2010/09/14 in item Date</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="829">
+      <screenshots>
+        <screenshot image="e358406471bf5fff0fa3297cfc35df52.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I choose a branch 北海道 in dropdown Branch</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="247">
+      <screenshots>
+        <screenshot image="80e112d47ba41eb6f75350e0059be3a5.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I type value 濱谷賢児 for autocomplete Employee</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1363">
+      <screenshots>
+        <screenshot image="34908c7ae614d58f244644e77075dc7e.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I choose 濱谷賢児 employee in dropdown of autocomplete Employee</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1368">
+      <screenshots>
+        <screenshot image="2807756f1b2d6ec0f9ab3b31b5af634c.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I click button &apos;Search&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="291">
+      <screenshots>
+        <screenshot image="1ca383364fb80a66bff25ba9a83f773f.png"/>
+      </screenshots>
+      <description>Then The system should show table Search by date result can not select any row</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

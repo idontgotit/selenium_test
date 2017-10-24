@@ -1,0 +1,79 @@
+<acceptance-test-run title="Open Employee Management verify check toggle column show hidden column" name="Open Employee Management verify check toggle column show hidden column" description="" steps="5" successful="5" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="7935" timestamp="2016-11-03T09:11:31.545+07:00" session-id="02dcb434c09356ff95a3c15208adf3bc">
+  <user-story id="employee-management-display" name="Employee Management display" path="employee_management/employee_management.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Employee management" type="capability"/>
+    <tag name="Employee Management display" type="feature"/>
+    <tag name="Employee management/Employee management display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>employeeMenu</header>
+      <header>parentMenuText</header>
+      <header>toggleBtn</header>
+      <header>numberClm</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>Toggle Column</value>
+        <value>12</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, toggleBtn=Toggle Column, numberClm=12}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="4d64c8cc120b06b4afc090515c0dd716.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="881">
+      <screenshots>
+        <screenshot image="3deb930aa5faa946602fe74c7496e58d.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="785">
+      <screenshots>
+        <screenshot image="43919cdd86d82372872e81efc18265ed.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Toggle Column</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="796">
+      <screenshots>
+        <screenshot image="6cdfd77a4b56b0db47c7b83a7b2d3c4a.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I toggle all column
+| Hire Date |
+| Telephone |
+| Mobile |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="697">
+      <screenshots>
+        <screenshot image="77cdae1c80b2b04a8ea937313213df68.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Toggle Column</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="154">
+      <screenshots>
+        <screenshot image="947fa8a72f34c5f2cdf85f71066c78d4.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table have 12 columns</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

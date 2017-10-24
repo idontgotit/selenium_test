@@ -1,0 +1,124 @@
+<acceptance-test-run title="1. Open Maintain credit data and verify when start" name="1. Open Maintain credit data and verify when start" description="" steps="11" successful="11" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="14676" timestamp="2017-04-17T16:27:14.348+07:00" session-id="69e9614765d42983373d210998dbb413">
+  <user-story id="1-4.-maintain-credit-data" name="1-4. Maintain credit data" path="maintain_credit_data/maintain_credit_data14.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Maintain credit data" type="capability"/>
+    <tag name="1-4. Maintain credit data" type="feature"/>
+    <tag name="Maintain credit data/1 4. maintain credit data" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>maintainMenu</header>
+      <header>pageTitle</header>
+      <header>parentMenuText</header>
+      <header>otherConditions</header>
+      <header>associated</header>
+      <header>fieldCompanyName</header>
+      <header>emptyString</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Maintain Credit Data</value>
+        <value>Maintenance accounting data screen</value>
+        <value>Accounting</value>
+        <value>Other conditions</value>
+        <value>Associated</value>
+        <value>Company name</value>
+        <value></value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {maintainMenu=Maintain Credit Data, pageTitle=Maintenance accounting data screen, parentMenuText=Accounting, otherConditions=Other conditions, associated=Associated, fieldCompanyName=Company name, emptyString=}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="211ba72560aa0e05afa6111e50fd8a60.png"/>
+      <screenshot image="aa52d0db2dd8facd74f079d8c6f6fb50.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1778">
+      <screenshots>
+        <screenshot image="33b082ecd7f0d60fc0c53a0a6e8069ec.png"/>
+      </screenshots>
+      <description>When I open submenu Maintain Credit Data of parent menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="271">
+      <screenshots>
+        <screenshot image="221cafbdb337e0b85e2a92d86c21ebf0.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Maintenance accounting data screen&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="243">
+      <screenshots>
+        <screenshot image="221cafbdb337e0b85e2a92d86c21ebf0.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, System show list button can not use
+| Search |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="299">
+      <screenshots>
+        <screenshot image="f37fe1c7774dd5afa5a641867e304be5.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, System show field can input
+| Customer code |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="192">
+      <screenshots>
+        <screenshot image="e480b3ec9299844e042ed211a0ce57d3.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, I choose radio button have name is Other conditions</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="358">
+      <screenshots>
+        <screenshot image="0c5141925e043b657d6ec9486b1caec7.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, System show field can input
+| Company name |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="199">
+      <screenshots>
+        <screenshot image="0c5141925e043b657d6ec9486b1caec7.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, System show field can not input
+| Sansan Company ID |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="235">
+      <screenshots>
+        <screenshot image="db9098dfe31cddd4014279c3eb73df90.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, I choose radio button have name is Associated</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="436">
+      <screenshots>
+        <screenshot image="e56037ed1e379374bad40177e0155d3f.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I type  in input field have name is Company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="152">
+      <screenshots>
+        <screenshot image="e56037ed1e379374bad40177e0155d3f.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, System show list button can not use
+| Search |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="342">
+      <screenshots>
+        <screenshot image="aa52d0db2dd8facd74f079d8c6f6fb50.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, System show field can input
+| Company name |
+| Sansan Company ID |</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

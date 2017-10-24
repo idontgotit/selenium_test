@@ -1,0 +1,107 @@
+<acceptance-test-run title="verify edit daily report" name="verify edit daily report" description="" steps="8" successful="8" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="10399" timestamp="2016-11-03T08:39:37.057+07:00" session-id="9c5954d4ef1ac2845c372d3f713dec30">
+  <user-story id="search-daily-report-by-date" name="Search Daily report by date" path="searchDailyReportByDate/searchDailyReportByDate.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Search daily report by date" type="capability"/>
+    <tag name="Search Daily report by date" type="feature"/>
+    <tag name="Search daily report by date/Search daily report by date" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>buttonSearchText</header>
+      <header>branchName</header>
+      <header>employeeInfo</header>
+      <header>editButtonText</header>
+      <header>rowIndex</header>
+      <header>pageTitle</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Search By Date</value>
+        <value>Daily Report</value>
+        <value>Search</value>
+        <value>東京都</value>
+        <value>9999999</value>
+        <value>Edit</value>
+        <value>0</value>
+        <value>Daily Report</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Search By Date, menuText=Daily Report, buttonSearchText=Search, branchName=東京都, employeeInfo=9999999, editButtonText=Edit, rowIndex=0, pageTitle=Daily Report}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="8d57da6b8052b32d65feb8aee78d253a.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="910">
+      <screenshots>
+        <screenshot image="d7b5a0b36c6e3e43d6baaa99b42d1886.png"/>
+      </screenshots>
+      <description>When I open submenu Search By Date of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="857">
+      <screenshots>
+        <screenshot image="ef82a533f0d6293f76cf817aa564322b.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I choose a branch 東京都 in dropdown Branch</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="244">
+      <screenshots>
+        <screenshot image="e33ee9da8af34166ab9b5f8287ca81d3.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I type value 9999999 for autocomplete Employee</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1478">
+      <screenshots>
+        <screenshot image="eb2602e93425f038d696cac41f490c45.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I choose 9999999 employee in dropdown of autocomplete Employee</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="788">
+      <screenshots>
+        <screenshot image="4dae7b37bd05280ede60099d056f775c.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I click button &apos;Search&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="247">
+      <screenshots>
+        <screenshot image="a80a8085dbefb0e2f29d57427b396d08.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I select row 0</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="822">
+      <screenshots>
+        <screenshot image="53b94e2c949543335f04a56da4e56e16.png"/>
+      </screenshots>
+      <description>And In Search by date screen, I click button &apos;Edit&apos;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="237">
+      <screenshots>
+        <screenshot image="8d57da6b8052b32d65feb8aee78d253a.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Daily Report&apos; page</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

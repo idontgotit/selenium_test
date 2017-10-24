@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Accounting" skipped="0" tests="4" time="88.5" timestamp="2016-11-308 08:22:47"><testcase name="initialization screen"/><testcase name="search customer by code"/><testcase name="search customer by other conditions"/><testcase name="change page on paging"/></testsuite>

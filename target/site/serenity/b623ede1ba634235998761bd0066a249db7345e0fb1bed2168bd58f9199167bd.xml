@@ -1,0 +1,106 @@
+<acceptance-test-run title="verify delete daily report" name="verify delete daily report" description="" steps="8" successful="8" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="22192" timestamp="2016-11-03T20:03:26.592+07:00" session-id="2b3f3f9feabc2f361c0f10d5b4a15be0">
+  <user-story id="register-daily-report" name="register daily report" path="registerDailyReport/registerDailyReport.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Register daily report" type="capability"/>
+    <tag name="register daily report" type="feature"/>
+    <tag name="Register daily report/Register daily report" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>declineText</header>
+      <header>confirmText</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Register</value>
+        <value>Daily Report</value>
+        <value>No</value>
+        <value>Yes</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Register, menuText=Daily Report, declineText=No, confirmText=Yes}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="f9d344772aae59c8e031af5a399de0c5.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="2149">
+      <screenshots>
+        <screenshot image="28704585fba37185f63b8b8d7fd6b503.png"/>
+      </screenshots>
+      <description>When I open submenu Register of menu Daily Report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2769">
+      <screenshots>
+        <screenshot image="7351569f5e39ff85e3556a608cf3b261.png"/>
+      </screenshots>
+      <description>And In Register daily report, I select rows in table daily report history to delete
+| 0 |
+| 1 |
+| 2 |
+| 3 |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="346">
+      <screenshots>
+        <screenshot image="f291e27db939303448ba19307cc79f28.png"/>
+      </screenshots>
+      <description>And In Register daily report, I click button Delete</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="301">
+      <screenshots>
+        <screenshot image="57f7d90e1a36c06d396cc15726986d3a.png"/>
+      </screenshots>
+      <description>And In Register daily report, I click button No in popup confirm delete daily report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="131">
+      <screenshots>
+        <screenshot image="57f7d90e1a36c06d396cc15726986d3a.png"/>
+      </screenshots>
+      <description>Then The system should show table daily report history has data</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="246">
+      <screenshots>
+        <screenshot image="f291e27db939303448ba19307cc79f28.png"/>
+      </screenshots>
+      <description>When In Register daily report, I click button Delete</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1648">
+      <screenshots>
+        <screenshot image="b79b3aa442a3afbf44ba32876765fc31.png"/>
+      </screenshots>
+      <description>And In Register daily report, I click button Yes in popup confirm delete daily report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6431">
+      <screenshots>
+        <screenshot image="f9d344772aae59c8e031af5a399de0c5.png"/>
+      </screenshots>
+      <description>Then The system should show message delete daily report successfully</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

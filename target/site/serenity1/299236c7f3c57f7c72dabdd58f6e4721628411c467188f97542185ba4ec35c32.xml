@@ -1,0 +1,110 @@
+<acceptance-test-run title="Paging" name="paging" description="" steps="11" successful="11" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="10589" timestamp="2016-11-03T08:52:35.781+07:00" session-id="d5e3d34aabe3bb85d896e5672144ef84">
+  <user-story id="company-management" name="company management" path="companyManagement/companyManagement.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Company management" type="capability"/>
+    <tag name="company management" type="feature"/>
+    <tag name="Company management/Company management" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>pageNumberOne</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Company Management</value>
+        <value>Common</value>
+        <value>2</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Company Management, menuText=Common, pageNumberOne=2}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="d292dd939d1dc6acbd13f6129aa1163f.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="871">
+      <screenshots>
+        <screenshot image="5e9400f10847eeed72133eadc9bc5c4a.png"/>
+      </screenshots>
+      <description>When I open submenu Company Management of menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="865">
+      <screenshots>
+        <screenshot image="7271df1192cabb99aff8c1030f13cf26.png"/>
+      </screenshots>
+      <description>And In Company management screen, I click button last page on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="173">
+      <screenshots>
+        <screenshot image="5363c6a24f84c08eab62dde52b756584.png"/>
+      </screenshots>
+      <description>Then The table company should show last page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="789">
+      <screenshots>
+        <screenshot image="be74e8e2f6f2234090c57b7712575b43.png"/>
+      </screenshots>
+      <description>When In Company management screen, I click button first page on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="161">
+      <screenshots>
+        <screenshot image="663c32d9a2e6b5c377755ec24e37f5a0.png"/>
+      </screenshots>
+      <description>Then The table company should show first page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="773">
+      <screenshots>
+        <screenshot image="49a702d827c5355e2a8b5f872a6f9d1b.png"/>
+      </screenshots>
+      <description>When In Company management screen, I click page 2 on paging</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="168">
+      <screenshots>
+        <screenshot image="49271f835c26a8ee568410d041f7cfa8.png"/>
+      </screenshots>
+      <description>Then The table company should change to selected page 2</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="849">
+      <screenshots>
+        <screenshot image="dc19daa67f976bf8f5ad297340a44f60.png"/>
+      </screenshots>
+      <description>When In Company management screen, I click button next</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="170">
+      <screenshots>
+        <screenshot image="69bdfbbd3907d0bfef3a53c364db4f0b.png"/>
+      </screenshots>
+      <description>Then The table company should change to selected page 2 + 1</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="792">
+      <screenshots>
+        <screenshot image="db66501bdd8ce01ce49ecc7f202b5251.png"/>
+      </screenshots>
+      <description>When In Company management screen, I click button back</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="167">
+      <screenshots>
+        <screenshot image="d292dd939d1dc6acbd13f6129aa1163f.png"/>
+      </screenshots>
+      <description>Then The table company should change to selected page 2</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

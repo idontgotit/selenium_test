@@ -1,0 +1,104 @@
+<acceptance-test-run title="Open Employee Management verify screen when edit new employee and click button reset" name="Open Employee Management verify screen when edit new employee and click button reset" description="" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="21416" timestamp="2016-11-03T09:17:27.769+07:00" session-id="02dcb434c09356ff95a3c15208adf3bc">
+  <user-story id="employee-management-display" name="Employee Management display" path="employee_management/employee_management.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Employee management" type="capability"/>
+    <tag name="Employee Management display" type="feature"/>
+    <tag name="Employee management/Employee management display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>employeeMenu</header>
+      <header>parentMenuText</header>
+      <header>firstRecord</header>
+      <header>resetBtn</header>
+      <header>editBtn</header>
+      <header>resetBtn</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>1</value>
+        <value>Reset</value>
+        <value>Edit</value>
+        <value>Reset</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, firstRecord=1, resetBtn=Reset, editBtn=Edit}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="b4e34214fd264580174586ada4da7ff9.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1179">
+      <screenshots>
+        <screenshot image="c915ae774313cb4be4653afc5da6deee.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="995">
+      <screenshots>
+        <screenshot image="49fca6133043a2b7f5fbeae51e0122b4.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click in number 1 record can click</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1462">
+      <screenshots>
+        <screenshot image="17fa11c2252cdf468ad544cc90ccd386.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="10058">
+      <screenshots>
+        <screenshot image="33be6e0d1ae7e1bf0ed93a6d8e29d9f3.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I fill all data as below with employee name auto generate
+| hireDate | status | baseLocation | position | authority | email | tel | mobile |
+| 2016/08/08 | Working | 青森県 | 管理職 | 拠点 | ngocpt@arrow-tech.vn | 03-1234-5678 | 090-1234-5678 |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1461">
+      <screenshots>
+        <screenshot image="96934003b345fb314c827e4eeef0aadb.png"/>
+      </screenshots>
+      <description>And In Employee Management screen, I click button with name Reset</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="592">
+      <screenshots>
+        <screenshot image="b4e34214fd264580174586ada4da7ff9.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, The system should show all field is old value</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

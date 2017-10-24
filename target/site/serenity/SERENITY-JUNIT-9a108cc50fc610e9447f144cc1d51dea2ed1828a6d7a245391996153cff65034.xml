@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Run feature for debugging" skipped="0" tests="2" time="64.62" timestamp="2017-01-17 02:53:19"><testcase name="5. Open Notification Setting and verify start screen with out setting"/><testcase name="6. Open Notification Setting, select one branch, one position, one employee name and add"/></testsuite>

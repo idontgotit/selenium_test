@@ -1,0 +1,112 @@
+<acceptance-test-run title="1. Open Notification Setting click check box enable" name="1. Open Notification Setting click check box enable" description="" steps="8" successful="2" failures="0" errors="1" skipped="5" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="21997" timestamp="2016-12-07T15:37:10.198+07:00" session-id="e114aaa195842c7a818ac9f96acb3347">
+  <user-story id="notification-setting-display" name="Notification Setting display" path="notification_setting/notification_setting.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Notification setting" type="capability"/>
+    <tag name="Notification Setting display" type="feature"/>
+    <tag name="Notification setting/Notification setting display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>notificationMenu</header>
+      <header>parentMenuText</header>
+      <header>numberClm</header>
+      <header>statusViewNotifications</header>
+    </headers>
+    <rows>
+      <row result="ERROR">
+        <value>Notification Setting</value>
+        <value>Notification</value>
+        <value>6</value>
+        <value>Visible</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {notificationMenu=Notification Setting, parentMenuText=Notification, numberClm=6, statusViewNotifications=Visible}" result="ERROR">
+    <screenshots>
+      <screenshot image="0f6e15ca3ec1b9747fc24e62f86932b1.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1767">
+      <screenshots>
+        <screenshot image="e4d8ed33de229d38f1e4c39a4bf3d844.png"/>
+      </screenshots>
+      <description>When I open submenu Notification Setting of parent menu Notification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="220">
+      <screenshots>
+        <screenshot image="8f83ae9110f1c926b163508de72f6fc3.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Notification&apos; page</description>
+    </test-step>
+    <test-group name="And In Notification Setting screen, I click random checkbox in column enable" result="ERROR">
+      <test-step result="ERROR" duration="170">
+        <screenshots>
+          <screenshot image="8f83ae9110f1c926b163508de72f6fc3.png" source="pagesource6720352881987607676.html.txt"/>
+        </screenshots>
+        <description>Click random check box enable</description>
+        <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;*//tbody/tr[@data-ri=&apos;0&apos;]//span[contains(@class,&apos;ui-chkbox-icon&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.100)
+  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.BZ3MlL}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.100, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e114aaa195842c7a818ac9f96acb3347
+*** Element info: {Using=xpath, value=*//tbody/tr[@data-ri=&apos;0&apos;]//span[contains(@class,&apos;ui-chkbox-icon&apos;)]}</error>
+        <exception>org.openqa.selenium.NoSuchElementException:no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;*//tbody/tr[@data-ri=&apos;0&apos;]//span[contains(@class,&apos;ui-chkbox-icon&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.100)
+  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;NgocPT&apos;, ip: &apos;172.17.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.19.0-42-generic&apos;, java.version: &apos;1.8.0_66&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.BZ3MlL}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.100, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e114aaa195842c7a818ac9f96acb3347
+*** Element info: {Using=xpath, value=*//tbody/tr[@data-ri=&apos;0&apos;]//span[contains(@class,&apos;ui-chkbox-icon&apos;)]}
+[my.lib.serenity.primefaces.component.TableComponent.select_check_box_by_index(TableComponent.java:251), my.lib.serenity.primefaces.sars.page.NotificationSettingPage.clickRandomCheckBoxEnable(NotificationSettingPage.java:220), my.lib.serenity.primefaces.sars.steps.NotificationSettingSteps.clickRandomCheckBoxEnable(NotificationSettingSteps.java:150), my.lib.serenity.primefaces.sars.definition.NotificationSettingScenarioSteps.inNotificationSettingScreenIClickRandomCheckboxInColumnEnable(NotificationSettingScenarioSteps.java:104)]</exception>
+      </test-step>
+    </test-group>
+    <test-step result="SKIPPED" duration="3">
+      <description>Then In Notification Setting screen, System show list button can not use
+| Add |
+| Delete |</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>And In Notification Setting screen, link View Notifications is Visible</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>And In Notification Setting screen, Table in the left have list select box can select
+| Branch |
+| Position |
+| Employee Name |</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="2">
+      <description>And In Notification Setting screen, Table in the right have 6 columns</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="2">
+      <description>And In Notification Setting screen, Table in the right have columns like below
+| Employee Code |
+| Employee Name |
+| Type |
+| Enable? |
+| Unread |</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

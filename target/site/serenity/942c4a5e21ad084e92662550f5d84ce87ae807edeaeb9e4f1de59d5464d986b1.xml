@@ -1,0 +1,103 @@
+<acceptance-test-run title="Open Notification Setting click check box enable" name="Open Notification Setting click check box enable" description="" steps="8" successful="8" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="20604" timestamp="2016-11-03T19:54:34.496+07:00" session-id="e5f323a40e5dcd2da3c56b4df45027e8">
+  <user-story id="notification-setting-display" name="Notification Setting display" path="notification_setting/notification_setting.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Notification setting" type="capability"/>
+    <tag name="Notification Setting display" type="feature"/>
+    <tag name="Notification setting/Notification setting display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>notificationMenu</header>
+      <header>parentMenuText</header>
+      <header>numberClm</header>
+      <header>statusViewNotifications</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Notification Setting</value>
+        <value>Notification</value>
+        <value>6</value>
+        <value>Visible</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {notificationMenu=Notification Setting, parentMenuText=Notification, numberClm=6, statusViewNotifications=Visible}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="085df582eccbc02998fcb466e8dfbd8e.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="2356">
+      <screenshots>
+        <screenshot image="09d596c744bd9668a581711d491d277c.png"/>
+      </screenshots>
+      <description>When I open submenu Notification Setting of parent menu Notification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="354">
+      <screenshots>
+        <screenshot image="ded9759d3aa8b25816f93d0074503fba.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Notification&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1960">
+      <screenshots>
+        <screenshot image="085df582eccbc02998fcb466e8dfbd8e.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, I click random checkbox in column enable</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="197">
+      <screenshots>
+        <screenshot image="085df582eccbc02998fcb466e8dfbd8e.png"/>
+      </screenshots>
+      <description>Then In Notification Setting screen, System show list button can not use
+| Add |
+| Delete |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="146">
+      <screenshots>
+        <screenshot image="085df582eccbc02998fcb466e8dfbd8e.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, link View Notifications is Visible</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="205">
+      <screenshots>
+        <screenshot image="085df582eccbc02998fcb466e8dfbd8e.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, Table in the left have list select box can select
+| Branch |
+| Position |
+| Employee Name |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="226">
+      <screenshots>
+        <screenshot image="085df582eccbc02998fcb466e8dfbd8e.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, Table in the right have 6 columns</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="386">
+      <screenshots>
+        <screenshot image="085df582eccbc02998fcb466e8dfbd8e.png"/>
+      </screenshots>
+      <description>And In Notification Setting screen, Table in the right have columns like below
+| Employee Code |
+| Employee Name |
+| Type |
+| Enable? |
+| Unread |</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

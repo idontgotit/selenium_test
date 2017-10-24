@@ -1,0 +1,145 @@
+<acceptance-test-run title="6. Select record -&gt; duplicate -&gt; back" name="6. Select record -&gt; duplicate -&gt; back" description="" steps="14" successful="14" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="21384" timestamp="2017-01-25T09:36:48.914+07:00" session-id="4df7fcc14669e5b0a71bd01e93c6cdff">
+  <user-story id="run-feature-for-debugging" name="Run feature for debugging" path="debug/debug.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Debug" type="capability"/>
+    <tag name="Debug/Run feature for debugging" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>validCustomerCode</header>
+      <header>rowIndex</header>
+      <header>btnBack</header>
+      <header>rowIndex2CreditHistory</header>
+      <header>btnDuplicate</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Credit Management</value>
+        <value>Accounting</value>
+        <value>A567</value>
+        <value>0</value>
+        <value>Back</value>
+        <value>0</value>
+        <value>Duplicate</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Credit Management, menuText=Accounting, validCustomerCode=A567, rowIndex=0, btnBack=Back, rowIndex2CreditHistory=0, btnDuplicate=Duplicate}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="0b13856788e585dbb7fa0982146a5e15.png"/>
+      <screenshot image="333b5d4aa06691dba56e0c866a70fe47.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1290">
+      <screenshots>
+        <screenshot image="d6094e12f4e17083fdaee82c02d73df0.png"/>
+      </screenshots>
+      <description>When I open submenu Credit Management of menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1547">
+      <screenshots>
+        <screenshot image="6fe9e6375f1333a55d5ddd097e9aec2f.png"/>
+      </screenshots>
+      <description>And I search customer by code A567</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="447">
+      <screenshots>
+        <screenshot image="5dd096d0ecfb94d1960e4baaac2161f8.png"/>
+      </screenshots>
+      <description>And I click checkbox left of a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1388">
+      <screenshots>
+        <screenshot image="ee7909a47065cdddf32f1e7088c8ab99.png"/>
+      </screenshots>
+      <description>And In accounting screen, I click button select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="936">
+      <screenshots>
+        <screenshot image="3e1c98bd6d5f3cc84a0a165bb233e020.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click record 0 in table Credit History in bottom with View enable</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="285">
+      <screenshots>
+        <screenshot image="2a412c190afbf4b0b9a7320829ad55cc.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I memory data in table</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2280">
+      <screenshots>
+        <screenshot image="0d46622e5dd884a7743a476b9a8c0c1e.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Duplicate</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="4357">
+      <screenshots>
+        <screenshot image="333b5d4aa06691dba56e0c866a70fe47.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Back</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="284">
+      <screenshots>
+        <screenshot image="333b5d4aa06691dba56e0c866a70fe47.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show list button can use
+| Back |
+| New report |
+| View |
+| Duplicate |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="142">
+      <screenshots>
+        <screenshot image="333b5d4aa06691dba56e0c866a70fe47.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show list button can not use
+| Edit |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="400">
+      <screenshots>
+        <screenshot image="333b5d4aa06691dba56e0c866a70fe47.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields required can not input
+| Customer code (index) |
+| Company name |
+| Company name in Kana |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="150">
+      <screenshots>
+        <screenshot image="333b5d4aa06691dba56e0c866a70fe47.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields can not select
+| Client code status |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="258">
+      <screenshots>
+        <screenshot image="333b5d4aa06691dba56e0c866a70fe47.png"/>
+      </screenshots>
+      <description>And In Credit Management page, fields not required can not input
+| Year of starting business |
+| Year of official establishment |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="193">
+      <screenshots>
+        <screenshot image="333b5d4aa06691dba56e0c866a70fe47.png"/>
+      </screenshots>
+      <description>And In Credit Management page, data in table when back is same before</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

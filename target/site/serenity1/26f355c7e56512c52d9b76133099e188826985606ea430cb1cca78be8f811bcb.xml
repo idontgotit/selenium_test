@@ -1,0 +1,88 @@
+<acceptance-test-run title="Open Employee Management and verify paging" name="Open Employee Management and verify paging" description="" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="7031" timestamp="2016-11-03T09:12:57.372+07:00" session-id="02dcb434c09356ff95a3c15208adf3bc">
+  <user-story id="employee-management-display" name="Employee Management display" path="employee_management/employee_management.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Employee management" type="capability"/>
+    <tag name="Employee Management display" type="feature"/>
+    <tag name="Employee management/Employee management display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>employeeMenu</header>
+      <header>parentMenuText</header>
+      <header>numberPaging</header>
+      <header>pageNumber2</header>
+      <header>pageNumber1</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Employee Management</value>
+        <value>Common</value>
+        <value>20</value>
+        <value>2</value>
+        <value>1</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {employeeMenu=Employee Management, parentMenuText=Common, numberPaging=20, pageNumber2=2, pageNumber1=1}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="e4b2474310d6fab9292ef1442a8a5697.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="923">
+      <screenshots>
+        <screenshot image="9c739abe68759edc6552694ed25d7947.png"/>
+      </screenshots>
+      <description>When I open submenu Employee Management of parent menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="154">
+      <screenshots>
+        <screenshot image="08801aa39c1a529c58901c98e7bf4d25.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result with 20 results in page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="207">
+      <screenshots>
+        <screenshot image="827735ee225d5a65042e12064db96c44.png"/>
+      </screenshots>
+      <description>When In Employee Management screen, I click page 1</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="161">
+      <screenshots>
+        <screenshot image="827735ee225d5a65042e12064db96c44.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result with 20 results in page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="787">
+      <screenshots>
+        <screenshot image="9fd24baaa088e2e5ae7a24c257113f2a.png"/>
+      </screenshots>
+      <description>When In Employee Management screen, I click page 2</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="144">
+      <screenshots>
+        <screenshot image="e4b2474310d6fab9292ef1442a8a5697.png"/>
+      </screenshots>
+      <description>Then In Employee Management screen, Table show result with 20 results in page</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

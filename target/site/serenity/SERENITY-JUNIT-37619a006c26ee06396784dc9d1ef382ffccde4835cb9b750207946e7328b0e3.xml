@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="2" name="5-7. Maintain credit data" skipped="0" tests="6" time="183.4" timestamp="2017-04-107 05:16:52"><testcase name="1. Open Maintain credit data, search by customer code, select one record and verify value start screen"/><testcase name="2. Open Maintain credit data, search by customer code, select one record and try save and cancel immediately"/><testcase name="3. Open Maintain credit data, search by customer code, select one record and verify search Company Sansan"/><testcase name="4. Open Maintain credit data, search by customer code, select record, unselect, change page..."><failure message="Expected enabled element was not enabled&#10;Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'&#10;System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'&#10;Driver info: driver.version: unknown&#10;Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'&#10;System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'
+Driver info: driver.version: unknown
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'
+Driver info: driver.version: unknown</failure><system-err>Expected enabled element was not enabled
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'
+Driver info: driver.version: unknown
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'
+Driver info: driver.version: unknown
+my.lib.serenity.primefaces.component.TableComponent.click_check_box_by_row_index(TableComponent.java:40)
+my.lib.serenity.primefaces.sars.page.MaintainCreditDataPage.unselectRecord(MaintainCreditDataPage.java:245)
+my.lib.serenity.primefaces.sars.steps.MaintainCreditDataSteps.unselectRecord(MaintainCreditDataSteps.java:115)
+my.lib.serenity.primefaces.sars.definition.MaintainCreditDataScenarioSteps.inMaintainCreditDataScreenInSearchCompanySansanIUnselectRecordClickBefore(MaintainCreditDataScenarioSteps.java:124)
+</system-err></testcase><testcase name="5. Open Maintain credit data, search by Other conditions - Unassociated, select record, unselect, change page..."><failure message="Expected enabled element was not enabled&#10;Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'&#10;System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'&#10;Driver info: driver.version: unknown&#10;Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'&#10;System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'
+Driver info: driver.version: unknown
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'
+Driver info: driver.version: unknown</failure><system-err>Expected enabled element was not enabled
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'
+Driver info: driver.version: unknown
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'
+Driver info: driver.version: unknown
+my.lib.serenity.primefaces.component.TableComponent.click_check_box_by_row_index(TableComponent.java:40)
+my.lib.serenity.primefaces.sars.page.MaintainCreditDataPage.unselectRecord(MaintainCreditDataPage.java:245)
+my.lib.serenity.primefaces.sars.steps.MaintainCreditDataSteps.unselectRecord(MaintainCreditDataSteps.java:115)
+my.lib.serenity.primefaces.sars.definition.MaintainCreditDataScenarioSteps.inMaintainCreditDataScreenInSearchCompanySansanIUnselectRecordClickBefore(MaintainCreditDataScenarioSteps.java:124)
+</system-err></testcase><testcase name="6. Open Maintain credit data, search by Other conditions - Associated, select record, unselect, change page..."><error message="unknown error: Cannot read property 'ajax' of null&#10;  (Session info: chrome=54.0.2840.100)&#10;  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 4 milliseconds&#10;Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'&#10;System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.D2JMi4}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.100, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: 6d2b575ba2fd2d5ef5ceb43fab6dac8e&#10;Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'&#10;System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.WebDriverException">unknown error: Cannot read property 'ajax' of null
+  (Session info: chrome=54.0.2840.100)
+  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.D2JMi4}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.100, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6d2b575ba2fd2d5ef5ceb43fab6dac8e
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'
+Driver info: driver.version: unknown</error><system-err>unknown error: Cannot read property 'ajax' of null
+  (Session info: chrome=54.0.2840.100)
+  (Driver info: chromedriver=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3),platform=Linux 3.19.0-42-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417424 (c5c5ea873213ee72e3d0929b47482681555340c3), userDataDir=/tmp/.org.chromium.Chromium.D2JMi4}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.100, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6d2b575ba2fd2d5ef5ceb43fab6dac8e
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'NgocPT', ip: '172.17.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-42-generic', java.version: '1.8.0_66'
+Driver info: driver.version: unknown
+my.lib.serenity.primefaces.component.WebComponent.executeBooleanJavascript(WebComponent.java:91)
+my.lib.serenity.primefaces.component.WebComponent.access$000(WebComponent.java:18)
+my.lib.serenity.primefaces.component.WebComponent.waitForJQueryAndPrimeFaces(WebComponent.java:51)
+my.lib.serenity.primefaces.component.WebComponent.waitForAjaxDone(WebComponent.java:95)
+my.lib.serenity.primefaces.component.TableComponent.next(TableComponent.java:88)
+my.lib.serenity.primefaces.sars.page.MaintainCreditDataPage.gotoPageWithValue(MaintainCreditDataPage.java:256)
+my.lib.serenity.primefaces.sars.steps.MaintainCreditDataSteps.gotoPageWithValue(MaintainCreditDataSteps.java:119)
+my.lib.serenity.primefaces.sars.definition.MaintainCreditDataScenarioSteps.inMaintainCreditDataScreenInSearchCompanySansanTableIGoToNextPage(MaintainCreditDataScenarioSteps.java:129)
+</system-err></testcase></testsuite>

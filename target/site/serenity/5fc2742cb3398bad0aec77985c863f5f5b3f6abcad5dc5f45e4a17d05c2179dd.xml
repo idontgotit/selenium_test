@@ -1,0 +1,87 @@
+<acceptance-test-run title="view details notification" name="view details notification" description="" steps="7" successful="2" failures="1" skipped="4" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="10522" timestamp="2016-11-03T20:06:40.793+07:00" session-id="5049f77184e1913fa059ff0fb451f225">
+  <user-story id="view-notification" name="View Notification" path="viewNotifications/viewNotifications.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="View notifications" type="capability"/>
+    <tag name="View Notification" type="feature"/>
+    <tag name="View notifications/View notification" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>rowIndex</header>
+      <header>tableIndex</header>
+      <header>dailyReportTitle</header>
+    </headers>
+    <rows>
+      <row result="FAILURE">
+        <value>View Notifications</value>
+        <value>Notification</value>
+        <value>0</value>
+        <value>0</value>
+        <value>Daily Report</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=View Notifications, menuText=Notification, rowIndex=0, tableIndex=0, dailyReportTitle=Daily Report}" result="FAILURE">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1524">
+      <screenshots>
+        <screenshot image="ab7a9f250836007658f76ae7bdada888.png"/>
+      </screenshots>
+      <description>When I open submenu View Notifications of menu Notification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="202">
+      <screenshots>
+        <screenshot image="ab7a9f250836007658f76ae7bdada888.png"/>
+      </screenshots>
+      <description>And In View notification screen, I choose row 0 in table list notification</description>
+    </test-step>
+    <test-group name="Then The system should show list table notification detail" result="FAILURE">
+      <test-step result="FAILURE" duration="133">
+        <screenshots>
+          <screenshot image="ab7a9f250836007658f76ae7bdada888.png" source="pagesource3109927377342198889.html.txt"/>
+        </screenshots>
+        <description>Should show list table notification detail</description>
+        <error>org.junit.ComparisonFailure: expected:&lt;[tru]e&gt; but was:&lt;[fals]e&gt;</error>
+        <exception>org.junit.ComparisonFailure:expected:&lt;[tru]e&gt; but was:&lt;[fals]e&gt;
+[my.lib.serenity.primefaces.sars.steps.ViewNotificationsSteps.should_show_list_table_notification_detail(ViewNotificationsSteps.java:35), my.lib.serenity.primefaces.sars.definition.ViewNotificationsFeatureScenarioSteps.then_the_system_should_show_list_table_notification_detail(ViewNotificationsFeatureScenarioSteps.java:43)]</exception>
+      </test-step>
+    </test-group>
+    <test-step result="SKIPPED" duration="1">
+      <description>When In View notification screen, I choose row 0 in table 0 of Notification details panel</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>Then The system should open &apos;Daily Report&apos; page</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>When I close screen</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="1">
+      <description>Then The system should show initialization screen of View Notifications page when have data</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

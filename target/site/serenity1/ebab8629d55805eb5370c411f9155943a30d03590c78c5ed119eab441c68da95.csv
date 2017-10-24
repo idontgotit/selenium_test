@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Notification Setting display","Open Notification Setting and verify paging last, first, next, previous","SUCCESS","2016-11-03T08:34:37.795+07:00","0.0","14.94"
+"Notification Setting display","Open Notification Setting and verify start screen have setting","SUCCESS","2016-11-03T08:34:53.720+07:00","0.0","7.4"
+"Notification Setting display","Open Notification Setting click check box enable","SUCCESS","2016-11-03T08:34:05.490+07:00","0.0","29.46"
+"Notification Setting display","Open Notification Setting click view notification","SUCCESS","2016-11-03T08:35:01.980+07:00","0.0","9.72"

@@ -1,0 +1,9 @@
+my/lib/serenity/primefaces/showcases/pages/AutocompletePage.class
+my/lib/serenity/primefaces/showcases/pages/CalendarShowcasePage.class
+my/lib/serenity/primefaces/showcases/pages/TabViewPage.class
+my/lib/serenity/primefaces/showcases/definition/TabViewScenarioSteps.class
+my/lib/serenity/primefaces/showcases/definition/AutocompleteScenarioSteps.class
+my/lib/serenity/primefaces/showcases/definition/OneRadioScenarioSteps.class
+my/lib/serenity/primefaces/sars/page/AbstractPage$2.class
+my/lib/serenity/primefaces/showcases/pages/OneRadioPage.class
+my/lib/serenity/primefaces/showcases/definition/CalendarScenarioSteps.class

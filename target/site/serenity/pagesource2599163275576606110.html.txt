@@ -1,0 +1,152 @@
+<!--?xml version="1.0" encoding="UTF-8"?--><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" style="overflow-y: hidden; height: 100%; border: none; padding: 0px; margin: 0px; overflow-x: auto;"><head><link type="text/css" rel="stylesheet" href="/business_traceability/javax.faces.resource/theme.css.xhtml?ln=primefaces-mems800" /><link type="text/css" rel="stylesheet" href="/business_traceability/javax.faces.resource/fa/font-awesome.css.xhtml?ln=primefaces" /><link type="text/css" rel="stylesheet" href="/business_traceability/javax.faces.resource/offline-theme-chrome.css.xhtml?ln=css" media="screen" /><link type="text/css" rel="stylesheet" href="/business_traceability/javax.faces.resource/offline-language-ja.css.xhtml?ln=css" media="screen" /><link type="text/css" rel="stylesheet" href="/business_traceability/javax.faces.resource/timepicker.css.xhtml?ln=css" media="screen" /><link type="text/css" rel="stylesheet" href="/business_traceability/javax.faces.resource/pivot.css.xhtml?ln=css" media="screen" /><link type="text/css" rel="stylesheet" href="/business_traceability/javax.faces.resource/primefaces.css.xhtml?ln=primefaces" /><script type="text/javascript" src="/business_traceability/javax.faces.resource/jquery/jquery.js.xhtml?ln=primefaces"></script><script type="text/javascript" src="/business_traceability/javax.faces.resource/jquery/jquery-plugins.js.xhtml?ln=primefaces"></script><script type="text/javascript" src="/business_traceability/javax.faces.resource/primefaces.js.xhtml?ln=primefaces"></script><script type="text/javascript" src="/business_traceability/javax.faces.resource/primefaces-extensions.js.xhtml?ln=primefaces-extensions&amp;v=3.2.0"></script><link type="text/css" rel="stylesheet" href="/business_traceability/javax.faces.resource/blockui/blockui.css.xhtml?ln=primefaces-extensions&amp;v=3.2.0" /><script type="text/javascript" src="/business_traceability/javax.faces.resource/blockui/blockui.js.xhtml?ln=primefaces-extensions&amp;v=3.2.0"></script><link type="text/css" rel="stylesheet" href="/business_traceability/javax.faces.resource/layout/layout.css.xhtml?ln=primefaces" /><script type="text/javascript" src="/business_traceability/javax.faces.resource/layout/layout.js.xhtml?ln=primefaces"></script><script type="text/javascript" src="/business_traceability/javax.faces.resource/idlemonitor/idlemonitor.js.xhtml?ln=primefaces"></script><link type="text/css" rel="stylesheet" href="/business_traceability/javax.faces.resource/scrollpanel/scrollpanel.css.xhtml?ln=primefaces" /><script type="text/javascript" src="/business_traceability/javax.faces.resource/scrollpanel/scrollpanel.js.xhtml?ln=primefaces"></script><link type="text/css" rel="stylesheet" href="/business_traceability/javax.faces.resource/main.css.xhtml?ln=css" media="screen" /><link type="text/css" rel="stylesheet" href="/business_traceability/javax.faces.resource/customize.css.xhtml?ln=css" media="screen" /><script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.projectStage='Development';}</script>
+		<title>営業日報システム</title><script type="text/javascript" src="/business_traceability/javax.faces.resource/locale/locale.js.xhtml?ln=js"></script><script type="text/javascript" src="/business_traceability/javax.faces.resource/toggleColumn.js.xhtml?ln=js"></script></head><body id="contentPage" class="body-content ui-layout-container" style="overflow: hidden; height: auto; margin: 0px; position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; zoom: 1; width: auto;">
+		<script>
+			function alertUnsavedChanges() {
+			    if (isModified) {
+			        var result = confirm('他のページへ移動する前に、データを保存してください。');
+			        if (result) {
+			        	resetChangeEvent();
+			        	showBlockUI();
+			        } else {
+			            hideBlockUI();
+			            return false;
+			        }
+			    }
+			    else {
+					showBlockUI();
+			    }
+			}
+
+			window.onbeforeunload = function(event)
+		    {
+				if (isModified) {
+			        return '他のページへ移動する前に、データを保存してください。';
+			    }
+		    }
+		</script><script type="text/javascript" src="/business_traceability/javax.faces.resource/offline/offline.js.xhtml?ln=js"></script><script type="text/javascript" src="/business_traceability/javax.faces.resource/offline/ui.js.xhtml?ln=js"></script><script type="text/javascript" src="/business_traceability/javax.faces.resource/offline/reconnect.js.xhtml?ln=js"></script><script type="text/javascript" src="/business_traceability/javax.faces.resource/offline/requests.js.xhtml?ln=js"></script><script type="text/javascript" src="/business_traceability/javax.faces.resource/jquery-ui.js.xhtml?ln=js"></script><script type="text/javascript" src="/business_traceability/javax.faces.resource/main.js.xhtml?ln=js"></script><script type="text/javascript" src="/business_traceability/javax.faces.resource/customize.js.xhtml?ln=js"></script><script type="text/javascript" src="/business_traceability/javax.faces.resource/pivot.js.xhtml?ln=js"></script><script type="text/javascript" src="/business_traceability/javax.faces.resource/locale/messages_ja.js.xhtml?ln=js"></script>
+
+	<script type="text/javascript">
+		Offline.options = {
+			checks: {
+				xhr: {
+					url: function () {
+						return "/business_traceability/resources/images/triarrow-logo.png?_=" + Math.floor(1e9 * Math.random())
+					}, timeout: 5e3
+				}, image: {
+					url: function () {
+						return "/business_traceability/resources/images/triarrow-logo.png?_=" + Math.floor(1e9 * Math.random())
+					}
+				}, active: "xhr"
+			}, checkOnLoad: !0, interceptRequests: !0, reconnect: {initialDelay: 3, delay: 1.5}, requests: !0, game: !1
+		}
+	</script><span id="growl"></span>
+<form id="j_idt21" name="j_idt21" method="post" action="/business_traceability/index.xhtml?cid=40" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt21" value="j_idt21" />
+<input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="-6175759347514764140:-4378577797077299450" autocomplete="off" />
+</form><div id="dialogPanel" class="ui-outputpanel ui-widget"></div><div id="globalAjaxStatus"><div id="globalAjaxStatus_start" style="display: none;">
+ 			        Loading...
+ 		</div><div id="globalAjaxStatus_complete" style="display: block;"></div></div><div id="globalBlockUI_content" style="display: none;"><table>
+<tbody>
+<tr>
+<td><img src="/business_traceability/javax.faces.resource/loading.gif.xhtml?ln=images" style="margin-right: 12px; vertical-align: middle;" /></td>
+<td><span style="white-space: nowrap;">読み込み中...</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<form id="j_idt33" name="j_idt33" method="post" action="/business_traceability/index.xhtml?cid=40" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt33" value="j_idt33" />
+
+          <input type="hidden" id="isLoggedInId" value="false" /><div id="otherScreensTimeoutSession" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container" role="dialog" aria-labelledby="otherScreensTimeoutSession_title" aria-hidden="true" style="width: auto; height: auto;"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="otherScreensTimeoutSession_title" class="ui-dialog-title">警告</span></div><div class="ui-dialog-content ui-widget-content" style="height: auto;">
+               <div><label class="text-warning">システムを30分放置しましたので、セッションタイムアウトになり、入力中のデータが全部なくなりました。</label>		
+               </div>
+            	<div align="center"><button id="j_idt39" name="j_idt39" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PF('timeoutOtherScreensDialog').hide();PrimeFaces.ab({s:&quot;j_idt39&quot;,ps:true,onco:function(xhr,status,args){location.reload(true);}});return false;" type="submit" role="button" aria-disabled="false"><span class="ui-button-text ui-c">今の状態をそのまま保留しますか？</span></button><button id="hiddenLogout" name="hiddenLogout" class="" onclick="PrimeFaces.ab({s:&quot;hiddenLogout&quot;,p:&quot;hiddenLogout&quot;,u:&quot;contentPane @([id$=northPane])&quot;,ps:true});return false;" style="display:none" type="submit" role="button" aria-disabled="false"><span class="ui-button-text ui-c">ui-button</span></button>
+               </div></div></div><div id="loginScreenTimeoutSession" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container" role="dialog" aria-labelledby="loginScreenTimeoutSession_title" aria-hidden="true" style="width: auto; height: auto;"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="loginScreenTimeoutSession_title" class="ui-dialog-title">警告</span></div><div class="ui-dialog-content ui-widget-content" style="height: auto;"><label class="text-warning">長い間システムを利用しません。システムは自動的にログアウトしました。もう一度ログオンしてください。</label>
+               <br />
+               <br />
+               <div align="center"><button id="j_idt43" name="j_idt43" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.ab({s:&quot;j_idt43&quot;,ps:true,onco:function(xhr,status,args){location.reload(true);}});return false;" type="submit" role="button" aria-disabled="false"><span class="ui-button-text ui-c">OK</span></button>
+               </div></div></div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:1" value="-6175759347514764140:-4378577797077299450" autocomplete="off" />
+</form>
+     <script type="text/javascript">
+						function startIdleMonitor() {
+							var isLoggedIn = document.getElementById("isLoggedInId").value;
+							if(isLoggedIn == 'true'){
+								PF('timeoutOtherScreensDialog').show();
+								countDownBeforeRefresh();
+							}else{
+								PF('timeoutLoginScreenDialog').show();
+							}
+						};
+
+						function countDownBeforeRefresh() {
+							setTimeout(function(){
+								if(PF('timeoutOtherScreensDialog').isVisible()){
+									$('#hiddenLogout').click();
+								}
+                            }, 300000);
+						};
+					</script><div id="northPane" class="ui-layout-unit ui-widget ui-widget-content ui-corner-all ui-layout-north ui-layout-pane ui-layout-pane-north" style="position: absolute; margin: 0px; bottom: auto; width: auto; z-index: 0; top: 0px; left: 0px; right: 0px; height: 40px; display: block; visibility: visible;"><div class="ui-layout-unit-content ui-widget-content" style="position: relative; height: 34px; visibility: visible;"><div id="coverHeaderPane" class="ui-outputpanel ui-widget"></div></div></div><div id="centerPane" class="ui-layout-unit ui-widget ui-widget-content ui-corner-all ui-layout-center ui-layout-pane ui-layout-pane-center ui-layout-pane-hover ui-layout-pane-center-hover ui-layout-pane-open-hover ui-layout-pane-center-open-hover" style="border: none; position: absolute; margin: 0px; z-index: 0; display: block; visibility: visible; top: 46px; bottom: 0px; left: 0px; right: 0px; width: 1084px; height: 630px;"><div class="ui-layout-unit-content ui-widget-content" style="position: relative; height: 623px; visibility: visible;"><div id="contentPane" class="ui-outputpanel ui-widget"><span id="j_idt119"></span><script type="text/javascript">$(function(){PrimeFaces.focus('login');});</script>
+    <div class="card" style="border: none;">
+    	<div class="class-block">
+   			<div class="form-group">
+   				<div style="margin: auto;">
+				   	
+   				</div>
+   			</div>
+   		</div>
+	    <div class="class-block">
+	    	<div class="form-group">
+	    		<div class="login-header">
+		    		<h1>営業日報システム</h1>
+	    		</div>
+	    	</div>
+	    	<div class="form-group">
+
+<form id="login" name="login" method="post" action="/business_traceability/index.xhtml?cid=40" class="login-form">
+<input type="hidden" name="login" value="login" />
+
+		    		<div class="form-input">
+			    		<label class="top-label">社員ID</label><div id="login:username:tooltip" aria-live="polite" class="ui-message ui-helper-hidden"></div><input id="login:username:text" name="login:username:text" type="text" autocomplete="false" maxlength="256" title="" onchange="PrimeFaces.ab({s:&quot;login:username:text&quot;,e:&quot;change&quot;,f:&quot;login&quot;,p:&quot;login:username:text&quot;,u:&quot;login:username:text&quot;,ps:true});" style="width: 310px; min-width: 310px; max-width: 310px;" aria-required="true" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all value" role="textbox" aria-disabled="false" aria-readonly="false" />
+		    		</div>
+		    		<div class="form-input input-padding">
+					    <label class="top-label">パスワード</label><input id="login:passwd" name="login:passwd" type="password" class="ui-inputfield ui-password ui-widget ui-state-default ui-corner-all login-input" autocomplete="false" title="" aria-required="true" role="textbox" aria-disabled="false" aria-readonly="false" /><div id="login:j_idt124" aria-live="polite" class="ui-message ui-helper-hidden"></div>
+		    		</div>
+		    		<div class="form-input input-padding"><button id="login:btnLogin" name="login:btnLogin" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only login-button ui-state-focus" onclick="PrimeFaces.ab({s:&quot;login:btnLogin&quot;,u:&quot;login&quot;,ps:true,onst:function(cfg){showBlockUI();;}});return false;" style="margin-left: 0;" type="submit" role="button" aria-disabled="false"><span class="ui-button-text ui-c">ログイン</span></button>
+		    		</div>
+		    		<div class="form-input forgot-password"><a id="login:lnkForgotPassword" href="#" class="ui-commandlink ui-widget arrow-link forgot-password-link" onclick="PrimeFaces.ab({s:&quot;login:lnkForgotPassword&quot;,p:&quot;login:lnkForgotPassword&quot;,u:&quot;contentPane&quot;,ps:true,onst:function(cfg){showBlockUI();;},onco:function(xhr,status,args){hideBlockUI();;}});return false;">パスワードを忘れたときは ?</a>
+		    		</div>
+		    		<script>
+			    		$(document).ready(function(){
+							var messages = document.getElementById('growl_container').getElementsByTagName('div');
+							if(messages.length !== 0) {
+								if(PF('globalBlockUI_js')){
+									hideBlockUI();
+								}
+							}
+						})
+    				</script>
+<input type="hidden" name="javax.faces.ViewState" value="-6175759347514764140:-4378577797077299450" autocomplete="off" /></form>
+	    	</div>
+	    </div>
+    </div></div><div id="j_idt358" class="ui-outputpanel ui-widget" style="height: 50px;">
+					<div style="positon:relative">
+	
+
+
+
+
+
+	<div id="companyTradeMark" style="position: relative;width: 100%;border-top:solid 1px #dedede;padding-top: 15px;">
+		<span style="float:left;position: absolute;bottom: 0px;"><font size="0.2em">commit b4beeef9675d829bc3107038f38d5023b4132abf</font></span>
+		<a href="http://" style="float:right"><img src="/business_traceability/resources/images/triarrow-logo.png" />
+		</a>
+		<h4 style="color:black; right: 100px; bottom: 0px;float:right;margin:0px;">
+			Copyright (C) TRI-ARROW Corporation.All rights reserved.
+			<br />
+			<font size="0.5em">Business Tracebility System version Alpha 02 rev. 3.1-SNAPSHOT</font>
+			<br />
+
+		</h4>
+	</div>
+					</div></div></div></div>
+<div id="textarea_simulator" style="position: absolute; top: 0px; left: 0px; visibility: hidden;"></div><div id="growl_container" class="ui-growl ui-widget" style="z-index: 1003;"><div class="ui-growl-item-container ui-state-highlight ui-corner-all ui-helper-hidden ui-shadow" aria-live="polite"><div class="ui-growl-item"><div class="ui-growl-icon-close ui-icon ui-icon-closethick" style="display:none"></div><span class="ui-growl-image ui-growl-image-error"></span><div class="ui-growl-message"><span class="ui-growl-title">ユーザ名またパスワードが無効です。</span><p>ユーザ名またパスワードが無効です。</p></div><div style="clear: both;"></div></div></div></div><div id="j_idt21:j_idt22" class="ui-confirm-dialog ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container" role="dialog" aria-labelledby="j_idt21:j_idt22_title" aria-hidden="true" style="width: auto; height: auto;"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span class="ui-dialog-title"></span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content" style="height: auto;"><span class="ui-icon ui-confirm-dialog-severity"></span><span class="ui-confirm-dialog-message"></span></div><div class="ui-dialog-buttonpane ui-dialog-footer ui-widget-content ui-helper-clearfix"><button id="j_idt21:j_idt23" name="j_idt21:j_idt23" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-confirmdialog-yes" type="button" role="button" aria-disabled="false"><span class="ui-button-icon-left ui-icon ui-c ui-icon-check"></span><span class="ui-button-text ui-c">はい</span></button><button id="j_idt21:j_idt24" name="j_idt21:j_idt24" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-confirmdialog-no" type="button" role="button" aria-disabled="false"><span class="ui-button-icon-left ui-icon ui-c ui-icon-close"></span><span class="ui-button-text ui-c">いいえ</span></button></div></div><div class="ui-dialog-docking-zone"></div><div id="northPane-resizer" class="ui-layout-resizer ui-layout-resizer-north ui-layout-resizer-open ui-layout-resizer-north-open" style="position: absolute; padding: 0px; margin: 0px; font-size: 1px; text-align: left; overflow: hidden; z-index: 2; top: 40px; cursor: default; width: 1090px; height: 6px; left: 0px;"><div id="northPane-toggler" class="ui-layout-toggler ui-layout-toggler-north ui-layout-toggler-open ui-layout-toggler-north-open" title="Close" style="position: absolute; display: none; padding: 0px; margin: 0px; overflow: hidden; text-align: center; font-size: 1px; z-index: 1; visibility: visible; cursor: pointer;"><span class="content content-closed" style="display: none;"><a href="javascript:void(0)" class="ui-layout-unit-expand-icon ui-state-default ui-corner-all"><span class="ui-icon ui-icon-arrow-4-diag"></span></a></span></div></div><div class="offline-ui offline-ui-up"><div class="offline-ui-content"></div><a href="" class="offline-ui-retry"></a></div></body></html>

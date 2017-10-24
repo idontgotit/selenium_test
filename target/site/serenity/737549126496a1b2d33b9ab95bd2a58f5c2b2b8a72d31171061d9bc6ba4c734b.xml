@@ -1,0 +1,297 @@
+<acceptance-test-run title="11. Verify tab input customer data" name="11. Verify tab input customer data" description="" steps="36" successful="36" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="63502" timestamp="2017-02-02T09:53:04.409+07:00" session-id="94cbc25e0a757b606d484640c243037c">
+  <user-story id="credit-management-add-and-edit" name="Credit management add and edit" path="creditManagement/credit_management_add_edit.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Credit management" type="capability"/>
+    <tag name="Credit management/Credit management add and edit" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>validCustomerCode</header>
+      <header>rowIndex</header>
+      <header>textInput</header>
+      <header>typeInput</header>
+      <header>btnGenerate</header>
+      <header>index</header>
+      <header>btnNewReport</header>
+      <header>btnBack</header>
+      <header>btnEditInputCustomerData</header>
+      <header>emptyData</header>
+      <header>btnDeleteInputCustomerData</header>
+      <header>deleteSuccess</header>
+      <header>lessThan1</header>
+      <header>tabInputCustomer</header>
+      <header>duplicateMessage</header>
+      <header>tabBussi</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Credit Management</value>
+        <value>Accounting</value>
+        <value>a567</value>
+        <value>0</value>
+        <value>name1,name2</value>
+        <value>Provider</value>
+        <value>Generate in input customer data</value>
+        <value>0</value>
+        <value>New report</value>
+        <value>Back</value>
+        <value>Edit in input customer data</value>
+        <value>0</value>
+        <value>Delete in input customer data</value>
+        <value>Delete data successfully</value>
+        <value>less Than 1</value>
+        <value>Input customer data</value>
+        <value>There are some duplicated items</value>
+        <value>Business factors</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Credit Management, menuText=Accounting, validCustomerCode=a567, rowIndex=0, textInput=name1,name2, typeInput=Provider, btnGenerate=Generate in input customer data, index=0, btnNewReport=New report, btnBack=Back, btnEditInputCustomerData=Edit in input customer data, emptyData=0, btnDeleteInputCustomerData=Delete in input customer data, deleteSuccess=Delete data successfully, lessThan1=less Than 1, tabInputCustomer=Input customer data, duplicateMessage=There are some duplicated items, tabBussi=Business factors}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="0b13856788e585dbb7fa0982146a5e15.png"/>
+      <screenshot image="d34b7e6223eccdf34a41923f18b4540e.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1111">
+      <screenshots>
+        <screenshot image="501828a9bf6293055a142d6589b11f27.png"/>
+      </screenshots>
+      <description>And I open submenu Credit Management of menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1466">
+      <screenshots>
+        <screenshot image="3078a2673b32944aff7394fbe417c26d.png"/>
+      </screenshots>
+      <description>And I search customer by code a567</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="402">
+      <screenshots>
+        <screenshot image="4009d889e1b8f4213061d9a55348fb7e.png"/>
+      </screenshots>
+      <description>And I click checkbox left of a row 0 into table result</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1830">
+      <screenshots>
+        <screenshot image="c288014f946ee454b4ba82cb07ab9f4b.png"/>
+      </screenshots>
+      <description>And In accounting screen, I click button select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3570">
+      <screenshots>
+        <screenshot image="f48d8f2b05e1f533a56b9a6b1b06ff45.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button New report</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="668">
+      <screenshots>
+        <screenshot image="8b8d6711c8c68e6df096e38ff64b3bee.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I select tab have name is Input customer data</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="325">
+      <screenshots>
+        <screenshot image="a6fb80960cc6352fb648178cc1466918.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I type name1,name2 in Input related company and choose type is Provider</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="152">
+      <screenshots>
+        <screenshot image="fa1ef366e42904c2a9f46159f0f88a93.png"/>
+      </screenshots>
+      <description>And In Credit Management page, System show list button can use
+| Generate in input customer data |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="193">
+      <screenshots>
+        <screenshot image="fa1ef366e42904c2a9f46159f0f88a93.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show list button can not use
+| Edit in input customer data |
+| Delete in input customer data |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3330">
+      <screenshots>
+        <screenshot image="8ac2f48c7b122a0a9cbbaab9a0f34ac7.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Generate in input customer data</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="404">
+      <screenshots>
+        <screenshot image="8ac2f48c7b122a0a9cbbaab9a0f34ac7.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, Table have data like name1,name2 and Provider</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="232">
+      <screenshots>
+        <screenshot image="946bb4f056ff4961f61f09b0da17b367.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click record 0 in table Input Customer Data</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="132">
+      <screenshots>
+        <screenshot image="946bb4f056ff4961f61f09b0da17b367.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show list button can not use
+| Generate in input customer data |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="144">
+      <screenshots>
+        <screenshot image="946bb4f056ff4961f61f09b0da17b367.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show list button can use
+| Edit in input customer data |
+| Delete in input customer data |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="198">
+      <screenshots>
+        <screenshot image="d38f7977da5a8d7d6ec61bc8725e3d1c.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I click record 0 in table Input Customer Data</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="153">
+      <screenshots>
+        <screenshot image="d38f7977da5a8d7d6ec61bc8725e3d1c.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show list button can not use
+| Edit in input customer data |
+| Delete in input customer data |
+| Generate in input customer data |</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="197">
+      <screenshots>
+        <screenshot image="bde0899fd17fd178114d76f76c15c82e.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I click record 0 in table Input Customer Data</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3264">
+      <screenshots>
+        <screenshot image="eb10f519f9cb35ef6ad592af1332ee75.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Edit in input customer data</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="148">
+      <screenshots>
+        <screenshot image="eb10f519f9cb35ef6ad592af1332ee75.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, in table Input Customer Data have data is 0 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="188">
+      <screenshots>
+        <screenshot image="eb10f519f9cb35ef6ad592af1332ee75.png"/>
+      </screenshots>
+      <description>And In Credit Management page, in Input related company have name1,name2 and choose type is Provider</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="554">
+      <screenshots>
+        <screenshot image="0907b9061f40944cc0ba5615db9f569c.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I type name1,name2 in Input related company and choose type is Provider</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3266">
+      <screenshots>
+        <screenshot image="8ac2f48c7b122a0a9cbbaab9a0f34ac7.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Generate in input customer data</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="273">
+      <screenshots>
+        <screenshot image="e53f80fb6be2566d38d94ae67ec8cd1f.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I type name1,name2 in Input related company and choose type is Provider</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3292">
+      <screenshots>
+        <screenshot image="bda06554b7968781e45527eb3f27db4a.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Generate in input customer data</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="7855">
+      <screenshots>
+        <screenshot image="f53dc412af1b307f55246e01ca750f1e.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show message There are some duplicated items: name1,name2</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="260">
+      <screenshots>
+        <screenshot image="5555d980508b373f7d57d674328a99e8.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I click record 0 in table Input Customer Data</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2229">
+      <screenshots>
+        <screenshot image="aac880b6ffea9b364c656e8dfe1d3973.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Delete in input customer data</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1770">
+      <screenshots>
+        <screenshot image="b58ea8fcf38858b6f3eeb5fe295c61ab.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I confirm action</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="7838">
+      <screenshots>
+        <screenshot image="9e6144f28506bb0b9ebbf88ab908f15a.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, System show message Delete data successfully</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="166">
+      <screenshots>
+        <screenshot image="9e6144f28506bb0b9ebbf88ab908f15a.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, in table Input Customer Data have data is less Than 1 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="297">
+      <screenshots>
+        <screenshot image="3987340c1080bc32084c51487d475321.png"/>
+      </screenshots>
+      <description>When In Credit Management page, I type name1,name2 in Input related company and choose type is Provider</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3283">
+      <screenshots>
+        <screenshot image="9525ef4e30969644930d4c671e0b6568.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Generate in input customer data</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="352">
+      <screenshots>
+        <screenshot image="9525ef4e30969644930d4c671e0b6568.png"/>
+      </screenshots>
+      <description>Then In Credit Management page, Table have data like name1,name2 and Provider</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="666">
+      <screenshots>
+        <screenshot image="9525ef4e30969644930d4c671e0b6568.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I select tab have name is Input customer data</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="669">
+      <screenshots>
+        <screenshot image="a39549f24ac3107c60eadbcd28020d22.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I select tab have name is Business factors</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="5225">
+      <screenshots>
+        <screenshot image="d34b7e6223eccdf34a41923f18b4540e.png"/>
+      </screenshots>
+      <description>And In Credit Management page, I click button Back</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

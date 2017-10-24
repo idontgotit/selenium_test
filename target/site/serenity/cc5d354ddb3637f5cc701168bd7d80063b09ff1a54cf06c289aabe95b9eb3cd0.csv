@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Credit management test 1-3","search customer by other conditions, mapping sansan with credit data but not have Credit Investigation","SUCCESS","2016-11-03T20:15:06.821+07:00","0.0","50.24"
+"Credit management test 1-3","search customer by other conditions, not mapping sansan with credit data","SUCCESS","2016-11-03T20:14:00.158+07:00","0.0","28.7"
+"Credit management test 1-3","select record -> duplicate -> back","SUCCESS","2016-11-03T20:17:09.485+07:00","0.0","20.62"
+"Credit management test 1-3","select record -> duplicate start screen","SUCCESS","2016-11-03T20:16:29.133+07:00","0.0","38.87"
+"Credit management test 1-3","verify screen View->Duplicate is same","SUCCESS","2016-11-03T20:15:57.889+07:00","0.0","29.86"

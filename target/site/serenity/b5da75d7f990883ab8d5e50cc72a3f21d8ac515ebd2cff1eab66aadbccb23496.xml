@@ -1,0 +1,232 @@
+<acceptance-test-run title="10. Open Maintain credit data, search by Other conditions - associated, unlink. Find again in unassociated" name="10. Open Maintain credit data, search by Other conditions - associated, unlink. Find again in unassociated" description="" steps="27" successful="27" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="37908" timestamp="2017-01-20T09:03:48.201+07:00" session-id="aea6b6ae05cf97a038b70070bf5c2e83">
+  <user-story id="run-feature-for-debugging" name="Run feature for debugging" path="debug/debug.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Debug" type="capability"/>
+    <tag name="Debug/Run feature for debugging" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>maintainMenu</header>
+      <header>pageTitle</header>
+      <header>parentMenuText</header>
+      <header>btnSave</header>
+      <header>searchBtn</header>
+      <header>selectBtn</header>
+      <header>rowSelect</header>
+      <header>only1</header>
+      <header>fieldIdNamecard</header>
+      <header>emptyString</header>
+      <header>fieldSansanCompanyId</header>
+      <header>fieldCompanyName</header>
+      <header>validCompanyName</header>
+      <header>associated</header>
+      <header>otherConditions</header>
+      <header>unassociated</header>
+      <header>successSave</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Maintain Credit Data</value>
+        <value>Maintenance accounting data screen</value>
+        <value>Accounting</value>
+        <value>Save</value>
+        <value>Search</value>
+        <value>Select</value>
+        <value>0</value>
+        <value>1</value>
+        <value>Id Name Card</value>
+        <value></value>
+        <value>Sansan Company ID</value>
+        <value>Company name</value>
+        <value>N</value>
+        <value>Associated</value>
+        <value>Other conditions</value>
+        <value>Unassociated</value>
+        <value>Save successfully</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {maintainMenu=Maintain Credit Data, pageTitle=Maintenance accounting data screen, parentMenuText=Accounting, btnSave=Save, searchBtn=Search, selectBtn=Select, rowSelect=0, only1=1, fieldIdNamecard=Id Name Card, emptyString=, fieldSansanCompanyId=Sansan Company ID, fieldCompanyName=Company name, validCompanyName=N, associated=Associated, otherConditions=Other conditions, unassociated=Unassociated, successSave=Save successfully}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="0b13856788e585dbb7fa0982146a5e15.png"/>
+      <screenshot image="34fd5c5ce892e140f52f814c3ce2fd96.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1302">
+      <screenshots>
+        <screenshot image="c8ccfce4959679dc487b5bdf68a15be3.png"/>
+      </screenshots>
+      <description>When I open submenu Maintain Credit Data of parent menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="302">
+      <screenshots>
+        <screenshot image="33a29bc64e9c7a1e15b9c3fa38500ab7.png"/>
+      </screenshots>
+      <description>And The system should open &apos;Maintenance accounting data screen&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="227">
+      <screenshots>
+        <screenshot image="5cc4c585be52cb02cf0d288af617edf9.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, I choose radio button have name is Other conditions</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="234">
+      <screenshots>
+        <screenshot image="441fcb0a4068af5c47d2c12049813df0.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I choose radio button have name is Associated</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="346">
+      <screenshots>
+        <screenshot image="d4d13fb6f43d1ee95c522d280c06e7ec.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I type N in input field have name is Company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1938">
+      <screenshots>
+        <screenshot image="ef98af99742950d710b4c11bc77b4aef.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="832">
+      <screenshots>
+        <screenshot image="1470fb248c9447a203f6327f7d027442.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click select checkbox row 0</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1929">
+      <screenshots>
+        <screenshot image="4c6e9b542406578b5b5a3f5028f09cd2.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="426">
+      <screenshots>
+        <screenshot image="848e7cae8365e7f6cff43f82918c2272.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I memory data in Trade name of customer</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="332">
+      <screenshots>
+        <screenshot image="3bd349dd00c4d90e7f3d6b1372ac1f59.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I click check box 0 in table</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="978">
+      <screenshots>
+        <screenshot image="8d74a1926cb181e9e5aac9a5a4386076.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, I click button Save</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2021">
+      <screenshots>
+        <screenshot image="9ad0e2d796bd89153f03c6a99d56b1cb.png"/>
+      </screenshots>
+      <description>When I open submenu Maintain Credit Data of parent menu Accounting</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="224">
+      <screenshots>
+        <screenshot image="849926f8dd953ca6043bb58585798ebb.png"/>
+      </screenshots>
+      <description>And The system should open &apos;Maintenance accounting data screen&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="215">
+      <screenshots>
+        <screenshot image="3db300f09e1100acc7bc81f6581ffbba.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, I choose radio button have name is Other conditions</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="264">
+      <screenshots>
+        <screenshot image="db83e43d1c8c997466cb9c02280dc685.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I choose radio button have name is Unassociated</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="275">
+      <screenshots>
+        <screenshot image="8867be1f1e4ec98041c284b7bb9f4e48.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I retype memory data in Trade name of customer in input field have name is Company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1887">
+      <screenshots>
+        <screenshot image="0cbcc4e9e7a2165f8c17e66e9671ace1.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="254">
+      <screenshots>
+        <screenshot image="de61c3958e158c59c02c618adc796104.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, Table below have 1 record</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="833">
+      <screenshots>
+        <screenshot image="2978a075ce068cee503a17cc527c6a24.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click select checkbox row 0</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="846">
+      <screenshots>
+        <screenshot image="6bc532e19d8e1f6005a0103722b9b01b.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I click button Select</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="414">
+      <screenshots>
+        <screenshot image="2b910c82ff1c846cda73895b3144d8f9.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, I retype memory data in Trade name of customer in input field have name is Sansan Company ID</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="253">
+      <screenshots>
+        <screenshot image="d13962367e202ae8bc471b78d469ab09.png"/>
+      </screenshots>
+      <description>When In Maintain credit data screen, in search Company Sansan I type  in input field have name is Company name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="226">
+      <screenshots>
+        <screenshot image="cfc89fcf966ff0acc49f7e769d77107f.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I type  in input field have name is Id Name Card</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1860">
+      <screenshots>
+        <screenshot image="6b8222f928f09cbf21c68a84bc9fa17d.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="327">
+      <screenshots>
+        <screenshot image="10ccc97444daf8d7a0c4c0178b25551e.png"/>
+      </screenshots>
+      <description>And In Maintain credit data screen, in search Company Sansan I click check box 0 in table</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1925">
+      <screenshots>
+        <screenshot image="66bbcde05e94e92545a26788417cc09e.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, I click button Save</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="7542">
+      <screenshots>
+        <screenshot image="34fd5c5ce892e140f52f814c3ce2fd96.png"/>
+      </screenshots>
+      <description>Then In Maintain credit data screen, System show message Save successfully</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

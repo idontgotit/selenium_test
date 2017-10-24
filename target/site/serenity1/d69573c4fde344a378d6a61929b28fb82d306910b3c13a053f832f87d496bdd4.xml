@@ -1,0 +1,227 @@
+<acceptance-test-run title="Open bass export and use download location" name="Open bass export and use download location" description="" steps="29" successful="29" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="19741" timestamp="2016-11-03T08:45:03.925+07:00" session-id="9d26e2b384fd2243831a10dbdbfdc441">
+  <user-story id="bass-export-display" name="Bass export display" path="bassExport/bass_export.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Bass export" type="capability"/>
+    <tag name="Bass export/Bass export display" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>menuText</header>
+      <header>parentMenuText</header>
+      <header>location</header>
+      <header>editBtn</header>
+      <header>saveBtn</header>
+      <header>cancelBtn</header>
+      <header>exportBtn</header>
+      <header>textValue</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>BASS Export</value>
+        <value>Import/Export</value>
+        <value>Download location:</value>
+        <value>Edit</value>
+        <value>Save</value>
+        <value>Cancel</value>
+        <value>Export</value>
+        <value>!@#$%</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {menuText=BASS Export, parentMenuText=Import/Export, location=Download location:, editBtn=Edit, saveBtn=Save, cancelBtn=Cancel, exportBtn=Export, textValue=!@#$%}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="fb11e74028bfa80227094021d65bcf09.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="855">
+      <screenshots>
+        <screenshot image="850c9542f8e9e7cc11604458d3245f60.png"/>
+      </screenshots>
+      <description>When I open submenu BASS Export of parent menu Import/Export</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1760">
+      <screenshots>
+        <screenshot image="05a466d5fe833d333b84e87232ff35d5.png"/>
+      </screenshots>
+      <description>And In Bass export screen, I click button Export</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1243">
+      <screenshots>
+        <screenshot image="b30a46eb04f9734dd3715d80fcf4b8d7.png"/>
+      </screenshots>
+      <description>And In Bass export screen, I click button Edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="136">
+      <screenshots>
+        <screenshot image="b30a46eb04f9734dd3715d80fcf4b8d7.png"/>
+      </screenshots>
+      <description>Then In Bass export screen, System show button Save</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="127">
+      <screenshots>
+        <screenshot image="b30a46eb04f9734dd3715d80fcf4b8d7.png"/>
+      </screenshots>
+      <description>And In Bass export screen, System show button Cancel</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="131">
+      <screenshots>
+        <screenshot image="b30a46eb04f9734dd3715d80fcf4b8d7.png"/>
+      </screenshots>
+      <description>And System hide button Edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="167">
+      <screenshots>
+        <screenshot image="b30a46eb04f9734dd3715d80fcf4b8d7.png"/>
+      </screenshots>
+      <description>And System show downloaded location Download location: and can edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1207">
+      <screenshots>
+        <screenshot image="fb11e74028bfa80227094021d65bcf09.png"/>
+      </screenshots>
+      <description>When In Bass export screen, I click button Cancel</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="132">
+      <screenshots>
+        <screenshot image="fb11e74028bfa80227094021d65bcf09.png"/>
+      </screenshots>
+      <description>Then In Bass export screen, System show button Edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="134">
+      <screenshots>
+        <screenshot image="fb11e74028bfa80227094021d65bcf09.png"/>
+      </screenshots>
+      <description>And System hide button Save</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="129">
+      <screenshots>
+        <screenshot image="fb11e74028bfa80227094021d65bcf09.png"/>
+      </screenshots>
+      <description>And System hide button Cancel</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="134">
+      <screenshots>
+        <screenshot image="fb11e74028bfa80227094021d65bcf09.png"/>
+      </screenshots>
+      <description>And System show downloaded location Download location: and can not edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1189">
+      <screenshots>
+        <screenshot image="b30a46eb04f9734dd3715d80fcf4b8d7.png"/>
+      </screenshots>
+      <description>When In Bass export screen, I click button Edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1249">
+      <screenshots>
+        <screenshot image="c34dcd473c5e13cea31ce4ab6fcf3965.png"/>
+      </screenshots>
+      <description>And In Bass export screen, I click button Save</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="122">
+      <screenshots>
+        <screenshot image="c34dcd473c5e13cea31ce4ab6fcf3965.png"/>
+      </screenshots>
+      <description>Then In Bass export screen, System show button Edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="127">
+      <screenshots>
+        <screenshot image="c34dcd473c5e13cea31ce4ab6fcf3965.png"/>
+      </screenshots>
+      <description>And System hide button Save</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="129">
+      <screenshots>
+        <screenshot image="c34dcd473c5e13cea31ce4ab6fcf3965.png"/>
+      </screenshots>
+      <description>And System hide button Cancel</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="152">
+      <screenshots>
+        <screenshot image="c34dcd473c5e13cea31ce4ab6fcf3965.png"/>
+      </screenshots>
+      <description>And System show downloaded location Download location: and can not edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="779">
+      <screenshots>
+        <screenshot image="94af61d4641f1bc96d219e086a2902e8.png"/>
+      </screenshots>
+      <description>When I open submenu BASS Export of parent menu Import/Export</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1803">
+      <screenshots>
+        <screenshot image="4e8eafadfd52cc9af69eb9f7cdc02b01.png"/>
+      </screenshots>
+      <description>And In Bass export screen, I click button Export</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1219">
+      <screenshots>
+        <screenshot image="b30a46eb04f9734dd3715d80fcf4b8d7.png"/>
+      </screenshots>
+      <description>And In Bass export screen, I click button Edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="138">
+      <screenshots>
+        <screenshot image="b30a46eb04f9734dd3715d80fcf4b8d7.png"/>
+      </screenshots>
+      <description>And I save path in download location to new variable</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="211">
+      <screenshots>
+        <screenshot image="a37d83e9ecc20e02355ae2d2aacca265.png"/>
+      </screenshots>
+      <description>And I type !@#$% in downloaded location</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1223">
+      <screenshots>
+        <screenshot image="fb11e74028bfa80227094021d65bcf09.png"/>
+      </screenshots>
+      <description>And In Bass export screen, I click button Cancel</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="124">
+      <screenshots>
+        <screenshot image="fb11e74028bfa80227094021d65bcf09.png"/>
+      </screenshots>
+      <description>Then In Bass export screen, System show button Edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="127">
+      <screenshots>
+        <screenshot image="fb11e74028bfa80227094021d65bcf09.png"/>
+      </screenshots>
+      <description>And System hide button Save</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="122">
+      <screenshots>
+        <screenshot image="fb11e74028bfa80227094021d65bcf09.png"/>
+      </screenshots>
+      <description>And System hide button Cancel</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="151">
+      <screenshots>
+        <screenshot image="fb11e74028bfa80227094021d65bcf09.png"/>
+      </screenshots>
+      <description>And System show downloaded location Download location: and can not edit</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="130">
+      <screenshots>
+        <screenshot image="fb11e74028bfa80227094021d65bcf09.png"/>
+      </screenshots>
+      <description>And System show downloaded location with old path</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

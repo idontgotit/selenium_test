@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"View Notification","create new daily report and logout from system","ERROR","2016-11-03T20:06:36.845+07:00","0.0","3.91"
+"View Notification","verify when delete tracking a user then add tracking that user again","ERROR","2016-11-03T20:07:08.481+07:00","0.0","21.35"

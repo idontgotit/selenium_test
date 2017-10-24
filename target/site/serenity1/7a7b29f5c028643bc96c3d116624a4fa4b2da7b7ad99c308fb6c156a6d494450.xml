@@ -1,0 +1,82 @@
+<acceptance-test-run title="initialization screen when have no data" name="initialization screen when have no data" description="" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="8053" timestamp="2016-11-03T08:45:54.922+07:00" session-id="e02788a4687a6dd95353ac181b190d1d">
+  <user-story id="view-notification" name="View Notification" path="viewNotifications/viewNotifications.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="View notifications" type="capability"/>
+    <tag name="View Notification" type="feature"/>
+    <tag name="View notifications/View notification" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>username</header>
+      <header>password</header>
+      <header>lang</header>
+      <header>submenuText</header>
+      <header>menuText</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>12000001</value>
+        <value>123456</value>
+        <value>en</value>
+        <value>View Notifications</value>
+        <value>Notification</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {username=12000001, password=123456, lang=en, submenuText=View Notifications, menuText=Notification}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="2ce2876c0a583728f9d467828912269b.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="2173">
+      <screenshots>
+        <screenshot image="35bea53004f39eed20d942bf48fa3e71.png"/>
+      </screenshots>
+      <description>When I open Login page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2780">
+      <screenshots>
+        <screenshot image="fde769d7d69a2aec55fb3fa0ebd33da0.png"/>
+        <screenshot image="9efcfe48d5c0000a5e65c385ed712f71.png"/>
+      </screenshots>
+      <description>And I input my credentials username 12000001 and password 123456</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1663">
+      <screenshots>
+        <screenshot image="9efcfe48d5c0000a5e65c385ed712f71.png"/>
+      </screenshots>
+      <description>And I change language to en</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="865">
+      <screenshots>
+        <screenshot image="4655ac3a84fa8a493abe401a27ca11ee.png"/>
+      </screenshots>
+      <description>When I open submenu View Notifications of menu Notification</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="173">
+      <screenshots>
+        <screenshot image="2ce2876c0a583728f9d467828912269b.png"/>
+      </screenshots>
+      <description>Then The system should open &apos;Notification&apos; page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="283">
+      <screenshots>
+        <screenshot image="2ce2876c0a583728f9d467828912269b.png"/>
+      </screenshots>
+      <description>And The system should show initialization screen of View Notifications page</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

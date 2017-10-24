@@ -1,0 +1,5 @@
+<!--?xml version="1.0" encoding="UTF-8"?--><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" style="overflow-y: hidden; height: 100%; border: none; padding: 0px; margin: 0px; overflow-x: auto;"><head><link type="text/css" rel="stylesheet" href="/business_traceability/javax.faces.resource/theme.css.xhtml?ln=primefaces-mems800" /><link type="text/css" rel="stylesheet" href="/business_traceability/javax.faces.resource/fa/font-awesome.css.xhtml?ln=primefaces" /><script type="text/javascript">if(window.PrimeFaces){}</script>
+		<title>営業日報システム</title></head><body id="contentPage" class="body-content ui-layout-container" style="overflow: hidden; height: auto; margin: 0px; position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; zoom: 1; width: auto;">誰かがシステムにログインするために、アカウントを使用していますので、あなたは追い出さなければならない。ページをリフレッシュしてからもう一度お試しください。
+		<div style="overflow: auto; max-height: 500px;">
+			<a href="index.html">ホームページに戻るには、ここをクリックして、再試行してください。</a>
+		</div></body></html>

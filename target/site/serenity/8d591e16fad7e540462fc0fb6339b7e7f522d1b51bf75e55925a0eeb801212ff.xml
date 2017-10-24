@@ -1,0 +1,89 @@
+<acceptance-test-run title="search company" name="search company" description="" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="16622" timestamp="2016-11-03T20:08:03.300+07:00" session-id="1ade5611e675970de818aca53ca2e32b">
+  <user-story id="company-management" name="company management" path="companyManagement/companyManagement.feature"/>
+  <issues>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+    <issue></issue>
+  </issues>
+  <versions>
+    <version>3.1.5</version>
+    <version>Sprint-1.1</version>
+  </versions>
+  <tags>
+    <tag name="Company management" type="capability"/>
+    <tag name="company management" type="feature"/>
+    <tag name="Company management/Company management" type="feature"/>
+    <tag name="" type="issue"/>
+    <tag name="LoggedIn" type="tag"/>
+    <tag name="3.1.5" type="version"/>
+    <tag name="Sprint-1.1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>submenuText</header>
+      <header>menuText</header>
+      <header>invalidSearchText</header>
+      <header>validSearchText</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Company Management</value>
+        <value>Common</value>
+        <value>aaaaa</value>
+        <value>a</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {submenuText=Company Management, menuText=Common, invalidSearchText=aaaaa, validSearchText=a}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="4de85f3834e8d6155ca17a5503924df8.png"/>
+      <screenshot image="08edaed0be753a3249646e2b5d4f0002.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1581">
+      <screenshots>
+        <screenshot image="2e9ea0df2ff7046cadd5c782166e35d6.png"/>
+      </screenshots>
+      <description>When I open submenu Company Management of menu Common</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="975">
+      <screenshots>
+        <screenshot image="e0156b6e5c5e76f1cdc2349994dfba30.png"/>
+      </screenshots>
+      <description>And I fill value aaaaa for input search in Company management screen</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1511">
+      <screenshots>
+        <screenshot image="4e5f6ceb7c3fd8eccf04351b62373fde.png"/>
+      </screenshots>
+      <description>And In Company management screen, I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="403">
+      <screenshots>
+        <screenshot image="09731a869237652eea44aada30c5cd7d.png"/>
+      </screenshots>
+      <description>Then In Company management screen, the system should show table company with no record found</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1646">
+      <screenshots>
+        <screenshot image="c36fde8f00637b0ed8925ecd7dea6f57.png"/>
+      </screenshots>
+      <description>When I fill value a for input search in Company management screen</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1615">
+      <screenshots>
+        <screenshot image="bc2faa0a3a3e49ad35dccd76f7ef3132.png"/>
+      </screenshots>
+      <description>And In Company management screen, I click button Search</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="297">
+      <screenshots>
+        <screenshot image="2290d8352cc723069a9b2df2fe30b6f2.png"/>
+      </screenshots>
+      <description>Then The system should show table company with record found</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>
